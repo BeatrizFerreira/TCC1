@@ -1,0 +1,276 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.5 }
+
+\bibitem[Bass, Clements e Kazman 2003]{bass_software_2003}
+\abntrefinfo{Bass, Clements e Kazman}{BASS; CLEMENTS; KAZMAN}{2003}
+{BASS, L.; CLEMENTS, P.~C.; KAZMAN, R. \emph{Software {Architecture} in
+  {Practice}}. 2. ed. [S.l.]: Addison-Wesley Professional, 2003.
+ISBN 0-321-15495-9.}
+
+\bibitem[Belqasmi et al. 2012]{belqasmi_soap-based_2012}
+\abntrefinfo{Belqasmi et al.}{BELQASMI et al.}{2012}
+{BELQASMI, F. et al. {SOAP}-{Based} vs. {RESTful} {Web} {Services}: {A} {Case}
+  {Study} for {Multimedia} {Conferencing}.
+\emph{IEEE Internet Computing}, v.~16, n.~4, p. 54--63, jul. 2012.
+ISSN 1089-7801.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6197173}.}
+
+\bibitem[Bianco et al. 2011]{BiancoArchitectingServiceOriented2011}
+\abntrefinfo{Bianco et al.}{BIANCO et al.}{2011}
+{BIANCO, P. et al. \emph{Architecting Service-Oriented Systems}.
+Pittsburgh, PA, 2011. Dispon{\'\i}vel em:
+  \url{http://resources.sei.cmu.edu/library/asset-view.cfm?AssetID=9829}.}
+
+\bibitem[Chen, Kazman e Perry 2010]{chen_software_2010}
+\abntrefinfo{Chen, Kazman e Perry}{CHEN; KAZMAN; PERRY}{2010}
+{CHEN, H.-M.; KAZMAN, R.; PERRY, O. From {Software} {Architecture} {Analysis}
+  to {Service} {Engineering}: {An} {Empirical} {Study} of {Methodology}
+  {Development} for {Enterprise} {SOA} {Implementation}.
+\emph{IEEE Transactions on Services Computing}, v.~3, n.~2, p. 145--160, abr.
+  2010.
+ISSN 1939-1374.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5467023}.}
+
+\bibitem[Dai et al. 2015]{dai_bridging_2015}
+\abntrefinfo{Dai et al.}{DAI et al.}{2015}
+{DAI, W. et al. Bridging {Service}-{Oriented} {Architecture} and {IEC} 61499
+  for {Flexibility} and {Interoperability}.
+\emph{IEEE Transactions on Industrial Informatics}, v.~11, n.~3, p. 771--781,
+  jun. 2015.
+ISSN 1551-3203, 1941-0050.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7086296}.}
+
+\bibitem[Dikmans e Luttikhuizen 2012]{dikmans_soa_2012}
+\abntrefinfo{Dikmans e Luttikhuizen}{DIKMANS; LUTTIKHUIZEN}{2012}
+{DIKMANS, L.; LUTTIKHUIZEN, R.~v. \emph{{SOA} {Made} {Simple}}. BIRMINGHAM -
+  MUMBAI: Packt Publishing, 2012.
+ISBN 978-1-84968-416-3.}
+
+\bibitem[Educational {Software} {Architecture} {And} {Systemic} {Impact}: {The}
+  {Promise} {Of} {Component} {Software} 1996]{_educational_1996}
+\abntrefinfo{Educational\ldots}{EDUCATIONAL\ldots}{1996}
+{EDUCATIONAL {Software} {Architecture} {And} {Systemic} {Impact}: {The}
+  {Promise} {Of} {Component} {Software}.
+\emph{Journal of Educational Computing Research}, v.~14, n.~3, p. 217--228,
+  1996.
+Dispon{\'\i}vel em:
+  \url{https://www.sri.com/sites/default/files/publications/imports/EdSoftwareArch.pdf}.}
+
+\bibitem[Erl 2009]{erl_computacao_2009}
+\abntrefinfo{Erl}{ERL}{2009a}
+{ERL, T. Computação orientada a serviços e {SOA}. In:  GAMA, F. C. N.~d.;
+  BARBOSA, R. d.~C. (Ed.). \emph{{SOA}: {Princípios} de {Design} de
+  {Serviços}}. São Paulo: Pearson Prentice Hall, 2009. p.~306.
+ISBN 978-85-7605-189-3.}
+
+\bibitem[Erl 2009]{erl_orientacao_2009}
+\abntrefinfo{Erl}{ERL}{2009b}
+{ERL, T. Orientação a serviços. In:  GAMA, F. C. N.~d.; BARBOSA, R. d.~C.
+  (Ed.). \emph{{SOA}: {Princípios} de {Design} de {Serviços}}. São Paulo:
+  Pearson Prentice Hall, 2009. p.~306.
+ISBN 978-85-7605-189-3.}
+
+\bibitem[Erl et al. 2009]{erl_soa_2009}
+\abntrefinfo{Erl et al.}{ERL et al.}{2009}
+{ERL, T. et al. \emph{{SOA} - {Princípios} de {Design} de {Serviços}}. 1. ed.
+  São Paulo: Pearson Prentice Hall, 2009.
+ISBN 978-85-7605-189-3.}
+
+\bibitem[Esfahani et al. 2011]{safi_esfahani_adaptable_2011}
+\abntrefinfo{Esfahani et al.}{ESFAHANI et al.}{2011}
+{ESFAHANI, F. S. et al. Adaptable {Decentralized} {Service} {Oriented}
+  {Architecture}.
+\emph{Journal of Systems and Software}, v.~84, n.~10, p. 1591--1617, out. 2011.
+ISSN 01641212.
+Dispon{\'\i}vel em:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0164121211000744}.}
+
+\bibitem[Evdemon 2005]{evdemon_principios_2005}
+\abntrefinfo{Evdemon}{EVDEMON}{2005}
+{EVDEMON, J. \emph{Princípios do design de serviço: padrões e antipadrões
+  de serviço}. 2005.
+Dispon{\'\i}vel em:
+  \url{https://msdn.microsoft.com/pt-br/library/ms954638.aspx}.}
+
+\bibitem[Ferreira 2013]{ferreira_soa_2013}
+\abntrefinfo{Ferreira}{FERREIRA}{2013}
+{FERREIRA, A.
+Apresentação {Prezi}, \emph{{SOA} vs {ESB}}. 2013.
+Dispon{\'\i}vel em: \url{https://prezi.com/na8\_yc87is6s/soa-vs-esb/}.}
+
+\bibitem[Jansen e Bosch 2005]{jansen_software_2005}
+\abntrefinfo{Jansen e Bosch}{JANSEN; BOSCH}{2005}
+{JANSEN, A.; BOSCH, J. Software {Architecture} as a {Set} of {Architectural}
+  {Design} {Decisions}. In:  . IEEE, 2005. p. 109--120.
+ISBN 978-0-7695-2548-8. Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1620096}.}
+
+\bibitem[Júnior e Vieira 2012]{junior_uma_2012}
+\abntrefinfo{Júnior e Vieira}{JúNIOR; VIEIRA}{2012}
+{JúNIOR, D.; VIEIRA, M.
+\emph{Uma arquitetura para aprendizagem colaborativa utilizando a integração
+  web e {TV} digital integrativa}.
+Tese (text) --- Universidade Federal de Alagoas, set. 2012.
+Dispon{\'\i}vel em: \url{http://www.repositorio.ufal.br/handle/riufal/849}.}
+
+\bibitem[Krafzig, Banke e Slama 2005]{krafzig_enterprise_2005}
+\abntrefinfo{Krafzig, Banke e Slama}{KRAFZIG; BANKE; SLAMA}{2005}
+{KRAFZIG, D.; BANKE, K.; SLAMA, D. \emph{Enterprise {SOA}: {Service}-oriented
+  {Architecture} {Best} {Practices}}. [S.l.]: Prentice Hall Professional, 2005.
+ISBN 978-0-13-146575-6.}
+
+\bibitem[Lewis 2010]{lewis_getting_2010}
+\abntrefinfo{Lewis}{LEWIS}{2010}
+{LEWIS, G. \emph{Getting {Started} with {Service}-{Oriented} {Architecture}
+  ({SOA}) {Terminology}}. Software Engineering Institute Carnegie Mellon
+  University, 2010.
+Dispon{\'\i}vel em:
+  \url{http://www.sei.cmu.edu/library/assets/whitepapers/SOA\_Terminology.pdf}.}
+
+\bibitem[Linthicum et al. 2007]{linthicum_service_2007}
+\abntrefinfo{Linthicum et al.}{LINTHICUM et al.}{2007}
+{LINTHICUM, D. et al. \emph{Service {Oriented} {Architecture} ({SOA}) in the
+  {Real} {World}}. [S.l.]: Microsoft Corporation, 2007.}
+
+\bibitem[López-Sanz et al. 2008]{lopez-sanz_modelling_2008}
+\abntrefinfo{López-Sanz et al.}{LóPEZ-SANZ et al.}{2008}
+{LóPEZ-SANZ, M. et al. Modelling of {Service}-{Oriented} {Architectures} with
+  {UML}.
+\emph{Electronic Notes in Theoretical Computer Science}, v.~194, n.~4, p.
+  23--37, abr. 2008.
+ISSN 15710661.
+Dispon{\'\i}vel em:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1571066108002028}.}
+
+\bibitem[Malloy et al. 2006]{malloy_improving_2006}
+\abntrefinfo{Malloy et al.}{MALLOY et al.}{2006}
+{MALLOY, B. et al. Improving the predictable assembly of service-oriented
+  architectures.
+\emph{IEEE Software}, v.~23, n.~2, p. 12--15, mar. 2006.
+ISSN 0740-7459.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1605172}.}
+
+\bibitem[Mironela 2009]{mironela_general_2009}
+\abntrefinfo{Mironela}{MIRONELA}{2009}
+{MIRONELA, P. General {Information} and {Main} {Characteristics} {Regarding}
+  {Web} {Services}. {Protocol} {SOAP} and {REST}.
+\emph{Annals of Faculty of Economics}, v.~4, n.~1, p. 1021--1024, 2009.
+Dispon{\'\i}vel em:
+  \url{http://steconomice.uoradea.ro/anale/volume/2009/v4-management-and-marketing/209.pdf}.}
+
+\bibitem[Mueller 2013]{mueller_understanding_2013}
+\abntrefinfo{Mueller}{MUELLER}{2013}
+{MUELLER, J. \emph{Understanding {SOAP} and {REST} {Basics} {And}
+  {Differences}}. 2013.
+Dispon{\'\i}vel em:
+  \url{http://blog.smartbear.com/apis/understanding-soap-and-rest-basics/}.}
+
+\bibitem[O que é {SOA} e por que usá-la? 2010]{_o_2010}
+\abntrefinfo{O\ldots}{O\ldots}{2010}
+{O que é {SOA} e por que usá-la? 2010.
+Dispon{\'\i}vel em:
+  \url{http://www.celtainformatica.com.br/noticias/o-que-e-soa-e-por-que-usa-la}.}
+
+\bibitem[Onoe 2010]{onoe_proposta_2010}
+\abntrefinfo{Onoe}{ONOE}{2010}
+{ONOE, A.~Y.
+\emph{Proposta de governança {SOA} utilizando capacidades dinâmicas: uma
+  aplicação em centro de comunicação digital universitário.}
+Tese (text) --- Universidade de São Paulo, nov. 2010.
+Dispon{\'\i}vel em:
+  \url{http://www.teses.usp.br/teses/disponiveis/3/3141/tde-19012011-095120/}.}
+
+\bibitem[Park, Choi e Yoo 2012]{park_integrated_2012}
+\abntrefinfo{Park, Choi e Yoo}{PARK; CHOI; YOO}{2012}
+{PARK, S.; CHOI, J.; YOO, H. Integrated {Model} of {Service}-{Oriented}
+  {Architecture} and {Web}-{Oriented} {Architecture} for {Financial}
+  {Software}.
+\emph{Journal of Information Science and Engineering}, v.~28, n.~5, p.
+  925--939, 2012.
+Dispon{\'\i}vel em:
+  \url{http://www.iis.sinica.edu.tw/page/jise/2012/201209\_07.pdf}.}
+
+\bibitem[Peredo e Peredo 2014]{peredo_software_2014}
+\abntrefinfo{Peredo e Peredo}{PEREDO; PEREDO}{2014}
+{PEREDO, R.; PEREDO, I. Software {Architecture} and {Design} with {Semantic}
+  {Web} {Technologies} in {Virtual} {Learning} {Environments}.
+\emph{Issues in Information Systems - A Journal of IACIS}, v.~15, n.~2, p.
+  190--196, 2014.
+Dispon{\'\i}vel em:
+  \url{http://iacis.org/iis/2014/111\_iis\_2014\_190-196.pdf}.}
+
+\bibitem[Pereira 2011]{pereira_repositorio_2011}
+\abntrefinfo{Pereira}{PEREIRA}{2011}
+{PEREIRA, M.~Z.
+\emph{Repositório {PUCRS}: {PSOA}: um framework de práticas e padrões {SOA}
+  para projetos {DDS}}.
+Tese ({masterThesis}) --- Pontifícia Universidade Católica do Rio Grande do
+  Sul, Rio Grande do Sul, 2011.
+Dispon{\'\i}vel em: \url{http://hdl.handle.net/10923/1658}.}
+
+\bibitem[Rozlog 2013]{rozlog_rest_2013}
+\abntrefinfo{Rozlog}{ROZLOG}{2013}
+{ROZLOG, M. \emph{{REST} e {SOAP}: {Usar} um dos dois ou ambos?} 2013.
+Dispon{\'\i}vel em:
+  \url{http://www.infoq.com/br/articles/rest-soap-when-to-use-each}.}
+
+\bibitem[Sangwan et al. 2008]{sangwan_integrating_2008}
+\abntrefinfo{Sangwan et al.}{SANGWAN et al.}{2008}
+{SANGWAN, R. et al. Integrating a software architecture-centric method into
+  object-oriented analysis and design.
+\emph{Journal of Systems and Software}, v.~81, n.~5, p. 727--746, maio 2008.
+ISSN 01641212.
+Dispon{\'\i}vel em:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0164121207001872}.}
+
+\bibitem[Siriwardena 2013]{siriwardena_enterprise_2013}
+\abntrefinfo{Siriwardena}{SIRIWARDENA}{2013}
+{SIRIWARDENA, P. \emph{Enterprise {Integration} with {WSO}2 {ESB}}. 1. ed.
+  BIRMINGHAM - MUMBAI: Packt Publishing, 2013.
+ISBN 978-1-78328-019-3.}
+
+\bibitem[{Software Engineering Institute - Carnegie Mellon
+  University}]{software_engineering_institute_-_carnegie_mellon_university_software_????}
+\abntrefinfo{{Software Engineering Institute - Carnegie Mellon
+  University}}{{Software Engineering Institute - Carnegie Mellon University}}{}
+{{Software Engineering Institute - Carnegie Mellon University}. \emph{Software
+  {Architecture}}.
+Dispon{\'\i}vel em: \url{http://www.sei.cmu.edu/architecture/}.}
+
+\bibitem[Steenderen e Dyk 2000]{steenderen_standard_2000}
+\abntrefinfo{Steenderen e Dyk}{STEENDEREN; DYK}{2000}
+{STEENDEREN, M.~v.; DYK, P.~v. Standard {Object} {Access} {Protocol} ({SOAP}).
+\emph{InterWord Communications - South African Journal of Information
+  Management}, v.~2, n.~2/3, set. 2000.
+ISSN 1560-683X.
+Dispon{\'\i}vel em:
+  \url{http://www.sajim.co.za/index.php/SAJIM/article/viewFile/106/103}.}
+
+\bibitem[Vantagens e {Desvantagens} de {SOA}]{_vantagens_????}
+\abntrefinfo{Vantagens\ldots}{VANTAGENS\ldots}{}
+{VANTAGENS e {Desvantagens} de {SOA}.
+Dispon{\'\i}vel em:
+  \url{http://www.devmedia.com.br/vantagens-e-desvantagens-de-soa/27437}.}
+
+\bibitem[Witt, Baker e Merritt 1993]{witt_software_1993}
+\abntrefinfo{Witt, Baker e Merritt}{WITT; BAKER; MERRITT}{1993}
+{WITT, B.~I.; BAKER, F.~T.; MERRITT, E.~W. \emph{Software {Architecture} and
+  {Design}: {Principles}, {Models}, and {Methods}}. John Wiley \& Sons, Inc.,
+  1993.
+ISBN 978-0-442-01556-5. Dispon{\'\i}vel em:
+  \url{http://dl.acm.org/citation.cfm?id=562427}.}
+
+\bibitem[{WSO}2 {Enterprise} {Service} {Bus}]{_wso2_????}
+\abntrefinfo{{WSO}2\ldots}{{WSO}2\ldots}{}
+{{WSO}2 {Enterprise} {Service} {Bus}.
+Dispon{\'\i}vel em: \url{http://wso2.com/products/enterprise-service-bus/}.}
+
+\end{thebibliography}
