@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  4 APR 2016 09:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  20 APR 2016 10:59
 entering extended mode
 **./engenhariadesoftware.tex
 (engenhariadesoftware.tex
@@ -82,9 +82,66 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
 []
  []
 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \cite{mueller_understanding_2013}
+                                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+\citation{mueller_understanding_2013}
 ! Undefined control sequence.
-l.9 \section
-            {Descrição do projeto}
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.6 \cite{mueller_understanding_2013}
+                                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `mueller_understanding_2013' on page  undefined on inpu
+t line 6.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{wso2}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.7 \cite{wso2}
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `wso2' on page  undefined on input line 7.
+
+Missing character: There is no ] in font nullfont!
+
+Overfull \hbox (25.43053pt too wide) in paragraph at lines 6--8
+[][]
+ []
+
+
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 6--8
+[] 
+ []
+
+! Undefined control sequence.
+l.11 \section
+             {Descrição do projeto}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -98,8 +155,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 \section{D
-              escrição do projeto}
+l.11 \section{D
+               escrição do projeto}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -124,12 +181,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 9--10
+Overfull \hbox (20.0pt too wide) in paragraph at lines 11--12
 []
  []
 
 ! Undefined control sequence.
-l.12 \section
+l.14 \section
              {Proposta}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -144,7 +201,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 \section{P
+l.14 \section{P
                roposta}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -158,12 +215,12 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no a in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
 [] 
  []
 
 ! Undefined control sequence.
-l.17 \section
+l.19 \section
              {O sistema}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -178,7 +235,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.17 \section{O
+l.19 \section{O
                 sistema}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -192,12 +249,12 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 17--18
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--20
 []
  []
 
 ! Undefined control sequence.
-l.19 \section
+l.21 \section
              {Definição das tecnologias}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -212,7 +269,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.19 \section{D
+l.21 \section{D
                efinição das tecnologias}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -243,12 +300,12 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 19--20
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
 []
  []
 
 ! Undefined control sequence.
-l.21 \section
+l.23 \section
              {Cronograma de desenvolvimento}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -263,7 +320,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.21 \section{C
+l.23 \section{C
                ronograma de desenvolvimento}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -296,7 +353,7 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
+Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
 []
  []
 
@@ -307,7 +364,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.23 P
+l.25 P
       ara o desenvolvimento da proposta, foi criado o cronograma \ref{cronog...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -367,7 +424,7 @@ Missing character: There is no a in font nullfont!
 ! Undefined control sequence.
 <write> ...nce `cronograma_tcc1' on page \thepage 
                                                   \space undefined\on@line .
-l.23 ... criado o cronograma \ref{cronograma_tcc1}
+l.25 ... criado o cronograma \ref{cronograma_tcc1}
                                                   , onde estão descritas as...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -376,7 +433,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `cronograma_tcc1' on page  undefined on input line 23.
+LaTeX Warning: Reference `cronograma_tcc1' on page  undefined on input line 25.
 
 
 Missing character: There is no , in font nullfont!
@@ -465,12 +522,12 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
 []
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 23--24
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--26
 []
  []
 
@@ -481,7 +538,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \begin{table}
+l.27 \begin{table}
                   [!h]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -494,7 +551,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \begin{table}[
+l.27 \begin{table}[
                    !h]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -510,7 +567,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \caption
+l.29 \caption
              {Cronograma de atividades relacionadas ao TCC 1}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -556,9 +613,9 @@ Missing character: There is no C in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no 1 in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 31.
 Missing character: There is no A in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -961,14 +1018,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.43 \end{table}
+l.45 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--44
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--46
 []
  []
 
@@ -980,11 +1037,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 25--44
 
  
 Here is how much of TeX's memory you used:
- 14 strings out of 493634
- 235 string characters out of 3134424
+ 16 strings out of 493634
+ 269 string characters out of 3134424
  57604 words of memory out of 3000000
- 3498 multiletter control sequences out of 15000+200000
+ 3500 multiletter control sequences out of 15000+200000
  3948 words of font info for 15 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 19i,7n,19p,703b,129s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,7n,26p,703b,127s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

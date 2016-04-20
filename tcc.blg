@@ -2,12 +2,11 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: tcc.aux
 The style file: abntex2-alf.bst
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
-Warning--campo year vazio ou faltando em software_engineering_institute_-_carnegie_mellon_university_software_????
-Warning--campo year vazio ou faltando em _vantagens_????
-Warning--campo year vazio ou faltando em _wso2_????
+Warning--campo year vazio ou faltando em software_engineering_institute
+Warning--campo year vazio ou faltando em wso2
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.5           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-(There were 3 warnings)
+(There were 2 warnings)
