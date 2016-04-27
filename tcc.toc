@@ -28,23 +28,21 @@
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {A PROPOSTA}}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}Proposta de arquitetura}{30}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Modelo de Dom\IeC {\'\i }nio}{30}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Requisitos}{30}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}A arquitetura}{30}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Uso do ESB}{31}{subsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.4.1}Ferramentas ESB}{32}{subsubsection.3.2.4.1}
-\contentsline {subsection}{\numberline {3.2.5}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{32}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Metodologia}{33}{section.3.3}
-\contentsline {section}{\numberline {3.4}Cronograma de execu\IeC {\c c}\IeC {\~a}o}{33}{section.3.4}
+\contentsline {subsection}{\numberline {3.2.1}Requisitos}{30}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}A arquitetura}{30}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Ferramentas ESB}{31}{subsubsection.3.2.2.1}
+\contentsline {subsection}{\numberline {3.2.3}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{31}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Metodologia}{32}{section.3.3}
+\contentsline {section}{\numberline {3.4}Cronograma de execu\IeC {\c c}\IeC {\~a}o}{32}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{35}{chapter.4}
-\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o do projeto}{35}{section.4.1}
-\contentsline {section}{\numberline {4.2}Proposta}{35}{section.4.2}
-\contentsline {section}{\numberline {4.3}O sistema}{35}{section.4.3}
-\contentsline {section}{\numberline {4.4}Defini\IeC {\c c}\IeC {\~a}o das tecnologias}{35}{section.4.4}
-\contentsline {section}{\numberline {4.5}Cronograma de desenvolvimento}{35}{section.4.5}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o do projeto}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Proposta}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}O sistema}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}Defini\IeC {\c c}\IeC {\~a}o das tecnologias}{33}{section.4.4}
+\contentsline {section}{\numberline {4.5}Cronograma de desenvolvimento}{33}{section.4.5}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{37}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{35}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{39}{section*.15}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{37}{section*.15}

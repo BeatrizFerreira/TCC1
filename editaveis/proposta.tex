@@ -1,6 +1,6 @@
 \chapter[A PROPOSTA]{A PROPOSTA}
 
-Este capítulo apresenta a proposta do trabalho de conclusão de curso, com detalhes sobre [...]
+Este capítulo apresenta a proposta do trabalho de conclusão de curso.
 
 \section{Introdução}
 Avanços tecnológicos e a criação de linguagens de programação, diferentes técnicas e paradigmas e outros conceitos relacionados ao desenvolvimento de software contribui para que a necessidade de interação entre estes elementos seja emergente, de modo a viabilizar a construção de sistemas cada vez mais robustos e inteligentes. Esta interação entre elementos de software não consistem de aplicações robustas que executam todas as suas atividades de forma independente de outras aplicações: cada vez mais, diversos sistemas de software interagem com outros, podendo ser estes desenvolvidos tomando como base outros paradigmas ou escritos em outras linguagens de programação e utilizando-se diferentes técnicas.
@@ -13,12 +13,8 @@ Desta forma, será viável a disponibilização à sociedade de uma plataforma v
 
 \section{Proposta de arquitetura}
 
-\subsection{Modelo de Domínio}
-
-{REESCREVER O MODELO DE DOMINIO, DE FORMA A SER MAIS AMPLO E NÃO SOMENTE RESTRITO AO CONTEXTO EDUCACIONAL}
-
 \subsection{Requisitos}
-A partir da necessidade identificada que é disponibilizar aplicações que foram desenvolvidas, bem como aquelas que estão em desenvolvimento e que serão desenvolvidas, através de uma plataforma virtual único, algumas das principais características arquiteturais deste ambiente que influenciaram na escolha do modelo arquitetural para a construção da plataforma são:
+A partir da necessidade identificada de disponibilizar aplicações que foram desenvolvidas, bem como aquelas que estão em desenvolvimento e que serão desenvolvidas, através de uma plataforma virtual único, algumas das principais características arquiteturais deste ambiente que influenciaram na escolha do modelo arquitetural para a construção da plataforma são:
 
 \begin{itemize}
 \item A comunicação entre as aplicações deve permitir a troca de dados independentemente das tecnologias utilizadas para seu desenvolvimento.
@@ -28,49 +24,40 @@ A partir da necessidade identificada que é disponibilizar aplicações que fora
 \item Flexibilidade,  possibilitando a extensão da plataform sem que a arquitetura original seja modificada drasticamente.
 \end{itemize}
 
-A partir das características acima, foi proposto o uso do modelo arquitetural SOA - Service-Oriented Architecture, ou Arquitetura Orientada a Serviços -, pois desta forma a plataforma virtual terá conhecimento sobre as aplicações - podendo também ser chamadas de serviços ou funcionalidades da plataforma - por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações.
+A partir das características acima, foi proposto o uso do modelo arquitetural SOA - \textit{Service-Oriented Architecture} -, pois desta forma a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações neste contexto também podem ser denominadas serviços ou funcionalidades da plataforma.
 
 \subsection{A arquitetura}
 
-{FALAR AQUI COMO SERÁ A ARQUITETURA, CONTAR DETALHES, MOSTRAR FIGURAS, PROPOR CENÁRIO DE APLICAÇÃO E JUSTIFICAR OS DETALHES QUE FIZERAM A ESCOLHA PELO MODELO SOA E NÃO POR OUTRO QUALQUER}
+A proposta de arquitetura a ser implementada faz uso da abordagem "\textit{Hub-and-spoke}", onde a interface de comunicação entre os serviços é única e pode ser realizada com o uso de um barrameneto de serviços ou um Enterprise Service Bus (ESB).
 
-De acordo com Bianco et.al \cite{BiancoEvaluatinga2007}, as principais abordagens utilizadas para implementação de uma arquitetura baseada em serviços são:
-\begin{itemize}
-\item Integração direta ponto-a-ponto: a interface de comunicação é única entre os serviços e as aplicações que os utilizam, Além disso, a responsabilidade de conexão entre as partes é compartilhada.
-\item "\textit{Hub-and-spoke}": a comunicação entre os serviços e as aplicações que os utilizam é mediada por um terceiro software - o ESB (Enterprise Service Bus).
-\end{itemize}
+O barramento de serviços é um recurso a ser utilizado na implementação da arquitetura baseada no modelo SOA para facilitar a troca entre mensagens entre as aplicações - ou serviços. Este barramento é uma ferramenta que implementa funcionalidades que roteiam as mensagens entre os usuários e provedores de um determinado serviço, transformam as mensagens e os dados para o formato aceito pelas aplicações e aceita protocolos múltiplos de comunicação através de adapters. Na arquitetura proposta, o protocolo de comunicação será padronizado e unificado e apenas as outras características do barramento de serviços serão utilizadas.
 
-Na segunda abordagem de implementação de serviços, o ESB suporta Web Services e padrões de segurança, faz o roteamento de mensagens para uma ou mais aplicações (independentemente do local onde a aplicação está hospedada) e realiza a transformação/conversão de dados \cite{BiancoEvaluatinga2007}.
+Sendo interoperabilidade um dos requisitos relevantes para a escolha do modelo arquitetural, o ESB, que é um padrão de implementação do barramento de serviços, é visto como um recurso que pode ser utilizado para ajudar a promover a interoperabilidade na arquitetura definida e na validação de políticas e critérios de segurança a serem definidas posteriormente.
 
-
-{{DESENVOLVER MELHOR AS IDEIAS RELACIONADAS À ABORDAGEM 'HUB-AND-SPOKE', POIS É ESTA QUE SERÁ UTILIZADA. 
-
-PROCURAR FALAR SOBRE OS BENEFÍCIO DE UMA ABORDAGEM E COMO ELA SERÁ IMPLEMENTADA NO TRABALHO}}
+--COLOCAR AQUI UMA FIGURA QUE REPRESENTE O USO DO BARRAMENTO DE SERVIÇOS PROVENDO A INTEROPERABILIDADE DO SISTEMA, TIPO UM BARRAMENTO COM DIVERSAS APLICAÇÕES CONECTADAS. 
+ALÉM DISSO, CADA APLICAÇÃO DEVE SER REPRESENTADA COMO UMA APLICAÇÃO ESCRITA EM UMA DETERMINADA LINGUAGEM DE PROGRAMAÇÃO--
 
 
-Com base nos requisitos essenciais levantados e no estudo realizado sobre o modelo arquitetural SOA, o modelo proposto pode ser visto de maneira superfícial na imagem abaixo:
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=1\textwidth]{figuras/TCC_diagrama1.PNG}
-\caption{Rascunho do modelo arquitetural a ser proposto.}
-\label{TCC_diagrama1}
-\end{figure}
-
-{MELHORAR A FIGURA}
+Ao adicionar um novo serviço à arquitetura utilizando o ESB, deverão ser especificados tanto os procedimentos quando uma nova requisição for feita quanto aqueles passos que conduzem ao envio de uma resposta de acesso ao serviço especificado, sendo esta resposta advinda do próprio serviço ou uma resposta padrão, também especificada, em caso de falha ou sucesso ao executar a requisição.
 
 
-\subsection{Uso do ESB}
+--A FIGURA A SER COLOCADA AQUI DVE ENFATIZAR O PAPEL DO ESB NO MODELO PROPOSTO, EXIBIR DE ALGUMA FORMA A TRANSFORMAÇÃO DE MENSAGENS E O ROTEAMENTO DESTAS ENTRE AS APLICAÇÕES--
 
-Como já mencionado, o Enterprise Service Bus - ESB - é um conceito que está diretamente conectado a SOA e é um mecanismo que pode ser utilizado para ajudar a prover a interoperabilidade na arquitetura estabelecida, além de colaborar na validação de algumas políticas e critérios definidos relacionados à segurança da aplicação baseada neste modelo arquitetural \cite{oliveira_interoperabilidade}.
 
-Para facilitar o processo de roteamento, bem como de transformação de mensagens trocadas entre provedores e usuários dos serviços, faz-se necessário o uso do ESB. Ao adicionar um novo serviço à arquitetura utilizando o ESB, deverão ser especificados tanto os procedimentos quando uma nova requisição for feita quanto aqueles passos que conduzem ao envio de uma resposta de acesso ao serviço especificado, sendo esta resposta advinda do próprio serviço ou uma resposta padrão, também especificada, em caso de falha ou sucesso ao executar a requisição.
+--PROCURAR FALAR SOBRE OS BENEFÍCIO DE UMA ABORDAGEM E COMO ELA SERÁ IMPLEMENTADA NO TRABALHO--
 
---COLOCAR AQUI UMA FIGURA--
 
---A FIGURA A SER COLOCADA AQUI DVE ENFATIZAR O PAPEL DO ESB NO MODELO PROPOSTO--
+Com base nos requisitos essenciais levantados e no estudo realizado sobre o modelo arquitetural SOA, o modelo proposto pode ser visto na imagem abaixo:
 
-A figura acima elucida o papel do ESB na proposta de arquitetura a ser implementada.
+--COLOCAR AQUI UM MODELO COMPLETO DA ARQUITETURA--
+
+
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=1\textwidth]{figuras/TCC_diagrama1.PNG}
+%\caption{Rascunho do modelo arquitetural a ser proposto.}
+%\label{TCC_diagrama1}
+%\end{figure}
 
 \subsubsection{Ferramentas ESB}
 Existem diversas ferramentas deste tipo disponíveis e em uso por grandes organizações, tais como JBoss ESB, Mule ESB, Zato e WSO2 ESB. Algumas destas ferramentas já foram levantadas, e, sendo o ESB um elemento importante para a implementação aqui porposta, uma análise destas ferramentas com junto a uma avaliação baseada em critérios ainda não estebelecidos a fim de eleger uma ferramenta deste tipo para apoiar o desenvolvimento do trabalho.
@@ -89,7 +76,7 @@ Para o desenvolvimento da proposta e completude da memsa com sucesso, foram cria
 \centering
 \caption{Cronograma de atividades relacionadas ao TCC 1}
 \label{cronograma_tcc1}
-\begin{tabular}{|l|c|c|c|c|c|c|}
+\begin{tabular}{|p{9cm}|c|c|c|c|c|c|}
 \hline
 Atividade                                                   & \multicolumn{1}{l|}{Jan} & \multicolumn{1}{l|}{Fev} & \multicolumn{1}{l|}{Mar} & \multicolumn{1}{l|}{Abr} & \multicolumn{1}{l|}{Mai} & \multicolumn{1}{l|}{Jun} \\ \hline
 Identificação da necessidade                                & X                           &                             &                              &                            &                             &                              \\ \hline
@@ -108,7 +95,7 @@ Escrita do TCC 1                                            &                   
 \centering
 \caption{Cronograma de atividades relacionadas ao TCC 2}
 \label{cronograma_tcc2}
-\begin{tabular}{|l|c|c|c|c|c|c|}
+\begin{tabular}{|p{9cm}|c|c|c|c|c|c|}
 \hline
 Atividade                                                   & \multicolumn{1}{l|}{Jul} & \multicolumn{1}{l|}{Ago} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{Out} & \multicolumn{1}{l|}{Nov} & \multicolumn{1}{l|}{Dez} \\ \hline
 Análise de ferramentas a serem utilizadas                   & X                           &                             &                              &                            &                             &                              \\ \hline
