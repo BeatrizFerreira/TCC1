@@ -1,17 +1,48 @@
-
-
 \chapter[A PROPOSTA]{A PROPOSTA}
 
-"Neste capítulo é descrita a proposta do trabalho".		
-
+Este capítulo apresenta a proposta do trabalho de conclusão de curso, com detalhes sobre [...]
 
 \section{Introdução}
-%Com a evolução da tecnologia, os computadores se tornaram cada vez mais parte do nosso cotidiano, com as mais diversas utilidades, desde cálculos complexos e previsão do tempo, diversão, comunicação, educação entre outros, com isso o computador se tornou algo fundamental na sociedade.
+Avanços tecnológicos e a criação de linguagens de programação, diferentes técnicas e paradigmas e outros conceitos relacionados ao desenvolvimento de software contribui para que a necessidade de interação entre estes elementos seja emergente, de modo a viabilizar a construção de sistemas cada vez mais robustos e inteligentes. Esta interação entre elementos de software não consistem de aplicações robustas que executam todas as suas atividades de forma independente de outras aplicações: cada vez mais, diversos sistemas de software interagem com outros, podendo ser estes desenvolvidos tomando como base outros paradigmas ou escritos em outras linguagens de programação e utilizando-se diferentes técnicas.
 
-%Para a educação a utilização cada vez maior de Ambientes virtuais de aprendizado (AVA), que podem ser usados tanto para alunos de cursos presenciais ou de educação a distância (EAD), melhora o acompanhamento pelo professor, que tem a possibilidade de oferecer as matérias de estudo, recolher atividades, aplicar testes entre outras atividades oferecidas.
+A fim de suprir esta necessidade de interação entre sistemas diversos, foi criado um modelo arquitetural conhecido como Arquitetura Baseada em Serviços (ou \textit{Service-Oriented Architecture} - SOA). Este modelo arquitetural utiliza o conceito de serviço como uma unidade que representa uma funcionalidade do sistema, além de trazer consigo os conceitos de interoperabilidade, flexibilidade e baixo acoplamento entre os diversos sistemas ou serviços.
 
-%Nesse trabalho iremos focar a parte de avaliação, nas AVA's podem-se ter avaliações por meio de perguntas de múltipla escolha, verdadeiro ou falso entre outros, a avaliação de questões discursivas pode ser realizada, mas sua correção tem que ser feita manualmente, assim com processamento de linguagem natural (PLN), uma subárea da inteligência artificial, poderá ser usada para a realização de uma pré-avaliação de questões discursivas de forma a guiar os tutores na correção, que ele poderá aceitar ou dar a nota que ele achar correta.
+Para este trabalho de conclusão de curso, a proposta consiste em desenvolver uma arquitetura baseada no modelo SOA para um ambiente virtual, propiciando que diversos trabalhos já desenvolvidos e também aqueles em desenvolvimento não sejam mais "engavetados". Por meio do uso do modelo SOA, será possível integrar tais aplicações, ou serviços nos moldes dos termos de SOA, de modo que estas possam trocar dados e fazer uso do serviço disponibilizado por outras, indepentemente das tecnologias utilizadas para o desenvolvimento das mesmas. Também faz parte da proposta, o estabelecimento de um protocolo de comunicação entre as aplicações, bem como o padrão de comunicação a ser utilizado.
 
-%A proposta é desenvolver uma forma de analisar a resposta discursiva com um gabarito definido, com algoritmos de similaridade de texto como \textit{latent semantic analysis} (LSA) e STASIS, podemos comprará o quanto que dois textos são similares e através dessa ter uma nota de similaridade, além dessa análise, uma vez que o tutor der uma nota que não seja a proposta pelo sistema, um algoritmo genético irá analisar quais elementos do texto implicou na diferença na nota, com essa diferença armazenada o sistema aprende qual parte do texto deverá ter maior ou menor nota e quais partes do texto não fazem parte do gabarito inicialmente definido que também alteram a nota final, para que na próxima vez que for aplicada essa pergunta já ter novos pesos.
+Desta forma, será viável a disponibilização à sociedade de uma plataforma virtual que conterá os trabalhos realizados dentro da universidade, sejam oriundos de projetos de conclusão de curso, disciplinas ou projetos de extensão e pesquisa.
 
-%Para o texto gabarito foi proposto uma linguagem de marcação, que permitisse marcar partes mais importantes do texto gabarito, definir que alguma palavra pode ser substituída por um sinônimo, tesauro ou metonímia e marcar palavras que serão definidas como negativas há nota final. A definição da sintaxe se encontra no apêndice 1, Definição da sintaxe da definição de gabarito.
+\section{Proposta de arquitetura}
+
+\subsection{Modelo de Domínio}
+
+{REESCREVER O MODELO DE DOMINIO, DE FORMA A SER MAIS AMPLO E NÃO SOMENTE RESTRITO AO CONTEXTO EDUCACIONAL}
+
+\subsection{Requisitos}
+
+{FALAR AQUI SOBRE OS REQUISITOS LEVANTADOS E DESCRITOS ANTERIORMENTE}
+
+\subsection{A arquitetura}
+
+{FALAR AQUI COMO SERÁ A ARQUITETURA, CONTAR DETALHES, MOSTRAR FIGURAS, PROPOR CENÁRIO DE APLICAÇÃO E JUSTIFICAR OS DETALHES QUE FIZERAM A ESCOLHA PELO MODELO SOA E NÃO POR OUTRO QUALQUER}
+
+\subsection{Uso do ESB}
+
+Como já mencionado, o Enterprise Service Bus - ESB - é um conceito que está diretamente conectado a SOA e é um mecanismo que pode ser utilizado para ajudar a prover a interoperabilidade na arquitetura estabelecida, além de colaborar na validação de algumas políticas e critérios definidos relacionados à segurança da aplicação baseada neste modelo arquitetural \cite{oliveira_interoperabilidade}.
+
+Para facilitar o processo de roteamento, bem como de transformação de mensagens trocadas entre provedores e usuários dos serviços, faz-se necessário o uso do ESB. Ao adicionar um novo serviço à arquitetura utilizando o ESB, deverão ser especificados tanto os procedimentos quando uma nova requisição for feita quanto aqueles passos que conduzem ao envio de uma resposta de acesso ao serviço especificado, sendo esta resposta advinda do próprio serviço ou uma resposta padrão, também especificada, em caso de falha ou sucesso ao executar a requisição.
+
+--COLOCAR AQUI UMA FIGURA--
+
+A figura acima elucida o papel do ESB na proposta de arquitetura a ser implementada.
+
+\subsubsection{Ferramentas ESB}
+Existem diversas ferramentas deste tipo disponíveis e em uso por grandes organizações, tais como JBoss ESB, Mule ESB, Zato e WSO2 ESB. Algumas destas ferramentas já foram levantadas, e, sendo o ESB um elemento importante para a implementação aqui porposta, uma análise destas ferramentas com junto a uma avaliação baseada em critérios ainda não estebelecidos a fim de eleger uma ferramenta deste tipo para apoiar o desenvolvimento do trabalho.
+
+\subsection{Protocolo de comunicação}
+
+{DESCREVER O PROTOCOLO, JUSTIFICAR O USO E ESTABELECER OS PADRÕES A SEREM UTILIZADOS}
+
+\section{Metodologia}
+
+
+\section{Cronograma de execução}
