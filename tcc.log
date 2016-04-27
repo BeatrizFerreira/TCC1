@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  26 APR 2016 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  27 APR 2016 13:31
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1219,11 +1219,7 @@ l.2
 ] [22
 
 ])
-(fixos/indiceAutomatico.tex (tcc.toc)
-Underfull \vbox (badness 5519) has occurred while \output is active []
-
- [23]
-[24]) (editaveis/aspectosgerais.tex
+(fixos/indiceAutomatico.tex (tcc.toc [23]) [24]) (editaveis/aspectosgerais.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 14.
 
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
@@ -1244,23 +1240,53 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29]
 
-Package hyperref Warning: Suppressing empty link on input line 30.
+LaTeX Warning: Citation `BiancoEvaluatinga2007' on page 30 undefined on input l
+ine 37.
 
-[30]) (editaveis/engenhariadesoftware.tex [31] [32
+[30]
 
-]
-Overfull \hbox (27.00961pt too wide) in paragraph at lines 27--41
+LaTeX Warning: Citation `BiancoEvaluatinga2007' on page 31 undefined on input l
+ine 43.
+
+
+Overfull \hbox (8.38077pt too wide) in paragraph at lines 48--49
+[]\T1/lmr/m/n/12 PROCURAR FA-LAR SO-BRE OS BE-NE-FÍ-CIO DE UMA ABOR-DA-GEM E CO
+MO
+ []
+
+<figuras/TCC_diagrama1.PNG, id=257, 1520.68124pt x 1145.27875pt>
+File: figuras/TCC_diagrama1.PNG Graphic file (type png)
+
+<use figuras/TCC_diagrama1.PNG>
+Package pdftex.def Info: figuras/TCC_diagrama1.PNG used on input line 55.
+(pdftex.def)             Requested size: 455.0pt x 342.67755pt.
+
+
+Package hyperref Warning: Suppressing empty link on input line 65.
+
+[31]
+Underfull \vbox (badness 4341) has occurred while \output is active []
+
+ [32 <./figuras/TCC_diagrama1.PNG>]
+Overfull \hbox (19.21257pt too wide) in paragraph at lines 92--105
  [][] 
  []
 
-) (editaveis/consideracoesfinais.tex [33] [34
+
+Overfull \hbox (72.8738pt too wide) in paragraph at lines 111--120
+ [][] 
+ []
+
+) (editaveis/engenhariadesoftware.tex [33] [34
+
+])
+(editaveis/consideracoesfinais.tex [35] [36
 
 ]) (tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [35]
-[36
+ [37] [38
 
 ]
 
@@ -1268,10 +1294,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[37] [38] [39]) (editaveis/apendices.tex) (editaveis/anexos.tex) (tcc.ind)
+[39] [40] [41]) (editaveis/apendices.tex) (editaveis/anexos.tex) (tcc.ind)
 
 AED: lastpage setting LastPage
-[40]
+[42]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1286,47 +1312,42 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package rerunfilecheck Info: File `tcc.brf' has not changed.
+(rerunfilecheck)             Checksum: A604AEB040E3919A28BDBA8C8A7B5B63;204.
 
 
-Package rerunfilecheck Warning: File `tcc.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `tcc.brf':
-(rerunfilecheck)             Before: C48C627213EFE3767401A56E96CA5835;72
-(rerunfilecheck)             After:  B414353B4C6E0B7F44BF7BE244E66FAD;72.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 12966 strings out of 493634
- 197938 string characters out of 3134424
- 317464 words of memory out of 3000000
- 15878 multiletter control sequences out of 15000+200000
+ 12988 strings out of 493634
+ 198370 string characters out of 3134424
+ 317708 words of memory out of 3000000
+ 15896 multiletter control sequences out of 15000+200000
  72542 words of font info for 51 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,38p,777b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsubsection.3.2.1.1} has been referenced but do
-es not exist, replaced by a fixed one
-
-{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hsy.enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/
-lm-rm.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmbx12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmr10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmri10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Beatriz/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/Beatriz/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beatriz/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/Beatriz/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Beatr
-iz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (42 pages, 444394 bytes).
+{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
+enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athsy.enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
+m/lm-rm.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/lm/lmbx12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmr10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmr12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmri10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Beatriz/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/Beatriz/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beatriz/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/Beatriz/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Bea
+triz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+Output written on tcc.pdf (44 pages, 748307 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 145 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 613 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
+ 407 words of extra memory for PDF output out of 10000 (max. 10000000)
 
