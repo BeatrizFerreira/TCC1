@@ -1,6 +1,6 @@
 \select@language {brazil}
 \contentsline {figure}{\numberline {1}{\ignorespaces Interoperabilidade em uma arquitetura baseada no modelo SOA.}}{31}{figure.3.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Proposta da arquitetura baseada no modelo SOA com o uso de um ESB.}}{32}{figure.3.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Proposta da arquitetura baseada no modelo SOA com o uso de um ESB.}}{33}{figure.3.2}
 \contentsline {figure}{\numberline {3}{\ignorespaces Fluxo b\IeC {\'a}sico do protocolo de comunica\IeC {\c c}\IeC {\~a}o.}}{34}{figure.3.3}
 \contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de uma mensagem de requisi\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}o em formato JSON de uma aplica\IeC {\c c}\IeC {\~a}o usu\IeC {\'a}rio escrita em Python e Django.}}{35}{figure.3.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Exemplo de uma mensagem de resposta de requisi\IeC {\c c}\IeC {\~a}o em formato JSON.}}{35}{figure.3.5}

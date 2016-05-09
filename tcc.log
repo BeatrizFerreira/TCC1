@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  6 MAY 2016 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  9 MAY 2016 08:29
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1238,48 +1238,42 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 
 ]
 [29] [30]
-<figuras/barramento_interoperabilidade.PNG, id=256, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.PNG, id=258, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.PNG Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.PNG>
 Package pdftex.def Info: figuras/barramento_interoperabilidade.PNG used on inpu
-t line 39.
+t line 41.
 (pdftex.def)             Requested size: 455.0pt x 386.75586pt.
  [31 <./figuras/barramento_interoperabilidade.PNG (PNG copy)>]
-<figuras/uso_esb.PNG, id=261, 390.70969pt x 361.35pt>
+<figuras/uso_esb.PNG, id=263, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.PNG Graphic file (type png)
 
 <use figuras/uso_esb.PNG>
-Package pdftex.def Info: figuras/uso_esb.PNG used on input line 54.
+Package pdftex.def Info: figuras/uso_esb.PNG used on input line 56.
 (pdftex.def)             Requested size: 318.49861pt x 294.5776pt.
-
-Underfull \vbox (badness 3260) has occurred while \output is active []
-
- [32 <./figuras/uso_esb.PNG>] [33]
-<figuras/fluxo_basico_protocolo.PNG, id=272, 997.7275pt x 406.51875pt>
+ [32] [33 <./figuras/uso_esb.PNG>]
+<figuras/fluxo_basico_protocolo.PNG, id=274, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.PNG Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.PNG>
 Package pdftex.def Info: figuras/fluxo_basico_protocolo.PNG used on input line 
-84.
+86.
 (pdftex.def)             Requested size: 455.0pt x 185.3881pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34 <./figuras/fluxo_basico_protocolo.PNG>]
-<figuras/mensagem_requisicao.PNG, id=278, 402.00188pt x 97.86563pt>
+ [34 <./figuras/fluxo_basico_protocolo.PNG>] <figuras/mensagem_requisicao.PNG, 
+id=280, 402.00188pt x 97.86563pt>
 File: figuras/mensagem_requisicao.PNG Graphic file (type png)
 
 <use figuras/mensagem_requisicao.PNG>
-Package pdftex.def Info: figuras/mensagem_requisicao.PNG used on input line 102
+Package pdftex.def Info: figuras/mensagem_requisicao.PNG used on input line 104
 .
 (pdftex.def)             Requested size: 364.00139pt x 88.61433pt.
 
-<figuras/mensagem_resposta.PNG, id=279, 379.4175pt x 34.62938pt>
+<figuras/mensagem_resposta.PNG, id=281, 379.4175pt x 34.62938pt>
 File: figuras/mensagem_resposta.PNG Graphic file (type png)
 
 <use figuras/mensagem_resposta.PNG>
-Package pdftex.def Info: figuras/mensagem_resposta.PNG used on input line 109.
+Package pdftex.def Info: figuras/mensagem_resposta.PNG used on input line 111.
 (pdftex.def)             Requested size: 364.00139pt x 33.22319pt.
 ) (editaveis/engenhariadesoftware.tex
 [35 <./figuras/mensagem_requisicao.PNG> <./figuras/mensagem_resposta.PNG>]
@@ -1298,23 +1292,22 @@ CAR
  []
 
 [38]
-Overfull \hbox (1.19246pt too wide) in paragraph at lines 52--61
+Overfull \hbox (1.19246pt too wide) in paragraph at lines 55--64
  [][] 
  []
 
-
-Overfull \hbox (4.94069pt too wide) in paragraph at lines 71--84
+[39]
+Overfull \hbox (4.94069pt too wide) in paragraph at lines 78--91
  [][] 
  []
 
-) (editaveis/consideracoesfinais.tex [39] [40
-
-]) (tcc.bbl (tcc.brf)
+) (editaveis/consideracoesfinais.tex [40]) (tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [41]
-[42
+ [41
+
+] [42
 
 ]
 
@@ -1355,7 +1348,7 @@ Here is how much of TeX's memory you used:
  15905 multiletter control sequences out of 15000+200000
  72542 words of font info for 51 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,13n,38p,904b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,38p,1055b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
 enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
@@ -1370,9 +1363,9 @@ rograms/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beatriz/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/Beatriz/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Bea
 triz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (48 pages, 591962 bytes).
+Output written on tcc.pdf (48 pages, 593870 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
+ 622 PDF objects out of 1000 (max. 8388607)
  152 named destinations out of 1000 (max. 500000)
  395 words of extra memory for PDF output out of 10000 (max. 10000000)
 
