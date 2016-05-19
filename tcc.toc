@@ -36,11 +36,12 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}Metodologia de desenvolvimento}{37}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Fases de desenvolvimento}{38}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Cronograma de execu\IeC {\c c}\IeC {\~a}o}{39}{section.4.3}
+\contentsline {section}{\numberline {4.2}Metodologia de Execu\IeC {\c c}\IeC {\~a}o da Proposta}{37}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Planejamento da Implementa\IeC {\c c}\IeC {\~a}o}{39}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fase de Constru\IeC {\c c}\IeC {\~a}o}{40}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{41}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{41}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{43}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{43}{section*.15}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{45}{section*.15}

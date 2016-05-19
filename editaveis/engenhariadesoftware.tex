@@ -3,50 +3,77 @@
 Este capítulo apresenta o uso de metodologias e conceitos relacionados à Engenharia de Software que serão aplicados no desenvolvimento da proposta descrita no capítulo anterior.
 
 \section{Introdução}
-
-Um projeto de Engenharia de Software deve ser realizado utilizando-se de metodologias e técnicas relacionadas à esta área de conhecimento, sendo sempre adaptadas de acordo com o projeto a ser desenvolvido e podendo ser modificado quando necessário, visando o sucesso na conclusão do projeto.
-
 O projeto de Engenharia de Software a ser desenvolvido como parte do trabalho de conclusão de curso consiste em uma arquitetura para uma plataforma virtual onde as funcionalidades serão tratadas como serviços no contexto arquitetural. Os serviços ou funcionalidades desta plataforma virtual consiste em trabalhos já realizados, em processo de desenvolvimento e também de trabalhos futuros que, quando incorporados a esta arquitetura, poderão ser disponibilizados para uso pela comunidade tanto acadêmica quando externa, deixando que ser "projetos de gaveta".
 
-A proposta feita, que foi descrita no capítulo anterior, será desenvolvida utilizando-se de alguns conceitos de metodologias de desenvolvimento e de gerenciamento de projetos de software, adaptadas conforme as necessidades deste projeto.
+A proposta descrita no capítulo anterior, será desenvolvida utilizando-se de alguns conceitos de metodologias de desenvolvimento e de gerenciamento de projetos de software, adaptadas conforme as necessidades deste projeto.
 
-%COLOCAR AQUI A METODOLOGIA A SER UTILIZADA PARA A IMPLEMENTAÇÃO DA ARQUITETURA. VERIFICAR QUAL A METODOLOGIA MAIS ADEQUADA PARA EXECUÇÃO E GERENCIAMENTO. 
-%Sugerido: Scrum com RUP incremental (iniciação - ja feita, elaboração, execução e implantação).
-%RUP incremental pq podemos fazer parte da adaptação de um serviço, e colocar na plataforma; outra parte, e acoplar à plataforma e assim por diante. Pensar também no layout e tentar implementar o login (login pode ser implementado, mas não afirmando que isso vai ser feito, deixar em off o login).
+\section{Metodologia de Execução da Proposta}
+Um projeto de Engenharia de Software deve ser realizado utilizando-se de metodologias, técnicas e ferramentas disponíveis relacionadas à esta área de conhecimento, sendo sempre adaptadas de acordo com o projeto a ser desenvolvido visando, assim, o sucesso na conclusão do projeto.
 
-\section{Metodologia de desenvolvimento}
+Entre as diversas metodologias de desenvolvimento de software existentes, foi decidido pela adoção de uma metodologia híbrida para o desenvolvimento deste projeto. Esta metodologia híbrida contém alguns conceitos relacionados ao RUP (Rational Unified Process) e outros relacionados à metodologia ágil de desenvolvimento, mais especificamente o Scrum. 
 
-Dentre as diversas metodologias de desenvolvimento conhecidas na Engenharia de Software, foi decidido pela elaboração de uma metodologia que utiliza as fases do RUP (iniciação, elaboração, construção e transição) e algumas das atividades também deste método de desenvolvimento de software. Além disso, o método adotado terá um ciclo de vida incremental, onde partes da arquitetura serão desenvolvidas e incrementadas a cada ciclo.
+A metodologia híbrida adotada é composta pelas fases do RUP e alguns de seus artefatos. Envolve também o conceito de histórias de usuário, que em sua marioria serão tratadas como histórias técnicas  neste projeto. Além disso, o modelo de desenvolvimento é iterativo e incremental, tornando a identificação de falhas e correção das mesmas mais eficiente, assim como a identificação de novas necessidades para que a arquitetura e o protocolo de comunicação propostos sejam implementados.
 
-Por se tratar de um projeto mais técnico do que funcional, a adoção de uma outra metodologia de desenvolvimento, como a metodologia ágil, tornou-se complexa para a identificação de unidades funcionais unitárias, como histórias de usuário (um conceito da metodologia ágil utilizado para descrever as funcionalidades de um sistema de software), o estabelecimento de ciclos bem definidos e a distribuição das unidades funcionais neste ciclo. Isto se deve ao fato de que o estabelecimento da arquitetura deve ser realizado em conjunto com o uso do protocolo de comunicação de acordo com o padrão estabelecido e isto deve ser realizado de maneira incremental, pois estas partes são dependentes uma da outra.
+Foi modelado um processo para a execução das atividades necessárias para a realização do trabalho de conclusão de curso, tanto para que a proposta pudesse ser elaborada, quanto para o planejamento e execução desta. A imagem abaixo ilustra o processo, ainda em andamento, e contém os aspectos relacionados à metodologia adotada e descrita no parágrafo anterior.
 
-\subsection{Fases de desenvolvimento}
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1\textwidth]{figuras/processo_tcc.PNG}
+\caption{Processo de elaboração e execução do TCC.}
+\label{processo_tcc}
+\end{figure}
 
-Adotando o RUP como metodologia de desenvolvimento, as fases a serem executadas são:
+A imagem exibe o processo que está sendo executado, com suas fases e as atividades correspondentes de  cada fase. Como anteriomente mencionado, o processo foi dividido de acordo com as fases do RUP: iniciação, elaboração, construção e implantação. A fase de iniciação contém as atividades de \textit{Identificação de necessidade}, \textit{Estudo do contexto e Pesquisa por soluções} e \textit{Aprovação da Solução}: uma vez que a necessidade foi identificada, foi realizado um estudo sobre o contexto da necessidade e uma pesquisa por soluções arquiteturais adequadas e que suprissem a necessidade; a solução, com o uso do modelo arquitetural SOA, foi proposta e aprovada.
 
-\begin{itemize}
-\item \textit{Iniciação}: fase de concepção do projeto, onde as necessidades são identificadas e a solução é proposta.
-\item \textit{Elaboração}: fase em que é realizado o planejamento da solução proposta. Também são identificados os recursos necessários, tanto de pessoal quanto de infraestrutura física.
-\item \textit{Construção}: fase em que os requisitos identificados são de fato desenvolvidos/construídos. Também nesta fase são realizados testes a fim de garantir a menor taxa de erros no sistema.
-\item \textit{Transição}: fase em que o software é homologado e implantado no ambiente do cliente, dono do software.
-\end{itemize}
+A fase de elaboração contém atividades que procuram refinar conceitos relacionados ao este modelo arquiteural escolhido e definir padrões e ferramentas que serão utilizadas na fase de construção, além de obter um plano de execução para a fase seguinte. Assim, foram realizadas as atividades de definição de um padrão de comunicação para a arquitetura, uma pesquisa sobre ferramentas que podem ser úteis no desenvolvimento da arquitetura da plataforma virtual e o planejamento da fase de construção.
 
-Os ciclos de desenvolvimento adotados serão de forma incremental de maneira a adaptar parte de um sofwtare desenvolvido em trabalhos anteriores para que este seja incorporado a plataforma virtual como um serviço e a comunicação entre a plataforma virtual e este serviço esteja de acordo com o padrão de comunicação adotado. O objetivo principal desta iteração é garantir que exista um modelo prático a ser seguido quando novas aplicações forem desenvolvidas e incorporadas à plataforma virtual.
+A fase de construção é aquela em que o planejamento realizado na fase anterior será executado. É nesta fase em que adaptações deverão ser feitas, tanto na plataforma virtual quanto em aplicações que fornecerão serviços. A fase de construção é constituída de ciclos iterativos e incrementais e será detalhada mais adiante.
 
----DEFINIR QUANTIDADE DE CICLOS A SEREM RODADOS---
----COLOCAR UMA FIGURA EXPLICANDO O CICLO DE DESENVOLVIMENTO---
----O CICLO ADOTADO DEVERÁ CONTER UMA GRANDE FASE DE INICIAÇÃO E ELABORAÇÃO NO PRIMEIRO CICLO. O SEGUNDO, TERCEIRO E QUARTO CICLOS DEVERÃO SER DE 7 A 10 DIAS. NESTES CICLOS, A FASE DE INICIAÇÃO DEVE SER BEM PEQUENA, SÓ INDICANDO DE NOVAS NECESSIDADES PODEM SER IDENTIFICADAS; A FASE DE ELABORAÇÃO DEVE SER UM POUCO MAIOR QUE A INICIAÇÃO, INDICANDO O PLANEJAMENTO DO NOVO CICLO E A IDENTIFICAÇÃO DE NECESSIDADE DE NOVOS RECURSOS DE HARDWARE; A FASE DE CONSTRUÇÃO DEVE INDICAR IMPLEMENTAÇÃO DA PLATAFORMA, ADAPTAÇÃO DO SOFTWARE E TESTES. A IMPLANTAÇÃO DEVERÁ SER FEITA AO FINAL  DOS CICLOS, E TAMBÉM DEVE INDICAR A EXISTÊNCIA DE TESTES---
-------
+A última fase definida no processo é a fase de implantação. Nesta fase a plataforma deverá ser implantada e homologada para uso pela comunidade.
+
+Até o final do TCC 1, as fases do processo que foram executadas são as fases de iniciação e elaboração do projeto. O processo definido poderá ser readaptado conforme caso seja necessário durante as próximas etapas de realização do trabalho. É sugerido que os processos definidos para as fases de construção e implantação sejam repetidos sempre que uma nova funcionalidade implementada por um serviço seja incorporada à plataforma virtual criada.
+
+\subsection{Planejamento da Implementação}
+Durante a fase de construção, um subprocesso definido foi o de planejamento da implementação (subprocesso da fase de construção do projeto). As atividades e o fluxograma deste subprocesso podem ser visualizados na imagem a seguir.
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1\textwidth]{figuras/subprocesso_planejamento.PNG}
+\caption{Fluxograma e atividades do subprocesso Planejar Implementação.}
+\label{subprocesso_planejamento}
+\end{figure}
+
+A figura acima exibe as atividades realizadas durante a fase de elaboração definida no processo e que já foi realizada durante o TCC 1. As atividades são \textit{Definir escopo}, \textit{Definir metodologia}, \textit{Adaptar processo de implementação} e \textit{Criar cronograma}. No início do planejamento o escopo do que será entregue ao final do trabalho de conclusão de curso foi definido. Esta atividade foi seguida da definição de uma metodologia de desenvolvimento de software para a execução do projeto e, baseando-se na metodologia definida, um processo a ser seguido para a implementação da arquitetura foi adaptado. Por fim, um cronograma de execução da implementação foi criado.
+
+Na atividade de definição do escopo não foi definida a aplicação que será adaptada e incorporada à plataforma como um serviço a fim de demonstrar a proposta feita. Esta escolha deverá ser feita durante na fase de construção.
+
+A metodologia definida foi do tipo híbrida, que utiliza conceitos das metodologias tradicional (RUP) e ágil (Scrum), como mencionado anteriormente neste capítulo.
+
+O cronograma criado durante a última fase deste subprocesso poderá ser visto na seção final deste capítulo.
 
 
-A imagem acima mostra o ciclo de desenvolvimento a ser adotado com base nas fases do modelo RUP. A imagem mostra as fases de iniciação, elaboração, construção e implantação a serem executadas durante o trabalho de conclusão de curso. A parte incremental é realizada durante a construção da arquitetura, onde pequenos ciclos são executados e o foco maior está na fase de construção.
+\subsection{Fase de Construção}
+O uso de uma arquitetura baseada no modelo SOA não elimina o trabalho necessário para a inserção de novos serviços: o seu uso visa minimizar os reparos que devem ser feitos para que a nova funcionalidade seja incorporada ao sistema, promovendo extensibilidade e flexibilidade à arquiteura construída.
 
-A fase de construção consiste em ciclos de desenvolvimento onde os requisitos e necessidades serão revistos e implementados usando-se de tecnologias mais atuais e adequadas ao contexto. Este ciclo é exibido desta maneira na figura a fim de demonstrar que, embora as fases de iniciaão, elaboração e implantação tenham seus períodos definidos e maior parte dos trabalhos de identificação das necessidades, planejamento e homologação da arquitetura proposta sejam realizados em suas respectivas fases, estas tarefas também devem ser realizadas durante a construção, principalmente se o serviço que for incorporado à arquitetura tiver que ser adaptado para tal finalidade. Para que as aplicações sejam adaptadas, as fases indicadas devem ser executadas de maneira cíclica e incremental, de modo que as necessidades de adaptação sejam identificadas e depois implementadas. A implantação ao final de cada ciclo será um teste para verificar e validar a adequação realizada.
+A fase de construção do precesso definido tem como objetivo a implementação da plataforma virtual de acordo com os requisitos básicos levantados e que foram importantes para a proposta da solução e a adaptação de uma aplicação existente para ser incorporada à plataforma. Em um contexto onde novos serviços serão inseridos na plataforma em um tempo posterior à execução do TCC, esta fase será também executada. Assim, o processo definido para a fase de construção pode ser visualizado na imagem a seguir.
 
-A execução destes ciclos menores se faz necessário visto que, como existem aplicações já desenvolvidas, um dos objetivos a serem alcançados ao final do TCC 2 é a adaptação e implantação de uma destas aplicações e torná-la um serviço dentro da plataforma virtual.
+\begin{figure}[htb]
+\centering
+\includegraphics[width=1\textwidth]{figuras/subprocesso_implementacao.PNG}
+\caption{Fluxograma e atividades da fase de construção.}
+\label{subprocesso_implementacao}
+\end{figure}
 
-\section{Cronograma de execução}
-Para o desenvolvimento da proposta e completude da mesma com sucesso foi criado um cronograma para a fase de prova de conceito e implementação da proposta aqui feita. O cronograma contém a descrição das atividades a serem realizadas, bem como os prazos relacionados a cada uma das atividades e pode ser visualizado na tabela abaixo.
+A imagem acima exibe o fluxograma de atividades a serem executadas no subprocesso de implementação definido na fase de construção da plataforma virtual.As atividades a serem realizadas são dependentes da definição do serviço que será incorporado à plataforma, pois, caso o novo serviço seja uma aplicação que deve ser adaptada, as atividades referentes à adaptação desta deverão ser executadas. Se o novo serviço, ou funcionalidade, não for uma aplicação a ser adaptada para fornecer suas operações, pode-se executar as atividades e tarefas referentes à construção da plataforma (no caso do trabalho de conclusão de curso) ou adaptação desta para que a nova funcionalidade seja disponibilizada na plataforma.
+
+Um dos conceitos ágeis utilizados no subprocesso de implementação é o de histórias de usuário, que consiste na descrição de funcionalidades que agregam valor ao produto final a ser entregue de forma que possa ser facilmente entendida e escrita de maneira simples. As histórias a serem elicitadas consistirão tanto de histórias que descrevem funcionalidades, quando de histórias técnicas, que tratam de adaptação e implantação de tecnologias e outros aspectos mais relacionados à parte técnica do desenvolvimento de software so que à funcionalidades.
+
+Outro conceito associado à metodologia ágil de desenvolvimento de software é o de \textit{sprints}. Por se tratar de um modelo criado para ser iterativo e incremental, a fase de construção definida para este TCC consistirá de sprints com períodos definidos de 1 (uma) semana. Foi estabelecido que a quantidade de \textit{sprints} será de 8 a 10.
+
+A fase de construção e a subsequente (implantação) serão executadas durante a realização do TCC2.
+
+\section{Cronograma de Execução do TCC}
+Para o desenvolvimento da proposta e completude da mesma com sucesso foi criado um cronograma para as fases de construção da proposta aqui feita e de implantação do produto final obtido. O cronograma contém as atividades a serem realizadas, bem como os prazos relacionados a cada uma das atividades e pode ser visualizado na tabela abaixo.
 
 \begin{table}[!h]
 \centering
@@ -56,19 +83,25 @@ Para o desenvolvimento da proposta e completude da mesma com sucesso foi criado 
 \hline
 Atividade                                                   & \multicolumn{1}{l|}{Jul} & \multicolumn{1}{l|}{Ago} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{Out} & \multicolumn{1}{l|}{Nov} & \multicolumn{1}{l|}{Dez} \\ \hline
 Análise de ferramentas a serem utilizadas                   & X                           &                             &                              &                            &                             &                              \\ \hline
-Implantação da ferramenta escolhida                         &                             & X                            &                              &                            &                             &                              \\ \hline
-Adaptação de uma aplicação já desenvolvida                  &                             &                               & X                            & X                          &                             &                              \\ \hline
-Implementação do uso da ferramenta com a aplicação adaptada &                             &                         & X                            & X                          &                             &                              \\ \hline
+Implantação da ferramenta escolhida                         & X                           &                             &                              &                            &                             &                              \\ \hline
+Adaptação de uma aplicação já desenvolvida                  &                             & X                              & X                            & X                          &                             &                              \\ \hline
+Implementação da plataforma virtual                         &                             & X                       & X                            & X                          &                             &                              \\ \hline
+Implantação da plataforma virtual                           &                             &                         &                              & X                          &                             &                              \\ \hline
 Escrita do TCC 2                                            &                             &                             &                              &                            & X                           & X          \\ \hline
 \end{tabular}
 \end{table}
 
 
+\begin{itemize}
+\item \textbf{Análise de ferramentas a serem utilizadas:} como explicitado no capítulo anterior, que trata os detalhes da proposta, será utilizada uma ferramenta que fornece os serviços de roteamento, adaptação de tecnologias e tratamento de formatos de dados e de mensagens. Para que isso ocorra, algumas das ferramentas levantadas serão analizadas com mais rigor para que uma seja eleita. A análise consistirá de testes de implantação da ferramentas, bem como de uma avaliação das funcionalidades e da facilidade de uso e aprendizagem.
+\item \textit{Implantação da ferramenta escolhida:} após a escolha da ferramenta, esta deverá ser implantada em um servidor que tenha capacidade para tal. A implantação deverá facilitar o uso da ferramenta durante as atividades posteriores.
+\item \textbf{Adaptação de uma aplicação já desenvolvida:} aplicações já desenvolvidas podem não estar preparadas para serem incorporadas à plataforma virtual como um serviço. Para que isto ocorra, será selecionada uma aplicação para ser adaptada, sendo assim possível de ser disponibilizada na plataforma. Esta atividade também consiste em fazer com que as operações do novo serviço sejam acessadas via o protocolo estabelecido.
+\item \textbf{Implementação da plataforma virtual:} nesta atividade, a plataforma virtual será criada e o serviço que foi adaptado deverá ser incorporado a tal plataforma. Aqui serão implementados o uso do protocolo de comunicação estabelecido, bem como o uso da ferramenta ESB escolhida.
+\end{itemize}
 
---- TEM QUE INDICAR NO CRONOGRAMA OU EXPLICAR EM FORMA DE TEXTO QUE OS CICLOS VÃO SER EXECUTADOS  FURANTE AGOSTO E SETEMBRO (OU É SETEMBRO E OUTUBRO) E QUE A CARACTERIZAÇÃO DAS FERRAMENTAS esb FAZEM PARTE DA ELABORAÇÃO/INICIAÇÃO (VERIFICAR ISSO, CHECAR AS FASES DO RUP)---
+As atividades de adaptação de uma aplicação existente e a incorporação desta aplicação como um serviço à plataforma virtual utilizando a ferramenta ESB escolhida serão realizadas de maneira iterativa e incremental, justificando o uso de um método de desenvolvimento de software capaz de fornecer suporte para que iterações sejam executadas. A intenção é ter pelo menos uma aplicação adapatada ao padrão de protocolo estebelecido e sendo utilizada na arquitetura como um serviço.
 
-
-As atividades realizadas durante o desenvolvimento do TCC 1 foram registradas e podem ser visualizadas na tabele seguinte.
+Com relação às atividades realizadas durante o desenvolvimento do TCC 1, a tabela abaixo contém o registro das atividades realizadas bem como os seus respectivos períodos de execução.
 
 
 \begin{table}[!h]
@@ -83,7 +116,8 @@ Leituras sobre modelos arquiteturais                        & X                 
 Pesquisa sobre o modelo arquitetural mais adequado          & X                           & X                             &                              &                            &                             &                              \\ \hline
 Pesquisa sobre trabalhos relacionados                       & X                           & X                        &                              &                            &                             &                              \\ \hline
 Levantamento superficial de ferramentas ESB                 &                             & X                        & X                            &                            &                             &                              \\ \hline
-Organização das referências                                 &                             &                             & X                            &                            &                             &           \\ \hline
+Definição do padrão de comunicação                          &                             &                          & X                            &                            &                             &                              \\ \hline
+Organização das referências                                 &                             &                             &                              & X                          &                             &           \\ \hline
 Escrita formal da proposta                                  &                             &                             &                              & X                          &                             &           \\ \hline
 Estabelecimento de metodologia                              &                             &                             &                              & X                          &                             &             \\ \hline
 Escrita do TCC 1                                            &                             &                             &                              &                            & X                           & X          \\ \hline

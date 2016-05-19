@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  9 MAY 2016 08:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  17 MAY 2016 23:01
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1219,9 +1219,11 @@ l.2
 ] [22
 
 ])
-(fixos/indiceAutomatico.tex (tcc.toc) [23] [24
+(fixos/indiceAutomatico.tex (tcc.toc)
+Underfull \vbox (badness 5519) has occurred while \output is active []
 
-]) (editaveis/aspectosgerais.tex
+ [23]
+[24]) (editaveis/aspectosgerais.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 14.
 
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
@@ -1232,13 +1234,14 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 
 [25
 
+
 ]) (editaveis/estadodaarte.tex [26]) (editaveis/proposta.tex [27
 
 ] [28
 
 ]
 [29] [30]
-<figuras/barramento_interoperabilidade.PNG, id=258, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.PNG, id=266, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.PNG Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.PNG>
@@ -1246,14 +1249,14 @@ Package pdftex.def Info: figuras/barramento_interoperabilidade.PNG used on inpu
 t line 41.
 (pdftex.def)             Requested size: 455.0pt x 386.75586pt.
  [31 <./figuras/barramento_interoperabilidade.PNG (PNG copy)>]
-<figuras/uso_esb.PNG, id=263, 390.70969pt x 361.35pt>
+<figuras/uso_esb.PNG, id=271, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.PNG Graphic file (type png)
 
 <use figuras/uso_esb.PNG>
 Package pdftex.def Info: figuras/uso_esb.PNG used on input line 56.
 (pdftex.def)             Requested size: 318.49861pt x 294.5776pt.
  [32] [33 <./figuras/uso_esb.PNG>]
-<figuras/fluxo_basico_protocolo.PNG, id=274, 997.7275pt x 406.51875pt>
+<figuras/fluxo_basico_protocolo.PNG, id=282, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.PNG Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.PNG>
@@ -1261,7 +1264,7 @@ Package pdftex.def Info: figuras/fluxo_basico_protocolo.PNG used on input line
 86.
 (pdftex.def)             Requested size: 455.0pt x 185.3881pt.
  [34 <./figuras/fluxo_basico_protocolo.PNG>] <figuras/mensagem_requisicao.PNG, 
-id=280, 402.00188pt x 97.86563pt>
+id=288, 402.00188pt x 97.86563pt>
 File: figuras/mensagem_requisicao.PNG Graphic file (type png)
 
 <use figuras/mensagem_requisicao.PNG>
@@ -1269,7 +1272,7 @@ Package pdftex.def Info: figuras/mensagem_requisicao.PNG used on input line 104
 .
 (pdftex.def)             Requested size: 364.00139pt x 88.61433pt.
 
-<figuras/mensagem_resposta.PNG, id=281, 379.4175pt x 34.62938pt>
+<figuras/mensagem_resposta.PNG, id=289, 379.4175pt x 34.62938pt>
 File: figuras/mensagem_resposta.PNG Graphic file (type png)
 
 <use figuras/mensagem_resposta.PNG>
@@ -1279,35 +1282,45 @@ Package pdftex.def Info: figuras/mensagem_resposta.PNG used on input line 111.
 [35 <./figuras/mensagem_requisicao.PNG> <./figuras/mensagem_resposta.PNG>]
 [36] [37
 
-]
-Overfull \hbox (21.80286pt too wide) in paragraph at lines 30--31
-[]\T1/lmr/m/it/12 Construção\T1/lmr/m/n/12 : fase em que os re-qui-si-tos iden-
-ti-fi-ca-dos são de fato de-sen-vol-vi-dos/construídos.
- []
+] <figuras/processo_tcc.PNG, id=303, 825.83531pt x 365.11406pt>
+File: figuras/processo_tcc.PNG Graphic file (type png)
 
+<use figuras/processo_tcc.PNG>
+Package pdftex.def Info: figuras/processo_tcc.PNG used on input line 21.
+(pdftex.def)             Requested size: 455.0pt x 201.16432pt.
+ [38 <./figuras/processo_tcc.PNG>]
+<figuras/subprocesso_planejamento.PNG, id=309, 561.59813pt x 198.7425pt>
+File: figuras/subprocesso_planejamento.PNG Graphic file (type png)
 
-Overfull \hbox (0.31952pt too wide) in paragraph at lines 36--40
-[]\T1/lmr/m/n/12 ---DEFINIR QUAN-TI-DADE DE CI-CLOS A SE-REM RODADOS--- ---COLO
-CAR
- []
+<use figuras/subprocesso_planejamento.PNG>
+Package pdftex.def Info: figuras/subprocesso_planejamento.PNG used on input lin
+e 41.
+(pdftex.def)             Requested size: 455.0pt x 161.01692pt.
+ [39 <./figuras/subprocesso_planejamento.PNG>]
+<figuras/subprocesso_implementacao.PNG, id=315, 785.93625pt x 347.04657pt>
+File: figuras/subprocesso_implementacao.PNG Graphic file (type png)
 
-[38]
-Overfull \hbox (1.19246pt too wide) in paragraph at lines 55--64
+<use figuras/subprocesso_implementacao.PNG>
+Package pdftex.def Info: figuras/subprocesso_implementacao.PNG used on input li
+ne 62.
+(pdftex.def)             Requested size: 455.0pt x 200.92175pt.
+ [40 <./figuras/subprocesso_implementacao.PNG>]
+Overfull \hbox (1.19246pt too wide) in paragraph at lines 82--92
  [][] 
  []
 
-[39]
-Overfull \hbox (4.94069pt too wide) in paragraph at lines 78--91
+[41]
+Overfull \hbox (4.94069pt too wide) in paragraph at lines 111--125
  [][] 
  []
 
-) (editaveis/consideracoesfinais.tex [40]) (tcc.bbl (tcc.brf)
+) (editaveis/consideracoesfinais.tex [42]) (tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [41
+ [43
 
-] [42
+] [44
 
 ]
 
@@ -1315,10 +1328,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[43] [44] [45]) (editaveis/apendices.tex) (editaveis/anexos.tex) (tcc.ind)
+[45] [46] [47]) (editaveis/apendices.tex) (editaveis/anexos.tex) (tcc.ind)
 
 AED: lastpage setting LastPage
-[46]
+[48]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1342,13 +1355,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 13005 strings out of 493634
- 198955 string characters out of 3134424
- 318485 words of memory out of 3000000
- 15905 multiletter control sequences out of 15000+200000
+ 13030 strings out of 493634
+ 199606 string characters out of 3134424
+ 318910 words of memory out of 3000000
+ 15921 multiletter control sequences out of 15000+200000
  72542 words of font info for 51 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,13n,38p,1055b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,38p,809b,657s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
 enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
@@ -1363,9 +1376,9 @@ rograms/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beatriz/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/Beatriz/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/Bea
 triz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on tcc.pdf (48 pages, 593870 bytes).
+Output written on tcc.pdf (50 pages, 679576 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 152 named destinations out of 1000 (max. 500000)
- 395 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 418 words of extra memory for PDF output out of 10000 (max. 10000000)
 
