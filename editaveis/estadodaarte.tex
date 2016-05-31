@@ -120,7 +120,7 @@ A integração entre os subsistemas de software que compõem a arquitetura distr
 \item \textbf{\textit{Hub-and-Spoke}}: a comunicação entre usuários e provedores de serviço é mediada por um terceiro software chamado ESB (\textit{Enteprise Service Bus}) ou EAI (\textit{Enterprise Application Integration}); nesta abordagem, as aplicações estebelecem uma comunicação com o ESB (ou EAI), responsável por gerenciar as mensagens enviadas pelas aplicações.
 \end{itemize}
 
-\subsection{ESB - Enterprise Service Bus}
+\subsection{ESB - \textit{Enterprise Service Bus}}
 
 O ESB, ou \textit{Enterprise Service Bus}, consiste em um barramento de serviços cuja principal responsabilidade é promover a interoperabilidade do sistema de software que implementa o modelo SOA \cite{josuttis_soa_2007}. A criação do ESB foi uma solução encontrada para reduzir a quantidade de interfaces e canais de comunicação a serem mantidos quando o sistema de software construído constitui uma aplicação distribuída: a interface tanto dos serviços quanto das aplicações usuárias estabelecem uma comunicação apenas com o barramento, não necessitando mais se adaptarem a cada interface definida pelos serviços existentes e que fazem parte do sistema \cite{josuttis_soa_2007}.
 
@@ -210,10 +210,78 @@ A fim de alcançar tal objetivo, Pereira \cite{pereira_psoa_2011} realizou um le
 
 O \textit{framework} foi construído com base nas boas práticas levantadas através da pesquisa bibliográfica e das entrevistas realizadas. Estão envolvidos no \textit{framework} conceitos que colaboram para que o acesso aos serviços seja de maneira segura, a interação entre usuários e provedores de serviços possa ser também assíncrona, protocolos de comunicação sejam traduzidos quando necessário, aplicações clientes possam ser notificados quando determinados eventos ocorrem (padrão \textit{publisher/subscriber}), aplicações que fornecem serviços exponham múltiplos contratos de serviço (isto permite que um serviço seja utilizado por diversos consumidores), além de permitir o registro de erros e a adaptação de serviços por meio do uso de \textit{Service Façade}.
 
+\subsection{Conectando Arquitetura orientada a serviços e IEC 61499 para Flexibilidade e Interoperabilidade}
 
+Dai et. al. \cite{dai_bridging_2015} propuseram um modelo arquitetural que combina a orientação a serviços e padrões definidos pela ISO/IEC 61499 aplicados à automação industrial com o objetivo de propor um método de aplicação do modelo SOA e da norma citada para a construção de um sistema industrial automatizado.
+
+A orientação à serviços permite que requisitos de interoperabilidade, flexibilidade e reconfigurabilidade sejam mais facilmente incorporados à um sistema automatizado. Como o sistema construído por Dai et. al. \cite{dai_bridging_2015} foi aplicado à indústria, a norma IEC 61499 foi tomada como o padrão a ser seguido para o gerenciamento de comandos de operação industrial, permitindo que manutenções fossem realizadas sem afetar operações em curso.
+
+Para que a proposta de um modelo integrativo baseado em SOA e IEC 61499, os autores deste trabalho realizaram um mapeamento dos princípios definidos para o modelo arquiteural tratado e a norma. Em seguida, a execução da norma em um ambiente baseado no modelo SOA foi ilustrado a fim de elucidar a integração proposta. Por fim, detalhes e resultados do estudo de caso realizado são descritos \cite{dai_bridging_2015}.
+
+Assim como esperado, os resultados obtidos no estudo de caso demonstraram que flexibilidade, interoperabilidade e reconfigurabilidade podem ser implementados em um sistema de \textit{software} automatizado e distribuído, aplicado à automação industrial \cite{dai_bridging_2015}.
+
+
+\subsection{Modelo integrado de Arquitetura Orientada a Serviços e Arquitetura Orientada a Web para Software Financeiro}
+A pesquisa realizada por Park et. al. \cite{park_integrated_2012} tem como objetivo a criação de um modelo capaz de integrar os modelos arquiteturais orientado a serviços e orientado a Web para a construção de um sistema de software financeiro. Este modelo integrado foi proposto após a identificação de pontos fortes e falhas em ambos os modelos de construção de uma arquitetura de software.
+
+Sistemas de software construídos com base no modelo SOA (orientado a serviços) possui diversos padrões já conhecidos, contribuindo para que a sua implementação seja complexa e consuma bastante investimento de tempo e dinheiro. Já o modelo WOA (orientado à Web) é um modelo adaptado à Web, facilita a implementação de características também existentes no modelo SOA tais como reusabilidade, flexibilidade e baixa complexidade, além de colaborar para a diminuição de custos e tempo investidos. Embora o modelo WOA seja simples, este não fornece um suporte à segurança do sistema distribuído como o SOA.
+
+Os modelos WOA e SOA são antagônicos e complementares: o que é complexo de ser realizado em um destes, é simplificado no outro, ao passo que os pontos falhos existentes em um modelo podem ser implementados pelo outro.
+
+Os resultados apresentados por Park et. al. \cite{park_integrated_2012} foram coletados a partir da comparação da complexidade de dois \textit{software} financeiros, onde um foi construído com base no modelo que integra WOA e SOA proposto e o outro apenas no modelo SOA. O \textit{software} construído a partir do modelo integrado implementa qualidade de serviços, segurança e confiabilidade e a combinação de ambos os modelos não afeta a performance e a complexidade do sistema construído de um modo geral.
 
 \section{Engenharia de Software}
 
-\subsection{Conceitos de ESW adotados}
-- RUP
-- Scrum
+\subsection{RUP - Rational Unified Process}
+
+O RUP, ou Rational Unified Process, é um processo de Engenharia de \textit{Software} utilizado para o desenvolvimento de projetos da área. Este processo estabelece uma abordagem de desenvolvimento onde responsabilidades e tarefas são bem definidas a fim de obter um produto de software de qualidade capaz de atender às expectativas do cliente ou usuário final. Além disso, este processo visa promover o aumento da produtividade, definir modelos e templates a serem seguidos, além de ser suportado por diversas ferramentas e implementar boas práticas identificadas em projetos de \textit{software}, caracterizando-se como um guia adaptável para projetos desta natureza\cite{rational_software_rational_1998}.
+
+As boas práticas caracterizadas pelos criadores desde processo de desenvolvimento julgadas como as mais importantes a serem implementadas, de acordo com Rational Software \cite{rational_software_rational_1998} são:
+
+\begin{itemize}
+\item Desenvolvimento iterativo: colabora para que o entendimento acerca do problema a ser resolvido seja refinado, melhorando a solução a ser construída a cada iteração. Esta boa prática também contribui para que mudanças sejam acomodadas mais facilmente ao projeto.
+
+\item Gerenciamento de requisitos: o RUP descreve como "elicitar, organizar e documentar os requisitos de um produto de \textit{software}", além de promover a rastreabilidade dos requisitos, caso o guia seja seguido.
+
+\item Uso de arquitetura baseada em componentes: um produto de software robusto pode ser construído de modo a ser flexível, extensível, reutilizável e de fácil entendimento quando módulos do sistema são individualmente construídos e em seguida integrados em uma arquitetura de \textit{software} bem definida.
+
+\item Desenhos de software: modelos visuais que ilustram a arquitetura  do software a ser construído são capazes de exibir e esconder detalhes quando convém, ajudando na comunicação entre os envolvidos no projeto.
+
+\item Verificação de qualidade do \textit{software}: os critérios de qualidade são definidos pelo cliente ou usuário e guiam o processo de desenvolvimento. O RUP estabelece atividades específicas para a avaliação da qualidade do \textit{software} em processo de construção.
+
+\item Controle de mudanças: mudanças são inevitáveis durante o processo de desenvolvimento de \textit{software} e uma boa prática para lidar com tais acontecimentos é controlá-las, rastreá-las e monitorá-las. 
+\end{itemize}
+
+\subsubsection{Fases do RUP}
+O ciclo de vida de desenvolvimento de software no RUP é executado em ciclos e estes, por sua vez, são divididos em quatro fases diferentes: iniciação, elaboração, construção e transição. \textit{Milestones} consistem em marcos definidos onde uma destas fases termina e outra pode ser iniciada \cite{rational_software_rational_1998}. 
+
+A fase de iniciação tem como objetivo a identificação do domínio de negócio do software, bem como o estabelecimento do escopo que será desenvolvido. Riscos, critérios de sucesso e recursos necessários são definidos juntamente com as \textit{milestones} \cite{rational_software_rational_1998}.
+
+A segunda fase do ciclo, chamada de fase de elaboração, tem como propósito analisar a necessidade identificada no domínio de negócio, identificar os requisitos da solução, estabelecer a arquitetura, desenvolver um plano de projeto e minimizar os riscos classificados como críticos e que ameaçam o sucesso do projeto de software. Nesta fase, decisões arquiteturais são feitas a fim de obter-se uma compreensão do sistema que será desenvolvido como um todo, podendo existir como um artefato construído nesta fase um protótipo funcional da aplicação que será construída \cite{rational_software_rational_1998}.
+
+Uma vez estabelecidos os requisitos da solução de software, é iniciada a fase de construção. Considerada uma atividade manufaturada, a implementação das funcionalidades de um sistema de software é realizada nesta fase do ciclo de desenvolvimento: aqui os componentes e requisitos do software são desenvolvidos, integrados e testados. Nesta fase, o cronograma, custos e qualidade devem ser sempre gerenciados e devidamente controlados \cite{rational_software_rational_1998}.
+
+A última fase do ciclo de desenvolvimento definido pelo RUP é a de transição. É nesta fase onde o produto de software construído é homologado e implantado para que o cliente ou usuário final possa usufruí-lo. Esta fase pode ser executada em diversas iterações para que correções de \textit{bugs} sejam realizadas até que a qualidade mínima desejada seja atingida, mantenedores e usuários sejam devidamente treinados, para que o produto seja divulgado e distribuído (quando for o caso) \cite{rational_software_rational_1998}.
+
+As fases definidas pelo RUP podem ser subdivididas em iterações, o que contribui para os riscos sejam mitigados ainda no início, as mudanças sejam mais gerenciáveis e rastreáveis, oportunidades de reuso de partes do software desenvolvido sejam mais facilmente identificadas, além de melhorar a qualidade e promover a aprendizagem dos membros da equipe \cite{rational_software_rational_1998}.
+
+Durante cada uma das fases descritas, macro atividades definidas no RUP são desenvolvidas com maior ou menor intensidade, de acordo com o objetivo de cada fase determinada. Abaixo é possível visualizar o modelo de desenvolvimento de software proposto pelo RUP.
+
+
+\begin{figure}[htb]
+\centering
+\includegraphics[scale=0.5]{figuras/ciclo_rup.jpg}
+\caption{Modelo de ciclo de vida definido pelo RUP. Fonte: \cite{henrique_rup_2015}.}
+\label{ciclo_rup}
+\end{figure}
+
+A imagem exibe o modelo de ciclo de vida do processo de desenvolvimento de software no modelo RUP. Nove disciplinas fazem parte deste modelo e a quantidade de atividades relacionadas a cada disciplina varia de acordo com cada fase do ciclo e iteração no processo de desenvolvimento.
+
+É possível verificar que atividades relacionadas à modelagem de negócios e identificação, elicitação e gerenciamento de requisitos são intensas na fase inicial do projeto, onde a aplicação a ser desenvolvida ainda esta sendo definida. A análise e design e implementação da solução é realizada com afinco na fase de elaboração do projeto de software e continuada durante  as iterações contidas na fase seguinte. Atividades de testes são mais executadas ao final da construção e transição. Atividades de apoio ao desenvolvimento como configuração de ambiente, gerenciamento de configuração e mudança e o gerenciamento do projeto são relativamente constantes durante o ciclo de vida de desenvolvimento.
+
+\subsection{Scrum}
+schwaber_guia_2013
+- sprints
+- histórias de usuário
+- histórias técnicas
+- reuniões semanais ou periódicas

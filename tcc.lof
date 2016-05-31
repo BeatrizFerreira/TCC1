@@ -1,14 +1,15 @@
 \select@language {brazil}
-\contentsline {figure}{\numberline {1}{\ignorespaces Padr\IeC {\~a}o MVC - Arquitetura baseada em camadas.}}{28}{figure.2.1}
-\contentsline {figure}{\numberline {2}{\ignorespaces Servi\IeC {\c c}o em uma arquitetura baseada no modelo SOA. Fonte: \cite {nickull_service_2007}.}}{31}{figure.2.2}
-\contentsline {figure}{\numberline {3}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos modelos de integra\IeC {\c c}\IeC {\~a}o em SOA. Fonte: \cite {Bianco2007}.}}{33}{figure.2.3}
-\contentsline {figure}{\numberline {4}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es ESB. Fonte: \cite {bianco_architecting_2011}.}}{35}{figure.2.4}
-\contentsline {figure}{\numberline {5}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es de comunica\IeC {\c c}\IeC {\~a}o. Fonte: \cite {josuttis_soa_2007}.}}{37}{figure.2.5}
-\contentsline {figure}{\numberline {6}{\ignorespaces Interoperabilidade em uma arquitetura baseada no modelo SOA.}}{43}{figure.3.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Proposta da arquitetura baseada no modelo SOA com o uso de um ESB.}}{45}{figure.3.7}
-\contentsline {figure}{\numberline {8}{\ignorespaces Fluxo b\IeC {\'a}sico do protocolo de comunica\IeC {\c c}\IeC {\~a}o.}}{46}{figure.3.8}
-\contentsline {figure}{\numberline {9}{\ignorespaces Exemplo de uma mensagem de requisi\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}o em formato JSON de uma aplica\IeC {\c c}\IeC {\~a}o usu\IeC {\'a}rio escrita em Python e Django.}}{47}{figure.3.9}
-\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de uma mensagem de resposta de requisi\IeC {\c c}\IeC {\~a}o em formato JSON.}}{47}{figure.3.10}
-\contentsline {figure}{\numberline {11}{\ignorespaces Processo de elabora\IeC {\c c}\IeC {\~a}o e execu\IeC {\c c}\IeC {\~a}o do TCC.}}{50}{figure.4.11}
-\contentsline {figure}{\numberline {12}{\ignorespaces Fluxograma e atividades do subprocesso Planejar Implementa\IeC {\c c}\IeC {\~a}o.}}{51}{figure.4.12}
-\contentsline {figure}{\numberline {13}{\ignorespaces Fluxograma e atividades da fase de constru\IeC {\c c}\IeC {\~a}o.}}{52}{figure.4.13}
+\contentsline {figure}{\numberline {1}{\ignorespaces Padr\IeC {\~a}o MVC - Arquitetura baseada em camadas.}}{26}{figure.2.1}
+\contentsline {figure}{\numberline {2}{\ignorespaces Servi\IeC {\c c}o em uma arquitetura baseada no modelo SOA. Fonte: \cite {nickull_service_2007}.}}{29}{figure.2.2}
+\contentsline {figure}{\numberline {3}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos modelos de integra\IeC {\c c}\IeC {\~a}o em SOA. Fonte: \cite {Bianco2007}.}}{31}{figure.2.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es ESB. Fonte: \cite {bianco_architecting_2011}.}}{33}{figure.2.4}
+\contentsline {figure}{\numberline {5}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o de padr\IeC {\~o}es de comunica\IeC {\c c}\IeC {\~a}o. Fonte: \cite {josuttis_soa_2007}.}}{35}{figure.2.5}
+\contentsline {figure}{\numberline {6}{\ignorespaces Modelo de ciclo de vida definido pelo RUP. Fonte: \cite {henrique_rup_2015}.}}{41}{figure.2.6}
+\contentsline {figure}{\numberline {7}{\ignorespaces Interoperabilidade em uma arquitetura baseada no modelo SOA.}}{45}{figure.3.7}
+\contentsline {figure}{\numberline {8}{\ignorespaces Proposta da arquitetura baseada no modelo SOA com o uso de um ESB.}}{47}{figure.3.8}
+\contentsline {figure}{\numberline {9}{\ignorespaces Fluxo b\IeC {\'a}sico do protocolo de comunica\IeC {\c c}\IeC {\~a}o.}}{48}{figure.3.9}
+\contentsline {figure}{\numberline {10}{\ignorespaces Exemplo de uma mensagem de requisi\IeC {\c c}\IeC {\~a}o de servi\IeC {\c c}o em formato JSON de uma aplica\IeC {\c c}\IeC {\~a}o usu\IeC {\'a}rio escrita em Python e Django.}}{49}{figure.3.10}
+\contentsline {figure}{\numberline {11}{\ignorespaces Exemplo de uma mensagem de resposta de requisi\IeC {\c c}\IeC {\~a}o em formato JSON.}}{49}{figure.3.11}
+\contentsline {figure}{\numberline {12}{\ignorespaces Processo de elabora\IeC {\c c}\IeC {\~a}o e execu\IeC {\c c}\IeC {\~a}o do TCC.}}{52}{figure.4.12}
+\contentsline {figure}{\numberline {13}{\ignorespaces Fluxograma e atividades do subprocesso Planejar Implementa\IeC {\c c}\IeC {\~a}o.}}{53}{figure.4.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces Fluxograma e atividades da fase de constru\IeC {\c c}\IeC {\~a}o.}}{54}{figure.4.14}

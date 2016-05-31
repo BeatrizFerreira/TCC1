@@ -43,6 +43,16 @@ Pittsburgh, PA, 2011. Dispon{\'\i}vel em:
 {BOX, D. et al. \emph{Simple {Object} {Access} {Protocol} ({SOAP}) 1.1}. 2000.
 Dispon{\'\i}vel em: \url{https://www.w3.org/TR/2000/NOTE-SOAP-20000508/}.}
 
+\bibitem[Dai et al. 2015]{dai_bridging_2015}
+\abntrefinfo{Dai et al.}{DAI et al.}{2015}
+{DAI, W. et al. Bridging {Service}-{Oriented} {Architecture} and {IEC} 61499
+  for {Flexibility} and {Interoperability}.
+\emph{IEEE Transactions on Industrial Informatics}, v.~11, n.~3, p. 771--781,
+  jun. 2015.
+ISSN 1551-3203, 1941-0050.
+Dispon{\'\i}vel em:
+  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7086296}.}
+
 \bibitem[Erl 2009]{erl_orientacaoaservico_2009}
 \abntrefinfo{Erl}{ERL}{2009}
 {ERL, T. Orientação a serviços. In:  GAMA, F. C. N.~d.; BARBOSA, R. d.~C.
@@ -54,6 +64,13 @@ ISBN 978-85-7605-189-3.}
 \abntrefinfo{Haas e Brown}{HAAS; BROWN}{2004}
 {HAAS, H.; BROWN, A. \emph{Web {Services} {Architecture}}. 2004.
 Dispon{\'\i}vel em: \url{https://www.w3.org/TR/ws-arch/\#whatis}.}
+
+\bibitem[Henrique e Francisco 2015]{henrique_rup_2015}
+\abntrefinfo{Henrique e Francisco}{HENRIQUE; FRANCISCO}{2015}
+{HENRIQUE, M.; FRANCISCO, R. \emph{{RUP}( {Rational} {Unified} {Process})}.
+  2015.
+Dispon{\'\i}vel em:
+  \url{https://egovernament.wordpress.com/2015/11/02/rup-rational-unified-process/}.}
 
 \bibitem[Josuttis 2007]{josuttis_soa_2007}
 \abntrefinfo{Josuttis}{JOSUTTIS}{2007}
@@ -101,6 +118,16 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{http://www.univale.com.br/unisite/mundo-j/artigos/37Interoperabilidade.pdf}.}
 
+\bibitem[Park, Choi e Yoo 2012]{park_integrated_2012}
+\abntrefinfo{Park, Choi e Yoo}{PARK; CHOI; YOO}{2012}
+{PARK, S.; CHOI, J.; YOO, H. Integrated {Model} of {Service}-{Oriented}
+  {Architecture} and {Web}-{Oriented} {Architecture} for {Financial}
+  {Software}.
+\emph{Journal of Information Science and Engineering}, v.~28, n.~5, p.
+  925--939, 2012.
+Dispon{\'\i}vel em:
+  \url{http://www.iis.sinica.edu.tw/page/jise/2012/201209\_07.pdf}.}
+
 \bibitem[Pereira 2011]{pereira_psoa_2011}
 \abntrefinfo{Pereira}{PEREIRA}{2011}
 {PEREIRA, M.~Z.
@@ -139,6 +166,11 @@ Dispon{\'\i}vel em:
 {SIRIWARDENA, P. \emph{Enterprise {Integration} with {WSO}2 {ESB}}. 1. ed.
   BIRMINGHAM - MUMBAI: Packt Publishing, 2013.
 ISBN 978-1-78328-019-3.}
+
+\bibitem[Software 1998]{rational_software_rational_1998}
+\abntrefinfo{Software}{SOFTWARE}{1998}
+{SOFTWARE, R. \emph{Rational {Unified} {Process} - {Best} {Practices} for
+  {Software} {Development} {Teams}}. [S.l.]: Rational Software, 1998.}
 
 \bibitem[Sommerville et al. 2008]{sommerville2008engenharia}
 \abntrefinfo{Sommerville et al.}{SOMMERVILLE et al.}{2008}
