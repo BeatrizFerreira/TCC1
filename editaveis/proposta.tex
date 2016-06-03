@@ -2,21 +2,46 @@
 
 Este capítulo apresenta a proposta do trabalho de conclusão de curso, exibindo detalhes da implementação a ser realizada acerca da arquitetura bem como o protocolo de comunicação dentro desta.
 
+A proposta detalhada neste capítulo consiste de um arquitetura de software baseada no modelo arquitetural SOA (orientado a serviços) responsável por promover a interação entre aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. A comunicação entre as aplicações seguirá um protocolo estabelecido e faz parte desta proposta.
+
+Este capítulo está organizado em quatro seções principais. A seção 3.1 apresenta uma introdução, expondo fatos e necessidades identificação que dão suporte à solução arquitetural proposta. A seção 3.2 trata do ambiente virtual a ser criado com base na solução. A proposta arquitetural é detalhada na seção 3.3. Nesta seção, também está descrito o a ser utilizado, estabelecendo o formato de mensagem padronizado na arquitetura.
+
 \section{Introdução}
-Avanços tecnológicos e a criação de linguagens de programação, diferentes técnicas e paradigmas e outros conceitos relacionados ao desenvolvimento de software contribui para que a necessidade de interação entre estes elementos seja emergente, de modo a viabilizar a construção de sistemas cada vez mais robustos e inteligentes. Esta interação entre elementos de software não consistem de aplicações robustas que executam todas as suas atividades de forma independente de outras aplicações, pois cada vez mais diversos sistemas de software interagem com outros, podendo ser estes desenvolvidos tomando como base outros paradigmas ou escritos em outras linguagens de programação e utilizando-se diferentes técnicas.
+Avanços tecnológicos, a criação de linguagens de programação, diferentes técnicas e paradigmas e outros conceitos relacionados ao desenvolvimento de software contribuem para que a necessidade de interação entre estes elementos seja emergente. Isto viabiliza a construção de sistemas cada vez mais robustos e inteligentes. Esta interação entre elementos de software não consistem de aplicações robustas que executam todas as suas atividades de forma independente de outras aplicações. Os sistemas de software mais modernos são desenvolvidos tomando como base outros paradigmas ou escritos em outras linguagens de programação e utilizando-se diferentes técnicas.
 
-A fim de suprir esta necessidade de interação entre sistemas diversos, foi criado um modelo arquitetural conhecido como Arquitetura Baseada em Serviços (ou \textit{Service-Oriented Architecture} - SOA). Este modelo arquitetural utiliza o conceito de serviço como uma unidade que representa uma funcionalidade do sistema, além de trazer consigo os conceitos de interoperabilidade, flexibilidade, extensibilidade e baixo acoplamento entre os diversos sistemas ou serviços.
+A fim de suprir esta necessidade de interação entre os diversos sistemas, foi criado um modelo arquitetural conhecido como Arquitetura Baseada em Serviços (ou \textit{Service-Oriented Architecture} - SOA) \cite{linthicum_soainrealworld_2007}. Este modelo arquitetural utiliza o conceito de serviço como uma unidade que representa uma funcionalidade reusável do sistema \cite{lewis_getting_2010}, além de trazer consigo como conceitos chave interoperabilidade, flexibilidade, extensibilidade e baixo acoplamento entre os diversos sistemas ou serviços \cite{josuttis_soa_2007}.
 
-Para este trabalho de conclusão de curso, a proposta consiste em desenvolver uma arquitetura baseada no modelo SOA para um ambiente virtual, propiciando que diversos trabalhos já desenvolvidos e também aqueles em desenvolvimento não sejam mais "engavetados". Por meio do uso do modelo arquitetural baseado em serviços, será possível integrar tais aplicações, ou serviços, de modo que estas possam trocar dados e fazer uso do serviço disponibilizado por outras, indepentemente das tecnologias utilizadas para o desenvolvimento das mesmas.
+Para este trabalho de conclusão de curso, a proposta é desenvolver uma arquitetura baseada no modelo SOA para um ambiente heterogêneo com características predominante web (um ambiente virtual), propiciando que diversas aplicações desenvolvidas que se encontram armazenadas em repositórios não mais mantidos ou visitados sejam integradas como módulos da plataforma. Por meio do uso do modelo arquitetural proposto, será possível integrar tais aplicações, ou serviços, de modo que estas possam trocar dados e fazer uso do serviço disponibilizado por outras, indepentemente das tecnologias utilizadas para o desenvolvimento das mesmas.
 
-Também faz parte da proposta, o estabelecimento de um protocolo de comunicação entre as aplicações, bem como o padrão de comunicação a ser utilizado, uma vez que as aplicações produzidas por outros podem se comunicar de modo a se tornarem mais robustas e completas enquanto ferramentas.
+Também faz parte da proposta, o estabelecimento de um protocolo de comunicação entre as aplicações, bem como o padrão de comunicação a ser utilizado, uma vez que as aplicações produzidas por terceiros podem se comunicar de modo a se tornarem mais robustas e completas enquanto ferramentas.
 
-Desta forma, será viável a disponibilização à sociedade, interna e externa à Universidade, de uma plataforma virtual que conterá os trabalhos realizados dentro da mesma, sejam oriundos de projetos de conclusão de curso, disciplinas ou projetos de extensão e pesquisa.
+Desta forma, será viável a disponibilização à sociedade, interna e externa à Universidade, de uma plataforma virtual que conterá os trabalhos realizados no âmbito do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília.
 
-\section{Proposta de arquitetura}
+\section{O Ambiente Virtual}
+
+Trabalhos realizados durante a execução de TCCs e em atividades e treinamentos desenvolvidos âmbito do Laboratório Fábrica de Software no Campus Gama da Universidade de Brasília resultam, muitas vezes, em aplicações de software isoladas. Estas aplicações são armazenadas em repositórios pessoais de orientandos de TCCs ou do laboratório e acabam por não serem divulgadas, incrementadas e mantidas por quem as criou.
+
+Como exemplos de trabalhos realizados que resultaram em aplicações de interesse público, mas que não estão em uso ou manutenção podem ser citados dois: um faz uma análise de aderência de perfis profissionais com base no currículo Lattes \cite{jesus_algoritmo_2014} e o outro faz a apresentação de resultados relevantes ao usuário de acordo com o perfil individual e de grupo de determinado usuário de uma plataforma virtual \cite{carvalho_sistema_2014}.
+
+O ambiente virtual a ser iniciado por este projeto de TCC consiste no resultado da integração de aplicações já existentes.
+
+\begin{figure}[!hbt]
+\centering
+\includegraphics[scale=0.7]{figuras/ambiente_virtual.png}
+\caption{Representação de um ambiente composto por aplicações integradas.}
+\label{ambiente_virtual}
+\end{figure}
+
+A figura \ref{ambiente_virtual} apresenta a ideia do que é o ambiente virtual a ser construído. As aplicações existentes que hoje se encontram em repositórios aleatórios serão integrados pela arquitetura proposta neste projeto de TCC. A interação entre tais elementos será dada pelo uso de mensagens padronizadas pelo protocolo estabelecido.
+
+\section{A Proposta de arquitetura}
+
+Esta seção apresenta os detalhes da arquitetura proposta baseada no modelo SOA e os aspectos deste modelo que foram adotados e a forma como se relacionam.
+
+As subseções apresentam os requisitos identificados, a arquitetura proposta e detalhes sobre o protocolo de comunicação.
 
 \subsection{Requisitos}
-A partir da necessidade identificada de disponibilizar aplicações que foram desenvolvidas, bem como aquelas que estão em desenvolvimento e que serão desenvolvidas, através de uma plataforma virtual único, algumas das principais características arquiteturais deste ambiente que influenciaram na escolha do modelo arquitetural para a construção da plataforma são:
+A partir da necessidade identificada de disponibilizar aplicações que foram desenvolvidas, bem como aquelas que estão em desenvolvimento e que serão desenvolvidas, através da plataforma virtual, algumas das principais características arquiteturais deste ambiente que influenciam na escolha do modelo arquitetural para a construção da plataforma são:
 
 \begin{itemize}
 \item A comunicação entre as aplicações deve permitir a troca de dados independentemente das tecnologias utilizadas para seu desenvolvimento.
@@ -26,32 +51,32 @@ A partir da necessidade identificada de disponibilizar aplicações que foram de
 \item Flexibilidade,  possibilitando a extensão da plataform sem que a arquitetura original seja modificada drasticamente.
 \end{itemize}
 
-A partir das características acima, foi proposto o uso do modelo arquitetural SOA - \textit{Service-Oriented Architecture} -, pois desta forma a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações neste contexto também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
+A partir destas características, foi proposto o uso do modelo arquitetural SOA - \textit{Service-Oriented Architecture} -, pois desta forma a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações neste contexto também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
 
 \subsection{A arquitetura}
 
-A proposta de arquitetura a ser implementada faz uso da abordagem de implementação de SOA chamada "\textit{Hub-and-spoke}", onde a interface de comunicação entre os serviços é única e pode ser realizada com o uso de um barrameneto de serviços ou um Enterprise Service Bus (ESB).
+A proposta de arquitetura a ser implementada faz uso da abordagem de implementação de SOA chamada "\textit{Hub-and-spoke}", onde a interface de comunicação entre os serviços é única e pode ser realizada com o uso de um barrameneto de serviços ou um Enterprise Service Bus (ESB) \cite{Bianco2007}.
 
-O barramento de serviços é um recurso a ser utilizado na implementação da arquitetura baseada no modelo SOA para facilitar a troca entre mensagens entre as aplicações - ou serviços. Este barramento é uma ferramenta que implementa funcionalidades que roteiam as mensagens entre os usuários e provedores de um determinado serviço, transformam as mensagens e os dados para o formato aceito pelas aplicações e aceita protocolos múltiplos de comunicação através de adaptadores. Na arquitetura proposta, o protocolo de comunicação será padronizado e unificado e apenas as outras características do barramento de serviços serão utilizadas.
+O barramento de serviços é um recurso a ser utilizado na implementação da arquitetura baseada no modelo SOA para facilitar a troca entre mensagens entre as aplicações - ou serviços. Este barramento é uma ferramenta que implementa funcionalidades que roteiam as mensagens entre os usuários e provedores de um determinado serviço, transformam as mensagens e os dados para o formato aceito pelas aplicações e com protocolos múltiplos de comunicação através de adaptadores. Na arquitetura proposta, o protocolo de comunicação será padronizado e a funcionalidade de roteamento de mensagens entre os serviços será a mais explorada.
 
 Sendo interoperabilidade um dos requisitos relevantes para a escolha do modelo arquitetural, o barramento de serviços é visto como um recurso que pode ser utilizado para ajudar a promover a interoperabilidade na arquitetura definida e na validação de políticas e critérios de segurança a serem definidas em trabalhos posteriores.
 
-\begin{figure}[htb]
+\begin{figure}[!hbt]
 \centering
-\includegraphics[width=1\textwidth]{figuras/barramento_interoperabilidade.png}
+\includegraphics[scale=0.4]{figuras/barramento_interoperabilidade.png}
 \caption{Interoperabilidade em uma arquitetura baseada no modelo SOA.}
 \label{barramento_interoperabilidade}
 \end{figure}
 
-A figura acima visa demonstrar a interoperabilidade em uma arquitetura baseada no modelo SOA: é possível inferir que as diversas aplicações fazem a requisição dos serviços disponíveis por meio do uso do barramento de serviços, que também pode ser interpretado como um barramento de aplicações. As aplicações podem ser desenvolvidas utilizando-se tecnologias e paradigmas distintos e a troca de dados entre elas se darão de forma bidirecional via mensagens de requisição e resposta entre as aplicações usuário, que requisitam operações dos serviços, e os serviços, responsáveis por processar as requisições e fornecer a resposta correspondente.
+A figura \ref{barramento_interoperabilidade} apresenta a interoperabilidade em uma arquitetura baseada no modelo SOA:  as diversas aplicações fazem a requisição dos serviços disponíveis por meio do uso do barramento de serviços, que também pode ser interpretado como um barramento de aplicações. As aplicações podem ser desenvolvidas utilizando-se tecnologias e paradigmas distintos. A troca de dados entre elas se darão de forma bidirecional via mensagens de requisição e de resposta entre as aplicações usuário (requisitam operações dos serviços) e os serviços (processam as requisições e fornecem a resposta correspondente).
 
-A figura também exibe um fato interessante na arquitetura proposta: não é necessário que um serviço seja apenas um serviço hospedado em um servidor. As aplicações poderão operar tanto em modo \textit{standalone}, sendo executadas de forma independente dos outros serviços ou aplicações, quanto como um serviço para a plataforma virtual ou para outras aplicações que tenham conhecimento da existência e do protocolo de uso deste serviço.
+Um fato interessante na arquitetura proposta (figura \ref{barramento_interoperabilidade}): as aplicações poderão operar tanto em modo \textit{standalone}, sendo executadas de forma independente dos outros serviços ou aplicações, quanto como um serviço para a plataforma virtual ou para outras aplicações que tenham conhecimento da existência e do protocolo em uso por este serviço.
 
-O ESB é uma ferramenta que fornece as funcionalidades do barramento de serviços. Seu uso irá garantir que, sempre que este estiver ativo, as requisições que serão realizadas sempre terão uma resposta, mesmo sendo algo que indique a inatividade do serviço requerido ou a não autorização para acesso à este. Ao adicionar um novo serviço à arquitetura utilizando o ESB, deverão ser especificados tanto os procedimentos quando uma nova requisição for feita quanto aqueles passos que conduzem ao envio de uma resposta de acesso ao serviço especificado, sendo esta resposta advinda do próprio serviço ou uma resposta padrão, também especificada, em caso de falha ou sucesso ao executar a requisição.
+O ESB é uma ferramenta que fornece as funcionalidades de um barramento de serviços. Seu uso garante que as requisições realizadas sempre terão uma resposta, mesmo sendo algo que indique a inatividade do serviço requerido ou a não autorização para acesso à operação requisitada. Ao se adicionar um novo serviço à arquitetura utilizando o ESB, deverão ser especificados os procedimentos a serem seguidos pelo barramento. Estes procedimentos dizem respeito ao processamento e encaminhamento das mensagens tanto de requisições quanto das respostas recebidas.
 
-Com base nos requisitos essenciais levantados e no estudo realizado sobre o modelo arquitetural SOA, o modelo proposto pode ser visto na imagem abaixo:
+Com base nos requisitos essenciais levantados e no estudo realizado sobre o modelo arquitetural SOA, o modelo proposto pode ser visto na figura \ref{uso_esb}.
 
-\begin{figure}[htb]
+\begin{figure}[!hbt]
 \centering
 \includegraphics[width=0.7\textwidth]{figuras/uso_esb.png}
 \caption{Proposta da arquitetura baseada no modelo SOA com o uso de um ESB.}
@@ -61,7 +86,7 @@ Com base nos requisitos essenciais levantados e no estudo realizado sobre o mode
 A comunicação entre aplicações e serviços deverão seguir o padrão de protocolo também definido durante o desenvolvimento deste trabalho de conclusão de curso, para que seja mantida uma regra de execução na troca de informações. O protocolo também facilitará a adição de um novo serviço à arquitetura no que diz respeito aos procedimentos de transformação dos dados e adaptação entre tecnologias e protocolos de transporte e comunicação adotados.
 
 \subsubsection{Ferramentas ESB}
-Existem diversas ferramentas deste tipo disponíveis e em uso por grandes organizações, tais como JBoss ESB, Mule ESB, Zato e WSO2 ESB. Para o conhecimento sobre a viabilidade de execução do trabalho aqui proposto, algumas destas ferramentas já foram levantadas, e, sendo o ESB um elemento importante para a implementação aqui proposta, uma análise prévia destas ferramentas já foi realizada. O levantamento feito mostrou que as ferramentas que podem ser utilizadas para a implementação da arquitetura são o JBoss ESB, WSO2 ESB e ErlangMS. Os critérios utilizados foram:
+Existem algumas ferramentas tipo ESB disponíveis e em uso por grandes organizações, tais como JBoss ESB\footnote{Para acesso a mais informações: http://jbossesb.jboss.org/}, Mule ESB\footnote{Mais informações em: https://www.mulesoft.com/platform/soa/mule-esb-open-source-esb}, Zato\footnote{\textit{Link} para acesso a mais informações: https://zato.io/docs/index.html}, WSO2 ESB\footnote{Informações podem ser encontraadas em: http://wso2.com/products/enterprise-service-bus/} e ErlangMS\footnote{\textit{Link} para repositório com mais informações: https://github.com/erlangMS/msbus}. Para o conhecimento sobre a viabilidade de execução do trabalho aqui proposto, algumas destas ferramentas já foram levantadas, e, sendo o ESB um elemento importante para a implementação deste TCC, uma análise prévia destas ferramentas foi realizada. Os critérios utilizados para a seleção foram:
 
 \begin{itemize}
 \item Ser uma ferramenta de código aberto e/ou \textit{free};
@@ -72,14 +97,22 @@ Existem diversas ferramentas deste tipo disponíveis e em uso por grandes organi
 \item Suporte ao formato de mensagem escolhido para a implementação do protocolo.
 \end{itemize}
 
+O levantamento mostrou que as ferramentas que podem ser utilizadas para a implementação da arquitetura são o JBoss ESB, WSO2 ESB e ErlangMS. A partir da análise realizada, o JBoss ESB é falho apenas no que diz respeito à facilidade de implementação e entendimento sobre o seu uso, embora exista uma grande comunidade aderente ao uso desta ferramenta. O WSO2 ESB apresentou facilidade para implementação e de uso, pois possui interface gráfica com um alto nível de usabilidade. A última ferramenta citada (ErlangMS) foi identificada após o levantamento prévio sobre as ferramentas ESB existentes. Está incluída na lista por ser utilizada no trabalho de pós-graduação desenvolvido por Aguilar \cite{agilar_uma_2015} como um recurso do tipo requerido (ESB) para promover a interoperabilidade entre sistemas da Universidade de Brasília.
+
 \subsection{Protocolo de comunicação}
-O protocolo de comunicação proposto para que ocorra a troca de dados entre usuários e provedores de serviço é um protocolo geral a ser utilizado por estes e adaptados sempre que necessário, porém não fugindo dos padrões estabelecidos. O protocolo proposto utiliza o modelo REST e, portanto, deve ser aderente à arquitetura deste. Este protocolo foi escolhido por ser de fácil uso, podendo ser implementado em diversas linguagens de programação (principalmente aquelas que são destinadas ao desenvolvimento de plataformas para a web) e em diversos sistemas operacionais. Além disso, o modelo REST utiliza o HTTP como protocolo de transporte, contribuindo para que a comunicação entre diversas aplicações seja realizada de maneira mais estável.
 
-A arquitetura do protocolo REST aceita alguns formatos tais como JSON, CSV e texto simples, como mencionado nos capítulos anteriores. O formato definido para uso neste protocolo é o JSON, por ser um formato que permite a composição da mensagem através de chaves e valores. Assim, quando de posse da mensagem, os valores podem extraídos de acordo com a chave. Estas informações deverão ser publicadas pelo serviço na especificação de suas operações e valores de retorno quando forem acessados.
+No âmbito da proposta de uma arquitetura de software baseada no modelo SOA é necessário que seja estabelecido um protocolo de comunicação. Este protocolo estabalece como as aplicações que oferecem e utilizam os serviços contidos na arquitetura irão se comunicar.
 
-A fim de permitir o acesso ao serviço, as aplicações devem disponibilizar uma API REST para que os recursos sejam manipulados através das operações. Alguns serviços podem necessitar de autenticação e autorização para acesso ao mesmo, porém outros estarão disponpiveis para uso sem a necessidade de que tais recuros de segurança sejam implementados. Os requisitos de segurança na troca de dados deverão ser planejados em trabalhos futuros.
+Após levantamento de modelos de protocolos, formatos e padrões de mensagens existentes optou-se pelo uso do modelo REST \cite{rozlog_restesoap_2013}. Este modelo de protocolo foi escolhido por ser de fácil uso, podendo ser implementado em diversas linguagens de programação (principalmente aquelas que são destinadas ao desenvolvimento de plataformas para a web) e em diversos sistemas operacionais. O modelo REST utiliza o HTTP como protocolo de transporte, contribuindo para que a comunicação entre diversas aplicações seja realizada de maneira mais estável.
 
-Desta forma, o fluxo básico do protocolo de comunicação entre os provedores e usuários dos serviços pode ser visto na imagem abaixo: 
+A arquitetura do protocolo REST aceita diferentes formatos tais como: JSON, CSV e texto simples. O formato definido para uso no protocolo desta proposta de TCC é o JSON, por ser um formato que permite a composição da mensagem através de chaves e valores. Assim, quando de posse da mensagem, os valores podem extraídos de acordo com a chave. As informações de chave e valores retornados por uma dada operação de um serviço devem estar contidas na especificação da interface de um serviço.
+
+
+Alguns serviços podem necessitar de autenticação e autorização para acesso ao mesmo, porém outros estarão disponíveis para uso sem a necessidade de que tais recuros de segurança sejam implementados. Os requisitos de segurança na troca de dados deverão ser planejados em trabalhos futuros.
+
+A fim de permitir o acesso ao serviço, as aplicações devem disponibilizar uma API REST para que os recursos sejam manipulados através das operações. Do inglês "\textit{Application Programming Interface}", uma API é um conjunto de operações e padrões de programação criadas por empresas de software a fim de disponibilizar seus serviços por meio de um aplicativo de software ou plataforma Web \cite{canaltech_o_2015}. O uso de uma API permite a construção de plataformas Web a partir do uso de funções de outras aplicações \cite{canaltech_o_2015}. Um exemplo é a API fornecida pelo Facebook, utilizada para realização de login utilizando credenciais da rede social, permitindo o acesso a fotos e conteúdo do perfil do usuário.
+
+O fluxo básico do protocolo de comunicação entre os provedores e usuários dos serviços pode ser visto na figura \ref{fluxo_basico_protocolo}.
 
 \begin{figure}[htb]
 \centering
@@ -88,31 +121,63 @@ Desta forma, o fluxo básico do protocolo de comunicação entre os provedores e
 \label{fluxo_basico_protocolo}
 \end{figure}
 
-A imagem exibe o fluxo geral do protocolo de comunicação estabelecido entre o usuário e o provedor de serviços, sendo esta comunicação intermediada pelo ESB: a aplicação que faz uso do serviço requisita que uma operação disponibilizada pelo serviço seja executada, esta requisição, por sua vez, é tratada pelo ESB e redirecionada à aplicação provedora do serviço; a resposta da requisição feita também será intermediada pelo ESB e redirecionada à aplicação que realizou a requisição.
+O fluxo geral do protocolo de comunicação estabelecido entre o usuário e o provedor de serviços, sendo esta comunicação intermediada pelo ESB é exibida na figura \ref{fluxo_basico_protocolo}. Ao realizar a requisição à uma operação disponibilizada pelo serviço, a ferramenta ESB trata tal requisição e redireciona à aplicação provedora do serviço. A resposta correspondente também será intermediada pelo ESB e enviada para a aplicação usuária de serviços.
 
-O ESB é o elemento da comunicação que detêm o conhecimento sobre os servidos providos na plataforma e é o ator responsável por realizar a entrega das mensagens de requisição e de resposta dos serviços. Caso necessário, é também uma responsabilidade do ESB, realizar a transformação/adaptação dos formatos das mensagens e dos protocolos usados.
+O ESB é o elemento que detêm o conhecimento sobre os serviços providos na plataforma. É o ator responsável por realizar a entrega das mensagens de requisição e de resposta dos serviços. Caso necessário, também tem a  responsabilidade de realizar a transformação/adaptação dos formatos das mensagens e dos protocolos usados.
 
 \subsubsection{Formato das Mensagens}
-Como anteriormente mencionado, o formato escolhido para a troca de mensagens entre as aplicações será o JSON. A escolha foi realizada pelo fato de este formato de mensagem ser leve, de fácil entendimento e implementação, além de permitir que não seja difícil a recuperação dos dados em qualquer linguagem de programação, bem como pelo ESB.
+O formato escolhido para a troca de mensagens entre as aplicações será o JSON. A escolha foi realizada pelo fato deste formato de mensagem ser leve, de fácil entendimento e implementação, além de permitir que não seja difícil a recuperação dos dados em qualquer linguagem de programação.
 
 O formato JSON é baseado em um esquema de chave-valor, onde a chave identifica um atributo, um dado, e o valor é o dado em si, o valor quantitativo ou qualitativo do atributo indicado pela chave. Este formato de mensagem adotado, pode ser tratado na aplicação como uma mensagem JSON ou como uma cadeia de caracteres, a depender da linguagem de programação adotada na construção da plataforma virtual e dos serviços disponibilizados.
 
-Assim, para realizar uma requisição, a aplicação que executa o papel de usuário de um serviço deverá indicar o serviço e a operação desejada, o formato da mensagem (JSON por padrão) e os valores necessários para que o serviço seja executado corretamente, indicados pela API disponibilizada pelo mesmo. Da mesma forma, a resposta também deverá ser gerada em formato JSON, porém a aplicação que prover serviços retorna apenas a resposta da mensagem no padrão chave-valor. Abaixo podem ser visualizados um exemplo de requisição e outro de reposta, ambos em formato JSON.
+Assim, para realizar uma requisição, a aplicação que executa o papel de usuário de um serviço deverá indicar o serviço e a operação desejada, o formato da mensagem (JSON por padrão) e os valores necessários para que o serviço seja executado corretamente, indicados pela API disponibilizada pelo mesmo. Da mesma forma, a resposta também deverá ser gerada em formato JSON, porém a aplicação que prover serviços retorna apenas a resposta da mensagem no padrão chave-valor. A seguir  podem ser visualizados um exemplo de requisição e outro de reposta, ambos em formato JSON.
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{figuras/mensagem_requisicao.png}
-\caption{Exemplo de uma mensagem de requisição de serviço em formato JSON de uma aplicação usuário escrita em Python e Django.}
-\label{mensagem_requisicao}
-\end{figure}
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.8\textwidth]{figuras/mensagem_resposta.png}
-\caption{Exemplo de uma mensagem de resposta de requisição em formato JSON.}
-\label{mensagem_resposta}
-\end{figure}
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}
+//Exemplo de uma mensagem de requisição de serviço em formato JSON de uma 
+//aplicação usuário.
 
-A primeira imagem exibe os valores necessários para realizar uma requisição ao serviço fornecido pela rede social Facebook através de sua API. Para a chamada do serviço, são necessários a especificação do endereço do serviço, indicado pela \textit{url}; \textit{headers} guarda os valores da operação a ser executada pelo serviço ('\textit{Action}') e o formato da mensagem ('\textit{Content-type}'); os valores necessários para a execução da operação requisitada estão contidos no \textit{payload} também em formato \textit{{'chave':'valor'}}.
+url = "http://localhost:8000/services/facebookConnector"
+headers = {'Action':'urn:getUserDetails', 
+	'Content-type':'application/json'}
+payload = {'apiUrl':'https://graph.facebook.com', 
+	'apiVersion':'v2.5',
+	'accessToken':access_token,
+	'fields':'id,,name,email,age_range,birthday'}
 
-As imagens acima mostram apenas exemplos do uso do formato de mensagem JSON para realizar uma requisição e de mensagem obtida como resposta advinda do serviço. Pode-se ver que os valores são correspondentes à uma chave conhecida por ambas as aplicações, permitindo que as aplicações (provedora e usuária de serviços) possam comunicar-se entre si de forma padronizada e conhecida por ambas as partes.
+//Exemplo de uma mensagem de resposta de requisição em formato JSON.
+{'id':'1', 'name':'user_name', 'email':'user@email.com', 
+	'age_range':'20-25', 'birthday':'dd/mm/yyyy'}
+\end{lstlisting}
+
+O código exibe os valores necessários para realizar uma requisição ao serviço fornecido pela rede social Facebook através de sua API. Para a chamada do serviço, são necessários a especificação do endereço do serviço, indicado pela \textit{url}; \textit{headers} guarda os valores da operação a ser executada pelo serviço ('\textit{Action}') e o formato da mensagem ('\textit{Content-type}'); os valores necessários para a execução da operação requisitada estão contidos no \textit{payload} também em formato \textit{{'chave':'valor'}}.
+
+A parte de código descrito mostra apenas exemplos do uso do formato de mensagem JSON para realizar uma requisição e de mensagem obtida como resposta advinda do serviço. Pode-se ver que os valores são correspondentes à uma chave conhecida por ambas as aplicações, permitindo que as aplicações (provedora e usuária de serviços) possam comunicar-se entre si de forma padronizada e conhecida por ambas as partes.
+
+\section{Considerações Finais}
+Neste capítulo foi apresenta a proposta do projeto em desenvolvimento para o TCC. A proposta é a elaboração de uma arquitetura baseada no modelo SOA para a integração de aplicações resultantes de orientações realizadas pelo Professor Doutor Sérgio Antônio Andrade de Freitas e de trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. Para tanto, aqui foram detalhadas as características que farão parte da solução proposta, com o uso de uma ferramenta do tipo ESB e um protocolo de comunicação padronizado baseado no modelo REST.
+
+A utilização de uma ferramenta que contenha as funcionalidades de um ESB (roteamento, transformação e formatação de dados) permite que a complexidade de implementação da arquitetura seja reduzida, uma vez que não há a necessidade de um serviço fornecer múltiplas interfaces. Isto colabora para que a interoperabilidade, flexibilidade e extensibilidade almeijada seja mais facilmente realizada.
+
+O próximo capítulo apresenta o planejamento para execução deste projeto de TCC. O planejamento relata as fases em que o projeto está dividido e as atividades contidas em cada uma destas fases. 

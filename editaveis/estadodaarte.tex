@@ -270,7 +270,7 @@ Durante cada uma das fases descritas, macro atividades definidas no RUP são des
 
 \begin{figure}[htb]
 \centering
-\includegraphics[scale=0.5]{figuras/ciclo_rup.jpg}
+\includegraphics[scale=0.8]{figuras/ciclo_rup.jpg}
 \caption{Modelo de ciclo de vida definido pelo RUP. Fonte: \cite{henrique_rup_2015}.}
 \label{ciclo_rup}
 \end{figure}
@@ -280,8 +280,46 @@ A imagem exibe o modelo de ciclo de vida do processo de desenvolvimento de softw
 É possível verificar que atividades relacionadas à modelagem de negócios e identificação, elicitação e gerenciamento de requisitos são intensas na fase inicial do projeto, onde a aplicação a ser desenvolvida ainda esta sendo definida. A análise e design e implementação da solução é realizada com afinco na fase de elaboração do projeto de software e continuada durante  as iterações contidas na fase seguinte. Atividades de testes são mais executadas ao final da construção e transição. Atividades de apoio ao desenvolvimento como configuração de ambiente, gerenciamento de configuração e mudança e o gerenciamento do projeto são relativamente constantes durante o ciclo de vida de desenvolvimento.
 
 \subsection{Scrum}
-schwaber_guia_2013
-- sprints
-- histórias de usuário
-- histórias técnicas
-- reuniões semanais ou periódicas
+Desenvolvido por Schwaber e Sutherland \cite{schwaber_guia_2013}, o Scrum é um \textit{framework} flexível utilizado no gerenciamento do desenvolvimento de produtos complexos por ser leve e de fácil compreensão, passível de execução iterativa e incremental.
+
+O Scrum estabelece que o processo que o utiliza deve ser transparente, frequentemente inspecionado por aqueles que fazem parte dele e a adaptação de produto, processo ou ferramentas de apoio devem ocorrer sempre que necessário \cite{schwaber_guia_2013}.
+
+\subsubsection{O Time Scrum}
+Os Times Scrum são auto-organizáveis, realizam múltiplas funções e são compostos por três papéis principais: \textit{Product Owner}, Time de desenvolvimento e o Scrum \textit{Master} \cite{schwaber_guia_2013}.
+
+De acordo com o papel desempenhado no Time Scrum, as responsabilidades são delegadas aos membros que o compõe. Desta forma, as responsabilidades dos papéis definidos por Schwaber e Sutherland \cite{schwaber_guia_2013} são:
+
+\begin{itemize}
+\item \textit{Product Owner}: como dono do produto, este papel é responsável por "maximizar o valor do produto" e gerenciar o \textit{backlog} do produto.
+
+\item Time de Desenvolvimento: são os membros da equipe responsáveis por construir um produto entregável e pronto ao final de cada \textit{sprint}. Devem ser auto-organizáveis, auto-gerenciáveis e não deve ser composto por times menores.
+
+\item Scrum \textit{Master}: é o papel que tem como principal responsabilidade garantir que as práticas deste \textit{framework} sejam, de fato, aplicadas pelo Time Scrum. Além disso, o Scrum \textit{Master} deve promover a interação entre o Time de Desenvolvimento e o \textit{Product Owner}.
+
+\end{itemize}
+\subsubsection{Eventos Scrum}
+Os Eventos Scrum são um meio que inspecionar e adaptar tecnologias, ferramentas, práticas, o produto ou o processo de desenvolvimento. Geralmente são \textit{time-boxed}, ou seja, possuem tempo limitado e fixo para ocorrerem \cite{schwaber_guia_2013}.
+
+São os Eventos Scrum citados por Schwaber e Sutherland \cite{schwaber_guia_2013}:
+
+\begin{itemize}
+\item \textit{Sprint}: neste evento Scrum são construídas versões funcionais do produto e possuem tempo de duração variável de acordo com a equipe e capacidade da mesma. Durante a execução de uma \textit{sprint}, ocorrem outros eventos Scrum. O uso de \textit{sprints} permite que os acontecimentos sejam previsíveis e que o progresso das atividades realizadas sejam transparentes.
+
+\item Reunião de Planejamento da \textit{Sprint}: é neste evento onde o trabalho a ser realizado durante a \textit{sprint} é planejado pelo Time Scrum. São incluídas apenas o que pode ser entregue ao final da \textit{sprint} e está contido no \textit{backlog} do produto. O trabalho a ser realizado durante uma dada \textit{sprint} é denominado \textit{backlog} da \textit{sprint}.
+
+\item Reunião Diária: estes eventos duram, em média, 15 minutos e o objetivo é "sincronizar as atividades e planejar o que será executado nas próximas 24 horas".
+
+\item Revisão da \textit{Sprint}: assim como há um evento para o planejamento, no encerramento da \textit{sprint} ocorre o evento de revisão, onde o \textit{backlog} do produto é revisto e atualizado (se necessário) e o progresso do desenvolvimento é analisado. O objetivo é obter \textit{feedbacks} sobre o que foi feito e promover a colaboração no Time Scrum.
+
+\item Retrospectiva da \textit{Sprint}: tem como objetivo identificar itens positivos, negativos e melhorias para o desenvolvimento no que diz respeito ao relacionamento interpessoal, aos processos e às ferramentas utilizadas para apoio.
+
+\end{itemize}
+
+\subsubsection{Artefatos do Scrum}
+Schwaber e Sutherland \cite{schwaber_guia_2013} definem dois importantes artefatos do Scrum importantes quando o assunto são os pilares do \textit{framework} (transparência, adaptação e inspeção): os \textit{backlogs} do produto e da \textit{sprint}. 
+
+O \textit{backlog} do produto consiste de todas as funcionalidades que devem estar contidas no produto desenvolvido. O \textit{backlog} da \textit{sprint} é o "conjunto de itens do \textit{backlog} do produto selecionados para a \textit{sprint}" \cite{schwaber_guia_2013}.
+
+As funcionalidades ou requisitos do produto a ser desenvolvido podem ser descritas a partir da identificação de histórias de usuário ou histórias técnicas \cite{galen_technical_2013}. As histórias de usuário, ou \textit{user stories}, são requisitos descritos de forma que os desenvolvedores sejam capazes de estimar o esforço necessário para implementá-los \cite{ambler_user_2005}.
+
+Histórias técnicas são descrições de atividades não funcionais que devem ser implementadas para fornecer um suporte necessário para que requisitos funcionais sejam implementados, agregando valor ao produto \cite{galen_technical_2013}.

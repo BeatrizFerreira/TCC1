@@ -19,6 +19,12 @@ Dispon{\'\i}vel em:
   {Serviços} para a {Modernização} dos {Sistemas} {Legados} da {UnB}}.
 Brasília, Brasil, 2015.}
 
+\bibitem[Ambler 2005]{ambler_user_2005}
+\abntrefinfo{Ambler}{AMBLER}{2005}
+{AMBLER, S. \emph{User {Stories}: {An} {Agile} {Introduction}}. 2005.
+Dispon{\'\i}vel em:
+  \url{http://www.agilemodeling.com/artifacts/userStory.htm}.}
+
 \bibitem[Bass, Clements e Kazman 2003]{bass_software_archi_practice_2003}
 \abntrefinfo{Bass, Clements e Kazman}{BASS; CLEMENTS; KAZMAN}{2003}
 {BASS, L.; CLEMENTS, P.~C.; KAZMAN, R. \emph{Software {Architecture} in
@@ -43,6 +49,18 @@ Pittsburgh, PA, 2011. Dispon{\'\i}vel em:
 {BOX, D. et al. \emph{Simple {Object} {Access} {Protocol} ({SOAP}) 1.1}. 2000.
 Dispon{\'\i}vel em: \url{https://www.w3.org/TR/2000/NOTE-SOAP-20000508/}.}
 
+\bibitem[Canaltech 2015]{canaltech_o_2015}
+\abntrefinfo{Canaltech}{CANALTECH}{2015}
+{CANALTECH, R. \emph{O que é {API}? - {Software}}. 2015.
+Dispon{\'\i}vel em:
+  \url{http://canaltech.com.br/o-que-e/software/o-que-e-api/}.}
+
+\bibitem[Carvalho e Freitas 2014]{carvalho_sistema_2014}
+\abntrefinfo{Carvalho e Freitas}{CARVALHO; FREITAS}{2014}
+{CARVALHO, P. H.~P.; FREITAS, S. A. A.~d. \emph{Sistema de {Buscas} em
+  {Ambiente} {Virtual} de {Aprendizagem} baseada em {Perfis}}. Brasília,
+  Brasil: [s.n.], 2014.}
+
 \bibitem[Dai et al. 2015]{dai_bridging_2015}
 \abntrefinfo{Dai et al.}{DAI et al.}{2015}
 {DAI, W. et al. Bridging {Service}-{Oriented} {Architecture} and {IEC} 61499
@@ -60,6 +78,13 @@ Dispon{\'\i}vel em:
   Pearson Prentice Hall, 2009. p.~306.
 ISBN 978-85-7605-189-3.}
 
+\bibitem[Galen 2013]{galen_technical_2013}
+\abntrefinfo{Galen}{GALEN}{2013}
+{GALEN, R. \emph{Technical {User} {Stories} – {What}, {When}, and {How}?}
+  2013.
+Dispon{\'\i}vel em:
+  \url{http://rgalen.com/agile-training-news/2013/11/10/technical-user-stories-what-when-and-how}.}
+
 \bibitem[Haas e Brown 2004]{haas_web_2004}
 \abntrefinfo{Haas e Brown}{HAAS; BROWN}{2004}
 {HAAS, H.; BROWN, A. \emph{Web {Services} {Architecture}}. 2004.
@@ -71,6 +96,12 @@ Dispon{\'\i}vel em: \url{https://www.w3.org/TR/ws-arch/\#whatis}.}
   2015.
 Dispon{\'\i}vel em:
   \url{https://egovernament.wordpress.com/2015/11/02/rup-rational-unified-process/}.}
+
+\bibitem[Jesus e Freitas 2014]{jesus_algoritmo_2014}
+\abntrefinfo{Jesus e Freitas}{JESUS; FREITAS}{2014}
+{JESUS, D. A.~d.; FREITAS, S. A. A.~d. \emph{Algoritmo para análise de
+  aderência de perfis na comunidade acadêmica da {Universidade} de
+  {Brasília}}. Brasília, Brasil: [s.n.], 2014.}
 
 \bibitem[Josuttis 2007]{josuttis_soa_2007}
 \abntrefinfo{Josuttis}{JOSUTTIS}{2007}
@@ -154,6 +185,12 @@ Dispon{\'\i}vel em:
 {ROZLOG, M. \emph{{REST} e {SOAP}: {Usar} um dos dois ou ambos?} 2013.
 Dispon{\'\i}vel em:
   \url{http://www.infoq.com/br/articles/rest-soap-when-to-use-each}.}
+
+\bibitem[Schwaber e Sutherland 2013]{schwaber_guia_2013}
+\abntrefinfo{Schwaber e Sutherland}{SCHWABER; SUTHERLAND}{2013}
+{SCHWABER, K.; SUTHERLAND, J. \emph{Guia do {Scrum} {Um} guia definitivo para o
+  {Scrum}: {As} regras do jogo}. [s.n.], 2013. Dispon{\'\i}vel em:
+  \url{http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-Portuguese-BR.pdf}.}
 
 \bibitem[Silva 2008]{silva_jbossesb_2008}
 \abntrefinfo{Silva}{SILVA}{2008}
