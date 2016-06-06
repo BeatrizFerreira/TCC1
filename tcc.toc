@@ -6,70 +6,70 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {INTRODU\IeC {\c C}\IeC {\~A}O}}{23}{chapter.1}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{23}{chapter.1}
 \contentsline {section}{\numberline {1.1}Objetivos}{23}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Objetivos Geral}{23}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Objetivos espec\IeC {\'\i }ficos}{23}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Quest\IeC {\~a}o de pesquisa}{23}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{23}{section.1.2}
-\contentsline {section}{\numberline {1.3}Metodologia}{23}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Classifica\IeC {\c c}\IeC {\~a}o da pesquisa}{23}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Referencial te\IeC {\'o}rico}{24}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Proposta}{24}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}Engenharia de software}{24}{subsection.1.3.4}
-\contentsline {section}{\numberline {1.4}Estrutura da Monografia}{24}{section.1.4}
+\contentsline {subsection}{\numberline {1.1.3}Quest\IeC {\~a}o de pesquisa}{24}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{24}{section.1.2}
+\contentsline {section}{\numberline {1.3}Metodologia}{24}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Classifica\IeC {\c c}\IeC {\~a}o da pesquisa}{24}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Referencial te\IeC {\'o}rico}{25}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Proposta}{25}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Engenharia de software}{25}{subsection.1.3.4}
+\contentsline {section}{\numberline {1.4}Estrutura da Monografia}{25}{section.1.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{25}{chapter.2}
-\contentsline {section}{\numberline {2.1}Arquitetura de Software}{25}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Estilos Arquiteturais}{26}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Arquitetura Baseada em Camadas}{26}{subsubsection.2.1.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.2}Arquitetura Orientada a Servi\IeC {\c c}os}{26}{subsubsection.2.1.1.2}
-\contentsline {subsubsection}{\numberline {2.1.1.3}Arquitetura Cliente-Servidor}{27}{subsubsection.2.1.1.3}
-\contentsline {subsubsection}{\numberline {2.1.1.4}Arquitetura Baseada em Eventos}{27}{subsubsection.2.1.1.4}
-\contentsline {section}{\numberline {2.2}SOA - Arquitetura Orientada a Servi\IeC {\c c}os}{27}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Conceitos Principais}{28}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Servi\IeC {\c c}os}{28}{subsubsection.2.2.1.1}
-\contentsline {subsubsection}{\numberline {2.2.1.2}Baixo Acoplamento}{30}{subsubsection.2.2.1.2}
-\contentsline {subsubsection}{\numberline {2.2.1.3}Interoperabilidade}{30}{subsubsection.2.2.1.3}
-\contentsline {subsection}{\numberline {2.2.2}Modelos de integra\IeC {\c c}\IeC {\~a}o}{31}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}ESB - \textit {Enterprise Service Bus}}{32}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}WSO2 ESB}{33}{subsubsection.2.2.3.1}
-\contentsline {subsubsection}{\numberline {2.2.3.2}JBoss ESB}{34}{subsubsection.2.2.3.2}
-\contentsline {subsubsection}{\numberline {2.2.3.3}ErlangMS}{34}{subsubsection.2.2.3.3}
-\contentsline {section}{\numberline {2.3}Protocolos de Comunica\IeC {\c c}\IeC {\~a}o}{34}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}SOAP}{35}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}REST}{36}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Implementa\IeC {\c c}\IeC {\~o}es do modelo SOA existentes}{37}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}PSOA - Um \textit {framework} de pr\IeC {\'a}ticas e padr\IeC {\~o}es SOA para projetos DDS}{37}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Conectando Arquitetura orientada a servi\IeC {\c c}os e IEC 61499 para Flexibilidade e Interoperabilidade}{37}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Modelo integrado de Arquitetura Orientada a Servi\IeC {\c c}os e Arquitetura Orientada a Web para Software Financeiro}{38}{subsection.2.4.3}
-\contentsline {section}{\numberline {2.5}Engenharia de Software}{39}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}RUP - Rational Unified Process}{39}{subsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.1.1}Fases do RUP}{40}{subsubsection.2.5.1.1}
-\contentsline {subsection}{\numberline {2.5.2}Scrum}{41}{subsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.2.1}O Time Scrum}{42}{subsubsection.2.5.2.1}
-\contentsline {subsubsection}{\numberline {2.5.2.2}Eventos Scrum}{42}{subsubsection.2.5.2.2}
-\contentsline {subsubsection}{\numberline {2.5.2.3}Artefatos do Scrum}{43}{subsubsection.2.5.2.3}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{27}{chapter.2}
+\contentsline {section}{\numberline {2.1}Arquitetura de Software}{27}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Estilos Arquiteturais}{28}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Arquitetura Baseada em Camadas}{28}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}Arquitetura Orientada a Servi\IeC {\c c}os}{29}{subsubsection.2.1.1.2}
+\contentsline {subsubsection}{\numberline {2.1.1.3}Arquitetura Cliente-Servidor}{29}{subsubsection.2.1.1.3}
+\contentsline {subsubsection}{\numberline {2.1.1.4}Arquitetura Baseada em Eventos}{29}{subsubsection.2.1.1.4}
+\contentsline {section}{\numberline {2.2}SOA - Arquitetura Orientada a Servi\IeC {\c c}os}{29}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Conceitos Principais}{31}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Servi\IeC {\c c}os}{31}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Baixo Acoplamento}{32}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}Interoperabilidade}{32}{subsubsection.2.2.1.3}
+\contentsline {subsection}{\numberline {2.2.2}Modelos de integra\IeC {\c c}\IeC {\~a}o}{33}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}ESB - \textit {Enterprise Service Bus}}{34}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}WSO2 ESB}{36}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}JBoss ESB}{36}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}ErlangMS}{36}{subsubsection.2.2.3.3}
+\contentsline {section}{\numberline {2.3}Protocolos de Comunica\IeC {\c c}\IeC {\~a}o}{36}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}SOAP}{38}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}REST}{38}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Implementa\IeC {\c c}\IeC {\~o}es do modelo SOA existentes}{39}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}PSOA - Um \textit {framework} de pr\IeC {\'a}ticas e padr\IeC {\~o}es SOA para projetos DDS}{39}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Conectando Arquitetura orientada a servi\IeC {\c c}os e IEC 61499 para Flexibilidade e Interoperabilidade}{40}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Modelo integrado de Arquitetura Orientada a Servi\IeC {\c c}os e Arquitetura Orientada a Web para Software Financeiro}{40}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Engenharia de Software}{41}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}RUP - Rational Unified Process}{41}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Fases do RUP}{42}{subsubsection.2.5.1.1}
+\contentsline {subsection}{\numberline {2.5.2}Scrum}{44}{subsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2.1}O Time Scrum}{44}{subsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Eventos Scrum}{45}{subsubsection.2.5.2.2}
+\contentsline {subsubsection}{\numberline {2.5.2.3}Artefatos do Scrum}{45}{subsubsection.2.5.2.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {A PROPOSTA}}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{45}{section.3.1}
-\contentsline {section}{\numberline {3.2}O Ambiente Virtual}{46}{section.3.2}
-\contentsline {section}{\numberline {3.3}A Proposta de arquitetura}{47}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Requisitos}{47}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}A arquitetura}{48}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Ferramentas ESB}{50}{subsubsection.3.3.2.1}
-\contentsline {subsection}{\numberline {3.3.3}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{51}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Formato das Mensagens}{52}{subsubsection.3.3.3.1}
-\contentsline {section}{\numberline {3.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{54}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {A Proposta}}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{47}{section.3.1}
+\contentsline {section}{\numberline {3.2}O Ambiente Virtual}{48}{section.3.2}
+\contentsline {section}{\numberline {3.3}A Proposta de arquitetura}{49}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Requisitos}{49}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}A arquitetura}{50}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Ferramentas ESB}{52}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.3}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{53}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Formato das Mensagens}{54}{subsubsection.3.3.3.1}
+\contentsline {section}{\numberline {3.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{56}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{55}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{55}{section.4.1}
-\contentsline {section}{\numberline {4.2}Metodologia de Execu\IeC {\c c}\IeC {\~a}o da Proposta}{55}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Planejamento da Implementa\IeC {\c c}\IeC {\~a}o}{57}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Fase de Constru\IeC {\c c}\IeC {\~a}o}{58}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{59}{section.4.3}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{57}{section.4.1}
+\contentsline {section}{\numberline {4.2}Metodologia de Execu\IeC {\c c}\IeC {\~a}o da Proposta}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Planejamento da Implementa\IeC {\c c}\IeC {\~a}o}{59}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fase de Constru\IeC {\c c}\IeC {\~a}o}{60}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{61}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{61}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{65}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{63}{section*.13}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{67}{section*.13}

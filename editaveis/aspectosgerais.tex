@@ -1,41 +1,55 @@
-\chapter[INTRODUÇÃO]{INTRODUÇÃO}
+\chapter[Introdução]{Introdução}
+Arquitetura de software é, segundo Bass, Clements e Kasman\cite{bass_software_archi_practice_2003}, um conjunto de estruturas que representam os componentes de um software e a maneira como tais componentes se relacionam. Todo sistema de software possui uma arquitetura, mesmo que não definida inicialmente ou documentada \cite{bass_software_archi_practice_2003}.
 
-ESCREVER O INICIO AQUI. INTRODUÇÃO DEVE SER ABRANGENTE.
+A maneira como os componentes de um \textit{software} são dispostos e combinados para que a melhor solução seja construída dão origem a estilos arquiteturais \cite{pressman2006engenharia}. Entre os existentes, pode-se citar estilo baseado em serviços, mais conhecido como SOA. Este estilo é amplamente utilizado quando o sistema de software a ser construído é composto de outros sistemas que oferecem suas funcionalidades como um serviço. O estilo arquitetural SOA facilita a implementação da interoperabilidade em um sistema, permitindo a troca de dados e interação entre aplicações que utilizam tecnologias distintas \cite{oqueesoa_2010}.
+
+Por ser um estilo arquitetural indicado para a construção de sistemas heterogêneos e distribuídos \cite{josuttis_soa_2007}, a implementação de um sistema baseado em serviços deve incorporar diferentes tecnologias, APIs e composições de infra-estrutura, resultando sempre em um produto de arquitetura única \cite{erl_orientacaoaservico_2009}.
 
 \section{Objetivos}
 
-São apresentados nessa seção os objetivos gerais, objetivos específicos e a questão de pesquisa.
+Nesta seção os objetivos geral e os específicos deste projeto são apresentados, bem como a questão de pesquisa que guia este TCC.
 
 \subsection{Objetivos Geral}
-DESCREVER AQUI O OBJETIVO GERAL.
-\subsection{Objetivos específicos}
-Os objetivos deste trabalho são:
-\begin{itemize}
-\item DESCREVER OS OBJETIVOS ESPECÍFICOS.
-\end{itemize}
-\subsection{Questão de pesquisa}
-EXPOR QUESTÃO DE PESQUISA.
-\section{Motivação}
+O objetivo geral é desenvolver uma arquitetura de software que permita a integração entre diversas aplicações de \textit{software}, facilitando a troca de dados entre estes. Estas aplicações fazem parte dos resultados de orientações de TCC do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de \textit{Software} da Universidade de Brasília.
 
-EXPOR MOTIVAÇÃO PARA A REALIZAÇÃO DO TRABALHO.
+\subsection{Objetivos específicos}
+Os objetivos específicos deste trabalho são:
+\begin{itemize}
+\item Disponibilizar à sociedade um ambiente virtual composto por aplicações desenvolvidas em projetos de TCC e no Laboratório Fábrica de \textit{Software}.
+\item Integrar sistemas heterogêneos em uma plataforma web.
+\item Propor e desenvolver uma arquitetura baseada no modelo SOA para um ambiente virtual.
+\item Definir um protocolo de comunicação para troca de dados entre as aplicações que compõem do ambiente virtual.
+\end{itemize}
+
+\subsection{Questão de pesquisa}
+A questão de pesquisa que move este trabalho é: "Como é possível construir um sistema de \textit{software} composto a partir da integração de diversas aplicações, sendo estas aplicações desenvolvidas com base em tecnologias, técnicas e métodos distintos?"
+
+A questão secundária é: "As aplicações que compõem este sistema podem ser executadas de modo \textit{standalone} ou apenas em conjunto ao sistema?"
+
+\section{Motivação}
+Diversos trabalhos oriundos de projetos de TCC são realizados e têm como software como produto. Geralmente estes sistemas de \textit{software} são construídos visando solucionar um problema ou uma necessidade que foi identificada. Contudo, estas ideias acabam sendo esquecidas ou desenvolvidas de modo incompleto por diversos motivos.
+
+Diante deste cenário, a principal motivação para este projeto de TCC é fazer com que estas aplicações sejam construídas, mantidas e evoluídas por quem as desenvolveu ou por aqueles que tenham interesse em dar continuidade à uma ideia existente.
 
 \section{Metodologia}
-
-Esss seção apresenta a metodologia que será usada no desenvolvimento desse trabalho: 
+A metodologia usada para o desenvolvimento deste trabalho está descrita nesta seção. 
 
 \subsection{Classificação da pesquisa}
-CLASSIFICAR A PESQUISA.
+De acordo com Gil \cite{gil_como_2008}, as pesquisas podem ser classificadas de acordo com os objetivos e procedimentos técnicos para sua realização. Quanto aos objetivos, podem ser classificadas em: exploratória, descritiva e explicativa. 
+
+O presente projeto de TCC classifica-se como uma pesquisa exploratória. Este tipo de pesquisa visa maior conhecimento e domínio sobre o problema ou a necessidade a ser investigada durante sua execução. Como procedimento técnico, pode adotar métodos que a classificam como uma pesquisa bibliográfica ou um estudo de caso na maioria das vezes \cite{gil_como_2008}.
 
 \subsection{Referencial teórico}
-DESCREVER COMO A PESQUISA FOI REALIZADA E ONDE O REFERENCIAL TEÓRICO ESTA CONTIDO NO DOCUMENTO.
+Para a proposição de uma arquitetura necessária para atingir os objetivos deste projeto de TCC, a pesquisa acerca do referencial teórico foi realizada por meio da busca de livros-textos sobre o assunto e artigos publicados sobre implementações já realizadas. Estes livros-textos foram encontrados em meios físico e digital. A compilação desta pesquisa encontra-se no capítulo 2 (Referencial Teórico).
 
 \subsection{Proposta}
-DESCREVER A PROPOSTA.
+A proposta deste projeto de TCC é desenvolver uma arquitetura baseada no modelo arquitetural SOA a fim de obter um sistema heterogêneo com características de uma plataforma web. Este sistema heterogêneo, aqui denominado de ambiente virtual, irá prover a integração de aplicações que se encontram armazenadas em repositórios que não são acessados ou mantidos. A ideia é construir uma plataforma composta de funcionalidades resultantes de trabalhos realizados no âmbito das orientações do Professor Doutor Sérgio Antônio Andrade de Freitas e atividades executadas no Laboratório Fábrica de Software da Universidade de Brasília.
+
+Uma vez que as aplicações que irão compor o ambiente virtual podem ser desenvolvidas em diferentes plataformas e a partir de tecnologias diferentes, faz parte da proposta a definição de um protocolo de comunicação a ser utilizado para que a troca de dados entre estas aplicações seja possível.
 
 \subsection{Engenharia de software}
-DESCREVER AS PRÁTICAS DE ENGENHARIA DE SOFTWARE ADOTADAS PARA O DESENVOLVIMENTO DO TRABALHO.
+
+Para a execução deste projeto de TCC foi proposto um processo de desenvolvimento de \textit{software} híbrido. Este processo agrega alguns conceitos relacionados à metodologias tradicionais e outros à metodologia ágil de desenvolvimento. O processo consiste de fases definidas de desenvolvimento de \textit{software} e irá ocorrer de modo iterativo e incremental.
 
 \section{Estrutura da Monografia}
-DESCREVER COMO O DOCUMENTO ESTA ESTRUTURADO.
-
-
+O presente documento está dividido em cinco partes: Introdução, Referencial Teórico, Proposta, Desenvolvimento da Proposta e Considerações Finais. O primeiro capítulo, Introdução, oferece uma visão geral da pesquisa realizada e da proposta realizada. O capítulo de referencial teórico tem como finalidade expor os estudos realizados e os conceitos relacionados à proposta. O terceiro capítulo, Proposta, contém detalhes sobre a proposta em execução neste projeto de TCC. A metodologia relacionada à execução da proposta é detalhada no capítulo quatro (Desenvolvimento da Proposta). No quinto e último capítulo, nomeado Considerações Finais, são expostas as conclusões possíveis até o presente momento.
