@@ -1,8 +1,8 @@
 \chapter[A Proposta]{A Proposta}
 
-Este capítulo apresenta a proposta do trabalho de conclusão de curso, exibindo detalhes da implementação a ser realizada acerca da arquitetura bem como o protocolo de comunicação dentro desta.
+Este capítulo apresenta a proposta do trabalho de conclusão de curso, detalhes da implementação a ser realizada acerca da arquitetura bem como o protocolo de comunicação dentro desta.
 
-A proposta detalhada neste capítulo consiste de uma arquitetura de software baseada no modelo arquitetural SOA (orientado a serviços) responsável por promover a interação entre aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. A comunicação entre as aplicações seguirá um protocolo estabelecido e faz parte desta proposta.
+A proposta consiste de uma arquitetura de software baseada no modelo arquitetural SOA (orientado a serviços) responsável por promover a interação entre aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. A comunicação entre as aplicações seguirá um protocolo estabelecido e faz parte desta proposta.
 
 Este capítulo está organizado em quatro seções principais. A seção 3.1 apresenta uma introdução, expondo fatos e necessidades identificação que dão suporte à solução arquitetural proposta. A seção 3.2 trata do ambiente virtual a ser criado com base na solução. A proposta arquitetural é detalhada na seção 3.3. Nesta seção, também está descrito o a ser utilizado, estabelecendo o formato de mensagem padronizado na arquitetura.
 
@@ -15,7 +15,7 @@ Para este trabalho de conclusão de curso, a proposta é desenvolver uma arquite
 
 Também faz parte da proposta, o estabelecimento de um protocolo de comunicação entre as aplicações, bem como o padrão de comunicação a ser utilizado, uma vez que as aplicações produzidas por terceiros podem se comunicar de modo a se tornarem mais robustas e completas enquanto ferramentas.
 
-Desta forma, será viável a disponibilização à sociedade, interna e externa à Universidade, de uma plataforma virtual que conterá os trabalhos realizados no âmbito do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília.
+Desta forma, será viável a disponibilização à sociedade, interna e externa à Universidade, de uma plataforma virtual que conterá resultados de trabalhos realizados por um grupo de orientandos de TCC e atividades do Laboratório Fábrica de Software da Universidade de Brasília.
 
 \section{O Ambiente Virtual}
 
@@ -51,9 +51,9 @@ A partir da necessidade identificada de disponibilizar aplicações que foram de
 \item Flexibilidade,  possibilitando a extensão da plataform sem que a arquitetura original seja modificada drasticamente.
 \end{itemize}
 
-A partir destas características, foi proposto o uso do modelo arquitetural SOA - \textit{Service-Oriented Architecture} -, pois desta forma a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações neste contexto também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
+A partir destas características, foi proposto o uso do modelo arquitetural SOA. Desta forma a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações neste contexto também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
 
-\subsection{A arquitetura}
+\subsection{A arquitetura escolhida}
 
 A proposta de arquitetura a ser implementada faz uso da abordagem de implementação de SOA chamada "\textit{Hub-and-spoke}", onde a interface de comunicação entre os serviços é única e pode ser realizada com o uso de um barrameneto de serviços ou um Enterprise Service Bus (ESB) \cite{Bianco2007}.
 
@@ -86,7 +86,7 @@ Com base nos requisitos essenciais levantados e no estudo realizado sobre o mode
 A comunicação entre aplicações e serviços deverão seguir o padrão de protocolo também definido durante o desenvolvimento deste trabalho de conclusão de curso, para que seja mantida uma regra de execução na troca de informações. O protocolo também facilitará a adição de um novo serviço à arquitetura no que diz respeito aos procedimentos de transformação dos dados e adaptação entre tecnologias e protocolos de transporte e comunicação adotados.
 
 \subsubsection{Ferramentas ESB}
-Existem algumas ferramentas tipo ESB disponíveis e em uso por grandes organizações, tais como JBoss ESB\footnote{Para acesso a mais informações: http://jbossesb.jboss.org/}, Mule ESB\footnote{Mais informações em: https://www.mulesoft.com/platform/soa/mule-esb-open-source-esb}, Zato\footnote{\textit{Link} para acesso a mais informações: https://zato.io/docs/index.html}, WSO2 ESB\footnote{Informações podem ser encontraadas em: http://wso2.com/products/enterprise-service-bus/} e ErlangMS\footnote{\textit{Link} para repositório com mais informações: https://github.com/erlangMS/msbus}. Para o conhecimento sobre a viabilidade de execução do trabalho aqui proposto, algumas destas ferramentas já foram levantadas, e, sendo o ESB um elemento importante para a implementação deste TCC, uma análise prévia destas ferramentas foi realizada. Os critérios utilizados para a seleção foram:
+Existem algumas ferramentas tipo ESB disponíveis e em uso por grandes organizações, tais como JBoss ESB\footnote{Para acesso a mais informações: http://jbossesb.jboss.org/}, Mule ESB\footnote{Mais informações em: https://www.mulesoft.com/platform/soa/mule-esb-open-source-esb}, Zato\footnote{\textit{Link} para acesso a mais informações: https://zato.io/docs/index.html}, WSO2 ESB\footnote{Informações podem ser encontradas em: http://wso2.com/products/enterprise-service-bus/} e ErlangMS\footnote{\textit{Link} para repositório com mais informações: https://github.com/erlangMS/msbus}. Para o conhecimento sobre a viabilidade de execução do trabalho aqui proposto, algumas destas ferramentas já foram levantadas, e, sendo o ESB um elemento importante para a implementação deste TCC, uma análise prévia destas ferramentas foi realizada. Os critérios utilizados para a seleção foram:
 
 \begin{itemize}
 \item Ser uma ferramenta de código aberto e/ou \textit{free};
@@ -121,7 +121,7 @@ O fluxo básico do protocolo de comunicação entre os provedores e usuários do
 \label{fluxo_basico_protocolo}
 \end{figure}
 
-O fluxo geral do protocolo de comunicação estabelecido entre o usuário e o provedor de serviços, sendo esta comunicação intermediada pelo ESB é exibida na figura \ref{fluxo_basico_protocolo}. Ao realizar a requisição à uma operação disponibilizada pelo serviço, a ferramenta ESB trata tal requisição e redireciona à aplicação provedora do serviço. A resposta correspondente também será intermediada pelo ESB e enviada para a aplicação usuária de serviços.
+Ao realizar a requisição à uma operação disponibilizada pelo serviço, a ferramenta ESB trata tal requisição e redireciona à aplicação provedora do serviço. A resposta correspondente também será intermediada pelo ESB e enviada para a aplicação usuária de serviços.
 
 O ESB é o elemento que detêm o conhecimento sobre os serviços providos na plataforma. É o ator responsável por realizar a entrega das mensagens de requisição e de resposta dos serviços. Caso necessário, também tem a  responsabilidade de realizar a transformação/adaptação dos formatos das mensagens e dos protocolos usados.
 
@@ -176,7 +176,7 @@ O código exibe os valores necessários para realizar uma requisição ao servi�
 A parte de código descrito mostra apenas exemplos do uso do formato de mensagem JSON para realizar uma requisição e de mensagem obtida como resposta advinda do serviço. Pode-se ver que os valores são correspondentes à uma chave conhecida por ambas as aplicações, permitindo que as aplicações (provedora e usuária de serviços) possam comunicar-se entre si de forma padronizada e conhecida por ambas as partes.
 
 \section{Considerações Finais}
-Neste capítulo foi apresenta a proposta do projeto em desenvolvimento para o TCC. A proposta é a elaboração de uma arquitetura baseada no modelo SOA para a integração de aplicações resultantes de orientações realizadas pelo Professor Doutor Sérgio Antônio Andrade de Freitas e de trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. Para tanto, aqui foram detalhadas as características que farão parte da solução proposta, com o uso de uma ferramenta do tipo ESB e um protocolo de comunicação padronizado baseado no modelo REST.
+Neste capítulo foi apresenta a proposta do projeto em desenvolvimento para o TCC. A proposta é a elaboração de uma arquitetura baseada no modelo SOA para a integração de aplicações resultantes de orientações de TCC e de atividades  desenvolvidas no Laboratório Fábrica de Software da Universidade de Brasília. Para tanto, aqui foram detalhadas as características que farão parte da solução proposta, com o uso de uma ferramenta do tipo ESB e um protocolo de comunicação padronizado baseado no modelo REST.
 
 A utilização de uma ferramenta que contenha as funcionalidades de um ESB (roteamento, transformação e formatação de dados) permite que a complexidade de implementação da arquitetura seja reduzida, uma vez que não há a necessidade de um serviço fornecer múltiplas interfaces. Isto colabora para que a interoperabilidade, flexibilidade e extensibilidade almeijada seja mais facilmente realizada.
 

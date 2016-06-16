@@ -1,7 +1,7 @@
 \chapter[Introdução]{Introdução}
 Arquitetura de software é, segundo Bass, Clements e Kasman\cite{bass_software_archi_practice_2003}, um conjunto de estruturas que representam os componentes de um software e a maneira como tais componentes se relacionam. Todo sistema de software possui uma arquitetura, mesmo que não definida inicialmente ou documentada \cite{bass_software_archi_practice_2003}.
 
-A maneira como os componentes de um \textit{software} são dispostos e combinados para que a melhor solução seja construída dão origem a estilos arquiteturais \cite{pressman2006engenharia}. Entre os existentes, pode-se citar estilo baseado em serviços, mais conhecido como SOA. Este estilo é amplamente utilizado quando o sistema de software a ser construído é composto de outros sistemas que oferecem suas funcionalidades como um serviço. O estilo arquitetural SOA facilita a implementação da interoperabilidade em um sistema, permitindo a troca de dados e interação entre aplicações que utilizam tecnologias distintas \cite{oqueesoa_2010}.
+A maneira como os componentes de um \textit{software} são dispostos e combinados para que a melhor solução seja construída dão origem a estilos arquiteturais \cite{pressman2006engenharia}. Entre os existentes, pode-se citar estilo baseado em serviços, mais conhecido como SOA \cite{josuttis_soa_2007}. Este estilo é amplamente utilizado quando o sistema de software a ser construído é composto de outros sistemas que oferecem suas funcionalidades como um serviço. O estilo arquitetural SOA facilita a implementação da interoperabilidade em um sistema, permitindo a troca de dados e interação entre aplicações que utilizam tecnologias distintas \cite{oqueesoa_2010}.
 
 Por ser um estilo arquitetural indicado para a construção de sistemas heterogêneos e distribuídos \cite{josuttis_soa_2007}, a implementação de um sistema baseado em serviços deve incorporar diferentes tecnologias, APIs e composições de infra-estrutura, resultando sempre em um produto de arquitetura única \cite{erl_orientacaoaservico_2009}.
 
@@ -10,13 +10,13 @@ Por ser um estilo arquitetural indicado para a construção de sistemas heterog�
 Nesta seção os objetivos geral e os específicos deste projeto são apresentados, bem como a questão de pesquisa que guia este TCC.
 
 \subsection{Objetivos Geral}
-O objetivo geral é desenvolver uma arquitetura de software que permita a integração entre diversas aplicações de \textit{software}, facilitando a troca de dados entre estes. Estas aplicações fazem parte dos resultados de orientações de TCC do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de \textit{Software} da Universidade de Brasília.
+O objetivo geral é especificar uma arquitetura de \textit{software} que permita a integração entre diversas aplicações de \textit{software}, implementando a troca de dados entre estes. Estas aplicações fazem parte dos resultados de orientações do Professor Sérgio Antônio Andrade de Freitas e dos trabalhos desenvolvidos no Laboratório Fábrica de \textit{Software} da Universidade de Brasília.
 
 \subsection{Objetivos específicos}
 Os objetivos específicos deste trabalho são:
 \begin{itemize}
-\item Disponibilizar à sociedade um ambiente virtual composto por aplicações desenvolvidas em projetos de TCC e no Laboratório Fábrica de \textit{Software}.
-\item Integrar sistemas heterogêneos em uma plataforma web.
+\item Disponibilizar à sociedade um ambiente virtual composto por aplicações desenvolvidas em projetos de TCC.
+\item Integrar sistemas heterogêneos em uma plataforma unificada.
 \item Propor e desenvolver uma arquitetura baseada no modelo SOA para um ambiente virtual.
 \item Definir um protocolo de comunicação para troca de dados entre as aplicações que compõem do ambiente virtual.
 \end{itemize}
@@ -27,9 +27,9 @@ A questão de pesquisa que move este trabalho é: "Como é possível construir u
 A questão secundária é: "As aplicações que compõem este sistema podem ser executadas de modo \textit{standalone} ou apenas em conjunto ao sistema?"
 
 \section{Motivação}
-Diversos trabalhos oriundos de projetos de TCC são realizados e têm como software como produto. Geralmente estes sistemas de \textit{software} são construídos visando solucionar um problema ou uma necessidade que foi identificada. Contudo, estas ideias acabam sendo esquecidas ou desenvolvidas de modo incompleto por diversos motivos.
+Alguns trabalhos oriundos de projetos de TCC na Engenharia de \textit{Software} são realizados e têm uma aplicação de \textit{software} como produto final. Geralmente estes sistemas de \textit{software} são construídos visando solucionar um problema ou uma necessidade que foi identificada. Contudo, estas ideias acabam sendo esquecidas ou desenvolvidas de modo incompleto por diversos motivos, não podendo ser utilizadas.
 
-Diante deste cenário, a principal motivação para este projeto de TCC é fazer com que estas aplicações sejam construídas, mantidas e evoluídas por quem as desenvolveu ou por aqueles que tenham interesse em dar continuidade à uma ideia existente.
+A principal motivação para este projeto de TCC é ter como um produto final algo que possa ser utilizado pela sociedade. Assim, um número maior de aplicações resultantes de trabalhos de TCC na Engenharia de Software serão reconhecidas e evoluídas. 
 
 \section{Metodologia}
 A metodologia usada para o desenvolvimento deste trabalho está descrita nesta seção. 
@@ -43,7 +43,7 @@ O presente projeto de TCC classifica-se como uma pesquisa exploratória. Este ti
 Para a proposição de uma arquitetura necessária para atingir os objetivos deste projeto de TCC, a pesquisa acerca do referencial teórico foi realizada por meio da busca de livros-textos sobre o assunto e artigos publicados sobre implementações já realizadas. Estes livros-textos foram encontrados em meios físico e digital. A compilação desta pesquisa encontra-se no capítulo 2 (Referencial Teórico).
 
 \subsection{Proposta}
-A proposta deste projeto de TCC é desenvolver uma arquitetura baseada no modelo arquitetural SOA a fim de obter um sistema heterogêneo com características de uma plataforma web. Este sistema heterogêneo, aqui denominado de ambiente virtual, irá prover a integração de aplicações que se encontram armazenadas em repositórios que não são acessados ou mantidos. A ideia é construir uma plataforma composta de funcionalidades resultantes de trabalhos realizados no âmbito das orientações do Professor Doutor Sérgio Antônio Andrade de Freitas e atividades executadas no Laboratório Fábrica de Software da Universidade de Brasília.
+A proposta deste projeto de TCC é projetar e implementar uma arquitetura baseada no modelo arquitetural SOA a fim de obter um sistema heterogêneo com características de uma plataforma web. Este sistema heterogêneo, aqui denominado de ambiente virtual, irá prover a integração de aplicações que se encontram armazenadas em repositórios que não são acessados ou mantidos. A ideia é construir uma plataforma composta de funcionalidades resultantes de trabalhos realizados no âmbito das orientações do Professor Sérgio Antônio Andrade de Freitas e atividades executadas no Laboratório Fábrica de Software da Universidade de Brasília.
 
 Uma vez que as aplicações que irão compor o ambiente virtual podem ser desenvolvidas em diferentes plataformas e a partir de tecnologias diferentes, faz parte da proposta a definição de um protocolo de comunicação a ser utilizado para que a troca de dados entre estas aplicações seja possível.
 

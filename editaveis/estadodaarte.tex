@@ -5,11 +5,11 @@ Este capítulo tem como objetivo apresentar o referencial teórico deste projeto
 Este capítulo está subdividido em cinco seções. A seção 2.1, entitulada Arquitetura de Software, aborda conceitos de arquitetura de software de um modo geral e exibe alguns estilos arquiteturais conhecidos. A seção 2.2, SOA - Arquitetura Orientada a Serviços, detalha a abordagem deste estilo arquitetural. A seção 2.3, nomeada Protocolos de Comunicação, fornece uma explicação sobre o tema e uma abordagem sobre dois principais protocolos, SOAP e REST. Na seção 2.4 estão resumidos algumas implementações existentes do modelo SOA. Os conceitos de Engenharia de Software utilizados para a execução deste TCC encontram-se descritos na seção 2.5.
 
 \section{Arquitetura de Software}
-Existe na literatura a assertiva de que o produto de software é construído com base em uma oportunidade de negócio ou uma necessidade de usuário(s) identificada. Estes produtos de software possuem uma arquitetura associada à sua construção, que é uma composição de estruturas de um ou mais sistemas que exibem não apenas as características visíveis de elementos que o compõem, mas também o relacionamento entre estes elementos \cite{bass_software_archi_practice_2003}.
+Existe na literatura a assertiva de que o produto de software é construído com base em uma oportunidade de negócio ou uma necessidade de usuário(s) identificada. Estes produtos de software possuem uma arquitetura associada à sua construção. Esta arquitetura é uma composição de estruturas de um ou mais sistemas exibem as características visíveis de elementos que o compõem e o relacionamento entre estes elementos \cite{bass_software_archi_practice_2003}.
 
-A arquitetura de software pode ser vista como uma ponte que conecta as necessidades de usuário ou as oportunidades de negócio identificadas a um produto de software construído. Tal arquitetura representa uma abstração do sistema de software a ser desenvolvido e exibe os detalhes que o arquiteto de software julga como necessários. Desta forma, quaisquer produtos de software possuem uma arquitetura definida, independentemente de terem passado pelos processos de desenho, documentação e análise \cite{bass_software_archi_practice_2003}.
+A arquitetura de software pode ser vista como uma ponte, conectando as necessidades do usuário ou as oportunidades identificadas do negócio a um produto de software construído. Tal arquitetura representa uma abstração do sistema de software a ser desenvolvido e exibe os detalhes que o arquiteto de software julga como necessários. Desta forma, quaisquer produtos de software possuem uma arquitetura definida, independentemente de terem passado pelos processos de desenho, documentação e análise \cite{bass_software_archi_practice_2003}.
 
-Bass, Clements e Kasman \cite{bass_software_archi_practice_2003} definem arquitetura de software como "a estrutura ou conjunto de estruturas de um sistema que comprime os elementos de um software, as propriedades externamente visíveis de tais elementos e os relacionamentos entre eles". Desta definição é possível inferir que:
+Bass, Clements e Kasman \cite{bass_software_archi_practice_2003} definem arquitetura de software como "a estrutura ou conjunto de estruturas de um sistema que comprime os elementos de um software, as propriedades externamente visíveis de tais elementos e os relacionamentos entre eles". Desta definição é possível concluir que:
 \begin{itemize}
 \item sistemas podem ser construídos utilizando-se mais de uma estrutura;
 \item os elementos que compõem o sistema, mas que não interagem diretamente, são omitidos na arquitetura;
@@ -32,7 +32,7 @@ A arquitetura baseada em camadas é caracterizada pela divisão de elementos em 
 \label{modelo_mvc}
 \end{figure}
 
-A figura \ref{modelo_mvc} é uma representação do padrão arquitetural MVC - \textit{Model View Controller} -, que é uma implementação do estilo arquitetural baseado em camadas. No MVC, a camada de modelo (\textit{Model}) interage apenas com a camada de controle (\textit{Controller}). Esta, por sua vez, é responsável por promover a interação entre as camadas \textit{View} e \textit{Model} e contém todas as regras de negócio estabelecidas para o produto.
+A figura \ref{modelo_mvc} é uma representação do padrão arquitetural MVC - \textit{Model View Controller}, que é uma implementação do estilo arquitetural baseado em camadas. No MVC, a camada de modelo (\textit{Model}) interage apenas com a camada de controle (\textit{Controller}). Esta, por sua vez, é responsável por promover a interação entre as camadas \textit{View} e \textit{Model} e contém todas as regras de negócio estabelecidas para o produto.
 
 \subsubsection{Arquitetura Orientada a Serviços}
 
@@ -44,12 +44,12 @@ Na arquitetura orientada a serviços, as funcionalidades ou módulos de um siste
 O estilo arquitetural cliente-servidor é utilizado como um modelo para a implementação de sistemas distribuídos. Neste estilo, os clientes são responsáveis por realizar requisições a um conjunto de servidores que disponibilizam serviços. Geralmente, os clientes se comunicam de maneira direta com os servidores e possuem conhecimento apenas dos servidores disponíveis, desconhecendo os outros clientes existentes. Um exemplo de implementação deste estilo é a rede de uma organização onde os usuários (clientes) têm conhecimento acerca de impressoras (servidores) disponíveis. Ao acionar o serviço de impressão, o cliente estebelece uma comunicação direta com a impressora \cite{sommerville2008engenharia}.
 
 \subsubsection{Arquitetura Baseada em Eventos}
-A arquitetura baseada em eventos é um estilo arquitetural onde ocorrências importantes no sistema são identificados pelo \textit{software} ou \textit{hardware} que o compõe. É composta por elementos que criam um evento, que apenas sabem que um evento ocorreu e o anuncia aos demais elementos do sistema, e por aqueles que consomem os eventos anunciados. Os elementos consumidores necessitam dos eventos para realizar o processamento de uma determinada operação ou mudança de estado \cite{rouse}.
+A arquitetura baseada em eventos é um estilo arquitetural onde ocorrências importantes no sistema são identificados pelo \textit{software} ou \textit{hardware} que o compõe. É composta por dois elementos principais. O primeiro cria um evento e é capaz apenas de identificar e anunciar a ocorrência do mesmo. O segundo elemento consome os eventos anunciados. Os elementos consumidores necessitam dos eventos para realizar o processamento de uma determinada operação ou mudança de estado \cite{rouse}.
 
 \section{SOA - Arquitetura Orientada a Serviços}
-Sendo tratado como um conceito evolucionário, a orientação a serviços é uma abordagem que foi criada para a construção de sistemas de \textit{software} distribuídos, a fim de promover a integração com baixo acoplamento entre aplicações e facilitar a manutenção corretiva, adaptativa ou evolutiva das mesmas \cite{linthicum_soainrealworld_2007}. Em outras palavras, a arquitetura orientada a serviços, também conhecida como SOA - do acrônimo em inglês \textit{Service-Oriented Architecture} - é "um paradigma para a construção e manutenção de processos de negócio que conecta sistemas distribuídos" \cite{josuttis_soa_2007}.
+A orientação a serviços é uma abordagem que foi criada para a construção de sistemas de \textit{software} distribuídos, a fim de promover a integração com baixo acoplamento entre aplicações e facilitar a manutenção corretiva, adaptativa ou evolutiva das mesmas \cite{linthicum_soainrealworld_2007}. Em outras palavras, a arquitetura orientada a serviços é "um paradigma para a construção e manutenção de processos de negócio que conecta sistemas distribuídos" \cite{josuttis_soa_2007}.
 
-Este modelo arquitetural é utilizado para o desenho, construção, implantação e gerenciamento de sistemas de \textit{software}, onde as funcionalidades deste sistema são providos por serviços que possuem interfaces de acesso bem definidas \cite{lewis_getting_2010}. Desta forma, podemos afirmar que SOA não é um tipo de tecnologia, ferramenta ou processo a serem utilizados para a construção de \textit{software}, mas uma abordagem utilizada para a definição e construção da arquitetura de determinadas aplicações \cite{oliveira_interoperabilidade}.
+Este modelo arquitetural é utilizado para o desenho, construção, implantação e gerenciamento de sistemas de \textit{software}, onde as funcionalidades são providas por serviços que possuem interfaces de acesso bem definidas \cite{lewis_getting_2010}. Desta forma, é possível afirmar que SOA não é um tipo de tecnologia, ferramenta ou processo a serem utilizados para a construção de \textit{software}. SOA é uma abordagem utilizada para a definição e construção da arquitetura de determinadas aplicações \cite{oliveira_interoperabilidade}.
 
 De acordo com Josuttis \cite{josuttis_soa_2007}, SOA é um recurso a ser utilizado para construir uma arquitetura de \textit{software} concreta e tem como objetivo melhorar a flexibilidade de um sistema, baseando-se em três conceitos técnicos principais: serviços, interoperabilidade promovida por um barramento de serviços e baixo acoplamento. SOA é uma abordagem adequada para a implementação de sistemas distribuídos em que sistemas heterogêneos são aceitos, ou seja, aplicações desenvolvidas em plataformas diferentes e em linguagens de programação distintas são capazes de interagirem formando um sistema único \cite{josuttis_soa_2007}.
 
@@ -60,9 +60,9 @@ Como qualquer modelo, SOA apresenta benefícios para a construção de \textit{s
 \subsection{Conceitos Principais}
 \subsubsection{Serviços}
 
-Serviço pode ser definido como uma aplicação de \textit{software} que interage com outras aplicações por meio da troca de mensagens \cite{linthicum_soainrealworld_2007}. Além disso, um serviço é uma coleção de capacidades \cite{erl_orientacaoaservico_2009}, "é um valor entregue para outro (serviço) através de uma interface bem definida e disponível e resulta em um trabalho provido de um para outro" \cite{adaptive_ltd_service_2009}.
+Um serviço pode ser definido como uma aplicação de \textit{software} que interage com outras aplicações por meio da troca de mensagens \cite{linthicum_soainrealworld_2007}. Além disso, um serviço é uma coleção de capacidades \cite{erl_orientacaoaservico_2009}, "é um valor entregue para outro (serviço) através de uma interface bem definida e disponível e resulta em um trabalho provido de um para outro" \cite{adaptive_ltd_service_2009}.
 
-Um serviço é uma aplicação independente e deve ser composto por duas partes principais: a interface, que permite a comunicação com os usuários do serviços e define a estrutura das mensagens a ser utilizada para a comunicação entre um serviço e seu usuário; e a implementação, que consiste do núcleo do serviço, desconhecido pelo usuário, mas a parte responsável pela execução do serviço \cite{linthicum_soainrealworld_2007} . As principais características de um serviço, de acordo com Jossutis \cite{josuttis_soa_2007} e Erl \cite{erl_orientacaoaservico_2009}, são:
+Um serviço é uma aplicação independente e deve ser composto por duas partes principais: a interface, que permite a comunicação com os usuários do serviços e define a estrutura das mensagens a ser utilizada para a comunicação entre um serviço e seu usuário; e a implementação, que consiste do núcleo do serviço, desconhecido pelo usuário, mas a parte responsável pela execução do serviço \cite{linthicum_soainrealworld_2007}. As principais características de um serviço, de acordo com Jossutis \cite{josuttis_soa_2007} e Erl \cite{erl_orientacaoaservico_2009}, são:
 
 \begin{itemize}
 \item Um serviço deve ser \textbf{autônomo},  capaz de controlar seu ambiente e recursos disponibilizados. Isto implica na não interferência de fatores externos à aplicação que implementa o serviço, dependendo apenas de parâmetros fornecidos pelos usuários de um dado serviço.
@@ -91,29 +91,29 @@ Algumas destas características estão representadas na figura \ref{servico_na_a
 \label{servico_na_arquitetura}
 \end{figure}
 
-A figura acima expressa o serviço como o núcleo de uma arquiteura baseada no modelo SOA. As capacidades de um serviço, o próprio serviço e os consumidores deste serviço formam o núcleo deste modelo, sendo visíveis e transparentes em uma arquitetura de \textit{software}. Como um serviço deve ocultar seus detalhes de implementação e geralmente não possui conhecimento do sistema de \textit{software} em que está inserido \cite{nickull_service_2007}.
+A figura \ref{servico_na_arquitetura} ilustra o serviço como o núcleo de uma arquiteura baseada no modelo SOA. As capacidades de um serviço, o próprio serviço e os consumidores deste serviço formam o núcleo deste modelo, sendo visíveis e transparentes em uma arquitetura de \textit{software}. Como um serviço deve ocultar seus detalhes de implementação e geralmente não possui conhecimento do sistema de \textit{software} em que está inserido \cite{nickull_service_2007}.
 
 \subsubsection{Baixo Acoplamento}
 O baixo acoplamento permite que a dependência entre sistemas de \textit{software} seja reduzido. Isto pode ser implementado de duas maneiras distintas: uma utiliza a comunicação assíncrona entre aplicações e a outra faz uso de compensação para manter a consistência do estado dos sistemas de software que utilizam e fornecem serviços \cite{josuttis_soa_2007}.
 
-A maior desvantagem de um sistema onde os níveis de acoplamento são baixíssimos é a complexidade, elevando a dificuldade para desenvolver, manter e \textit{debugar} a arquitetura criada \cite{josuttis_soa_2007}.
+A maior desvantagem de um sistema onde os níveis de acoplamento são baixíssimos é a complexidade, elevando a dificuldade para desenvolver, manter e depurar a arquitetura criada \cite{josuttis_soa_2007}.
 
 \subsubsection{Interoperabilidade}
 Josuitts \cite{josuttis_soa_2007} define a interoperabilidade como "a habilidade de sistemas diferentes se comunicarem", independentemente das tecnologias e linguagens de programação utilizadas na construção de tais sistemas de software. Existem padrões relacionados à interoperabilidade entre sistemas de \textit{software}, que não necessariamente garantem, mas colaboram na implementação desta característica. 
 
-Os padrões de interoperabilidade existentes, também conhecidos como WS-I, visam segundo Oliveira e Navarro \cite{oliveira_interoperabilidade}, a integração de especificações, promoção de implementações consistentes e que sigam guias e boas práticas, o fornecimento de ferramentas e aplicações como referências e o encorajamento da adoção de tais padrões. Os principais padrões WS-I são:
+Os padrões de interoperabilidade existentes, também conhecidos como WS-I, visam segundo Oliveira e Navarro \cite{oliveira_interoperabilidade}, a integração de especificações, promoção de implementações consistentes e que sigam guias e boas práticas, o fornecimento de ferramentas e aplicações como referências e o encorajamento da adoção de tais padrões. Os principais padrões WS-I são \cite{oliveira_interoperabilidade}:
 
 \begin{itemize}
-\item \textit{WS-Addressing}: visa uma solução que garanta que a origem e o destino das mensagens trocadas pelas aplicações sejam endereçadas de forma independente do meio de transporte \cite{oliveira_interoperabilidade}.
-\item \textit{WS-Policy}: permite a adição de políticas a serem cumpridas por clientes e provedores do serviço visando a efetividade da interação entre estes \cite{oliveira_interoperabilidade}.
-\item \textit{WS-Transaction}: padrão que define como se dará a interoperabilidade entre diferentes \textit{Web Services} para "compor a qualidade de serviços transacionais entre aplicações" \cite{oliveira_interoperabilidade}.
-\item \textit{WS-Security}: fornece segurança a nível de mensagem, garantindo a confidencialidade e integridade das mensagens, uma vez que estas passam por diversos sistemas intermediários entre a sua origem e o seu destino. Os mecanismos de segurança devem ser utilizados apenas quando realmente necessários já que o consumo de processamento pode aumentar, afetando o tempo de resposta de um serviço \cite{oliveira_interoperabilidade}.
+\item \textit{WS-Addressing}: visa uma solução que garanta que a origem e o destino das mensagens trocadas pelas aplicações sejam endereçadas de forma independente do meio de transporte.
+\item \textit{WS-Policy}: permite a adição de políticas a serem cumpridas por clientes e provedores do serviço visando a efetividade da interação entre estes.
+\item \textit{WS-Transaction}: padrão que define como se dará a interoperabilidade entre diferentes \textit{Web Services} para "compor a qualidade de serviços transacionais entre aplicações".
+\item \textit{WS-Security}: fornece segurança a nível de mensagem, garantindo a confidencialidade e integridade das mensagens, uma vez que estas passam por diversos sistemas intermediários entre a sua origem e o seu destino. Os mecanismos de segurança devem ser utilizados apenas quando realmente necessários já que o consumo de processamento pode aumentar, afetando o tempo de resposta de um serviço.
 \end{itemize}
 
 Quando os serviços seguem padrões independentes da tecnologia, permitindo que a utilização seja transparente e fácil para diversos clientes que utilizam diferentes tecnologias diz-se que interoperabilidade existe neste contexto, fornecendo uma abstração que colabora para o baixo acoplamento entre as aplicações \cite{oliveira_interoperabilidade}.
 
 \subsection{Modelos de integração}
-A integração entre os subsistemas de \textit{software} que compõem a arquitetura distribuída de um sistema construído com base no modelo arquitetural SOA pode ser estabelecida usando-se diferentes estatégias. A estratégia utilizada para promover tal integração é um aspecto que deve ser cuidadosamente analisado, pois o impacto de tal decisão é importante e irá perpertuar-se durante a existência do produto final construído. Desta forma, de acordo com Bianco et. al. \cite{Bianco2007} existem duas principais abordagens para a integração entre os sistemas que compõem a implementação deste modelo (ver figura \ref{modelos_integracao_soa}):
+A integração entre os subsistemas de \textit{software} que compõem a arquitetura distribuída de um sistema construído com base no modelo arquitetural SOA pode ser estabelecida usando-se diferentes estatégias. A estratégia utilizada para promover tal integração é um aspecto que deve ser cuidadosamente analisado. O impacto de tal decisão é importante e irá perpertuar-se durante a existência do produto final construído. Desta forma, de acordo com Bianco et. al. \cite{Bianco2007} existem duas principais abordagens para a integração entre os sistemas que compõem a implementação deste modelo (figura \ref{modelos_integracao_soa}):
 
 \begin{figure}[htb]
 \centering
@@ -136,12 +136,12 @@ A conexão entre provedores e usuários de serviços é realizada através deste
 O uso de um ESB possui como principal objetivo a promoção de interoperabilidade de um sistema de software. Segundo Josuttis \cite{josuttis_soa_2007}, para atingir estes objetivos, um ESB deve ser capaz de:
 
 \begin{itemize}
-\item Prover conectividade entre provedor e consumidor do serviço.
-\item Realizar transformação de dados
-\item Fazer o roteamento das mensagens (tanto requisições quanto respostas)
-\item Lidar com confiança e segurança de dados
-\item Gerenciar os serviços conhecidos pelo ESB.
-\item Monitorar e manter registros das transações
+\item Prover conectividade entre provedor e consumidor do serviço;
+\item Realizar transformação de dados;
+\item Fazer o roteamento das mensagens (tanto requisições quanto respostas);
+\item Lidar com confiança e segurança de dados;
+\item Gerenciar os serviços conhecidos pelo ESB;
+\item Monitorar e manter registros das transações.
 \end{itemize}
 
 Sendo um conceito relacionado ao modelo SOA, o ESB também possui padrões que devem ser seguidos quando deseja-se implementar uma ferramenta caracterizada pelos requisitos descritos. A figura \ref{padrao_ESB} ilustra os padrões indicados.
@@ -153,23 +153,31 @@ Sendo um conceito relacionado ao modelo SOA, o ESB também possui padrões que d
 \label{padrao_ESB}
 \end{figure}
 
-A imagem acima exibe os principais componentes de um ESB: roteador intermediário, intermediador ou agente de serviços (\textit{service broker}), um agente responsável por gerenciar mensagens assíncronas e um interceptor. Como exposto por Bianco et. al. \cite{bianco_architecting_2011}, as principais características de cada um destes componentes são:
+A figura \ref{padrao_ESB} exibe os principais componentes de um ESB: roteador intermediário, intermediador ou agente de serviços (\textit{service broker}), um agente responsável por gerenciar mensagens assíncronas e um interceptor. Como exposto por Bianco et. al. \cite{bianco_architecting_2011}, as principais características de cada um destes componentes são:
 
 \begin{itemize}
+
 \item Roteador intermediário: componente capaz de receber mensagens de requisição e resposta e determinar o serviço ou aplicação que deverá receber tal mensagem.
+
 \item \textit{Service Broker} (ou agente de serviços): realiza o tratamento adequado das mensagens dentro do ESB. Este componente é formado por estruturas responsáveis pela transformação do modelo de dados, conversão dos formatos de mensagens recebidas pelo ESB para o formato suportado pelo serviço ou aplicação, além da conversão de protocolos quando aqueles utilizados pelo provedor e usuário do serviço são distintos.
+
 \item Gerenciador de mensagem assíncrona: nem sempre os canais de comunicação realizam a troca de mensagens de forma síncrona. O papel deste componente é gerenciar as mensagens de requisições e respostas de transações assíncronas.
+
 \item Interceptor: é o elemento responsável por receber as mensagens que chegam ao ESB.
 \end{itemize}
 
+\subsection{Ferramentas ESB}
+
+Implementações do barramento de serviços que possuem as características de um ESB estão disponíveis, podendo ser facilmente encontradas. A seguir estão descritas algumas das características particulares de três ESBs conhecidas.
+
 \subsubsection{WSO2 ESB}
-Uma das ferramentas que implementam os padrões estabelecidos para o ESB é a WSO2 ESB. Esta é uma ferramenta \textit{open source} e foi construída a partir da licença Apache 2.0. Entre suas principais características estão o suporte para transformação/conversão, roteamento e validação de mensagens, troca de protocolos de comunicação, exposição de sistemas legados, políticas de autenticação e autorização para acesso aos serviços. Esta ferramenta também permite o monitoramento das transações realizadas e o armazenamento de mensagens \cite{siriwardena_enterprise_2013}.
+Uma das ferramentas que implementam os padrões estabelecidos para o ESB é a WSO2 ESB\footnote{Informações em: http://wso2.com/products/enterprise-service-bus/}. Esta é uma ferramenta \textit{open source} e foi construída a partir da licença Apache 2.0. Entre suas principais características estão o suporte para transformação, conversão, roteamento e validação de mensagens, troca de protocolos de comunicação, exposição de sistemas legados, políticas de autenticação e autorização para acesso aos serviços. Esta ferramenta também permite o monitoramento das transações realizadas e o armazenamento de mensagens \cite{siriwardena_enterprise_2013}.
 
 \subsubsection{JBoss ESB}
-O JBoss ESB é uma implementação dos padrões e abordagens relacionados ao conceito de ESB. Esta é uma ferramenta do tipo \textit{open source} e consiste de um barramento de serviços onde as mensagens trocadas através deste podem passar por processos de conversão de formatos, dados e protocolos de comunicação. A ferramenta também realiza o roteamento das mensagens com o auxílio de componentes, tais como conectores e adaptadores. Estes componentes colaboram para a rápida criação de canais de comunicação entre as aplicações conectadas ao barramento de maneira facilitada \cite{silva_jbossesb_2008}.
+O JBoss ESB\footnote{Mais informações: http://jbossesb.jboss.org/} é uma implementação dos padrões e abordagens relacionados ao conceito de ESB. Esta é uma ferramenta do tipo \textit{open source} e consiste de um barramento de serviços onde as mensagens trocadas através deste podem passar por processos de conversão de formatos, dados e protocolos de comunicação. A ferramenta também realiza o roteamento das mensagens com o auxílio de componentes, tais como conectores e adaptadores. Estes componentes colaboram para a rápida criação de canais de comunicação entre as aplicações conectadas ao barramento de maneira facilitada \cite{silva_jbossesb_2008}.
 
 \subsubsection{ErlangMS}
-ErlangMS é um ESB \textit{open source} desenvolvido na linguagem Erlang durante a realização de uma tese de mestrado na Universidade de Brasília. A proposta deste barramento é "fornecer uma camada de serviço em uma implementação do modelo SOA" para a integração dos sistemas implantados na instituição. Esta implementação do ESB possui, além dos padrões definidos para este conceito, características relacionadas à estrutura de eventos (onde eventos ocorridos em dada aplicação são anunciados às outras através do barramento) e recursos de tolerância a falhas \cite{agilar_uma_2015}.
+ErlangMS\footnote{Mais informações: https://github.com/erlangMS/msbus} é \textit{open source} desenvolvido na linguagem Erlang durante a realização de uma tese de mestrado na Universidade de Brasília. A proposta deste barramento é "fornecer uma camada de serviço em uma implementação do modelo SOA" para a integração dos sistemas implantados na instituição. Esta implementação do ESB possui, além dos padrões definidos para este conceito, características relacionadas à estrutura de eventos (onde eventos ocorridos em dada aplicação são anunciados às outras através do barramento) e recursos de tolerância a falhas \cite{agilar_uma_2015}.
 
 \section{Protocolos de Comunicação}
 Um protocolo de comunicação é definido na literatura como um conjunto de regras que determinam o formato e o significado de pacotes de mensagens que são transferidos entre aplicações ou sistemas \cite{Stallings_2006}. Sistemas de \textit{software} utilizam protocolos para estabelecer uma comunicação entre as entidades do sistema e implementar as definições de serviço que são fornecidas por cada entidade \cite{Stallings_2006}.
@@ -209,11 +217,13 @@ Esta abordagem é indicada para operações que não necessitam que dados sobre 
 
 \section{Implementações do modelo SOA existentes}
 
+Esta seção apresenta três trabalhos que utilizam o modelo SOA em suas implementações. Todas as publicações fazem uso deste modelo em ambientes distintos. O primeiro trabalho propôs a criação de um \textit{framework} baseado em boas práticas de desenvolvimento com SOA. O segundo estudo trata de um modelo arquitetural proposto a partir da orientação à serviços e a ISO/IEC 61499. O objetivo era construir um sistema industrial automatizado que fosse flexível, interoperável e reconfigurável. O último estudo aqui descrito. O último estudo exibe um modelo para \textit{software} financeiro utilizando conceitos das arquiteturas orientada a serviços e orientada a Web.
+
 \subsection{PSOA - Um \textit{framework} de práticas e padrões SOA para projetos DDS}
 
-Esta tese de mestrado, escrita por Pereira \cite{pereira_psoa_2011}, tem como objetivo a construção de um \textit{framework} conceitual que tem como base práticas de desenvolvimento utilizando o modelo SOA para o desenvolvimento de \textit{software} (referenciado pelo acrônimo DDS).
+O PSOA proposto por Pereira \cite{pereira_psoa_2011} tem como objetivo a construção de um \textit{framework} conceitual que tem como base práticas de desenvolvimento utilizando o modelo SOA para o desenvolvimento de \textit{software} (referenciado pelo acrônimo DDS). 
 
-A fim de alcançar tal objetivo, Pereira \cite{pereira_psoa_2011} realizou um levantamento sobre as práticas e padrões utilizados pela Engenharia de \textit{Software}, tais como processos e modelos de desenvolvimento de \textit{software}, definições, visões e padrões de arquitetura de \textit{software}. Também foi realizado um levantamento de estratégias adotadas por profissionais inseridos no mercado de desenvolvimento de \textit{software} por meio de entrevistas. Este levantamento de dados ocorreu com profissionais envolvidos no desenvolvimento de maneira geral e também com aqueles envolvidos no desenvolvimento de \textit{software} baseados no modelo SOA.
+A fim de alcançar tal objetivo, Pereira realizou um levantamento sobre as práticas e padrões utilizados pela Engenharia de \textit{Software}, tais como processos e modelos de desenvolvimento de \textit{software}, definições, visões e padrões de arquitetura de \textit{software}. Também foi realizado um levantamento de estratégias adotadas por profissionais inseridos no mercado de desenvolvimento de \textit{software} por meio de entrevistas. Este levantamento de dados ocorreu com profissionais envolvidos no desenvolvimento de maneira geral e também com aqueles envolvidos no desenvolvimento de \textit{software} baseados no modelo SOA.
 
 O \textit{framework} foi construído com base nas boas práticas levantadas através da pesquisa bibliográfica e das entrevistas realizadas. Estão envolvidos no \textit{framework} conceitos que colaboram para que o acesso aos serviços seja de maneira segura, a interação entre usuários e provedores de serviços possa ser também assíncrona e protocolos de comunicação sejam traduzidos quando necessário. Outros benefícios são o envio de notificação a clientes quando determinados eventos ocorrem (padrão \textit{publisher/subscriber}), exposição de múltiplos contratos de um único serviço (isto permite que um serviço seja utilizado por diversos consumidores), registro de erros e a adaptação de serviços por meio do uso de \textit{Service Façade}.
 
@@ -225,19 +235,20 @@ A orientação à serviços permite que requisitos de interoperabilidade, flexib
 
 Para que a proposta de um modelo integrativo baseado em SOA e IEC 61499, os autores deste trabalho realizaram um mapeamento dos princípios definidos para o modelo arquiteural tratado e a norma. Em seguida, a execução da norma em um ambiente baseado no modelo SOA foi realizada a fim de elucidar a integração proposta. Por fim, detalhes e resultados do estudo de caso realizado são descritos \cite{dai_bridging_2015}.
 
-Assim como esperado, os resultados obtidos no estudo de caso demonstraram que flexibilidade, interoperabilidade e reconfigurabilidade podem ser implementados em um sistema de \textit{software} automatizado e distribuído, aplicado à automação industrial \cite{dai_bridging_2015}.
+Os resultados obtidos no estudo de caso demonstraram que flexibilidade, interoperabilidade e reconfigurabilidade podem ser implementados em um sistema de \textit{software} automatizado e distribuído, aplicado à automação industrial \cite{dai_bridging_2015}.
 
 
 \subsection{Modelo integrado de Arquitetura Orientada a Serviços e Arquitetura Orientada a Web para Software Financeiro}
-A pesquisa realizada por Park et. al. \cite{park_integrated_2012} tem como objetivo a criação de um modelo capaz de integrar os modelos arquiteturais orientado a serviços e orientado a Web para a construção de um sistema de software financeiro. Este modelo integrado foi proposto após a identificação de pontos fortes e falhas em ambos os modelos de construção de uma arquitetura de software.
+A pesquisa realizada por Park et. al. \cite{park_integrated_2012} teve como objetivo a criação de um modelo capaz de integrar os modelos arquiteturais orientado a serviços e orientado a Web para a construção de um sistema de software financeiro. Este modelo integrado foi proposto após a identificação de pontos fortes e falhas em ambos os modelos de construção de uma arquitetura de software.
 
 Sistemas de software construídos com base no modelo SOA (orientado a serviços) possui diversos padrões já conhecidos, contribuindo para que a sua implementação seja complexa e consuma bastante investimento de tempo e dinheiro. Já o modelo WOA (orientado à Web) é um modelo adaptado à Web, facilita a implementação de características também existentes no modelo SOA tais como reusabilidade, flexibilidade e baixa complexidade, além de colaborar para a diminuição de custos e tempo investidos. Embora o modelo WOA seja simples, este não fornece um suporte à segurança do sistema distribuído como o SOA.
 
-Os modelos WOA e SOA são antagônicos e complementares: os pontos falhos existentes em um modelo podem ser implementados pelo outro.
+Os modelos WOA e SOA são complementares: os pontos falhos existentes em um modelo podem ser implementados pelo outro.
 
 Os resultados apresentados por Park et. al. \cite{park_integrated_2012} foram coletados a partir da comparação da complexidade de dois \textit{software} financeiros, onde um foi construído com base no modelo que integra WOA e SOA proposto e o outro apenas no modelo SOA. O \textit{software} construído a partir do modelo integrado implementa qualidade de serviços, segurança e confiabilidade e a combinação de ambos os modelos não afeta a performance e a complexidade do sistema construído de um modo geral.
 
 \section{Engenharia de Software}
+Em um projeto de Engenharia de \textit{Software} são utilizados métodos, modelos e técnicas durante o desenvolvimento de um produto. Esta seção aborda conceitos de dois métodos de desenvolvimento de software, exibindo as principais características associadas a cada um deles.
 
 \subsection{RUP - Rational Unified Process}
 
@@ -246,17 +257,17 @@ O RUP, ou \textit{Rational Unified Process}, é um processo de Engenharia de \te
 As boas práticas caracterizadas pelos criadores desde processo de desenvolvimento julgadas como as mais importantes a serem implementadas, de acordo com Rational Software \cite{rational_software_rational_1998} são:
 
 \begin{itemize}
-\item Desenvolvimento iterativo: colabora para que o entendimento acerca do problema a ser resolvido seja refinado, melhorando a solução a ser construída a cada iteração. Esta boa prática também contribui para que mudanças sejam acomodadas mais facilmente ao projeto.
+\item Desenvolvimento iterativo - colabora para que o entendimento acerca do problema a ser resolvido seja refinado, melhorando a solução a ser construída a cada iteração. Esta boa prática também contribui para que mudanças sejam acomodadas mais facilmente ao projeto.
 
-\item Gerenciamento de requisitos: o RUP descreve como "elicitar, organizar e documentar os requisitos de um produto de \textit{software}", além de promover a rastreabilidade dos requisitos, caso o guia seja seguido.
+\item Gerenciamento de requisitos - o RUP descreve como "elicitar, organizar e documentar os requisitos de um produto de \textit{software}", além de promover a rastreabilidade dos requisitos, caso o guia seja seguido.
 
-\item Uso de arquitetura baseada em componentes: um produto de \textit{software} robusto pode ser construído de modo a ser flexível, extensível, reutilizável e de fácil entendimento quando módulos do sistema são individualmente construídos e em seguida integrados em uma arquitetura de \textit{software} bem definida.
+\item Uso de arquitetura baseada em componentes - um produto de \textit{software} robusto pode ser construído de modo a ser flexível, extensível, reutilizável e de fácil entendimento quando módulos do sistema são individualmente construídos e em seguida integrados em uma arquitetura de \textit{software} bem definida.
 
-\item Desenhos de \textit{software}: modelos visuais que ilustram a arquitetura  do \textit{software} a ser construído são capazes de exibir e esconder detalhes quando convém, ajudando na comunicação entre os envolvidos no projeto.
+\item Desenhos de \textit{software} - modelos visuais que ilustram a arquitetura  do \textit{software} a ser construído são capazes de exibir e esconder detalhes quando convém, ajudando na comunicação entre os envolvidos no projeto.
 
-\item Verificação de qualidade do \textit{software}: os critérios de qualidade são definidos pelo cliente ou usuário e guiam o processo de desenvolvimento. O RUP estabelece atividades específicas para a avaliação da qualidade do \textit{software} em processo de construção.
+\item Verificação de qualidade do \textit{software} - os critérios de qualidade são definidos pelo cliente ou usuário e guiam o processo de desenvolvimento. O RUP estabelece atividades específicas para a avaliação da qualidade do \textit{software} em processo de construção.
 
-\item Controle de mudanças: mudanças são inevitáveis durante o processo de desenvolvimento de \textit{software} e uma boa prática para lidar com tais acontecimentos é controlá-las, rastreá-las e monitorá-las. 
+\item Controle de mudanças - mudanças são inevitáveis durante o processo de desenvolvimento de \textit{software} e uma boa prática para lidar com tais acontecimentos é controlá-las, rastreá-las e monitorá-las. 
 \end{itemize}
 
 \subsubsection{Fases do RUP}
@@ -297,33 +308,33 @@ Os Times Scrum são auto-organizáveis, realizam múltiplas funções e são com
 De acordo com o papel desempenhado no Time Scrum, as responsabilidades são delegadas aos membros que o compõe. Desta forma, as responsabilidades dos papéis definidos por Schwaber e Sutherland \cite{schwaber_guia_2013} são:
 
 \begin{itemize}
-\item \textit{Product Owner}: como dono do produto, este papel é responsável por "maximizar o valor do produto" e gerenciar o \textit{backlog} do produto.
+\item \textit{Product Owner} - como dono do produto, este papel é responsável por "maximizar o valor do produto" e gerenciar o \textit{backlog} do produto.
 
-\item Time de Desenvolvimento: são os membros da equipe responsáveis por construir um produto entregável ao final de cada \textit{sprint}. Devem ser auto-organizáveis, auto-gerenciáveis e não deve ser dividido por times menores.
+\item Time de Desenvolvimento - são os membros da equipe responsáveis por construir um produto entregável ao final de cada \textit{sprint}. Devem ser auto-organizáveis, auto-gerenciáveis e não deve ser dividido por times menores.
 
-\item Scrum \textit{Master}: é o papel que tem como principal responsabilidade garantir que as práticas deste \textit{framework} sejam aplicadas pelo Time Scrum. Além disso, o Scrum \textit{Master} deve promover a interação entre o Time de Desenvolvimento e o \textit{Product Owner}.
+\item Scrum \textit{Master} - é o papel que tem como principal responsabilidade garantir que as práticas deste \textit{framework} sejam aplicadas pelo Time Scrum. Além disso, o Scrum \textit{Master} deve promover a interação entre o Time de Desenvolvimento e o \textit{Product Owner}.
 
 \end{itemize}
 \subsubsection{Eventos Scrum}
 Os Eventos Scrum são um meio que inspecionar e adaptar tecnologias, ferramentas, práticas, o produto ou o processo de desenvolvimento. Geralmente são \textit{time-boxed}, ou seja, possuem tempo limitado e fixo para ocorrerem \cite{schwaber_guia_2013}.
 
-São os Eventos Scrum citados por Schwaber e Sutherland \cite{schwaber_guia_2013}:
+Os Eventos Scrum citados por Schwaber e Sutherland \cite{schwaber_guia_2013} são:
 
 \begin{itemize}
-\item \textit{Sprint}: neste evento Scrum são construídas versões funcionais do produto e possuem tempo de duração variável de acordo com a equipe e capacidade da mesma. Durante a execução de uma \textit{sprint}, ocorrem outros eventos Scrum. O uso de \textit{sprints} permite que os acontecimentos sejam previsíveis e que o progresso das atividades realizadas sejam transparentes.
+\item \textit{Sprint} - neste evento Scrum são construídas versões funcionais do produto e possuem tempo de duração variável de acordo com a equipe e capacidade da mesma. Durante a execução de uma \textit{sprint}, ocorrem outros eventos Scrum. O uso de \textit{sprints} permite que os acontecimentos sejam previsíveis e que o progresso das atividades realizadas sejam transparentes.
 
-\item Reunião de Planejamento da \textit{Sprint}: é neste evento onde o trabalho a ser realizado durante a \textit{sprint} é planejado pelo Time Scrum. São incluídas apenas o que pode ser entregue ao final da \textit{sprint} e está contido no \textit{backlog} do produto. O trabalho a ser realizado durante uma dada \textit{sprint} é denominado \textit{backlog} da \textit{sprint}.
+\item Reunião de Planejamento da \textit{Sprint} - é neste evento onde o trabalho a ser realizado durante a \textit{sprint} é planejado pelo Time Scrum. São incluídas apenas o que pode ser entregue ao final da \textit{sprint} e está contido no \textit{backlog} do produto. O trabalho a ser realizado durante uma dada \textit{sprint} é denominado \textit{backlog} da \textit{sprint}.
 
-\item Reunião Diária: estes eventos duram em média 15 minutos e o objetivo é "sincronizar as atividades e planejar o que será executado nas próximas 24 horas".
+\item Reunião Diária - estes eventos duram em média 15 minutos e o objetivo é "sincronizar as atividades e planejar o que será executado nas próximas 24 horas".
 
-\item Revisão da \textit{Sprint}: assim como há um evento para o planejamento, no encerramento da \textit{sprint} ocorre o evento de revisão, onde o \textit{backlog} do produto é revisto e atualizado (se necessário) e o progresso do desenvolvimento é analisado. O objetivo é obter \textit{feedbacks} sobre o que foi feito e promover a colaboração no Time Scrum.
+\item Revisão da \textit{Sprint} - assim como há um evento para o planejamento, no encerramento da \textit{sprint} ocorre o evento de revisão, onde o \textit{backlog} do produto é revisto e atualizado (se necessário) e o progresso do desenvolvimento é analisado. O objetivo é obter \textit{feedbacks} sobre o que foi feito e promover a colaboração no Time Scrum.
 
-\item Retrospectiva da \textit{Sprint}: tem como objetivo identificar itens positivos, negativos e melhorias para o desenvolvimento no que diz respeito ao relacionamento interpessoal, aos processos e às ferramentas utilizadas para apoio.
+\item Retrospectiva da \textit{Sprint} - tem como objetivo identificar itens positivos, negativos e melhorias para o desenvolvimento no que diz respeito ao relacionamento interpessoal, aos processos e às ferramentas utilizadas para apoio.
 
 \end{itemize}
 
 \subsubsection{Artefatos do Scrum}
-Schwaber e Sutherland \cite{schwaber_guia_2013} definem dois importantes artefatos do Scrum importantes quando o assunto são os pilares do \textit{framework} (transparência, adaptação e inspeção): os \textit{backlogs} do produto e da \textit{sprint}. 
+Schwaber e Sutherland \cite{schwaber_guia_2013} definem dois importantes artefatos do Scrum quando o assunto é os pilares do \textit{framework} (transparência, adaptação e inspeção): os \textit{backlogs} do produto e da \textit{sprint}. 
 
 O \textit{backlog} do produto consiste de todas as funcionalidades que devem estar contidas no produto desenvolvido. O \textit{backlog} da \textit{sprint} é o "conjunto de itens do \textit{backlog} do produto selecionados para a \textit{sprint}" \cite{schwaber_guia_2013}.
 
