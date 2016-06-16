@@ -5,14 +5,6 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.5 }
 
-\bibitem[{Adaptive Ltd} et al. 2009]{adaptive_ltd_service_2009}
-\abntrefinfo{{Adaptive Ltd} et al.}{{Adaptive Ltd} et al.}{2009}
-{{Adaptive Ltd} et al. \emph{Service oriented architecture {Modeling}
-  {Language} ({SoaML}) - {Specification} for the {UML} {Profile} and
-  {Metamodel} for {Services} ({UPMS})}. OMG - Object Management Group, 2009.
-Dispon{\'\i}vel em:
-  \url{http://www.uio.no/studier/emner/matnat/ifi/INF5120/v10/undervisningsmateriale/}.}
-
 \bibitem[Agilar e Almeida 2015]{agilar_uma_2015}
 \abntrefinfo{Agilar e Almeida}{AGILAR; ALMEIDA}{2015}
 {AGILAR, E. d.~V.; ALMEIDA, R. B.~d. \emph{Uma {Abordagem} {Orientada} a
@@ -31,6 +23,14 @@ Dispon{\'\i}vel em:
   {Practice}}. 2. ed. [S.l.]: Addison-Wesley Professional, 2003.
 ISBN 0-321-15495-9.}
 
+\bibitem[{BIANCO; LEWIS; MERSON; SIMANTA} 2011]{bianco_architecting_2011}
+\abntrefinfo{{BIANCO; LEWIS; MERSON; SIMANTA}}{{BIANCO; LEWIS; MERSON;
+  SIMANTA}}{2011}
+{{BIANCO; LEWIS; MERSON; SIMANTA}. \emph{Architecting {Service}-{Oriented}
+  {Systems}}.
+Pittsburgh, PA, 2011. Dispon{\'\i}vel em:
+  \url{http://resources.sei.cmu.edu/library/asset-view.cfm?AssetID=9829}.}
+
 \bibitem[Bianco, Kotermanski e Merson 2007]{Bianco2007}
 \abntrefinfo{Bianco, Kotermanski e Merson}{BIANCO; KOTERMANSKI; MERSON}{2007}
 {BIANCO, P.; KOTERMANSKI, R.; MERSON, P. \emph{Evaluating a Service-Oriented
@@ -38,15 +38,11 @@ ISBN 0-321-15495-9.}
 [S.l.], 2007. Dispon{\'\i}vel em:
   \url{http://www.sei.cmu.edu/library/abstracts/reports/07tr015.cfm}.}
 
-\bibitem[Bianco et al. 2011]{bianco_architecting_2011}
-\abntrefinfo{Bianco et al.}{BIANCO et al.}{2011}
-{BIANCO, P. et al. \emph{Architecting {Service}-{Oriented} {Systems}}.
-Pittsburgh, PA, 2011. Dispon{\'\i}vel em:
-  \url{http://resources.sei.cmu.edu/library/asset-view.cfm?AssetID=9829}.}
-
-\bibitem[Box et al. 2000]{box_simple_2000}
-\abntrefinfo{Box et al.}{BOX et al.}{2000}
-{BOX, D. et al. \emph{Simple {Object} {Access} {Protocol} ({SOAP}) 1.1}. 2000.
+\bibitem[{BOX; EHNEBUSKE; KAKIVAYA} et al. 2000]{box_simple_2000}
+\abntrefinfo{{BOX; EHNEBUSKE; KAKIVAYA} et al.}{{BOX; EHNEBUSKE; KAKIVAYA} et
+  al.}{2000}
+{{BOX; EHNEBUSKE; KAKIVAYA} et al. \emph{Simple {Object} {Access} {Protocol}
+  ({SOAP}) 1.1}. 2000.
 Dispon{\'\i}vel em: \url{https://www.w3.org/TR/2000/NOTE-SOAP-20000508/}.}
 
 \bibitem[Canaltech 2015]{canaltech_o_2015}
@@ -55,11 +51,27 @@ Dispon{\'\i}vel em: \url{https://www.w3.org/TR/2000/NOTE-SOAP-20000508/}.}
 Dispon{\'\i}vel em:
   \url{http://canaltech.com.br/o-que-e/software/o-que-e-api/}.}
 
+\bibitem[{Capgemini, Adaptive Ltd, Fujistu} et al.
+  2009]{adaptive_ltd_service_2009}
+\abntrefinfo{{Capgemini, Adaptive Ltd, Fujistu} et al.}{{Capgemini, Adaptive
+  Ltd, Fujistu} et al.}{2009}
+{{Capgemini, Adaptive Ltd, Fujistu} et al. \emph{Service oriented architecture
+  {Modeling} {Language} ({SoaML}) - {Specification} for the {UML} {Profile} and
+  {Metamodel} for {Services} ({UPMS})}. OMG - Object Management Group, 2009.
+Dispon{\'\i}vel em:
+  \url{http://www.uio.no/studier/emner/matnat/ifi/INF5120/v10/undervisningsmateriale/}.}
+
 \bibitem[Carvalho e Freitas 2014]{carvalho_sistema_2014}
 \abntrefinfo{Carvalho e Freitas}{CARVALHO; FREITAS}{2014}
 {CARVALHO, P. H.~P.; FREITAS, S. A. A.~d. \emph{Sistema de {Buscas} em
   {Ambiente} {Virtual} de {Aprendizagem} baseada em {Perfis}}. Brasília,
   Brasil: [s.n.], 2014.}
+
+\bibitem[{Celta Informática} 2010]{oqueesoa_2010}
+\abntrefinfo{{Celta Informática}}{{Celta Informática}}{2010}
+{{Celta Informática}. \emph{O que é {SOA} e por que usá-la?} 2010.
+Dispon{\'\i}vel em:
+  \url{http://www.celtainformatica.com.br/noticias/o-que-e-soa-e-por-que-usa-la}.}
 
 \bibitem[Dai et al. 2015]{dai_bridging_2015}
 \abntrefinfo{Dai et al.}{DAI et al.}{2015}
@@ -127,6 +139,12 @@ Dispon{\'\i}vel em:
 {LINTHICUM, D. et al. \emph{Service {Oriented} {Architecture} ({SOA}) in the
   {Real} {World}}. [S.l.]: Microsoft Corporation, 2007.}
 
+\bibitem[Mendes 2013]{vantagens_desvantagens_soa}
+\abntrefinfo{Mendes}{MENDES}{2013}
+{MENDES, E. \emph{Vantagens e {Desvantagens} de {SOA}}. 2013.
+Dispon{\'\i}vel em:
+  \url{http://www.devmedia.com.br/vantagens-e-desvantagens-de-soa/27437}.}
+
 \bibitem[Mueller 2013]{mueller_understanding_2013}
 \abntrefinfo{Mueller}{MUELLER}{2013}
 {MUELLER, J. \emph{Understanding {SOAP} and {REST} {Basics} {And}
@@ -140,17 +158,11 @@ Dispon{\'\i}vel em:
   {Specialized} {Messaging} {Patterns}}.
 San Jose, CA, USA, 2007.}
 
-\bibitem[O que é {SOA} e por que usá-la? 2010]{oqueesoa_2010}
-\abntrefinfo{O\ldots}{O\ldots}{2010}
-{O que é {SOA} e por que usá-la? 2010.
-Dispon{\'\i}vel em:
-  \url{http://www.celtainformatica.com.br/noticias/o-que-e-soa-e-por-que-usa-la}.}
-
-\bibitem[Oliveira e Navarro]{oliveira_interoperabilidade}
-\abntrefinfo{Oliveira e Navarro}{OLIVEIRA; NAVARRO}{}
+\bibitem[Oliveira e Navarro 2009]{oliveira_interoperabilidade}
+\abntrefinfo{Oliveira e Navarro}{OLIVEIRA; NAVARRO}{2009}
 {OLIVEIRA, M.; NAVARRO, R. Interoperabilidade em {SOA}: {Desafios} e
   {Padrões}.
-\emph{SOA na prática}.
+\emph{SOA na prática}, 2009.
 Dispon{\'\i}vel em:
   \url{http://www.univale.com.br/unisite/mundo-j/artigos/37Interoperabilidade.pdf}.}
 
@@ -177,6 +189,11 @@ Dispon{\'\i}vel em: \url{http://hdl.handle.net/10923/1658}.}
 {PRESSMAN, R. \emph{Engenharia de software}. McGraw-Hill, 2006.
 ISBN 9788586804571. Dispon{\'\i}vel em:
   \url{https://books.google.com.br/books?id=MNM6AgAACAAJ}.}
+
+\bibitem[{Rational Software} 1998]{rational_software_rational_1998}
+\abntrefinfo{{Rational Software}}{{Rational Software}}{1998}
+{{Rational Software}. \emph{Rational {Unified} {Process} - {Best} {Practices}
+  for {Software} {Development} {Teams}}. [S.l.]: Rational Software, 1998.}
 
 \bibitem[Rouse 2011]{rouse}
 \abntrefinfo{Rouse}{ROUSE}{2011}
@@ -209,11 +226,6 @@ Dispon{\'\i}vel em:
   BIRMINGHAM - MUMBAI: Packt Publishing, 2013.
 ISBN 978-1-78328-019-3.}
 
-\bibitem[Software 1998]{rational_software_rational_1998}
-\abntrefinfo{Software}{SOFTWARE}{1998}
-{SOFTWARE, R. \emph{Rational {Unified} {Process} - {Best} {Practices} for
-  {Software} {Development} {Teams}}. [S.l.]: Rational Software, 1998.}
-
 \bibitem[Sommerville et al. 2008]{sommerville2008engenharia}
 \abntrefinfo{Sommerville et al.}{SOMMERVILLE et al.}{2008}
 {SOMMERVILLE, I. et al. \emph{Engenharia de software}. ADDISON WESLEY BRA,
@@ -226,11 +238,5 @@ ISBN 9788588639287. Dispon{\'\i}vel em:
 {STALLINGS, W. \emph{Data and Computer Communications (8th Edition)}. Upper
   Saddle River, NJ, USA: Prentice-Hall, Inc., 2006.
 ISBN 0132433109.}
-
-\bibitem[Vantagens e {Desvantagens} de {SOA} 2013]{vantagens_desvantagens_soa}
-\abntrefinfo{Vantagens\ldots}{VANTAGENS\ldots}{2013}
-{VANTAGENS e {Desvantagens} de {SOA}. 2013.
-Dispon{\'\i}vel em:
-  \url{http://www.devmedia.com.br/vantagens-e-desvantagens-de-soa/27437}.}
 
 \end{thebibliography}

@@ -41,12 +41,12 @@
 \contentsline {subsection}{\numberline {2.3.1}SOAP}{36}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}REST}{37}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Implementa\IeC {\c c}\IeC {\~o}es do modelo SOA existentes}{37}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}PSOA - Um \textit {framework} de pr\IeC {\'a}ticas e padr\IeC {\~o}es SOA para projetos DDS}{37}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}PSOA - Um \textit {framework} de pr\IeC {\'a}ticas e padr\IeC {\~o}es SOA para projetos DDS}{38}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Conectando Arquitetura orientada a servi\IeC {\c c}os e IEC 61499 para Flexibilidade e Interoperabilidade}{38}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Modelo integrado de Arquitetura Orientada a Servi\IeC {\c c}os e Arquitetura Orientada a Web para Software Financeiro}{39}{subsection.2.4.3}
 \contentsline {section}{\numberline {2.5}Engenharia de Software}{39}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}RUP - Rational Unified Process}{39}{subsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.1.1}Fases do RUP}{40}{subsubsection.2.5.1.1}
+\contentsline {subsection}{\numberline {2.5.1}RUP - Rational Unified Process}{40}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Fases do RUP}{41}{subsubsection.2.5.1.1}
 \contentsline {subsection}{\numberline {2.5.2}Scrum}{42}{subsection.2.5.2}
 \contentsline {subsubsection}{\numberline {2.5.2.1}O Time Scrum}{43}{subsubsection.2.5.2.1}
 \contentsline {subsubsection}{\numberline {2.5.2.2}Eventos Scrum}{43}{subsubsection.2.5.2.2}
