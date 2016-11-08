@@ -51,26 +51,27 @@
 \contentsline {subsubsection}{\numberline {2.5.2.1}O Time Scrum}{43}{subsubsection.2.5.2.1}
 \contentsline {subsubsection}{\numberline {2.5.2.2}Eventos Scrum}{43}{subsubsection.2.5.2.2}
 \contentsline {subsubsection}{\numberline {2.5.2.3}Artefatos do Scrum}{44}{subsubsection.2.5.2.3}
+\contentsline {section}{\numberline {2.6}Considera\IeC {\c c}\IeC {\~o}es finais}{44}{section.2.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {A Proposta}}{45}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{45}{section.3.1}
-\contentsline {section}{\numberline {3.2}O Ambiente Virtual}{46}{section.3.2}
-\contentsline {section}{\numberline {3.3}A Proposta de arquitetura}{47}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Requisitos}{47}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}A arquitetura escolhida}{48}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Ferramentas ESB}{50}{subsubsection.3.3.2.1}
-\contentsline {subsection}{\numberline {3.3.3}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{51}{subsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.3.1}Formato das Mensagens}{52}{subsubsection.3.3.3.1}
-\contentsline {section}{\numberline {3.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{54}{section.3.4}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {A Proposta}}{47}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{47}{section.3.1}
+\contentsline {section}{\numberline {3.2}O Ambiente Virtual}{48}{section.3.2}
+\contentsline {section}{\numberline {3.3}A Proposta de arquitetura}{49}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Requisitos}{49}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}A arquitetura escolhida}{50}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Ferramentas ESB}{52}{subsubsection.3.3.2.1}
+\contentsline {subsection}{\numberline {3.3.3}Protocolo de comunica\IeC {\c c}\IeC {\~a}o}{53}{subsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.3.1}Formato das Mensagens}{54}{subsubsection.3.3.3.1}
+\contentsline {section}{\numberline {3.4}Considera\IeC {\c c}\IeC {\~o}es Finais}{56}{section.3.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{55}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{55}{section.4.1}
-\contentsline {section}{\numberline {4.2}Metodologia de Execu\IeC {\c c}\IeC {\~a}o da Proposta}{55}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Planejamento da Implementa\IeC {\c c}\IeC {\~a}o}{57}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Fase de Constru\IeC {\c c}\IeC {\~a}o}{58}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{59}{section.4.3}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{57}{section.4.1}
+\contentsline {section}{\numberline {4.2}Metodologia de Execu\IeC {\c c}\IeC {\~a}o da Proposta}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Planejamento da Implementa\IeC {\c c}\IeC {\~a}o}{59}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fase de Constru\IeC {\c c}\IeC {\~a}o}{60}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{61}{section.4.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{63}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{65}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{65}{section*.12}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{67}{section*.12}

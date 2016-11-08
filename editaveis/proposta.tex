@@ -4,7 +4,7 @@ Este capítulo apresenta a proposta do trabalho de conclusão de curso, detalhes
 
 A proposta consiste de uma arquitetura de software baseada no modelo arquitetural SOA (orientado a serviços) responsável por promover a interação entre aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. A comunicação entre as aplicações seguirá um protocolo estabelecido e faz parte desta proposta.
 
-Este capítulo está organizado em quatro seções principais. A seção 3.1 apresenta uma introdução, expondo fatos e necessidades identificação que dão suporte à solução arquitetural proposta. A seção 3.2 trata do ambiente virtual a ser criado com base na solução. A proposta arquitetural é detalhada na seção 3.3. Nesta seção, também está descrito o a ser utilizado, estabelecendo o formato de mensagem padronizado na arquitetura.
+Este capítulo está organizado em quatro seções principais. A seção 3.1 apresenta uma introdução, expondo fatos e necessidades de identificação que dão suporte à solução arquitetural proposta. A seção 3.2 trata do ambiente virtual a ser criado com base na solução. A proposta arquitetural é detalhada na seção 3.3. Nesta seção, também está descrito o a ser utilizado, estabelecendo o formato de mensagem padronizado na arquitetura.
 
 \section{Introdução}
 Avanços tecnológicos, a criação de linguagens de programação, diferentes técnicas e paradigmas e outros conceitos relacionados ao desenvolvimento de software contribuem para que a necessidade de interação entre estes elementos seja emergente. Isto viabiliza a construção de sistemas cada vez mais robustos e inteligentes. Esta interação entre elementos de software não consistem de aplicações robustas que executam todas as suas atividades de forma independente de outras aplicações. Os sistemas de software mais modernos são desenvolvidos tomando como base outros paradigmas ou escritos em outras linguagens de programação e utilizando-se diferentes técnicas.
@@ -19,9 +19,9 @@ Desta forma, será viável a disponibilização à sociedade, interna e externa 
 
 \section{O Ambiente Virtual}
 
-Trabalhos realizados durante a execução de TCCs e em atividades e treinamentos desenvolvidos âmbito do Laboratório Fábrica de Software no Campus Gama da Universidade de Brasília resultam, muitas vezes, em aplicações de software isoladas. Estas aplicações são armazenadas em repositórios pessoais de orientandos de TCCs ou do laboratório e acabam por não serem divulgadas, incrementadas e mantidas por quem as criou.
+Trabalhos realizados durante a execução de TCCs e em atividades e treinamentos desenvolvidos no âmbito do Laboratório Fábrica de Software no Campus Gama da Universidade de Brasília resultam, muitas vezes, em aplicações de software isoladas. Estas aplicações são armazenadas em repositórios pessoais de orientandos de TCCs ou do laboratório, e acabam por não serem divulgadas, incrementadas e mantidas por quem as criou.
 
-Como exemplos de trabalhos realizados que resultaram em aplicações de interesse público, mas que não estão em uso ou manutenção podem ser citados dois: um faz uma análise de aderência de perfis profissionais com base no currículo Lattes \cite{jesus_algoritmo_2014} e o outro faz a apresentação de resultados relevantes ao usuário de acordo com o perfil individual e de grupo de determinado usuário de uma plataforma virtual \cite{carvalho_sistema_2014}.
+Como exemplos de trabalhos realizados que resultaram em aplicações de interesse público, mas que não estão em uso ou manutenção, podem ser citados dois: um faz uma análise de aderência de perfis profissionais com base no currículo Lattes \cite{jesus_algoritmo_2014} e o outro faz a apresentação de resultados relevantes ao usuário de acordo com o perfil individual e de grupo de determinado usuário de uma plataforma virtual \cite{carvalho_sistema_2014}.
 
 O ambiente virtual a ser iniciado por este projeto de TCC consiste no resultado da integração de aplicações já existentes.
 
@@ -36,7 +36,7 @@ A figura \ref{ambiente_virtual} apresenta a ideia do que é o ambiente virtual a
 
 \section{A Proposta de arquitetura}
 
-Esta seção apresenta os detalhes da arquitetura proposta baseada no modelo SOA e os aspectos deste modelo que foram adotados e a forma como se relacionam.
+Esta seção apresenta os detalhes da arquitetura proposta baseada no modelo SOA, os aspectos deste modelo que foram adotados, e a forma como se relacionam.
 
 As subseções apresentam os requisitos identificados, a arquitetura proposta e detalhes sobre o protocolo de comunicação.
 
@@ -51,7 +51,7 @@ A partir da necessidade identificada de disponibilizar aplicações que foram de
 \item Flexibilidade,  possibilitando a extensão da plataform sem que a arquitetura original seja modificada drasticamente.
 \end{itemize}
 
-A partir destas características, foi proposto o uso do modelo arquitetural SOA. Desta forma a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações neste contexto também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
+A partir destas características, foi proposto o uso do modelo arquitetural SOA. Desta forma, a plataforma virtual terá conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisará ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações, neste contexto, também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
 
 \subsection{A arquitetura escolhida}
 
@@ -93,7 +93,7 @@ Existem algumas ferramentas tipo ESB disponíveis e em uso por grandes organiza�
 \item Possuir documentação e tutoriais disponíveis;
 \item Facilidade para implantação;
 \item Facilidade para uso;
-\item Possibilida de de uso de conectores (customizados e existentes);
+\item Possibilidade de de uso de conectores (customizados e existentes); e
 \item Suporte ao formato de mensagem escolhido para a implementação do protocolo.
 \end{itemize}
 
@@ -101,11 +101,11 @@ O levantamento mostrou que as ferramentas que podem ser utilizadas para a implem
 
 \subsection{Protocolo de comunicação}
 
-No âmbito da proposta de uma arquitetura de software baseada no modelo SOA é necessário que seja estabelecido um protocolo de comunicação. Este protocolo estabalece como as aplicações que oferecem e utilizam os serviços contidos na arquitetura irão se comunicar.
+No âmbito da proposta de uma arquitetura de software baseada no modelo SOA, é necessário que seja estabelecido um protocolo de comunicação. Este protocolo estabelece como as aplicações que oferecem e utilizam os serviços contidos na arquitetura irão se comunicar.
 
 Após levantamento de modelos de protocolos, formatos e padrões de mensagens existentes optou-se pelo uso do modelo REST \cite{rozlog_restesoap_2013}. Este modelo de protocolo foi escolhido por ser de fácil uso, podendo ser implementado em diversas linguagens de programação (principalmente aquelas que são destinadas ao desenvolvimento de plataformas para a web) e em diversos sistemas operacionais. O modelo REST utiliza o HTTP como protocolo de transporte, contribuindo para que a comunicação entre diversas aplicações seja realizada de maneira mais estável.
 
-A arquitetura do protocolo REST aceita diferentes formatos tais como: JSON, CSV e texto simples. O formato definido para uso no protocolo desta proposta de TCC é o JSON, por ser um formato que permite a composição da mensagem através de chaves e valores. Assim, quando de posse da mensagem, os valores podem extraídos de acordo com a chave. As informações de chave e valores retornados por uma dada operação de um serviço devem estar contidas na especificação da interface de um serviço.
+A arquitetura do protocolo REST aceita diferentes formatos tais como: JSON, CSV e texto simples. O formato definido para uso no protocolo desta proposta de TCC é o JSON, por ser um formato que permite a composição da mensagem através de chaves e valores. Assim, quando de posse da mensagem, os valores podem ser extraídos de acordo com a chave. As informações de chave e valores retornados por uma dada operação de um serviço devem estar contidas na especificação da interface de um serviço.
 
 
 Alguns serviços podem necessitar de autenticação e autorização para acesso ao mesmo, porém outros estarão disponíveis para uso sem a necessidade de que tais recuros de segurança sejam implementados. Os requisitos de segurança na troca de dados deverão ser planejados em trabalhos futuros.
@@ -130,7 +130,7 @@ O formato escolhido para a troca de mensagens entre as aplicações será o JSON
 
 O formato JSON é baseado em um esquema de chave-valor, onde a chave identifica um atributo, um dado, e o valor é o dado em si, o valor quantitativo ou qualitativo do atributo indicado pela chave. Este formato de mensagem adotado, pode ser tratado na aplicação como uma mensagem JSON ou como uma cadeia de caracteres, a depender da linguagem de programação adotada na construção da plataforma virtual e dos serviços disponibilizados.
 
-Assim, para realizar uma requisição, a aplicação que executa o papel de usuário de um serviço deverá indicar o serviço e a operação desejada, o formato da mensagem (JSON por padrão) e os valores necessários para que o serviço seja executado corretamente, indicados pela API disponibilizada pelo mesmo. Da mesma forma, a resposta também deverá ser gerada em formato JSON, porém a aplicação que prover serviços retorna apenas a resposta da mensagem no padrão chave-valor. A seguir  podem ser visualizados um exemplo de requisição e outro de reposta, ambos em formato JSON.
+Assim, para realizar uma requisição, a aplicação que executa o papel de usuário de um serviço deverá indicar o serviço e a operação desejada, o formato da mensagem (JSON por padrão) e os valores necessários para que o serviço seja executado corretamente, indicados pela API disponibilizada pelo mesmo. Da mesma forma, a resposta também deverá ser gerada em formato JSON, porém, a aplicação que provê serviços, retorna apenas a resposta da mensagem no padrão chave-valor. A seguir, podem ser visualizados um exemplo de requisição e outro de reposta, ambos em formato JSON.
 
 \definecolor{verde}{rgb}{0.25,0.5,0.35}
 \definecolor{jpurple}{rgb}{0.5,0,0.35}
@@ -176,8 +176,8 @@ O código exibe os valores necessários para realizar uma requisição ao servi�
 A parte de código descrito mostra apenas exemplos do uso do formato de mensagem JSON para realizar uma requisição e de mensagem obtida como resposta advinda do serviço. Pode-se ver que os valores são correspondentes à uma chave conhecida por ambas as aplicações, permitindo que as aplicações (provedora e usuária de serviços) possam comunicar-se entre si de forma padronizada e conhecida por ambas as partes.
 
 \section{Considerações Finais}
-Neste capítulo foi apresenta a proposta do projeto em desenvolvimento para o TCC. A proposta é a elaboração de uma arquitetura baseada no modelo SOA para a integração de aplicações resultantes de orientações de TCC e de atividades  desenvolvidas no Laboratório Fábrica de Software da Universidade de Brasília. Para tanto, aqui foram detalhadas as características que farão parte da solução proposta, com o uso de uma ferramenta do tipo ESB e um protocolo de comunicação padronizado baseado no modelo REST.
+Neste capítulo, foi apresentada a proposta do projeto em desenvolvimento para o TCC. A proposta é a elaboração de uma arquitetura baseada no modelo SOA para a integração de aplicações resultantes de orientações de TCC e de atividades  desenvolvidas no Laboratório Fábrica de Software da Universidade de Brasília. Para tanto, aqui foram detalhadas as características que farão parte da solução proposta, com o uso de uma ferramenta do tipo ESB e um protocolo de comunicação padronizado, baseado no modelo REST.
 
-A utilização de uma ferramenta que contenha as funcionalidades de um ESB (roteamento, transformação e formatação de dados) permite que a complexidade de implementação da arquitetura seja reduzida, uma vez que não há a necessidade de um serviço fornecer múltiplas interfaces. Isto colabora para que a interoperabilidade, flexibilidade e extensibilidade almeijada seja mais facilmente realizada.
+A utilização de uma ferramenta que contenha as funcionalidades de um ESB (roteamento, transformação e formatação de dados) permite que a complexidade de implementação da arquitetura seja reduzida, uma vez que não há a necessidade de um serviço fornecer múltiplas interfaces. Isto colabora para que a interoperabilidade, flexibilidade e extensibilidade almejada seja mais facilmente realizada.
 
 O próximo capítulo apresenta o planejamento para execução deste projeto de TCC. O planejamento relata as fases em que o projeto está dividido e as atividades contidas em cada uma destas fases. 
