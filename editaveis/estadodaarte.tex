@@ -28,7 +28,7 @@ A arquitetura baseada em camadas é caracterizada pela divisão de elementos em 
 \begin{figure}[htb]
 \centering
 \includegraphics[scale=0.5]{figuras/modelo_mvc.PNG}
-\caption{Padrão MVC - Arquitetura baseada em camadas.}
+\caption{Padrão MVC - Arquitetura baseada em camadas \cite{pressman2006engenharia}.}
 \label{modelo_mvc}
 \end{figure}
 
@@ -248,54 +248,7 @@ Os modelos WOA e SOA são complementares: os pontos falhos existentes em um mode
 Os resultados apresentados por Park et. al. \cite{park_integrated_2012} foram coletados a partir da comparação da complexidade de dois \textit{software} financeiros, onde um foi construído com base no modelo que integra WOA e SOA proposto e o outro apenas no modelo SOA. O \textit{software} construído a partir do modelo integrado implementa qualidade de serviços, segurança e confiabilidade, e a combinação de ambos os modelos não afeta o desempenho e a complexidade do sistema construído de um modo geral.
 
 \section{Engenharia de Software}
-Em um projeto de Engenharia de \textit{Software}, são utilizados métodos, modelos e técnicas durante o desenvolvimento de um produto. Esta seção aborda conceitos de dois métodos de desenvolvimento de software, exibindo as principais características associadas a cada um deles.
-
-\subsection{RUP - Rational Unified Process}
-
-O RUP, ou \textit{Rational Unified Process}, é um processo de Engenharia de \textit{Software} utilizado para o desenvolvimento de projetos da área. Este processo estabelece uma abordagem de desenvolvimento, onde responsabilidades e tarefas são bem definidas a fim de obter um produto de \textit{software} de qualidade, capaz de atender às expectativas do cliente ou usuário final. Além disso, este processo visa promover o aumento da produtividade, definir modelos e \textit{templates} a serem seguidos. É um processo suportado por diversas ferramentas e implementa boas práticas identificadas em projetos de \textit{software}, caracterizando-se como um guia adaptável para projetos desta natureza\cite{rational_software_rational_1998}.
-
-As boas práticas caracterizadas pelos criadores desde processo de desenvolvimento, julgadas como as mais importantes a serem implementadas, de acordo com Rational Software \cite{rational_software_rational_1998}, são:
-
-\begin{itemize}
-\item Desenvolvimento iterativo - colabora para que o entendimento acerca do problema a ser resolvido seja refinado, melhorando a solução a ser construída a cada iteração. Esta boa prática também contribui para que mudanças sejam acomodadas mais facilmente ao projeto.
-
-\item Gerenciamento de requisitos - o RUP descreve como "elicitar, organizar e documentar os requisitos de um produto de \textit{software}", além de promover a rastreabilidade dos requisitos, caso o guia seja seguido.
-
-\item Uso de arquitetura baseada em componentes - um produto de \textit{software} robusto pode ser construído de modo a ser flexível, extensível, reutilizável e de fácil entendimento quando módulos do sistema são individualmente construídos e em seguida integrados em uma arquitetura de \textit{software} bem definida.
-
-\item Desenhos de \textit{software} - modelos visuais que ilustram a arquitetura  do \textit{software} a ser construído são capazes de exibir e esconder detalhes quando convém, ajudando na comunicação entre os envolvidos no projeto.
-
-\item Verificação de qualidade do \textit{software} - os critérios de qualidade são definidos pelo cliente ou usuário e guiam o processo de desenvolvimento. O RUP estabelece atividades específicas para a avaliação da qualidade do \textit{software} em processo de construção.
-
-\item Controle de mudanças - mudanças são inevitáveis durante o processo de desenvolvimento de \textit{software} e uma boa prática para lidar com tais acontecimentos é controlá-las, rastreá-las e monitorá-las. 
-\end{itemize}
-
-\subsubsection{Fases do RUP}
-O ciclo de vida de desenvolvimento de \textit{software} no RUP é executado em ciclos divididos em quatro fases diferentes: iniciação, elaboração, construção e transição. \textit{Milestones} consistem em marcos definidos, onde uma destas fases termina e outra pode ser iniciada \cite{rational_software_rational_1998}. 
-
-A fase de iniciação tem como objetivo a identificação do domínio de negócio do \textit{software}, bem como o estabelecimento do escopo que será desenvolvido. Riscos, critérios de sucesso e recursos necessários são definidos juntamente com as \textit{milestones} \cite{rational_software_rational_1998}.
-
-A segunda fase do ciclo, chamada de fase de elaboração, tem como propósito analisar a necessidade identificada no domínio de negócio, identificar os requisitos da solução, estabelecer a arquitetura, desenvolver um plano de projeto e minimizar os riscos críticos do projeto de \textit{software}. Nesta fase, decisões arquiteturais são feitas a fim de obter-se uma compreensão do sistema que será desenvolvido como um todo, podendo existir como um artefato construído nesta fase um protótipo funcional da aplicação que será construída \cite{rational_software_rational_1998}.
-
-Uma vez estabelecidos os requisitos da solução de \textit{software}, é iniciada a fase de construção. Considerada uma atividade manufaturada, a implementação das funcionalidades de um sistema de software é realizada nesta fase do ciclo de desenvolvimento: os componentes e requisitos do \textit{software} são desenvolvidos, integrados e testados. Nesta fase, o cronograma, custos e qualidade devem ser sempre gerenciados e devidamente controlados \cite{rational_software_rational_1998}.
-
-A última fase do ciclo de desenvolvimento definido pelo RUP é a de transição. É nesta fase onde o produto de \textit{software} construído é homologado e implantado para que o cliente ou usuário final possa usufruí-lo. Esta fase pode ser executada em diversas iterações para que correções de \textit{bugs} sejam realizadas até que a qualidade mínima desejada seja atingida, mantenedores e usuários sejam devidamente treinados, para que o produto seja divulgado e distribuído (quando for o caso) \cite{rational_software_rational_1998}.
-
-As fases definidas pelo RUP podem ser subdivididas em iterações, o que contribui para que os riscos sejam mitigados ainda no início, e as mudanças sejam mais gerenciáveis e rastreáveis. Também permite que oportunidades de reutilização de partes do \textit{software} desenvolvido sejam mais facilmente identificadas, além de melhorar a qualidade e promover a aprendizagem dos membros da equipe \cite{rational_software_rational_1998}.
-
-Durante cada uma das fases descritas, macro atividades definidas no RUP são desenvolvidas com maior ou menor intensidade, de acordo com o objetivo de cada fase determinada. Na figura \ref{ciclo_rup}, é possível visualizar o modelo de desenvolvimento de \textit{software} proposto pelo RUP.
-
-
-\begin{figure}[htb]
-\centering
-\includegraphics[scale=0.8]{figuras/ciclo_rup.jpg}
-\caption{Modelo de ciclo de vida definido pelo RUP. Fonte: \cite{henrique_rup_2015}.}
-\label{ciclo_rup}
-\end{figure}
-
-A figura \ref{ciclo_rup} exibe o modelo de ciclo de vida do processo de desenvolvimento de \textit{software} no modelo RUP. Nove disciplinas fazem parte deste modelo e a quantidade de atividades relacionadas a cada disciplina varia de acordo com cada fase do ciclo e iteração no processo de desenvolvimento.
-
-É possível verificar que atividades relacionadas à modelagem de negócios e identificação, elicitação e gerenciamento de requisitos são intensas na fase inicial do projeto, onde a aplicação a ser desenvolvida ainda está sendo definida. A análise e design e implementação da solução é realizada com afinco na fase de elaboração do projeto de \textit{software} e continuada durante  as iterações contidas na fase seguinte. Atividades de testes são mais executadas ao final da construção e transição. Atividades de apoio ao desenvolvimento como configuração de ambiente, gerenciamento de configuração e mudança e o gerenciamento do projeto são relativamente constantes durante o ciclo de vida de desenvolvimento.
+Em um projeto de Engenharia de \textit{Software}, são utilizados métodos, modelos e técnicas durante o desenvolvimento de um produto. Esta seção aborda conceitos da metodologia ágil de desenvolvimento chamada Scrum, exibindo as principais características associadas a esta metodologia.
 
 \subsection{Scrum}
 Desenvolvido por Schwaber e Sutherland \cite{schwaber_guia_2013}, o Scrum é um \textit{framework} flexível utilizado no gerenciamento do desenvolvimento de produtos complexos por ser leve e de fácil compreensão, passível de execução iterativa e incremental.
@@ -352,4 +305,4 @@ Implementações de \textit{software} utilizando o modelo SOA demonstram que é 
 
 Um projeto de Engenharia de \textit{software} envolve aspectos metodológicos e técnicos. É possível o desenvolvimento de \textit{software} associando um processo adaptado à técnicas, métodos e modelos existentes. Tanto o processo quanto as ferramentas utilizadas devem ser adaptadas ao objetivo final definido.
 
-Assim, pode-se afirmar a possibilidade de construção de um sistema de software baseado no modelo SOA, utilizando o protocolo mais adequado ao modelo de negócio. A definição de um processo de desevolvimento, bem como o uso de técnicas, métodos e ferramentas da área de Engenharia de \textit{software} podem ser aplicadas à um projeto de uma aplicação distribuída.
+Assim, pode-se afirmar a possibilidade de construção de um sistema de software baseado no modelo SOA, utilizando o protocolo mais adequado ao modelo de negócio. A utilização de um processo de desevolvimento, bem como o uso de técnicas, métodos e ferramentas da área de Engenharia de \textit{software} podem ser aplicadas à um projeto de uma aplicação distribuída.
