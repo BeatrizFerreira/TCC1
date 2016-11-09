@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  17 JUN 2016 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  8 NOV 2016 22:55
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1289,7 +1289,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [23]
 [24] [25
 
-] <figuras/modelo_mvc.PNG, id=375, 232.87pt x 269.005pt>
+] <figuras/modelo_mvc.PNG, id=377, 232.87pt x 269.005pt>
 File: figuras/modelo_mvc.PNG Graphic file (type png)
 
 <use figuras/modelo_mvc.PNG>
@@ -1300,7 +1300,7 @@ Package pdftex.def Info: figuras/modelo_mvc.PNG used on input line 30.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-<figuras/servico_na_arquitetura.png, id=446, 408.02437pt x 168.63pt>
+<figuras/servico_na_arquitetura.png, id=448, 408.02437pt x 168.63pt>
 File: figuras/servico_na_arquitetura.png Graphic file (type png)
 
 <use figuras/servico_na_arquitetura.png>
@@ -1308,7 +1308,7 @@ Package pdftex.def Info: figuras/servico_na_arquitetura.png used on input line
 89.
 (pdftex.def)             Requested size: 326.41994pt x 134.90417pt.
  [29] [30 <./figuras/servico_na_arquitetura.png>]
-<figuras/modelos_integracao_soa.png, id=479, 593.96906pt x 347.04657pt>
+<figuras/modelos_integracao_soa.png, id=483, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
 
 <use figuras/modelos_integracao_soa.png>
@@ -1318,7 +1318,7 @@ Package pdftex.def Info: figuras/modelos_integracao_soa.png used on input line
  [31]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
- [32 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=503, 5
+ [32 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=507, 5
 68.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
@@ -1326,7 +1326,7 @@ File: figuras/padrao_ESB.png Graphic file (type png)
 Package pdftex.def Info: figuras/padrao_ESB.png used on input line 151.
 (pdftex.def)             Requested size: 284.18602pt x 171.26442pt.
  [33 <./figuras/padrao_ESB.png>] [34]
-<figuras/padroes_comunicacao.png, id=549, 901.11656pt x 299.61937pt>
+<figuras/padroes_comunicacao.png, id=553, 901.11656pt x 299.61937pt>
 File: figuras/padroes_comunicacao.png Graphic file (type png)
 
 <use figuras/padroes_comunicacao.png>
@@ -1345,7 +1345,7 @@ Underfull \vbox (badness 7777) has occurred while \output is active []
 Underfull \vbox (badness 4132) has occurred while \output is active []
 
  [39]
-[40] <figuras/ciclo_rup.jpg, id=648, 443.0151pt x 332.442pt>
+[40] <figuras/ciclo_rup.jpg, id=653, 443.0151pt x 332.442pt>
 File: figuras/ciclo_rup.jpg Graphic file (type jpg)
 
 <use figuras/ciclo_rup.jpg>
@@ -1358,7 +1358,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [42 <./figuras/ciclo_rup.jpg>] [43] [44]) (editaveis/proposta.tex [45] [46
 
 ]
-[47] <figuras/ambiente_virtual.png, id=727, 489.83pt x 389.455pt>
+[47] <figuras/ambiente_virtual.png, id=732, 489.83pt x 389.455pt>
 File: figuras/ambiente_virtual.png Graphic file (type png)
 
 <use figuras/ambiente_virtual.png>
@@ -1369,7 +1369,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48]
 [49 <./figuras/ambiente_virtual.png (PNG copy)>]
-<figuras/barramento_interoperabilidade.png, id=742, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.png, id=747, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.png Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.png>
@@ -1377,7 +1377,7 @@ Package pdftex.def Info: figuras/barramento_interoperabilidade.png used on inpu
 t line 66.
 (pdftex.def)             Requested size: 321.1943pt x 273.01517pt.
  [50]
-<figuras/uso_esb.png, id=750, 390.70969pt x 361.35pt>
+<figuras/uso_esb.png, id=755, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.png Graphic file (type png)
 
 <use figuras/uso_esb.png>
@@ -1387,20 +1387,25 @@ Package pdftex.def Info: figuras/uso_esb.png used on input line 81.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [52 <./figuras/u
-so_esb.png>] [53] <figuras/fluxo_basico_protocolo.png, id=784, 997.7275pt x 406
-.51875pt>
+so_esb.png>]
+Overfull \hbox (23.97556pt too wide) in paragraph at lines 111--124
+ [][] 
+ []
+
+[53] [54]
+<figuras/fluxo_basico_protocolo.png, id=794, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.png Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.png>
 Package pdftex.def Info: figuras/fluxo_basico_protocolo.png used on input line 
-119.
+148.
 (pdftex.def)             Requested size: 455.0pt x 185.3881pt.
- [54 <./figuras/fluxo_basico_protocolo.png>]
+ [55 <./figuras/fluxo_basico_protocolo.png>]
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 157.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 186.
 
 
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
@@ -1408,56 +1413,52 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55])
-(editaveis/engenhariadesoftware.tex [56]
-Underfull \vbox (badness 1067) has occurred while \output is active []
-
- [57
+ [56])
+(editaveis/engenhariadesoftware.tex [57] [58
 
 ]
-<figuras/processo_tcc.PNG, id=820, 825.83531pt x 365.11406pt>
+Underfull \vbox (badness 1067) has occurred while \output is active []
+
+ [59]
+<figuras/processo_tcc.PNG, id=835, 825.83531pt x 365.11406pt>
 File: figuras/processo_tcc.PNG Graphic file (type png)
 
 <use figuras/processo_tcc.PNG>
 Package pdftex.def Info: figuras/processo_tcc.PNG used on input line 25.
 (pdftex.def)             Requested size: 455.0pt x 201.16432pt.
- [58 <./figuras/processo_tcc.PNG>]
-<figuras/subprocesso_planejamento.PNG, id=828, 561.59813pt x 198.7425pt>
+ [60 <./figuras/processo_tcc.PNG>]
+<figuras/subprocesso_planejamento.PNG, id=843, 561.59813pt x 198.7425pt>
 File: figuras/subprocesso_planejamento.PNG Graphic file (type png)
 
 <use figuras/subprocesso_planejamento.PNG>
 Package pdftex.def Info: figuras/subprocesso_planejamento.PNG used on input lin
 e 45.
 (pdftex.def)             Requested size: 455.0pt x 161.01692pt.
- [59 <./figuras/subprocesso_planejamento.PNG>]
-<figuras/subprocesso_implementacao.PNG, id=837, 785.93625pt x 347.04657pt>
+ [61 <./figuras/subprocesso_planejamento.PNG>]
+<figuras/subprocesso_implementacao.PNG, id=851, 785.93625pt x 347.04657pt>
 File: figuras/subprocesso_implementacao.PNG Graphic file (type png)
 
 <use figuras/subprocesso_implementacao.PNG>
 Package pdftex.def Info: figuras/subprocesso_implementacao.PNG used on input li
 ne 63.
 (pdftex.def)             Requested size: 455.0pt x 200.92175pt.
- [60 <./figuras/subprocesso_implementacao.PNG>]
+ [62 <./figuras/subprocesso_implementacao.PNG>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-[62]
+[63] [64]
 Overfull \hbox (4.94069pt too wide) in paragraph at lines 118--129
  [][] 
  []
 
-) (editaveis/consideracoesfinais.tex [63] [64
+) (editaveis/consideracoesfinais.tex [65] [66
 
 ]) (tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [65]
-[66
+ [67]
+[68
 
 ]
 
@@ -1465,10 +1466,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[67] [68]) (editaveis/apendices.tex) (editaveis/anexos.tex) (tcc.ind)
+[69] [70]) (editaveis/apendices.tex) (editaveis/anexos.tex) (tcc.ind)
 
 AED: lastpage setting LastPage
-[69]
+[71]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1483,22 +1484,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: B55750BFA0D5C86BD7984FD258C0252C;7808.
 
+
+Package rerunfilecheck Warning: File `tcc.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `tcc.brf':
+(rerunfilecheck)             Before: 70D2A728F03181C7E670D1C4ADAECF39;7875
+(rerunfilecheck)             After:  B279E00B933753AACAC5BC751CABC3B5;7820.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15324 strings out of 493634
- 228424 string characters out of 3134424
- 405508 words of memory out of 3000000
- 18107 multiletter control sequences out of 15000+200000
+ 15329 strings out of 493634
+ 228479 string characters out of 3134424
+ 405694 words of memory out of 3000000
+ 18108 multiletter control sequences out of 15000+200000
  92052 words of font info for 59 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,13n,40p,1434b,1167s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,40p,1435b,1167s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
 enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
@@ -1518,9 +1524,9 @@ s/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
 12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
 m/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmtt10.pfb>
-Output written on tcc.pdf (71 pages, 1327036 bytes).
+Output written on tcc.pdf (73 pages, 1334529 bytes).
 PDF statistics:
- 1318 PDF objects out of 1440 (max. 8388607)
- 227 named destinations out of 1000 (max. 500000)
+ 1335 PDF objects out of 1440 (max. 8388607)
+ 231 named destinations out of 1000 (max. 500000)
  675 words of extra memory for PDF output out of 10000 (max. 10000000)
 
