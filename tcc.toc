@@ -65,11 +65,18 @@
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Desenvolvimento da Proposta}}{55}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{55}{section.4.1}
 \contentsline {section}{\numberline {4.2}Metodologia de Execu\IeC {\c c}\IeC {\~a}o da Proposta}{55}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Planejamento da Implementa\IeC {\c c}\IeC {\~a}o}{57}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Fase de Constru\IeC {\c c}\IeC {\~a}o}{58}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{59}{section.4.3}
+\contentsline {section}{\numberline {4.3}Cronograma de Execu\IeC {\c c}\IeC {\~a}o do TCC}{56}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Atividades de desenvolvimento}{56}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Constru\IeC {\c c}\IeC {\~a}o da Arquitetura}{58}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Adapta\IeC {\c c}\IeC {\~a}o de Aplica\IeC {\c c}\IeC {\~a}o Existente}{58}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Constru\IeC {\c c}\IeC {\~a}o do servi\IeC {\c c}o gerenciador de usu\IeC {\'a}rios}{62}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Constru\IeC {\c c}\IeC {\~a}o do Ambiente Virtual}{62}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Integra\IeC {\c c}\IeC {\~a}o atrav\IeC {\'e}s do ESB}{64}{subsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.1}Constru\IeC {\c c}\IeC {\~a}o de conector}{68}{subsubsection.4.4.4.1}
+\contentsline {section}{\numberline {4.5}Testes e Resultados}{68}{section.4.5}
+\contentsline {section}{\numberline {4.6}Considera\IeC {\c c}\IeC {\~o}es Finais}{68}{section.4.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{63}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es finais}}{69}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{65}{section*.12}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{71}{section*.12}

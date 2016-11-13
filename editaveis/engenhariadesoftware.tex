@@ -1,117 +1,29 @@
 \chapter[Desenvolvimento da Proposta]{Desenvolvimento da Proposta}
 
-Este capítulo apresenta o uso de metodologias e conceitos relacionados à Engenharia de Software que serão aplicados no desenvolvimento da proposta descrita no capítulo anterior.
+Este capítulo apresenta o uso de metodologias e conceitos relacionados à Engenharia de Software que aplicados no desenvolvimento da proposta descrita no capítulo anterior. Além disto, os testes aplicados e os resultados obtidos são descritos.
 
-A metodologia a ser utilizada é híbrida: contém elementos de metodologias clássicas e conhecidas na área de Engenharia de Software. Para melhor visualização da metodologia, um processo de execução de atividades foi modelado, e está detalhada neste capítulo.
-
-A seção 4.1 deste capítulo apresenta uma contextualização da proposta. A metodologia de execução da proposta, seção 4.2, apresenta a modelagem do processo de desenvolvimento de software adotado para a execução deste projeto de TCC, com detalhes sobre as atividades contidas em cada uma das fases e seus respectivos objetivos. Os cronogramas para as duas partes de execução do TCC são apresentados e detalhados na seção 4.3.
+REFAZER ESTE PARÁGRAFO AO FINAL DA ESCRITA DO CAPÍTULO - A seção 4.1 deste capítulo apresenta uma contextualização da proposta. A metodologia de execução da proposta, seção 4.2, apresenta a modelagem do processo de desenvolvimento de software adotado para a execução deste projeto de TCC, com detalhes sobre as atividades contidas em cada uma das fases e seus respectivos objetivos. Os cronogramas para as duas partes de execução do TCC são apresentados e detalhados na seção 4.3.
 
 \section{Introdução}
-O projeto de Engenharia de Software a ser desenvolvido como parte do trabalho de conclusão de curso consiste em uma arquitetura para uma plataforma virtual, onde as funcionalidades serão tratadas como serviços no contexto arquitetural. Os serviços ou funcionalidades desta plataforma virtual consistem de aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos no Laboratório Fábrica de Software da Universidade de Brasília. A plataforma virtual é um meio de disponibilizar tais trabalhos para uso pela comunidade.
+O projeto de Engenharia de Software desenvolvido como parte do trabalho de conclusão de curso consiste em uma arquitetura para uma plataforma virtual, onde as funcionalidades serão tratadas como serviços no contexto arquitetural. Os serviços ou funcionalidades desta plataforma virtual consistem de aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos em laboratórios de pesquisa e desenvolvimento de \textit{software} da Universidade de Brasília. A plataforma virtual é um meio de disponibilizar tais trabalhos para uso pela comunidade.
 
-A proposta descrita no capítulo 3 será desenvolvida utilizando-se de alguns conceitos de metodologias de desenvolvimento e de gerenciamento de projetos de software, adaptadas às necessidades deste projeto.
+A proposta descrita no capítulo 3 foi desenvolvida utilizando-se de alguns conceitos de metodologia ágil de desenvolvimento e de gerenciamento de projetos de software, adaptadas às necessidades deste projeto.
 
 \section{Metodologia de Execução da Proposta}
+%O uso de uma arquitetura baseada no modelo SOA não elimina o trabalho necessário para a inserção de novos serviços: o seu uso visa minimizar os reparos que devem ser feitos para que uma nova funcionalidade seja incorporada ao sistema, promovendo extensibilidade e flexibilidade à arquitetura construída. 
+
 Um projeto de Engenharia de Software deve ser realizado utilizando-se de metodologias, técnicas e ferramentas disponíveis, relacionadas à área de conhecimento, sendo sempre adaptadas de acordo com o projeto a ser desenvolvido visando, assim, o sucesso na conclusão do projeto.
 
-Entre as diversas metodologias de desenvolvimento de software existentes, foi decidido pela adoção de uma metodologia híbrida para o desenvolvimento deste projeto. Esta metodologia híbrida contém alguns conceitos relacionados ao RUP (\textit{Rational Unified Process}) e outros relacionados à metodologia ágil de desenvolvimento, mais especificamente o Scrum. 
+Entre as diversas metodologias de desenvolvimento de software existentes, foi decidido pela adoção de uma metodologia ágil para o desenvolvimento deste projeto. Para a execução, foram praticados conceitos relacionados à metodologia ágil de desenvolvimento, mais especificamente o Scrum. O modelo de desenvolvimento adotado foi iterativo e incremental, tornando a identificação de falhas e correção das mesmas mais eficiente, assim como a identificação de novas necessidades para que a arquitetura e o protocolo de comunicação propostos sejam implementados.
 
-A metodologia híbrida adotada é composta pelas fases do RUP e alguns de seus artefatos. Envolve também o conceito de histórias de usuário, que em sua maioria serão tratadas como histórias técnicas  neste projeto. Além disso, o modelo de desenvolvimento é iterativo e incremental, tornando a identificação de falhas e correção das mesmas mais eficiente, assim como a identificação de novas necessidades para que a arquitetura e o protocolo de comunicação propostos sejam implementados.
+Um dos conceitos ágeis utilizados foi o de histórias de usuário: descrição de funcionalidades que agregam valor ao produto final a ser entregue, escrita de maneira simples e facilmente entendida. As histórias elicitadas consistiram tanto de histórias que descrevem funcionalidades, quando de histórias técnicas, que tratam de adaptação e implantação de tecnologias e outros aspectos relacionados à características técnicas do desenvolvimento de software.
 
-Foi modelado um processo para a execução das atividades necessárias para a realização do trabalho de conclusão de curso, tanto para que a proposta pudesse ser elaborada, quanto para o planejamento e execução desta. A figura \ref{processo_tcc} ilustra o processo, ainda em andamento, e contém os aspectos relacionados à metodologia adotada.
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=1\textwidth]{figuras/processo_tcc.PNG}
-\caption{Processo de elaboração e execução do TCC.}
-\label{processo_tcc}
-\end{figure}
-
-A figura \ref{processo_tcc} apresenta o processo em execução, com suas fases e as atividades correspondentes de  cada fase. O processo foi dividido de acordo com as fases do RUP: iniciação, elaboração, construção e implantação. A fase de iniciação contém as atividades de \textit{Identificação de necessidade}, \textit{Estudo do contexto e Pesquisa por soluções} e \textit{Aprovação da Solução}: uma vez que a necessidade foi identificada, foi realizado um estudo sobre o contexto e uma pesquisa por soluções arquiteturais adequadas.
-
-A fase de elaboração contém atividades que procuram refinar conceitos relacionados a este modelo arquitetural escolhido, e definir padrões e ferramentas que serão utilizados na fase de construção, além de obter um plano de execução para a fase seguinte. Assim, foram realizadas as atividades de definição de um padrão de comunicação para a arquitetura, uma pesquisa sobre ferramentas que podem ser úteis no desenvolvimento da arquitetura da plataforma virtual e o planejamento da fase de construção.
-
-Na fase de construção, o planejamento realizado será executado. É nesta fase em que adaptações deverão ser feitas, tanto na plataforma virtual quanto em aplicações que fornecerão serviços. A fase de construção é constituída de ciclos iterativos e incrementais, e será detalhada mais adiante.
-
-A última fase definida no processo é a fase de implantação. Nesta fase, a plataforma deverá ser implantada e homologada para uso pela comunidade.
-
-Ao final do TCC 1, as fases do processo executadas foram a iniciação e a elaboração do projeto. O processo definido poderá ser readaptado durante as próximas etapas de realização do trabalho. Os processos definidos para as fases de construção e implantação podem ser repetidos sempre que uma nova funcionalidade implementada por um serviço seja incorporada à plataforma virtual criada.
-
-\subsection{Planejamento da Implementação}
-Durante a fase de construção, um subprocesso definido foi o de planejamento da implementação (subprocesso da fase de construção do projeto). As atividades e o fluxograma deste subprocesso podem ser visualizados na figura \ref{subprocesso_planejamento}.
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=1\textwidth]{figuras/subprocesso_planejamento.PNG}
-\caption{Fluxograma e atividades do subprocesso Planejar Implementação.}
-\label{subprocesso_planejamento}
-\end{figure}
-
-A figura \ref{subprocesso_planejamento} exibe as atividades realizadas durante a fase de elaboração definida no processo e que já foi realizada durante o TCC 1. As atividades são \textit{Definir escopo}, \textit{Definir metodologia}, \textit{Adaptar processo de implementação} e \textit{Criar cronograma}. No início do planejamento, o escopo do que será entregue ao final do trabalho de conclusão de curso foi definido. Esta atividade foi seguida da definição de uma metodologia de desenvolvimento de software para a execução do projeto e, baseando-se na metodologia definida, um processo a ser seguido para a implementação da arquitetura foi adaptado. Por fim, um cronograma de execução da implementação foi criado.
-
-Na atividade de definição do escopo não foi definida a aplicação que será adaptada e incorporada à plataforma como um serviço a fim de demonstrar a proposta feita. Esta escolha deverá ser feita durante a fase de construção.
-
-A metodologia definida foi do tipo híbrida, que utiliza conceitos das metodologias tradicional (RUP) e ágil (Scrum).
-
-\subsection{Fase de Construção}
-O uso de uma arquitetura baseada no modelo SOA não elimina o trabalho necessário para a inserção de novos serviços: o seu uso visa minimizar os reparos que devem ser feitos para que uma nova funcionalidade seja incorporada ao sistema, promovendo extensibilidade e flexibilidade à arquitetura construída.
-
-A fase de construção do processo definido tem como objetivo a implementação da plataforma virtual de acordo com os requisitos básicos levantados e que foram importantes para a proposta da solução e a adaptação de uma aplicação existente para ser incorporada à plataforma. Em um contexto onde novos serviços serão inseridos na plataforma em um tempo posterior à execução do TCC, esta fase será também executada (figura \ref{subprocesso_implementacao}).
-
-\begin{figure}[htb]
-\centering
-\includegraphics[width=1\textwidth]{figuras/subprocesso_implementacao.PNG}
-\caption{Fluxograma e atividades da fase de construção.}
-\label{subprocesso_implementacao}
-\end{figure}
-
-A figura \ref{subprocesso_implementacao} exibe o fluxograma de atividades a serem executadas no subprocesso de implementação definido na fase de construção da plataforma virtual. As atividades a serem realizadas são dependentes da definição do serviço que será incorporado à plataforma, pois, caso um novo serviço seja uma aplicação que deve ser adaptada, as atividades referentes à adaptação desta deverão ser executadas. Se o novo serviço ou funcionalidade, não for uma aplicação a ser adaptada para fornecer suas operações, pode-se executar as atividades e tarefas referentes à construção da plataforma (no caso do trabalho de conclusão de curso) ou adaptação desta para que a nova funcionalidade seja disponibilizada na plataforma.
-
-Um dos conceitos ágeis utilizados no subprocesso de implementação é o de histórias de usuário: descrição de funcionalidades que agregam valor ao produto final a ser entregue, escrita de maneira simples e facilmente entendida. As histórias a serem elicitadas consistirão tanto de histórias que descrevem funcionalidades, quando de histórias técnicas, que tratam de adaptação e implantação de tecnologias e outros aspectos mais relacionados à parte técnica do desenvolvimento de software do que à funcionalidades.
-
-Outro conceito associado à metodologia ágil de desenvolvimento de software é o de \textit{sprints}. Por se tratar de um modelo criado para ser iterativo e incremental, a fase de construção definida para este TCC consistirá de \textit{sprints} com períodos definidos de 1 (uma) semana. Foi estabelecido que a quantidade de \textit{sprints} será de 8 a 10.
-
-Durante a fase de construção em que as atividades de adaptação de uma aplicação existente e de implementação da plataforma virtual (com o auxílio do ESB selecionado) serão executadas. Estas atividades serão executadas de forma interativa e incremental. Desta forma, serão realizados testes para verificar a corretude e completude da integração entre as aplicações. Na modelagem do processo os testes se encontram implícitos, pois à medida em que partes das adaptações e implementações estiverem prontas, testes para validar e verificar a comunicação serão executados.
-
-O método adotado para teste consistirá em passos sistemáticos que simulem a troca de dados entre aplicações utilizando-se o ESB. O mecanismo de registro de \textit{log} de operações também será útil para os testes a serem realizados, pois exibem os processamentos executados pelo ESB.
-
-Quando finalizadas a adaptação da aplicação e a implementação da plataforma virtual, a fase de implantação será executada. Nesta última fase, testes de homologação do resultado final deste projeto serão realizados. Esta fase estará finalizada quando os testes de homologação forem realizados.
-
-As fases de construção e de implantação serão executadas durante a realização do TCC2.
+%Outro conceito associado ao Scrum que foi utilizado é o de \textit{sprints}. Por se tratar de um modelo criado para ser iterativo e incremental, a fase de construção definida para este TCC consistirá de \textit{sprints} com períodos definidos de 2 (duas) semanas.
 
 \section{Cronograma de Execução do TCC}
-Para o desenvolvimento da proposta e completude da mesma com sucesso, foi criado um cronograma para as fases de construção da proposta, aqui feita, e de implantação do produto final obtido. O cronograma contém as atividades a serem realizadas, bem como os prazos relacionados a cada uma das atividades e pode ser visualizado na tabela \ref{cronograma_tcc2}.
+Para o desenvolvimento da proposta e completude da mesma com sucesso, foram criados cronogramas para a concepção, construção e implantação do produto final obtido. O cronograma com atividades, bem como os prazos relacionados a cada uma destas e pode ser visualizado nas Tabelas \ref{cronograma_tcc1} e \ref{cronograma_tcc2}.
 
-\begin{table}[!h]
-\centering
-\caption{Cronograma de atividades relacionadas ao TCC 2}
-\label{cronograma_tcc2}
-\begin{tabular}{|p{9cm}|c|c|c|c|c|}
-\hline
-Atividade                                                   & \multicolumn{1}{l|}{Jul} & \multicolumn{1}{l|}{Ago} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{Out} & \multicolumn{1}{l|}{Nov} \\ \hline
-Análise de ferramentas a serem utilizadas                   & X                           &                             &                              &                            &                             \\ \hline
-Implantação da ferramenta escolhida                         & X                           &                             &                              &                            &                             \\ \hline
-Adaptação de uma aplicação já desenvolvida e Testes         &                             & X                              & X                            & X                          &                              \\ \hline
-Implementação da plataforma virtual e Testes                &                             & X                          & X                            & X                          &                             \\ \hline
-Implantação da plataforma virtual                           &                             &                            & X                          & X                            &                             \\ \hline
-Escrita do TCC 2                                            &                             &                             &                            & X                            & X                           \\ \hline
-\end{tabular}
-\end{table}
-
-
-\begin{itemize}
-\item \textbf{Análise de ferramentas a serem utilizadas:} será selecionada uma ferramenta que fornece os serviços de roteamento, adaptação de tecnologias e tratamento de formatos de dados e de mensagens. Para que isso ocorra, algumas das ferramentas levantadas serão analizadas com mais rigor para que uma seja eleita. A análise consistirá de testes de implantação da ferramentas, bem como de uma avaliação das funcionalidades e da facilidade de uso e aprendizagem.
-\item \textbf{Implantação da ferramenta escolhida:} após a escolha da ferramenta, esta deverá ser implantada em um servidor que tenha capacidade para tal. A implantação deverá facilitar o uso da ferramenta durante as atividades posteriores.
-\item \textbf{Adaptação de uma aplicação já desenvolvida e Testes:} aplicações já desenvolvidas podem não estar preparadas para serem incorporadas à plataforma virtual como um serviço. Para que isto ocorra, será selecionada uma aplicação para ser adaptada, sendo assim possível de ser disponibilizada na plataforma. Esta atividade também consiste em fazer com que as operações do novo serviço sejam acessadas via o protocolo estabelecido. Testes serão realizados para assegurar que o comportamento esperado da aplicação seja o mesmo ao final da adaptação da aplicação existente.
-\item \textbf{Implementação da plataforma virtual e Testes:} nesta atividade, a plataforma virtual será criada e o serviço que foi adaptado deverá ser incorporado a tal plataforma. Aqui serão implementados o uso do protocolo de comunicação estabelecido, bem como o uso da ferramenta ESB escolhida. Para assegurar a corretude e completude do escopo definido, serão realizados testes sistemáticos. Estes testes serão executados por meio da troca de mensagens entre aplicações utilizando o ESB escolhido.
-\end{itemize}
-
-As atividades de adaptação de uma aplicação e a incorporação desta aplicação como um serviço à plataforma virtual serão realizadas de maneira iterativa e incremental. Isto justifica o uso de um método de desenvolvimento de software capaz de fornecer suporte para que iterações sejam executadas. A intenção é ter pelo menos uma aplicação adaptada ao padrão do protocolo estabelecido e sendo utilizada na arquitetura como um serviço.
-
-Com relação às atividades realizadas durante o desenvolvimento do TCC 1, a tabela \ref{cronograma_tcc1} contém seus registros e os seus respectivos períodos de execução.
-
-
-\begin{table}[!h]
+\begin{table}[!htb]
 \centering
 \caption{Cronograma de atividades relacionadas ao TCC 1}
 \label{cronograma_tcc1}
@@ -127,3 +39,432 @@ Definição do padrão de comunicação utilizado                &              
 Escrita do TCC 1                                            &                             &                             &                              & X                           & X                           & X          \\ \hline
 \end{tabular}
 \end{table}
+
+\begin{table}[!htb]
+\centering
+\caption{Cronograma de atividades relacionadas ao TCC 2}
+\label{cronograma_tcc2}
+\begin{tabular}{|p{9cm}|c|c|c|c|c|c|}
+\hline
+Atividade                                            & \multicolumn{1}{l|}{Jul} & \multicolumn{1}{l|}{Ago} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{Out} & \multicolumn{1}{l|}{Nov} & \multicolumn{1}{l|}{Dez}\\ \hline
+Adaptação de uma aplicação já desenvolvida e Testes               & X & X &   &   &   &  \\ \hline
+Análise de ferramentas ESB                                        &   & X &   &   &   &  \\ \hline
+Implantação da ferramenta escolhida                               &   & X &   &   &   &  \\ \hline
+Implementação da plataforma virtual                               &   & X & X &   &   &  \\ \hline
+Integração de serviços, ESB e plataforma virtual e Testes         &   & X & X &   &   &  \\ \hline
+Escrita do artigo para ACM/SAC 2017                               &   &   & X &   &   &  \\ \hline
+Desenvolvimento de API de login e Testes                          &   &   &   & X &   &  \\ \hline
+Integração de API de login, ESB e plataforma virtual e Testes     &   &   &   & X & X &  \\ \hline
+Escrita do TCC 2                                                  &   &   &   &   & X &  \\ \hline
+Defesa do TCC 2                                                   &   &   &   &   &   & X\\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{Atividades de desenvolvimento}
+As atividades de adaptação de uma aplicação e a incorporação desta aplicação como um serviço à plataforma virtual foram realizadas de maneira iterativa e incremental. Isto justifica o uso de um método de desenvolvimento de software capaz de fornecer suporte para que iterações sejam executadas.
+
+As atividades descritas no cronograma de TCC 2 (Tabela \ref{cronograma_tcc2}) deram origem a histórias de usuário e histórias técnicas. Estas histórias foram tratadas como tarefas a serem realizadas para que a atividade pudesse ser completada com êxito. Abaixo estão descritas as histórias relacionadas a cada atividade.
+
+\begin{itemize}
+\item \textbf{Adaptação de uma aplicação já desenvolvida e Testes:} 
+
+\begin{itemize}
+\item Eu, como desenvolvedor(a), desejo verificar o escopo e proposta de aplicações já existentes para que eu possa selecionar uma destas transformá-la em um serviço (API REST).
+\item Eu, como desenvolvedor(a), desejo analisar o código-fonte disponibilizado da aplicação escolhida para identificar pontos de alteração necessários.
+\item Eu, como desenvolvedor(a), desejo construir uma camada REST para disponibilizar o serviço da aplicação escolhida sem  que a sua essência seja modificada.
+\end{itemize}
+
+\item \textbf{Análise de ferramentas ESB:} 
+\begin{itemize}
+\item Eu, como desenvolvedor(a) da arquitetura, desejo testar e analisar as ferramentas ESB levantadas inicialmente para que eu possa selecionar uma delas na implementação da arquitetura.
+\end{itemize}
+
+\item \textbf{Implantação da ferramenta escolhida:} 
+\begin{itemize}
+\item Eu, como desenvolvedor(a) da arquitetura, desejo ter a ferramenta ESB escolhida implantada para que eu possa realizar a integração das aplicações e realizar testes desta integração.
+\end{itemize}
+
+\item \textbf{Implementação da plataforma virtual:} 
+\begin{itemize}
+\item Eu, como usuário do sistema, desejo que o serviço adaptado seja disponibilizado por meio de uma plataforma virtual web para que eu possa utilizá-lo para fins diversos.
+\end{itemize}
+
+\item \textbf{Integração de serviços, ESB e plataforma virtual e Testes:} 
+\begin{itemize}
+\item Eu, como desenvolvedor(a) da arquitetura, desejo realizar a integração a aplicação que foi adaptada e a plataforma virtual através da ferramenta ESB escolhida para que este sirva de modelo para integrações futuras.
+\end{itemize}
+
+\item \textbf{Desenvolvimento de API de login e Testes:} 
+\begin{itemize}
+\item Eu, como desenvolvedor(a) da arquitetura, desejo desenvolver um serviço de login para diversas plataformas e serviços para que usuários de plataformas e serviços da arquiteura sejam gerenciados por este serviço.
+\item Eu, como usuário, gostaria de realizar meu cadastro na plataforma virtual para que eu possa usufruir do máximo de serviços da plataforma.
+\item Eu, como usuário, gostaria de realizar meu cadastro e login utilizando contas de redes sociais para que eu possa gerenciar mais facilmente minhas contas e usufruir do máximo de serviços da plataforma.
+\end{itemize}
+
+\item \textbf{Integração de API de login, ESB e plataforma virtual e Testes:} 
+\begin{itemize}
+\item Eu, como desenvolvedor(a) da arquitetura, desejo realizar a integração do serviço de login e a plataforma virtual através da ferramenta ESB escolhida para que usuários sejam gerenciados pelo serviço.
+\end{itemize}
+
+\end{itemize}
+
+
+\section{Construção da Arquitetura}
+COLOCAR AQUI UMA DESCRIÇÃO DA SEÇÃO
+
+\subsection{Adaptação de Aplicação Existente}
+Na parte inicial da implementação do protótipo da arquitetura proposta, as atividades realizadas foram a adaptação de uma ferramenta existente para integração de suas funcionalidades como um serviço; a construção de uma plataforma virtual onde os serviços podem ser acessados; e integração da plataforma virtual e do serviço com o auxílio do ESB escolhido. O padrão de comunicação estabelecido faz uso do protocolo REST. O formato de mensagem padrão trocados entre as aplicações através do ESB é o JSON.
+
+A aplicação escolhida para a atividade de adaptação é um algoritmo de análise de aderência de perfis baseado no currículo acadêmico de indivíduos \cite{jesus_algoritmo_2014}. Esta foi a aplicação escolhida devido ao recente desenvolvimento, disponibilidade para contato com o desenvolvedor do algoritmo e disponibilidade do código-fonte da aplicação.
+
+Primeiramente foi realizada a preparação do ambiente para execução da aplicação existente. O ambiente requerido consiste em um ambiente de desenvolvimento Java. As tecnologias utilizadas para a preparação do ambiente de desenvolvimento foram:
+\begin{itemize}
+\item Java SDK 1.8;
+\item Eclipse IDE;
+\item Apache Tomcat 7.0;
+\item Linux Mint 17.3;
+\item framework Jersey 2.24;
+\item POSTMAN REST Client.
+\end{itemize}
+
+Através de testes dinâmicos (execução da aplicação) e análise estática do código-fonte, foi identificado que esta aplicação utiliza a ontologia gerada por uma ferramenta chamada \textit{scriptLattes}\footnote{Mais sobre \textit{scriptLattes}: http://scriptlattes.sourceforge.net/} . Esta ferramenta realiza o \textit{download} automático do currículo acadêmico disponibilizado em uma plataforma brasileira de pesquisa. Deste currículo, em formato HTML, são extraídas informações sobre produções bibliográficas, técnicas e artísticas, além de orientações, projetos de pesquisa, prêmios, títulos e colaborações \cite{mena-chalco_scriptlattes:_2009}. Com base nos dados extraídos, o cálculo de aderência de perfis é realizado.
+
+Por ser uma aplicação Java, a proposta para adaptação é a construção de uma API RESTful em Java. Isto ocorreu para quea integridade do o algoritmo inicial fosse mantida. Para a construção da API, foi utilizado o framework Jersey 2.24 \footnote{Sobre o Jersey Framework: https://jersey.java.net/}, que viabiliza o desenvolvimento de \textit{RESTful Web Services} em Java.
+
+Para a disponibilização das funcionalidades da aplicação escolhida por meio de uma API, foram construídas uma operação que acessa o método principal de forma simples e outra operação que permite a comparação de mais de dois currículos. Desta forma, a API disponibiliza o cálculo de aderência de perfis 1:1 e 1:N. Para a realização do cálculo de aderência de perfis, as informações e os formatos de mensagem a ser enviado são demonstrados pelos Códigos (\textit{Listing}) \ref{lst:msgrecebida11} e \ref{lst:msgrecebida1N}.
+
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Formato de mensagem recebido pela API (1:1).},label={lst:msgrecebida11}]
+{
+"individuo_base":{
+         "nome_base":"<nome_base_como_no_curriculo_lattes>",
+         "id_base":"<id_como_no_curriculo_lattes>"
+            },
+"individuo_destino":{
+     "nome_destino":"<nome_como_no_curriculo_lattes>",
+     "id_destino":"<id_como_no_curriculo_lattes>"
+            },
+"cv_base":"<arquivo_como_grande_string>",
+"cv_destino":"<arquivo_como_grande_string>"
+}
+\end{lstlisting}
+
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Formato de mensagem recebido pela API (1:N).},label={lst:msgrecebida1N}]
+{
+"individuo_base":{
+	        	 "nome_base":"<nome_base_como_no_curriculo_lattes>",
+    		     "id_base":"<id_como_no_curriculo_lattes>"
+	            },
+"individuos_destino":{
+				"<nome1>":"<id_curriculo_lattes_01>",
+				"<nomeX>":"<id_curriculo_lattes_0X>"
+				},
+"cv_base":"<arquivo_como_grande_string>",
+"cvs_destino":{
+				"<nome1>":"<arquivo_como_grande_string>",
+				"<nomeX>":"<arquivo_como_grande_string>"
+				}
+}
+\end{lstlisting}
+
+O nome completo, código identificador do currículo e arquivo do currículo devem ser enviados na mensagem escrita no formato JSON. Devido ao impedimento de download automático do currículo acadêmico causado pelo uso de \textit{captchas}, a ferramenta \textit{scriptLattes} foi adaptada para execução local. Para tanto, se faz necessário o recebimento do currículo acadêmico em formato HTML, nome conforme informado no currículo e o código identificar correspondente.
+
+A partir de tais informações, os nomes do indivíduos são fornecidos ao código de aderência de perfis. Os resultados finais são enviados como resposta e contém os nomes dos indivíduos e o percentual de aderência. A mensagem de resposta também é no formato JSON. Assim, os formatos de mensagens de resposta para os cálculos de aderência 1:1 e 1:N são exibidos nos Códigos (\textit{Listing}) \ref{lst:msgresposta11} e \ref{lst:msgresposta1N}.
+
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Formato de mensagem de resposta(1:1).},label={lst:msgresposta11}]
+{
+"individuo_base":{
+         "nome_base":"<nome_base_como_no_curriculo_lattes>",
+         "id_base":"<id_como_no_curriculo_lattes>"
+            },
+"individuo_destino":{
+     "nome_destino":"<nome_como_no_curriculo_lattes>",
+     "id_destino":"<id_como_no_curriculo_lattes>"
+            },
+"percentual_aderencia":"<valor_calculado_em_porcentagem>",
+"equivalencias":{
+				"<titulo1>":[<titulo_destino_equivalente1>,...,<titulo_destino_equivalenteN>],
+				"<tituloN>":[<titulo_destino_equivalente1>,...,<titulo_destino_equivalenteN>],
+				}
+}
+
+
+\end{lstlisting}
+
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Formato de mensagem de resposta (1:N).},label={lst:msgresposta1N}]
+{
+"individuo_base":{
+         "nome_base":"<nome_base_como_no_curriculo_lattes>",
+         "id_base":"<id_como_no_curriculo_lattes>"
+         },
+"<idbase_iddestino1>":{
+		"percentual_aderencia":"<valor_calculado_em_porcentagem>",
+		"individuo_destino1":{
+						     "nome_destino":"<nome_como_no_curriculo_lattes>",
+						     "id_destino":"<id_como_no_curriculo_lattes>"
+				            },
+		"equivalencias":{
+				"<titulo1>":[<titulo_destino_equivalente1>,...,<titulo_destino_equivalenteN>],
+				"<tituloN>":[<titulo_destino_equivalente1>,...,<titulo_destino_equivalenteN>],
+				}
+	},
+"<idbase_iddestinoN>":{
+		"percentual_aderencia":"<valor_calculado_em_porcentagem>",
+		"individuo_destinoN":{
+						     "nome_destino":"<nome_como_no_curriculo_lattes>",
+						     "id_destino":"<id_como_no_curriculo_lattes>"
+				            },
+		"equivalencias":{
+				"<titulo1>":[<titulo_destino_equivalente1>,...,<titulo_destino_equivalenteN>],
+				"<tituloN>":[<titulo_destino_equivalente1>,...,<titulo_destino_equivalenteN>],
+				}
+	}
+}
+\end{lstlisting}
+
+As mensagens de resposta contém o nome e o código identificador do currículo dos indivíduos, o valor do percentual de aderência obtido e uma lista de equivalências de publicações. Como as análises são realizadas com base nas produções bibliográficas, técnicas e artísticas, orientações, projetos de pesquisa, prêmios, títulos e colaborações é possível parear as equivalências destes artefatos entre os indivíduos. Esta também foi uma modificação realizada, cujo objetivo é fornecer ao usuário não somente um percentual, mas identificar produções em temas de interesse mútuo. Estas informações também estão inclusas na mensagem de resposta a ser enviada.
+
+Os testes de envio de requisição e verificação de respostas obtidas foram realizados com o uso do aplicativo Postman REST Client\footnote{Mais sobre Postman: https://www.getpostman.com/}. Esta ferramenta é utilizada como um aplicativo no Google Chrome e colabora na realização de testes de APIs RESTful. O app Postman permite que requisições sejam facilmente construídas, permitindo assim que APIs RESTful sejam testadas sem a necessidade de construir uma aplicação cliente apenas para a execução de testes da API desenvolvida.
+
+A API RESTful construída a partir da aplicação já existente foi implantada em um servidor de aplicações (Apache Tomcat 7.0). Desta forma, foi disponibilizada e pôde ser testada e, posteriormente, conectada ao barramento de serviços escolhido (WSO2 ESB).
+
+\subsection{Construção do serviço gerenciador de usuários}
+API LOGIN
+
+\subsection{Construção do Ambiente Virtual}
+O ambiente virtual foi construído com o propósito de implementar uma aplicação \textit{front-end} para usufruto de serviços disponibilizados e conectados ao barramento de serviços. O ambiente virtual é o elemento responsável pela coleta de dados necessários para a execução de um serviço. O envio destes dados é por meio de uma requisição ao ESB. Este componente arquitetural é também responsável por exibir resultados obtidos nas respostas recebidas dos serviços. Para o usuário, o uso de serviços externos ao ambiente virtual é transparente. Isto significa que o usuário final não distingue se a operação é realizada pelo ambiente virtual ou por um serviço externo à esta plataforma.
+
+Para o desenvolvimento, optou-se pelo uso da linguagem de programação Python (3.4). Esta linguagem de programação possui frameworks que permitem a construção de plataformas para web. O framework escolhido é conhecido como Django (versão 1.9). O ambiente de desenvolvimento foi estabelecido com o sistema operacional Linux Mint (17.3). A construção do código-fonte foi realizado com o auxílio da IDE para Python, PyCharm IDE.
+
+Uma das estruturas de dados suportadas pela linguagem de programação Python é o dicionário. Esta estrutura define pares chave-valor e pode ser facilmente manipulada. Como a estrutura JSON também consiste de pares chave-valor, os dados das requisições são construídos no formato de um dicionário e convertido para JSON.
+
+Existe uma variedade de bibliotecas disponíveis para uso no desenvolvimento de sistemas de software em Django. Como o desenvolvimento desta plataforma será contínua assim como a produção de software no contexto definido, a existência de diversas bibliotecas colabora e estimula a evolução da mesma. Python dispõe da biblioteca Request (http://docs.python-requests.org/en/master/). Esta biblioteca facilita a implementação de requisições HTTP de todos os tipos (GET, POST, PUT, DELETE, OPTIONS) realizadas em aplicações Python. Para realizar uma requisição simples é necessário definir a URL, dados de cabeçalho e valores do corpo da mensagem (\textit{payload}) (Código (Listing) \ref{lst:requisicaopython}).
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Requisição HTTP em Python utilizando a biblioteca Request.},label={lst:requisicaopython}]
+def calcula_aderencia_simples():
+    url = "http://localhost:8280/aderencia/simples"
+    cabecalho = {'Content-type': 'application/json'}
+    ...
+    requests.post(url, data=json.dumps(conteudo), headers=cabecalho, timeout=6000)
+\end{lstlisting}
+
+O Código (Listing) \ref{lst:requisicaopython} representa o código-fonte do \textit{backend} de uma requisição realizada no ambiente virtual para uso do serviço disponibilizado no barramento de serviços do ESB. A url representa o endereço de acesso ao serviço. O cabeçalho deve conter a operação requisitada ao serviço. Os valores do corpo da mensagem contém os parâmetros requisitados pelo serviço para que este possa executar a operação desejada.
+
+A requisição realizada retorna uma resposta. As principais informações contidas na mensagem de resposta são o conteúdo e o código de status da mensagem. O conteúdo pode ser um texto ou um JSON com dados de resposta enviados pelo serviço. O status da mensagem informa se a requisição foi aceita com sucesso ou contém erros, além de indicar a inexistência da operação ou serviço ou a não autorização para acesso.
+
+Uma vez realizada a requisição, o ambiente virtual é o componente arquitetural responsável por exibir o conteúdo da mensagem de resposta do serviço ao usuário. Os valores contidos na mensagem de resposta é especificado no contrato de serviços da aplicação. No caso implementado, a resposta obtida está no formato JSON e os identificadores (chaves) de cada valor são conhecidos. Desta forma, o ambiente virtual trata o payload de resposta como um dicionário e os valores obtidos são exibidos ao usuário final da plataforma \textit{web} (ver Figura \ref{print_ambiente_virtual}).
+
+
+COLOCAR AQUI O PRINT DA TELA DO AMBIENTE VIRTUAL EXIBINDO OS DADOS.tem que mudar a figura
+\begin{figure}[!hbt]
+\centering
+\includegraphics[scale=0.7]{figuras/ambiente_virtual.png}
+\caption{Dados exibidos no Ambiente Virtual.}
+\label{print_ambiente_virtual}
+\end{figure}
+
+A Figura \ref{print_ambiente_virtual} exibe um exemplo de uma aplicação \textit{front-end} renderizando e exibindo os dados obtidos através de uma requisição realizada. Os dados da requisição realizada para o serviço de cálculo de aderência de perfis são dispostos como exibido na Figura \ref{print_ambiente_virtual}. Contudo, tais dados poderiam ser exibidos de uma maneira diferente, inclusive mostrando os resultados de equivalências entre produções bibliográficas, técnicas e artísticas, orientações, projetos de pesquisa, prêmios, títulos e colaborações dos indivíduos em questão.
+
+\subsection{Integração através do ESB}
+A arquitetura SOA implementada utilizou a abordagem de integração Hub-and-Spoke. Para a implementação desta abordagem é necessário o uso de um barramento de serviços. O barramento escolhido neste estudo de caso foi o WSO2 ESB, devido ao fato de este atender aos critérios de seleção estabelecidos. 
+
+Este barramento de serviços oferece as opções de adicionar o serviço como um serviço de \textit{proxy} \footnote{Serviços \textit{Proxy} no WSO2 ESB: https://docs.wso2.com/display/ESB480/Working+with+Proxy+Services} e também como uma API. O serviço de \textit{proxy} é um recurso fornecido pelo WSO2 ESB que recebe mensagens de requisição de serviços e pode processar a mensagem antes de redirecionar ao serviço. Os fluxos de mensagens de requisição e de resposta são tratados pelo serviço de \textit{proxy}. Este recurso permite a introdução de novas funcionalidades ao serviço sem alterá-lo. O tratamento de requisições pode definir respostas sem mesmo entregar as requisições aos serviços. O WSO2 ESB também permite a exposição de APIs RESTful e a mediação de requisições realizadas no ESB. O uso de WSO2 ESB REST API permite a configuração direta de \textit{end-points} com a especificação de uma operação HTTP, URI \textit{template} e URI \textit{mappings}. Estes componentes de URI definem a URL de acesso à operação/serviço.
+
+O serviço adicionado ao barramento consiste de uma aplicação que realiza o cálculo da aderência de perfis de usuários. Este serviço fornece suas operações por meio de uma API RESTful e está implantado em um servidor de aplicaçãoes externo (Tomcat 7.0). As operações deste serviço podem ser adicionadas tanto como um serviço de \textit{proxy}, quanto como uma API ao barramento. Em ambos os casos será gerado uma URL de acesso ao serviço e suas operações. Por se caracterizar em um API, o serviço foi adicionado ao barramento como tal. Ao adicionar uma API ao barramento, o endereço de acesso aos recursos definidos pela API REST pode ser modificado. Esta modificação tem como finalidade simplificar grandes URLs de acesso ou até mesmo eliminar a necessidade de dados padrões que são definidos na própria URL.
+
+Para a adição do serviço como API ao WSO2 ESB, cada operação da API é definida como um recurso ou operação. O serviço de cálculo de aderência de currículo adicionado possui duas operações. As operações seguem o mesmo padrão de execução quando as requisições são realizadas. A diferença é o modo como o conteúdo das mensagens estão organizadas. Abaixo está o modelo de código XML gerado ao adicionar a API como um serviço no ESB.
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=XML,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Código XML gerado pelo WSO2ESB durante o \textit{deploy} da API REST.} ,label={lst:xmldeployapi}]
+<api xmlns="http://ws.apache.org/ns/synapse" name="AderenciaPerfilLattes" context="/aderencia">
+   <resource methods="POST" url-mapping="/simples">
+      <inSequence>
+         <property name="content-type" value="application/json" scope="default"/>
+         <send>
+            <endpoint>
+               <http method="POST" uri-template="<URL_da_operacao_do_servico>"/>
+            </endpoint>
+         </send>
+      </inSequence>
+      <outSequence>
+         <send/>
+      </outSequence>
+   </resource>
+   <resource methods="POST" url-mapping="/composta">
+      <inSequence>
+         <property name="content-type" value="application/json" scope="default"/>
+         <send>
+            <endpoint>
+               <http method="POST" uri-template="<URL_da_operacao_do_servico>"/>
+            </endpoint>
+         </send>
+      </inSequence>
+      <outSequence>
+         <send/>
+      </outSequence>
+   </resource>
+</api>
+\end{lstlisting}
+
+Este modelo apresenta os passos a serem seguidos pela ferramenta quando uma requisição é feita para a API que realiza o cálculo de aderência de perfis. As requisições feitas para ambas operações fornecidas pelo serviço são identificadas como um recurso. As requisições realizadas são do tipo POST porque o recebimento de dados no conteúdo da mensagem só é permitido quando é realizada esta operação. Esta é uma restrição do framework Jersey utilizado para a construção da API RESTfull do serviço de cálculo de aderência de perfis de usuários. O valor “\textit{url-mapping}” define o nome reconhecido pelo ESB da operação do serviço requisitada.
+
+A sequência de entrada (\textit{inSequence}) estabelece os passos serem seguidos quando uma requisição é recebida pelo ESB. Aqui conversões de formatos de mensagens e adaptações entre protocolos podem ser realizados. Neste caso, o ESB deve redirecionar o \textit{payload} da mensagem diretamente à URL indicada na \textit{tag} <http>. A sequência de saída (\textit{outSequence}) define o que deve ser feito quando a resposta correspondente à requisição é recebida pelo ESB. Novamente, as mensagens podem ser tratadas, convertidas, salvas, clonadas e redirecionadas também para outros serviços ou aplicações cliente. A sequência de saída definida ao adicionar o serviço de cálculo de aderência de currículo apenas redireciona a resposta recebida ao ambiente virtual. Sequências para casos de falhas (\textit{faultSequence}) também podem ser definidas.
+
+O serviço não é capaz de distinguir quando uma requisição é realizada por uma conexão ponto a ponto entre aplicações ou quando é realizada por um software intermediário como o ESB. Enquanto isto, o usuário desconhece o mecanismo de execução de tal serviço.
+
+O ambiente virtual desenvolvido implementa o \textit{front-end} do serviço: os dados são capturados nesta plataforma \textit{web} e em seguida a requisição ao serviço do ESB é enviada. A Figura  \ref{integracao_esb_front_rest_api_tcc} ilustra a integração de serviços e componentes de \textit{software}.
+
+\begin{figure}[!hbt]
+\centering
+\includegraphics[scale=0.7]{figuras/integracao_esb_front_rest_api_tcc.png}
+\caption{Ilustração da integração final obtida.}
+\label{integracao_esb_front_rest_api_tcc}
+\end{figure}
+
+A Figura \ref{integracao_esb_front_rest_api_tcc} apresenta os componentes e o fluxo de mensagens de requisições e resposta. A comunicação é iniciada quando o usuário fornece os dados necessários e solicita o serviço informado. O ambiente virtual trata estas informações, as organiza e identifica conforme o solicitado no contrato de serviços e realiza a requisição. O ESB redireciona esta requisição ao serviço correspondente, indicado pela URL. A resposta obtida pelo ESB é redirecionada ao ambiente virtual.
+
+\subsubsection{Construção de conector}
+falar da construção do conector para o login e como foi feito para o deploy como serviço.
+Descrever aqui o integração do serviço de login. falar que aqui tem um exemplo de deploy do serviço como serviço proxy.
+
+
+\section{Testes e Resultados}
+colocar aqui os testes de desempenho, de melhoria de desempenho e comparação dos resultados. 
+colocar aqui tbm os resultados de análise de tempo necessário para adaptação da aplicação.
+
+\section{Considerações Finais}
+colocar nas conclusões do capítulo que o teste de aplicações legadas (aplicação de aderencia) demonstram como inserir uma aplicação legada como serviço à arquitetura definida e com o uso do recurso de disponibilizar o serviço enquanto API REST  e blablabla.... e que o teste com aplicações novas com o uso de conetores (login) apresenta um exemplo de como conectar aplicações novas que são planejadas para serem uma API REST e integradas como um serviço.

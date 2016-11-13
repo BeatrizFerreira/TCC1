@@ -3,7 +3,6 @@
 \backcite {Bianco2007}{{13}{(document)}{Doc-Start}}
 \backcite {bianco_architecting_2011}{{13}{(document)}{Doc-Start}}
 \backcite {josuttis_soa_2007}{{13}{(document)}{Doc-Start}}
-\backcite {henrique_rup_2015}{{13}{(document)}{Doc-Start}}
 \backcite {bass_software_archi_practice_2003}{{21}{1}{chapter.1}}
 \backcite {bass_software_archi_practice_2003}{{21}{1}{chapter.1}}
 \backcite {pressman2006engenharia}{{21}{1}{chapter.1}}
@@ -112,3 +111,5 @@
 \backcite {rozlog_restesoap_2013}{{50}{3.3.3}{subsection.3.3.3}}
 \backcite {canaltech_o_2015}{{51}{3.3.3}{subsection.3.3.3}}
 \backcite {canaltech_o_2015}{{51}{3.3.3}{subsection.3.3.3}}
+\backcite {jesus_algoritmo_2014}{{58}{4.4.1}{subsection.4.4.1}}
+\backcite {mena-chalco_scriptlattes:_2009}{{59}{4.4.1}{subsection.4.4.1}}
