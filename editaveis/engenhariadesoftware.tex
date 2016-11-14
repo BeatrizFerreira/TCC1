@@ -320,7 +320,87 @@ Os testes de envio de requisição e verificação de respostas obtidas foram re
 A API RESTful construída a partir da aplicação já existente foi implantada em um servidor de aplicações (Apache Tomcat 7.0). Desta forma, foi disponibilizada e pôde ser testada e, posteriormente, conectada ao barramento de serviços escolhido (WSO2 ESB).
 
 \subsection{Construção do serviço gerenciador de usuários}
-API LOGIN
+Um serviço para gerenciamento de usuários foi construído com o intuito de controlar o acesso de usuários às aplicações cliente e serviços conectados ao barramento de serviços. Este serviço armazena informações de usuários e quais as aplicações que o usuário possui permissão de acesso. Desta forma, o acesso a serviços contidos em uma mesma aplicação cliente pode ser gerenciado por meio deste terceiro serviço.
+
+As tecnologias utilizadas para o desenvolvimento da API de gerenciamento de usuários foram:
+\begin{itemize}
+\item Python 3.4;
+\item Django 1.9;
+\item Django REST framework (versão 3);
+\item PyCharm IDE;
+\item Linux Mint 17.3.
+\end{itemize}
+
+A API de gerenciamento de usuários desenvolvida possui três das operações básicas do protocolo HTTP: GET, POST e PUT. Para cada uma destas operações dispõe de um método correspondente. O método GET não recebe parâmetros no corpo da mensagem: os parâmetros são parte da URL e, a partir do nome de usuário e do nome identificador de uma aplicação ou serviço, retorna se o usuário possui autorização de acesso à aplicação ou serviço. O registro de usuários e a associação ao serviço ou aplicação é feito por meio do método POST: o corpo da mensagem JSON contém os dados do usuário e o nome que identifica a aplicação ou serviço. O método PUT foi desenvolvido para que os dados do usuário possam ser atualizados.
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Formato de mensagem recebido pelo serviço de gerenciamento de usuários (método POST).},label={lst:msgloginpost}]
+{
+"usuario":{
+	"first_name":"<primeiro_nome>",
+	"last_name":"<sobrenome>",
+	"username":"<nome_de_usuario>",
+	"password":"<senha>",
+	"email":"<email>"
+	},
+"aplicacao":"<nome_aplicacao>"
+}
+\end{lstlisting}
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=Java,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Formato de mensagem recebido pelo serviço de gerenciamento de usuários (método PUT).},label={lst:msgloginput}]
+{
+"first_name":"<primeiro_nome>",
+"last_name":"<sobrenome>",
+"username":"<nome_de_usuario>",
+"password":"<senha>",
+"email":"<email>"
+}
+\end{lstlisting}
+
+Os Códigos (\textit{Listings}) \ref{lst:msgloginpost} e \ref{lst:msgloginput} exibem os formatos de mensagem aceitos pelos métodos POST e PUT da API construída. Conforme exposto, o método PUT, no estado atual da API, recebe apenas dados para atualização do registro do usuário. O método POST, recebe dados para registro do usuário, bem como o nome identificador do serviço ou aplicação.
 
 \subsection{Construção do Ambiente Virtual}
 O ambiente virtual foi construído com o propósito de implementar uma aplicação \textit{front-end} para usufruto de serviços disponibilizados e conectados ao barramento de serviços. O ambiente virtual é o elemento responsável pela coleta de dados necessários para a execução de um serviço. O envio destes dados é por meio de uma requisição ao ESB. Este componente arquitetural é também responsável por exibir resultados obtidos nas respostas recebidas dos serviços. Para o usuário, o uso de serviços externos ao ambiente virtual é transparente. Isto significa que o usuário final não distingue se a operação é realizada pelo ambiente virtual ou por um serviço externo à esta plataforma.
@@ -458,13 +538,73 @@ O ambiente virtual desenvolvido implementa o \textit{front-end} do serviço: os 
 A Figura \ref{integracao_esb_front_rest_api_tcc} apresenta os componentes e o fluxo de mensagens de requisições e resposta. A comunicação é iniciada quando o usuário fornece os dados necessários e solicita o serviço informado. O ambiente virtual trata estas informações, as organiza e identifica conforme o solicitado no contrato de serviços e realiza a requisição. O ESB redireciona esta requisição ao serviço correspondente, indicado pela URL. A resposta obtida pelo ESB é redirecionada ao ambiente virtual.
 
 \subsubsection{Construção de conector}
-falar da construção do conector para o login e como foi feito para o deploy como serviço.
-Descrever aqui o integração do serviço de login. falar que aqui tem um exemplo de deploy do serviço como serviço proxy.
+Um conector facilita a interação entre aplicações cliente e operações fornecidas por serviços, permitindo que estes clientes interajam com APIs de serviços como Google+, Facebook e GitHub \cite{wso2}. Para a conexão com a API de gerenciamento de usuários e aplicações, foi criado um conector que trata a mensagem recebida, ajusta os dados da mensagem para o formato correto e envia a requisição para a API. O conector foi construído com base na documentação da ferramentas WSO2 ESB\footnote{Instruções em: https://docs.wso2.com/display/ESBCONNECTORS/Writing+a+Connector}. O código do conector está disponível no Apêndice A deste documento.
 
+As operações do serviço oferecido pela API de gerenciamento de usuários foram adicionadas ao ESB por meio da adição de um serviço de proxy, recebendo as mensagens, identificando a operação e conectando ao serviço utilizando o conector produzido. 
+
+O serviço de \textit{proxy} é um recurso fornecido pelo WSO2 ESB que recebe mensagens de requisição de serviços e pode processar a mensagem antes de redirecionar ao serviço. Os fluxos de mensagens de requisição e de resposta são tratados pelo serviço de \textit{proxy}. Este recurso permite a introdução de novas funcionalidades ao serviço sem alterá-lo. O tratamento de requisições pode definir respostas sem mesmo entregar as requisições aos serviços. Segue a definição do serviço de proxy criado.
+
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=XML,
+  basicstyle=\ttfamily\small, 
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{blue},
+  commentstyle=\color{verde},
+  extendedchars=true, 
+  showspaces=false, 
+  showstringspaces=false, 
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true, 
+  backgroundcolor=\color{cyan!10}, 
+  breakautoindent=true, 
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4,
+  texcl=true
+}
+\begin{lstlisting}[caption={Código XML de definição de serviço proxy de gerenciamento de usuários.} ,label={lst:xmlproxylogin}]
+COLOCAR O CoDIGO XML DO SERVIcO DE PROXY DE LOGIN
+\end{lstlisting}
+
+O Código (\textit{Listing}) \ref{lst:xmlproxylogin} exibe a definição do serviço de \textit{proxy} de gerenciamento de usuários em XML. O código é gerado pela ferramenta WSO2 ESB ao definir as ações do serviço. O código pode ser alterado pelo desenvolvedor/manutenedor da arquitetura definida.
+
+A definição do serviço de \textit{proxy} estabelece que o serviço permite conexão via protocolos HTTP e HTTPS, além de definir parâmetros necessários, as operações (\textit{Action}) permitidas e o que deve ser feito quando cada operação é acionada. O serviço de \textit{proxy} define também a sequência de saída da mensagem retornada pelo serviço (API REST).
+
+Integrado à plataforma virtual, o serviço de gerenciamento de usuários permite controlar o acesso de usuários aos serviços conectados e disponibilizados através da plataforma. Desta maneira, ao registrar um usuário na plataforma virtual, os dados do usuário são salvos e este é associado à plataforma por meio do seu identificador (método POST da API). Ao tentar realizar o login do usuário na plataforma virtual, é realizada uma requisição afim de verificar se o usuário possui permissão de acesso a plataforma (método GET da API).
 
 \section{Testes e Resultados}
-colocar aqui os testes de desempenho, de melhoria de desempenho e comparação dos resultados. 
-colocar aqui tbm os resultados de análise de tempo necessário para adaptação da aplicação.
+Foram realizadas medições de complexidade, desempenho e esforço empreendido no que diz respeito ao serviço de cálculo de aderência de perfiz. Com o auxílio da ferramenta CkeckStyle (http://checkstyle.sourceforge.net/), a complexidade ciclomática do projeto de algoritmo de inferência foi coletada e analisada. A coleta foi realizada antes e depois da adaptação. Como resultado, apenas dois métodos apresentaram complexidade ciclomática alta (acima de 10). Como houve alteração para que a comparação de perfis pudesse ser realizadas no modo 1:N, a complexidade ciclomática do método principal do cálculo de aderência aumentou em uma unidade. Não houve alteração no valor da complexidade ciclomática de outros métodos e classes, uma vez que não foram alteradas ou as alterações não influenciaram nesta medição.
+
+Os testes de desempenho executados compararam esta medida quando o serviço e a aplicação cliente são conectadas ponto a ponto, e quando são conectadas com o uso do WSO2 ESB. Estes testes foram realizados de duas maneiras: na primeira, os testes foram iniciados e as requisições foram enviadas em sequência, sem que nenhum dos componentes (API, ESB ou ambiente virtual) fossem reinicializados; na segunda, os componentes eram reinicializados antes do envio de uma requisição. Foi adotado esse método de comparação afim de verificar alterações quando um componente já teve uma operação executada ou dados da execução anterior armazenados em cache. A Tabela \ref{resultado_desempenho} exibe os resultados obtidos.
+
+\begin{table}[!htbp]
+\centering
+\caption{Resultados de Teste de Desempenho - Cálculo de Aderência de Perfis}
+\label{resultado_desempenho}
+\begin{tabular}{*5c}
+\toprule
+  & \multicolumn{2}{c}{Hot Scenario} & \multicolumn{2}{c}{Cold Scenario} \\ 
+\midrule
+Número do Teste               & ESB   & Ponto-a-Ponto & ESB    & Ponto-a-Ponto \\
+1                            & 97.8  &    103.2      & 107.4  &  123.9   \\
+2                            & 100.6 &     97.6      & 103.6  &  101.7   \\
+3                            & 96.1  &    104.2      & 107.9  &  105.5   \\ 
+4                            & 95.0  &    102.9      &  94.6  &  101.0   \\ 
+5                            & 105.6 &     98.7      &  95.2  &   94.8   \\ 
+\midrule
+\textbf{Média}                & 98.17 &    101.6      & 102.07 &  102.73   \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+Os testes de desempenho executados demonstraram que a média de tempo para obtenção de resposta ao requisitar o cálculo do fator de aderência foi maior quando a conexão foi realizada ponto a ponto. Os maiores e menos valores de cada coluna foram excluídos para o cálculo do valor médio final. O resultado dos testes de desempenho executados indica que a proposta arquitetural, como o uso do ESB, não degrada a performance geral da solução.
+
+**colocar aqui tbm os resultados de análise de tempo necessário para adaptação da aplicação.**
 
 \section{Considerações Finais}
 colocar nas conclusões do capítulo que o teste de aplicações legadas (aplicação de aderencia) demonstram como inserir uma aplicação legada como serviço à arquitetura definida e com o uso do recurso de disponibilizar o serviço enquanto API REST  e blablabla.... e que o teste com aplicações novas com o uso de conetores (login) apresenta um exemplo de como conectar aplicações novas que são planejadas para serem uma API REST e integradas como um serviço.
