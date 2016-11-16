@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  14 NOV 2016 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  16 NOV 2016 19:22
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1261,35 +1261,39 @@ l.2
 ])
 (fixos/indiceAutomatico.tex (tcc.toc
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 35.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 33.
 
-Underfull \vbox (badness 1325) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 86.
+(Font)              <14.4> on input line 82.
 
-Overfull \hbox (21.54878pt too wide) in paragraph at lines 90--90
+Overfull \hbox (21.54878pt too wide) in paragraph at lines 86--86
  [][] [][][]\T1/lmss/bx/n/12 CONECTOR API DE GE-REN-CI-A-MENTO DE USUÁ- 
  []
 
-) [20] [21] [22
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]) (editaveis/aspectosgerais.tex
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 18.
+ [20]
+[21] [22
+
+]) (editaveis/aspectosgerais.tex [23
+
+]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 23.
 
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 18.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 23.
 
-[23
+[24]) (editaveis/estadodaarte.tex [25] [26
 
-] [24]) (editaveis/estadodaarte.tex [25] [26] [27
-
-]
-<figuras/modelo_mvc.PNG, id=395, 232.87pt x 269.005pt>
+] [27]
+<figuras/modelo_mvc.PNG, id=386, 232.87pt x 269.005pt>
 File: figuras/modelo_mvc.PNG Graphic file (type png)
 
 <use figuras/modelo_mvc.PNG>
@@ -1300,7 +1304,7 @@ Package pdftex.def Info: figuras/modelo_mvc.PNG used on input line 30.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30]
-<figuras/servico_na_arquitetura.png, id=471, 408.02437pt x 168.63pt>
+<figuras/servico_na_arquitetura.png, id=461, 408.02437pt x 168.63pt>
 File: figuras/servico_na_arquitetura.png Graphic file (type png)
 
 <use figuras/servico_na_arquitetura.png>
@@ -1308,7 +1312,7 @@ Package pdftex.def Info: figuras/servico_na_arquitetura.png used on input line
 89.
 (pdftex.def)             Requested size: 326.41994pt x 134.90417pt.
  [31] [32 <./figuras/servico_na_arquitetura.png>]
-<figuras/modelos_integracao_soa.png, id=505, 593.96906pt x 347.04657pt>
+<figuras/modelos_integracao_soa.png, id=497, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
 
 <use figuras/modelos_integracao_soa.png>
@@ -1318,7 +1322,7 @@ Package pdftex.def Info: figuras/modelos_integracao_soa.png used on input line
  [33]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
- [34 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=529, 5
+ [34 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=522, 5
 68.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
@@ -1326,7 +1330,7 @@ File: figuras/padrao_ESB.png Graphic file (type png)
 Package pdftex.def Info: figuras/padrao_ESB.png used on input line 151.
 (pdftex.def)             Requested size: 284.18602pt x 171.26442pt.
  [35 <./figuras/padrao_ESB.png>] [36]
-<figuras/padroes_comunicacao.png, id=576, 901.11656pt x 299.61937pt>
+<figuras/padroes_comunicacao.png, id=570, 901.11656pt x 299.61937pt>
 File: figuras/padroes_comunicacao.png Graphic file (type png)
 
 <use figuras/padroes_comunicacao.png>
@@ -1352,7 +1356,7 @@ Underfull \vbox (badness 2617) has occurred while \output is active []
 (editaveis/proposta.tex [44] [45
 
 ]
-<figuras/ambiente_virtual.png, id=712, 489.83pt x 389.455pt>
+<figuras/ambiente_virtual.png, id=705, 489.83pt x 389.455pt>
 File: figuras/ambiente_virtual.png Graphic file (type png)
 
 <use figuras/ambiente_virtual.png>
@@ -1363,7 +1367,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
 [47 <./figuras/ambiente_virtual.png (PNG copy)>]
-<figuras/barramento_interoperabilidade.png, id=728, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.png, id=721, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.png Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.png>
@@ -1371,7 +1375,7 @@ Package pdftex.def Info: figuras/barramento_interoperabilidade.png used on inpu
 t line 66.
 (pdftex.def)             Requested size: 321.1943pt x 273.01517pt.
  [48]
-<figuras/uso_esb.png, id=736, 390.70969pt x 361.35pt>
+<figuras/uso_esb.png, id=729, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.png Graphic file (type png)
 
 <use figuras/uso_esb.png>
@@ -1381,13 +1385,8 @@ Package pdftex.def Info: figuras/uso_esb.png used on input line 81.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [49 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [50 <./figuras/u
-so_esb.png>]
-Overfull \hbox (23.97556pt too wide) in paragraph at lines 111--124
- [][] 
- []
-
-[51] [52]
-<figuras/fluxo_basico_protocolo.png, id=774, 997.7275pt x 406.51875pt>
+so_esb.png>] [51] [52]
+<figuras/fluxo_basico_protocolo.png, id=767, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.png Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.png>
@@ -1410,46 +1409,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [54])
 (editaveis/engenhariadesoftware.tex [55] [56
 
-] [57]
-Overfull \hbox (4.94069pt too wide) in paragraph at lines 30--41
- [][] 
- []
+] [57] [58] [59]
 
+LaTeX Warning: Citation `mena-chalco_scriptlattes:_2009' on page 60 undefined o
+n input line 87.
 
-Overfull \hbox (1.19246pt too wide) in paragraph at lines 47--61
- [][] 
- []
-
-[58] [59] [60]
-
-LaTeX Warning: Citation `mena-chalco_scriptlattes:_2009' on page 61 undefined o
-n input line 130.
-
+[60]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 159.
-[61] [62] [63] [64] [65]
+nput line 116.
+ [61] [62] [63] [64] [65]
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 437.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 394.
+ [66] <figuras/print_avsoa.png, id=962, 645.16031pt x 418.56375pt>
+File: figuras/print_avsoa.png Graphic file (type png)
+
+<use figuras/print_avsoa.png>
+Package pdftex.def Info: figuras/print_avsoa.png used on input line 409.
+(pdftex.def)             Requested size: 451.60913pt x 292.99261pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
-File: figuras/ambiente_virtual.png Graphic file (type png)
-
-<use figuras/ambiente_virtual.png>
-Package pdftex.def Info: figuras/ambiente_virtual.png used on input line 454.
-(pdftex.def)             Requested size: 342.87866pt x 272.61664pt.
-
-Overfull \hbox (14.68684pt too wide) in paragraph at lines 464--464
+ [67 <./figuras/print_avsoa.png>]
+Overfull \hbox (14.68684pt too wide) in paragraph at lines 419--419
  [] [] [][]\T1/lmr/m/n/10 Serviços \T1/lmr/m/it/10 Proxy \T1/lmr/m/n/10 no WSO2
  ESB: https://docs.wso2.com/display/ESB480/Working+with+Proxy+Services| 
  []
 
-[67] [68]
+
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1457,51 +1447,70 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc
 .sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-) [69]
-<figuras/integracao_esb_front_rest_api_tcc.png, id=1018, 314.17375pt x 482.8037
+)
+Underfull \vbox (badness 2103) has occurred while \output is active []
+
+ [68]
+[69]
+<figuras/integracao_esb_front_rest_api_tcc.png, id=1009, 314.17375pt x 482.8037
 6pt>
 File: figuras/integracao_esb_front_rest_api_tcc.png Graphic file (type png)
  <use figuras/integracao_esb_front_rest_api_tcc.png>
 Package pdftex.def Info: figuras/integracao_esb_front_rest_api_tcc.png used on 
-input line 533.
+input line 488.
 (pdftex.def)             Requested size: 219.92012pt x 337.96033pt.
+ [70 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>]
 
+LaTeX Warning: Citation `wso2' on page 71 undefined on input line 496.
 
-LaTeX Warning: Citation `wso2' on page 70 undefined on input line 541.
-
-
+[71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
-[71 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>] [72])
-(editaveis/consideracoesfinais.tex [73] [74
+ [72]
+[73] [74]) (editaveis/consideracoesfinais.tex [75] [76
 
-]) (tcc.bbl (tcc.brf)
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77])
+(tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [75] [76
-
-]
+ [78]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[77] [78]) (editaveis/apendices.tex [79] [80
+[79
+
+] [80]) (editaveis/apendices.tex [81] [82
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[81
-
-] [82]) (editaveis/anexos.tex) (tcc.ind) 
-AED: lastpage setting LastPage
 [83
 
-]
+] [84]
+<figuras/estrutura_conector_login.png, id=1251, 149.05687pt x 135.50626pt>
+File: figuras/estrutura_conector_login.png Graphic file (type png)
+
+<use figuras/estrutura_conector_login.png>
+Package pdftex.def Info: figuras/estrutura_conector_login.png used on input lin
+e 9.
+(pdftex.def)             Requested size: 149.0565pt x 135.5059pt.
+ [85
+
+ <./figuras/estrutura_conector_login.png>] [86]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+[88]) (editaveis/anexos.tex) (tcc.ind) 
+AED: lastpage setting LastPage
+[89]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1517,7 +1526,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: 48CBACCC6ED2ADA132F0D6030F71C280;7376.
+(rerunfilecheck)             Checksum: 15F6EA90083C2DB57020D503FC8B0042;7376.
 
 
 LaTeX Warning: There were undefined references.
@@ -1528,13 +1537,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15724 strings out of 493634
- 233812 string characters out of 3134424
- 434432 words of memory out of 3000000
- 18340 multiletter control sequences out of 15000+200000
+ 15958 strings out of 493634
+ 237525 string characters out of 3134424
+ 499729 words of memory out of 3000000
+ 18378 multiletter control sequences out of 15000+200000
  98747 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,13n,49p,1450b,1903s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,49p,1450b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
 enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
@@ -1555,9 +1564,9 @@ s/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
 m/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (85 pages, 1294582 bytes).
+Output written on tcc.pdf (91 pages, 1293642 bytes).
 PDF statistics:
- 1573 PDF objects out of 1728 (max. 8388607)
- 384 named destinations out of 1000 (max. 500000)
- 716 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1812 PDF objects out of 2073 (max. 8388607)
+ 578 named destinations out of 1000 (max. 500000)
+ 694 words of extra memory for PDF output out of 10000 (max. 10000000)
 

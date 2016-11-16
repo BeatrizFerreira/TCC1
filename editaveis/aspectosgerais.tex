@@ -1,16 +1,21 @@
 \chapter[Introdução]{Introdução}
-Arquitetura de software é, segundo Bass, Clements e Kasman\cite{bass_software_archi_practice_2003}, um conjunto de estruturas que representam os componentes de um software e a maneira como tais componentes se relacionam. Todo sistema de software possui uma arquitetura, mesmo que não definida inicialmente ou documentada \cite{bass_software_archi_practice_2003}.
+Arquitetura de software é, segundo Bass, Clements e Kasman\cite{bass_software_archi_practice_2003}, um conjunto de estruturas que representam os componentes de um software e a maneira como tais componentes se relacionam. Todo sistema de software possui uma arquitetura, mesmo que não definida ou documentada \cite{bass_software_archi_practice_2003}.
 
-A maneira como os componentes de um \textit{software} são dispostos e combinados para que a melhor solução seja construída dá origem a estilos arquiteturais \cite{pressman2006engenharia}. Entre os existentes, pode-se citar estilo baseado em serviços, mais conhecido como SOA \cite{josuttis_soa_2007}. Este estilo é amplamente utilizado quando o sistema de software a ser construído é composto de outros sistemas que oferecem suas funcionalidades como um serviço. O estilo arquitetural SOA facilita a implementação da interoperabilidade em um sistema, permitindo a troca de dados e interação entre aplicações que utilizam tecnologias distintas \cite{oqueesoa_2010}.
+A maneira como os componentes de um \textit{software} são dispostos e combinados para que a melhor solução seja construída dá origem a estilos arquiteturais \cite{pressman2006engenharia}. Pode-se citar os estilos baseado em camadas, eventos e serviços, sendo este último mais conhecido como SOA \cite{josuttis_soa_2007}. Este estilo baseado em serviços (SOA) é amplamente utilizado quando o sistema de software a ser construído é composto de outros sistemas que oferecem suas funcionalidades como um serviço. O estilo arquitetural SOA facilita a implementação da interoperabilidade em um sistema, permitindo a troca de dados e interação entre aplicações que utilizam tecnologias distintas \cite{oqueesoa_2010}.
 
 Por ser um estilo arquitetural indicado para a construção de sistemas heterogêneos e distribuídos \cite{josuttis_soa_2007}, a implementação de um sistema baseado em serviços deve incorporar diferentes tecnologias, APIs e composições de infra-estrutura, resultando sempre em um produto de arquitetura única \cite{erl_orientacaoaservico_2009}.
+
+\section{Motivação}
+Alguns trabalhos oriundos de projetos de TCC na Engenharia de \textit{Software} são realizados e têm uma aplicação de \textit{software} como produto final. Geralmente, estes sistemas de \textit{software} são construídos visando solucionar um problema ou uma necessidade que foi identificada. Contudo, estas ideias acabam sendo esquecidas ou desenvolvidas de modo incompleto por diversos motivos, não podendo ser utilizadas.
+
+A principal motivação para este projeto de TCC é ter como um produto final algo que possa ser utilizado pela sociedade. Assim, um número maior de aplicações resultantes de trabalhos de TCC na Engenharia de Software será conhecido e evoluído. 
 
 \section{Objetivos}
 
 Nesta seção, os objetivos geral e os específicos deste projeto são apresentados, bem como a questão de pesquisa que guia este TCC.
 
 \subsection{Objetivo Geral}
-O objetivo geral é especificar uma arquitetura de \textit{software} que permita a integração entre diversas aplicações de \textit{software}, implementando a troca de dados entre estes. Estas aplicações fazem parte dos resultados de orientações do Professor Sérgio Antônio Andrade de Freitas e dos trabalhos desenvolvidos no Laboratório Fábrica de \textit{Software} da Universidade de Brasília.
+O objetivo geral é especificar uma arquitetura de \textit{software} que permita a integração entre diversas aplicações de \textit{software}, implementando a troca de dados entre estes. Estas aplicações fazem parte dos resultados de trabalhos do grupo de orientandos e dos trabalhos desenvolvidos em laboratórios de pesquisa e desenvolvimento de \textit{software} da Universidade de Brasília.
 
 \subsection{Objetivos específicos}
 Os objetivos específicos deste trabalho são:
@@ -22,14 +27,10 @@ Os objetivos específicos deste trabalho são:
 \end{itemize}
 
 \subsection{Questão de pesquisa}
-A questão de pesquisa que move este trabalho é: "Como é possível construir um sistema de \textit{software} composto a partir da integração de diversas aplicações, sendo estas aplicações desenvolvidas com base em tecnologias, técnicas e métodos distintos?"
+A questão de pesquisa que move este trabalho é: "Como é possível implementar um sistema de \textit{software} composto a partir da integração de diversas aplicações, sendo estas aplicações desenvolvidas com base em tecnologias, técnicas e métodos distintos?"
 
 A questão secundária é: "As aplicações que compõem este sistema podem ser executadas de modo \textit{standalone} ou apenas em conjunto ao sistema?"
 
-\section{Motivação}
-Alguns trabalhos oriundos de projetos de TCC na Engenharia de \textit{Software} são realizados e têm uma aplicação de \textit{software} como produto final. Geralmente, estes sistemas de \textit{software} são construídos visando solucionar um problema ou uma necessidade que foi identificada. Contudo, estas ideias acabam sendo esquecidas ou desenvolvidas de modo incompleto por diversos motivos, não podendo ser utilizadas.
-
-A principal motivação para este projeto de TCC é ter como um produto final algo que possa ser utilizado pela sociedade. Assim, um número maior de aplicações resultantes de trabalhos de TCC na Engenharia de Software será conhecid e evoluído. 
 
 \section{Metodologia}
 A metodologia usada para o desenvolvimento deste trabalho está descrita nesta seção. 
@@ -42,14 +43,5 @@ O presente projeto de TCC classifica-se como uma pesquisa exploratória. Este ti
 \subsection{Referencial teórico}
 Para a proposição de uma arquitetura necessária para atingir os objetivos deste projeto de TCC, a pesquisa acerca do referencial teórico foi realizada por meio da busca de livros-textos sobre o assunto e artigos publicados sobre implementações já realizadas. Estes livros-textos foram encontrados em meios físico e digital. A compilação desta pesquisa encontra-se no capítulo 2 (Referencial Teórico).
 
-\subsection{Proposta}
-A proposta deste projeto de TCC é projetar e implementar uma arquitetura baseada no modelo arquitetural SOA a fim de obter um sistema heterogêneo com características de uma plataforma web. Este sistema heterogêneo, aqui denominado de ambiente virtual, irá prover a integração de aplicações que se encontram armazenadas em repositórios que não são acessados ou mantidos. A ideia é construir uma plataforma composta de funcionalidades resultantes de trabalhos realizados no âmbito das orientações do Professor Sérgio Antônio Andrade de Freitas e atividades executadas em laboratórios de pesquisa e desenvolvimento de software na Universidade de Brasília.
-
-Uma vez que as aplicações que irão compor o ambiente virtual podem ser desenvolvidas em diferentes plataformas e a partir de tecnologias diferentes, faz parte da proposta a definição de um protocolo de comunicação a ser utilizado para que a troca de dados entre estas aplicações seja possível.
-
-\subsection{Engenharia de software}
-
-Para a execução deste projeto de TCC, foram utilizados os conceitos relacionados à metodologia ágil de desenvolvimento. Desta metodologia foram utilizados os conceitos de sprints, reuniões semanais e histórias técnicas e de usuário. Desta forma, a proposta pode ser implementada de modo iterativo e incremental.
-
 \section{Estrutura da Monografia}
-O presente documento está dividido em quatro partes: Referencial Teórico, Proposta, Desenvolvimento da Proposta e Considerações Finais. O capítulo de referencial teórico tem como finalidade expor os estudos realizados e os conceitos relacionados à proposta. O terceiro capítulo, Proposta, contém detalhes sobre a proposta em execução neste projeto de TCC. A metodologia relacionada à execução da proposta, bem como testes e resultados são detalhados no capítulo quatro (Desenvolvimento da Proposta). No quinto e último capítulo, nomeado Considerações Finais, são expostas as conclusões e trabalhos futuros.
+O presente documento está dividido em quatro partes: Referencial Teórico, A Arquitetura Implementada, Desenvolvimento da Arquitetura e Considerações Finais. O capítulo de referencial teórico tem como finalidade expor os estudos realizados e os conceitos relacionados a arquitetura implementada. O terceiro capítulo, A Arquitetura Implementada, contém detalhes sobre a proposta do ambiente integrativo deste projeto de TCC. A metodologia relacionada à execução da proposta, bem como testes e resultados são detalhados no capítulo quatro (Desenvolvimento da Arquitetura). No quinto e último capítulo, nomeado Considerações Finais, são expostas as conclusões e trabalhos futuros.

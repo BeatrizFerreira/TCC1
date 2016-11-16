@@ -1,69 +1,25 @@
-\chapter[Desenvolvimento da Proposta]{Desenvolvimento da Proposta}
+\chapter[Desenvolvimento da Arquitetura]{Desenvolvimento da Arquitetura}
 
-Este capítulo apresenta o uso de metodologias e conceitos relacionados à Engenharia de Software que aplicados no desenvolvimento da proposta descrita no capítulo anterior. Além disto, os testes aplicados e os resultados obtidos são descritos.
+Este capítulo apresenta o uso de metodologias e conceitos relacionados à Engenharia de Software que aplicados no desenvolvimento descrito no capítulo anterior. Além disto, os testes aplicados e os resultados obtidos são descritos.
 
-REFAZER ESTE PARÁGRAFO AO FINAL DA ESCRITA DO CAPÍTULO - A seção 4.1 deste capítulo apresenta uma contextualização da proposta. A metodologia de execução da proposta, seção 4.2, apresenta a modelagem do processo de desenvolvimento de software adotado para a execução deste projeto de TCC, com detalhes sobre as atividades contidas em cada uma das fases e seus respectivos objetivos. Os cronogramas para as duas partes de execução do TCC são apresentados e detalhados na seção 4.3.
+A seção 4.1 deste capítulo apresenta uma contextualização da proposta arquitetural implementada. A metodologia de execução, seção 4.2, apresenta aspectos e atividades no processo de desenvolvimento de software adotados para a execução deste projeto de TCC, com detalhes sobre as atividades  e tarefas realizadas. A seção seguinte, Implementação da arquitetura, exibe os detalhes sobre a implementação da arquitetura, incluindo detalhes sobre as atividades desenvolvidas, tais como adaptação de uma aplicação legada, construção de um novo serviço como uma API REST e a integração destes serviços ao ESB e outras aplicações cliente. A última seção, 4.4, apresenta os testes realizados e os resultados coletados.
 
 \section{Introdução}
-O projeto de Engenharia de Software desenvolvido como parte do trabalho de conclusão de curso consiste em uma arquitetura para uma plataforma virtual, onde as funcionalidades serão tratadas como serviços no contexto arquitetural. Os serviços ou funcionalidades desta plataforma virtual consistem de aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação do Professor Doutor Sérgio Antônio Andrade de Freitas e trabalhos desenvolvidos em laboratórios de pesquisa e desenvolvimento de \textit{software} da Universidade de Brasília. A plataforma virtual é um meio de disponibilizar tais trabalhos para uso pela comunidade.
+O projeto de Engenharia de Software desenvolvido como parte do trabalho de conclusão de curso consiste em uma arquitetura para uma plataforma virtual, onde as funcionalidades serão tratadas como serviços no contexto arquitetural. Os serviços ou funcionalidades desta plataforma virtual consistem de aplicações de \textit{software} desenvolvidas no contexto do grupo de orientação e trabalhos desenvolvidos em laboratórios de pesquisa e desenvolvimento de \textit{software} da Universidade de Brasília. A plataforma virtual é um meio de disponibilizar tais trabalhos para uso pela comunidade.
 
 A proposta descrita no capítulo 3 foi desenvolvida utilizando-se de alguns conceitos de metodologia ágil de desenvolvimento e de gerenciamento de projetos de software, adaptadas às necessidades deste projeto.
 
-\section{Metodologia de Execução da Proposta}
-%O uso de uma arquitetura baseada no modelo SOA não elimina o trabalho necessário para a inserção de novos serviços: o seu uso visa minimizar os reparos que devem ser feitos para que uma nova funcionalidade seja incorporada ao sistema, promovendo extensibilidade e flexibilidade à arquitetura construída. 
-
+\section{Metodologia de Execução}
 Um projeto de Engenharia de Software deve ser realizado utilizando-se de metodologias, técnicas e ferramentas disponíveis, relacionadas à área de conhecimento, sendo sempre adaptadas de acordo com o projeto a ser desenvolvido visando, assim, o sucesso na conclusão do projeto.
 
 Entre as diversas metodologias de desenvolvimento de software existentes, foi decidido pela adoção de uma metodologia ágil para o desenvolvimento deste projeto. Para a execução, foram praticados conceitos relacionados à metodologia ágil de desenvolvimento, mais especificamente o Scrum. O modelo de desenvolvimento adotado foi iterativo e incremental, tornando a identificação de falhas e correção das mesmas mais eficiente, assim como a identificação de novas necessidades para que a arquitetura e o protocolo de comunicação propostos sejam implementados.
 
 Um dos conceitos ágeis utilizados foi o de histórias de usuário: descrição de funcionalidades que agregam valor ao produto final a ser entregue, escrita de maneira simples e facilmente entendida. As histórias elicitadas consistiram tanto de histórias que descrevem funcionalidades, quando de histórias técnicas, que tratam de adaptação e implantação de tecnologias e outros aspectos relacionados à características técnicas do desenvolvimento de software.
 
-%Outro conceito associado ao Scrum que foi utilizado é o de \textit{sprints}. Por se tratar de um modelo criado para ser iterativo e incremental, a fase de construção definida para este TCC consistirá de \textit{sprints} com períodos definidos de 2 (duas) semanas.
+\subsection{Atividades de Execução}
+Foram realizadas atividades de adaptação de uma aplicação e a incorporação desta aplicação como um serviço à plataforma virtual foram realizadas de maneira iterativa e incremental. Isto justifica o uso de um método de desenvolvimento de \textit{software} capaz de fornecer suporte para que iterações sejam executadas.
 
-\section{Cronograma de Execução do TCC}
-Para o desenvolvimento da proposta e completude da mesma com sucesso, foram criados cronogramas para a concepção, construção e implantação do produto final obtido. O cronograma com atividades, bem como os prazos relacionados a cada uma destas e pode ser visualizado nas Tabelas \ref{cronograma_tcc1} e \ref{cronograma_tcc2}.
-
-\begin{table}[!htb]
-\centering
-\caption{Cronograma de atividades relacionadas ao TCC 1}
-\label{cronograma_tcc1}
-\begin{tabular}{|p{9cm}|c|c|c|c|c|c|}
-\hline
-Atividade                                                   & \multicolumn{1}{l|}{Jan} & \multicolumn{1}{l|}{Fev} & \multicolumn{1}{l|}{Mar} & \multicolumn{1}{l|}{Abr} & \multicolumn{1}{l|}{Mai} & \multicolumn{1}{l|}{Jun} \\ \hline
-Identificação da necessidade                                & X                           &                             &                              &                            &                             &                              \\ \hline
-Leituras sobre modelos arquiteturais                        & X                           &                             &                              &                            &                             &                              \\ \hline
-Pesquisa sobre o modelo arquitetural mais adequado          & X                           & X                             &                              &                            &                             &                              \\ \hline
-Pesquisa sobre trabalhos relacionados                       & X                           & X                        &                              &                            &                             &                              \\ \hline
-Levantamento inicial de ferramentas ESB                    &                             & X                        & X                            &                            &                             &                              \\ \hline
-Definição do padrão de comunicação utilizado                &                             &                          & X                            &                            &                             &                              \\ \hline
-Escrita do TCC 1                                            &                             &                             &                              & X                           & X                           & X          \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[!htb]
-\centering
-\caption{Cronograma de atividades relacionadas ao TCC 2}
-\label{cronograma_tcc2}
-\begin{tabular}{|p{9cm}|c|c|c|c|c|c|}
-\hline
-Atividade                                            & \multicolumn{1}{l|}{Jul} & \multicolumn{1}{l|}{Ago} & \multicolumn{1}{l|}{Set} & \multicolumn{1}{l|}{Out} & \multicolumn{1}{l|}{Nov} & \multicolumn{1}{l|}{Dez}\\ \hline
-Adaptação de uma aplicação já desenvolvida e Testes               & X & X &   &   &   &  \\ \hline
-Análise de ferramentas ESB                                        &   & X &   &   &   &  \\ \hline
-Implantação da ferramenta escolhida                               &   & X &   &   &   &  \\ \hline
-Implementação da plataforma virtual                               &   & X & X &   &   &  \\ \hline
-Integração de serviços, ESB e plataforma virtual e Testes         &   & X & X &   &   &  \\ \hline
-Escrita do artigo para ACM/SAC 2017                               &   &   & X &   &   &  \\ \hline
-Desenvolvimento de API de login e Testes                          &   &   &   & X &   &  \\ \hline
-Integração de API de login, ESB e plataforma virtual e Testes     &   &   &   & X & X &  \\ \hline
-Escrita do TCC 2                                                  &   &   &   &   & X &  \\ \hline
-Defesa do TCC 2                                                   &   &   &   &   &   & X\\ \hline
-\end{tabular}
-\end{table}
-
-\subsection{Atividades de desenvolvimento}
-As atividades de adaptação de uma aplicação e a incorporação desta aplicação como um serviço à plataforma virtual foram realizadas de maneira iterativa e incremental. Isto justifica o uso de um método de desenvolvimento de software capaz de fornecer suporte para que iterações sejam executadas.
-
-As atividades descritas no cronograma de TCC 2 (Tabela \ref{cronograma_tcc2}) deram origem a histórias de usuário e histórias técnicas. Estas histórias foram tratadas como tarefas a serem realizadas para que a atividade pudesse ser completada com êxito. Abaixo estão descritas as histórias relacionadas a cada atividade.
+As atividades foram desenvolvidas com base em histórias de usuário e histórias técnicas. Estas histórias foram tratadas como tarefas a serem realizadas para que a atividade pudesse ser completada com êxito. Abaixo estão relacionadas as atividades e as descrições das histórias relacionadas a cada atividade executada.
 
 \begin{itemize}
 \item \textbf{Adaptação de uma aplicação já desenvolvida e Testes:} 
@@ -108,9 +64,10 @@ As atividades descritas no cronograma de TCC 2 (Tabela \ref{cronograma_tcc2}) de
 
 \end{itemize}
 
+\section{Implementação da Arquitetura}
+Foram integradas à arquitetura proposta dois serviços: um de análise de aderência de perfis e outro de gerenciamento de usuários. Os dois serviços foram implementados com o objetivo de demonstrar como adaptar um sistema legado para ser integrado à arquitetura e como desenvolver uma aplicação planejada como um serviço que fornece suas funcionalidades por meio de uma API REST.
 
-\section{Construção da Arquitetura}
-COLOCAR AQUI UMA DESCRIÇÃO DA SEÇÃO
+Esta seção está subdividida em quatro tópicos principais. O primeiro tópico trata da adaptação de um sistema legado desenvolvido como uma aplicação nativa Java, construindo, a partir do núcleo de funcionalidades da aplicação, uma interface que a transformou em uma API RESTful em Java. O segundo tópico, Construção de um Serviço Gerenciador de Usuários, trata do desenvolvimento da API de gerenciamento de usuários. Detalhes sobre a implementação do ambiente virtual e de como foram realizadas as requisições e tratamento de respostas estão descritos no terceito tópico. O último, Integração através do ESB, exibe como foi feita a conexão dos serviços ao barramento de serviços utilizado (WSO2 ESB).
 
 \subsection{Adaptação de Aplicação Existente}
 Na parte inicial da implementação do protótipo da arquitetura proposta, as atividades realizadas foram a adaptação de uma ferramenta existente para integração de suas funcionalidades como um serviço; a construção de uma plataforma virtual onde os serviços podem ser acessados; e integração da plataforma virtual e do serviço com o auxílio do ESB escolhido. O padrão de comunicação estabelecido faz uso do protocolo REST. O formato de mensagem padrão trocados entre as aplicações através do ESB é o JSON.
@@ -319,8 +276,8 @@ Os testes de envio de requisição e verificação de respostas obtidas foram re
 
 A API RESTful construída a partir da aplicação já existente foi implantada em um servidor de aplicações (Apache Tomcat 7.0). Desta forma, foi disponibilizada e pôde ser testada e, posteriormente, conectada ao barramento de serviços escolhido (WSO2 ESB).
 
-\subsection{Construção do serviço gerenciador de usuários}
-Um serviço para gerenciamento de usuários foi construído com o intuito de controlar o acesso de usuários às aplicações cliente e serviços conectados ao barramento de serviços. Este serviço armazena informações de usuários e quais as aplicações que o usuário possui permissão de acesso. Desta forma, o acesso a serviços contidos em uma mesma aplicação cliente pode ser gerenciado por meio deste terceiro serviço.
+\subsection{Construção de um Serviço Gerenciador de Usuários}
+Um serviço para gerenciamento de usuários foi construído com o intuito de controlar o acesso de usuários às aplicações cliente e serviços conectados ao barramento de serviços e demonstrar a integração de uma aplicação nova, planejada para fornecer suas funcionalidades como serviço. Este serviço armazena informações de usuários e quais as aplicações que o usuário possui permissão de acesso. Desta forma, o acesso a serviços contidos em uma mesma aplicação cliente pode ser gerenciado por meio deste terceiro serviço.
 
 As tecnologias utilizadas para o desenvolvimento da API de gerenciamento de usuários foram:
 \begin{itemize}
@@ -405,7 +362,7 @@ Os Códigos (\textit{Listings}) \ref{lst:msgloginpost} e \ref{lst:msgloginput} e
 \subsection{Construção do Ambiente Virtual}
 O ambiente virtual foi construído com o propósito de implementar uma aplicação \textit{front-end} para usufruto de serviços disponibilizados e conectados ao barramento de serviços. O ambiente virtual é o elemento responsável pela coleta de dados necessários para a execução de um serviço. O envio destes dados é por meio de uma requisição ao ESB. Este componente arquitetural é também responsável por exibir resultados obtidos nas respostas recebidas dos serviços. Para o usuário, o uso de serviços externos ao ambiente virtual é transparente. Isto significa que o usuário final não distingue se a operação é realizada pelo ambiente virtual ou por um serviço externo à esta plataforma.
 
-Para o desenvolvimento, optou-se pelo uso da linguagem de programação Python (3.4). Esta linguagem de programação possui frameworks que permitem a construção de plataformas para web. O framework escolhido é conhecido como Django (versão 1.9). O ambiente de desenvolvimento foi estabelecido com o sistema operacional Linux Mint (17.3). A construção do código-fonte foi realizado com o auxílio da IDE para Python, PyCharm IDE.
+Para o desenvolvimento, optou-se pelo uso da linguagem de programação Python (3.4). Esta linguagem de programação possui frameworks que permitem a construção de plataformas para web. O framework escolhido é conhecido como Django (versão 1.9). O ambiente de desenvolvimento foi estabelecido com o sistema operacional Linux Mint (17.3). A construção do código-fonte foi realizado com o auxílio da IDE para Python chamada PyCharm IDE.
 
 Uma das estruturas de dados suportadas pela linguagem de programação Python é o dicionário. Esta estrutura define pares chave-valor e pode ser facilmente manipulada. Como a estrutura JSON também consiste de pares chave-valor, os dados das requisições são construídos no formato de um dicionário e convertido para JSON.
 
@@ -447,11 +404,9 @@ A requisição realizada retorna uma resposta. As principais informações conti
 
 Uma vez realizada a requisição, o ambiente virtual é o componente arquitetural responsável por exibir o conteúdo da mensagem de resposta do serviço ao usuário. Os valores contidos na mensagem de resposta é especificado no contrato de serviços da aplicação. No caso implementado, a resposta obtida está no formato JSON e os identificadores (chaves) de cada valor são conhecidos. Desta forma, o ambiente virtual trata o payload de resposta como um dicionário e os valores obtidos são exibidos ao usuário final da plataforma \textit{web} (ver Figura \ref{print_ambiente_virtual}).
 
-
-COLOCAR AQUI O PRINT DA TELA DO AMBIENTE VIRTUAL EXIBINDO OS DADOS.tem que mudar a figura
 \begin{figure}[!hbt]
 \centering
-\includegraphics[scale=0.7]{figuras/ambiente_virtual.png}
+\includegraphics[scale=0.7]{figuras/print_avsoa.png}
 \caption{Dados exibidos no Ambiente Virtual.}
 \label{print_ambiente_virtual}
 \end{figure}
@@ -568,7 +523,64 @@ O serviço de \textit{proxy} é um recurso fornecido pelo WSO2 ESB que recebe me
   texcl=true
 }
 \begin{lstlisting}[caption={Código XML de definição de serviço proxy de gerenciamento de usuários.} ,label={lst:xmlproxylogin}]
-COLOCAR O CoDIGO XML DO SERVIcO DE PROXY DE LOGIN
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="loginConnector"
+       startOnLoad="true"
+       statistics="enable"
+       trace="enable"
+       transports="http,https">
+   <target>
+      <inSequence>
+         <log level="full"/>
+         <property expression="json-eval($.username)" name="username"/>
+         <property expression="json-eval($.client_name)" name="client_name"/>
+         <property expression="json-eval($.aplicacao)" name="aplicacao"/>
+         <property expression="json-eval($.password)" name="password"/>
+         <property expression="json-eval($.first_name)" name="first_name"/>
+         <property expression="json-eval($.last_name)" name="last_name"/>
+         <property expression="json-eval($.email)" name="email"/>
+         <switch source="get-property('transport', 'Action')">
+            <case regex="getAuth">
+               <login.getAuth>
+                  <username>{$ctx:username}</username>
+                  <client_name>{$ctx:client_name}</client_name>
+               </login.getAuth>
+            </case>
+            <case regex="saveUser">
+               <login.saveUser>
+                  <username>{$ctx:username}</username>
+                  <password>{$ctx:password}</password>
+                  <first_name>{$ctx:first_name}</first_name>
+                  <last_name>{$ctx:last_name}</last_name>
+                  <email>{$ctx:email}</email>
+                  <aplicacao>{$ctx:aplicacao}</aplicacao>
+               </login.saveUser>
+            </case>
+            <case regex="updateUser">
+               <login.updateUser>
+                  <username>{$ctx:username}</username>
+                  <password>{$ctx:password}</password>
+                  <first_name>{$ctx:first_name}</first_name>
+                  <last_name>{$ctx:last_name}</last_name>
+                  <email>{$ctx:email}</email>
+               </login.updateUser>
+            </case>
+         </switch>
+         <respond/>
+      </inSequence>
+      <outSequence>
+         <property name="DISABLE_CHUNKING" scope="axis2" value="true"/>
+         <log/>
+         <send/>
+      </outSequence>
+   </target>
+   <description>Este servico e um gerenciador de autorizacoes de acesso a aplicacoes.
+   Action (getAuth): verifica se o usuario esta autorizado a acessar a aplicacao. Parametros: username e client_name.
+   Action (saveUser): salva usuario e o associa a aplicacao. Parametros: username, password, email, first_name, last_name, aplicacao.
+   Action (updateUser): atualiza dados do usuario (se existir). Parametros: username, password, email, first_name, last_name.
+   </description>
+</proxy>
 \end{lstlisting}
 
 O Código (\textit{Listing}) \ref{lst:xmlproxylogin} exibe a definição do serviço de \textit{proxy} de gerenciamento de usuários em XML. O código é gerado pela ferramenta WSO2 ESB ao definir as ações do serviço. O código pode ser alterado pelo desenvolvedor/manutenedor da arquitetura definida.
@@ -597,14 +609,22 @@ Número do Teste               & ESB   & Ponto-a-Ponto & ESB    & Ponto-a-Ponto 
 4                            & 95.0  &    102.9      &  94.6  &  101.0   \\ 
 5                            & 105.6 &     98.7      &  95.2  &   94.8   \\ 
 \midrule
-\textbf{Média}                & 98.17 &    101.6      & 102.07 &  102.73   \\ 
+\textbf{Média}               & 98.17 &    101.6      & 102.07 &  102.73   \\ 
 \bottomrule
 \end{tabular}
 \end{table}
 
 Os testes de desempenho executados demonstraram que a média de tempo para obtenção de resposta ao requisitar o cálculo do fator de aderência foi maior quando a conexão foi realizada ponto a ponto. Os maiores e menos valores de cada coluna foram excluídos para o cálculo do valor médio final. O resultado dos testes de desempenho executados indica que a proposta arquitetural, como o uso do ESB, não degrada a performance geral da solução.
 
-**colocar aqui tbm os resultados de análise de tempo necessário para adaptação da aplicação.**
+A coleta de esforço empreendido para adaptar a aplicação existente e fornecer suas funcionalidades como serviço através de uma API REST foi realizada com base em \textit{commits} da ferramentas de controle utilizada (Git). Uma vez que os \textit{commits} permitem o registro de modificações e data correspondentes. Esta funcionalidade da ferramenta de controle utilizada foi útil para realizar as medidas de esforço empreendido para implementar a adaptação necessária no código-fonte da aplicação.
 
-\section{Considerações Finais}
-colocar nas conclusões do capítulo que o teste de aplicações legadas (aplicação de aderencia) demonstram como inserir uma aplicação legada como serviço à arquitetura definida e com o uso do recurso de disponibilizar o serviço enquanto API REST  e blablabla.... e que o teste com aplicações novas com o uso de conetores (login) apresenta um exemplo de como conectar aplicações novas que são planejadas para serem uma API REST e integradas como um serviço.
+O esforço foi medido em tempo e categorizado por dois aspectos: esforço/tempo necessário para adaptação e esforço/tempo empreendido para integração ao barramento de serviços (WSO2 ESB). A medida de esforço para adaptação expressa o tempo utilizado para realizar modificações necessárias no código-fonte e fornecer suas funcionalidades como operações de um serviço em uma API REST. O esforço empreendido para integração ao barramento de serviços mede o tempo (em horas) necessário para a configuração de uma nova aplicação ao incorporá-la como uma API REST ao ESB e implementação do \textit{backend} de uma aplicação cliente (neste caso, o ambiente virtual).
+
+O tempo total de esforço para a adaptação da aplicação foi de 41 horas onde:
+\begin{itemize}
+\item 5 horas - reconhecimento do código;
+\item 6 horas - planejamento de atividades e refatoração inicial;
+\item 30 horas - criação da camada de conexão e tratamento de dados da API REST.
+\end{itemize}
+
+A construção da plataforma virtual e conexão com o serviço através do ESB consumiu 15 horas de esforço. Desta forma, o esforço total necessário para a adaptação de uma aplicação existente, implementando uma API REST, configuração da API implementada e conexão com uma aplicação cliente foi de 56 horas.
