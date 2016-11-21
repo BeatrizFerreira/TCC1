@@ -2,7 +2,7 @@
 
 Este capítulo tem como objetivo apresentar o referencial teórico deste projeto de TCC. Neste capítulo, são abordados conceitos que estão diretamente ligados à proposta deste trabalho, e que fundamentam as decisões realizadas para propor uma solução à necessidade encontrada.
 
-Este capítulo está subdividido em cinco seções. A seção 2.1, intitulada Arquitetura de Software, aborda conceitos de arquitetura de software de um modo geral e exibe alguns estilos arquiteturais conhecidos. A seção 2.2, SOA - Arquitetura Orientada a Serviços, detalha a abordagem deste estilo arquitetural. A seção 2.3, nomeada Protocolos de Comunicação, fornece uma explicação sobre o tema e uma abordagem sobre dois principais protocolos, SOAP e REST. Na seção 2.4, estão resumidos algumas implementações existentes do modelo SOA. Os conceitos de Engenharia de Software utilizados para a execução deste TCC encontram-se descritos na seção 2.5.
+Este capítulo está subdividido em quatro seções. A seção 2.1, intitulada Arquitetura de Software, aborda conceitos de arquitetura de software de um modo geral e exibe alguns estilos arquiteturais conhecidos. A seção 2.2, SOA - Arquitetura Orientada a Serviços, detalha a abordagem deste estilo arquitetural. A seção 2.3, nomeada Protocolos de Comunicação, fornece uma explicação sobre o tema e uma abordagem sobre dois principais protocolos, SOAP e REST. Na seção 2.4, estão resumidos algumas implementações existentes do modelo SOA.
 
 \section{Arquitetura de Software}
 Existe na literatura a assertiva de que o produto de software é construído com base em uma oportunidade de negócio ou uma necessidade de usuário(s) identificada. Estes produtos de software possuem uma arquitetura associada à sua construção. Esta arquitetura é uma composição de estruturas de um ou mais sistemas que exibem as características visíveis de elementos que o compõem e o relacionamento entre estes elementos \cite{bass_software_archi_practice_2003}.
@@ -247,54 +247,6 @@ Os modelos WOA e SOA são complementares: os pontos falhos existentes em um mode
 
 Os resultados apresentados por Park et. al. \cite{park_integrated_2012} foram coletados a partir da comparação da complexidade de dois \textit{software} financeiros, onde um foi construído com base no modelo que integra WOA e SOA proposto e o outro apenas no modelo SOA. O \textit{software} construído a partir do modelo integrado implementa qualidade de serviços, segurança e confiabilidade, e a combinação de ambos os modelos não afeta o desempenho e a complexidade do sistema construído de um modo geral.
 
-\section{Engenharia de Software}
-Em um projeto de Engenharia de \textit{Software}, são utilizados métodos, modelos e técnicas durante o desenvolvimento de um produto. Esta seção aborda conceitos da metodologia ágil de desenvolvimento chamada Scrum, exibindo as principais características associadas a esta metodologia.
-
-\subsection{Scrum}
-Desenvolvido por Schwaber e Sutherland \cite{schwaber_guia_2013}, o Scrum é um \textit{framework} flexível utilizado no gerenciamento do desenvolvimento de produtos complexos por ser leve e de fácil compreensão, passível de execução iterativa e incremental.
-
-O Scrum estabelece que o processo que o utiliza deve ser transparente, frequentemente inspecionado por aqueles que fazem parte dele e a adaptação de produto, processo ou ferramentas de apoio devem ocorrer sempre que necessário \cite{schwaber_guia_2013}.
-
-\subsubsection{O Time Scrum}
-Os Times Scrum são auto-organizáveis, realizam múltiplas funções e são compostos por três papéis principais: \textit{Product Owner}, Time de desenvolvimento e o Scrum \textit{Master} \cite{schwaber_guia_2013}.
-
-De acordo com o papel desempenhado no Time Scrum, as responsabilidades são delegadas aos membros que o compõe. Desta forma, as responsabilidades dos papéis definidos por Schwaber e Sutherland \cite{schwaber_guia_2013} são:
-
-\begin{itemize}
-\item \textit{Product Owner} - como dono do produto, este papel é responsável por "maximizar o valor do produto" e gerenciar o \textit{backlog} do produto.
-
-\item Time de Desenvolvimento - são os membros da equipe responsáveis por construir um produto entregável ao final de cada \textit{sprint}. Devem ser auto-organizáveis, auto-gerenciáveis e não deve ser dividido por times menores.
-
-\item Scrum \textit{Master} - é o papel que tem como principal responsabilidade garantir que as práticas deste \textit{framework} sejam aplicadas pelo Time Scrum. Além disso, o Scrum \textit{Master} deve promover a interação entre o Time de Desenvolvimento e o \textit{Product Owner}.
-
-\end{itemize}
-\subsubsection{Eventos Scrum}
-Os Eventos Scrum são um meio que inspecionar e adaptar tecnologias, ferramentas, práticas, o produto ou o processo de desenvolvimento. Geralmente são \textit{time-boxed}, ou seja, possuem tempo limitado e fixo para ocorrerem \cite{schwaber_guia_2013}.
-
-Os Eventos Scrum, citados por Schwaber e Sutherland \cite{schwaber_guia_2013}, são:
-
-\begin{itemize}
-\item \textit{Sprint} - neste evento Scrum, são construídas versões funcionais do produto e possuem tempo de duração variável de acordo com a equipe e capacidade da mesma. Durante a execução de uma \textit{sprint}, ocorrem outros eventos Scrum. O uso de \textit{sprints} permite que os acontecimentos sejam previsíveis e que o progresso das atividades realizadas sejam transparentes.
-
-\item Reunião de Planejamento da \textit{Sprint} - é neste evento onde o trabalho a ser realizado durante a \textit{sprint} é planejado pelo Time Scrum. São incluídas apenas o que pode ser entregue ao final da \textit{sprint} e está contido no \textit{backlog} do produto. O trabalho a ser realizado durante uma dada \textit{sprint} é denominado \textit{backlog} da \textit{sprint}.
-
-\item Reunião Diária - estes eventos duram em média 15 minutos e o objetivo é "sincronizar as atividades e planejar o que será executado nas próximas 24 horas".
-
-\item Revisão da \textit{Sprint} - assim como há um evento para o planejamento, no encerramento da \textit{sprint} ocorre o evento de revisão, onde o \textit{backlog} do produto é revisto e atualizado (se necessário) e o progresso do desenvolvimento é analisado. O objetivo é obter \textit{feedbacks} sobre o que foi feito e promover a colaboração no Time Scrum.
-
-\item Retrospectiva da \textit{Sprint} - tem como objetivo identificar itens positivos, negativos e melhorias para o desenvolvimento no que diz respeito ao relacionamento interpessoal, aos processos e às ferramentas utilizadas para apoio.
-
-\end{itemize}
-
-\subsubsection{Artefatos do Scrum}
-Schwaber e Sutherland \cite{schwaber_guia_2013} definem dois importantes artefatos do Scrum quando o assunto é os pilares do \textit{framework} (transparência, adaptação e inspeção): os \textit{backlogs} do produto e da \textit{sprint}. 
-
-O \textit{backlog} do produto consiste de todas as funcionalidades que devem estar contidas no produto desenvolvido. O \textit{backlog} da \textit{sprint} é o "conjunto de itens do \textit{backlog} do produto selecionados para a \textit{sprint}" \cite{schwaber_guia_2013}.
-
-As funcionalidades ou requisitos do produto a ser desenvolvido podem ser descritas a partir da identificação de histórias de usuário ou histórias técnicas \cite{galen_technical_2013}. As histórias de usuário, ou \textit{user stories}, são requisitos descritos de forma que os desenvolvedores sejam capazes de estimar o esforço necessário para implementá-los \cite{ambler_user_2005}.
-
-Histórias técnicas são descrições de atividades não funcionais que devem ser implementadas para fornecer um suporte necessário para que requisitos funcionais sejam implementados, agregando valor ao produto \cite{galen_technical_2013}.
-
 \section{Considerações finais}
 
 A arquitetura de um \textit{software} sempre será definida, independentemente das atividades associadas ao desenho, documentação e análise arquiteural \cite{bass_software_archi_practice_2003}.
@@ -305,4 +257,4 @@ Implementações de \textit{software} utilizando o modelo SOA demonstram que é 
 
 Um projeto de Engenharia de \textit{software} envolve aspectos metodológicos e técnicos. É possível o desenvolvimento de \textit{software} associando um processo adaptado à técnicas, métodos e modelos existentes. Tanto o processo quanto as ferramentas utilizadas devem ser adaptadas ao objetivo final definido.
 
-Assim, pode-se afirmar a possibilidade de construção de um sistema de software baseado no modelo SOA, utilizando o protocolo mais adequado ao modelo de negócio. A utilização de um processo de desevolvimento, bem como o uso de técnicas, métodos e ferramentas da área de Engenharia de \textit{software} podem ser aplicadas à um projeto de uma aplicação distribuída.
+Assim, pode-se afirmar a possibilidade de construção de um sistema de software baseado no modelo SOA, utilizando o protocolo mais adequado ao modelo de negócio. A utilização de um processo de desenvolvimento, bem como o uso de técnicas, métodos e ferramentas da área de Engenharia de \textit{software} podem ser aplicadas à um projeto de uma aplicação distribuída.
