@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  21 NOV 2016 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  21 NOV 2016 21:12
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1053,8 +1053,10 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-) (fixos/comandos.tex) (fixos/novosComandos.tex) (editaveis/informacoes.tex) (f
-ixos/informacoes.tex) (fixos/setup.tex
+) (fixos/comandos.tex
+\c@loldepth=\count179
+) (fixos/novosComandos.tex) (editaveis/informacoes.tex) (fixos/informacoes.tex)
+ (fixos/setup.tex
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 )
 \tcc@idxfile=\write4
@@ -1095,7 +1097,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 tlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count179
+\c@section@level=\count180
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1115,19 +1117,19 @@ Package lastpage Info: Please have a look at the pageslts package at
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count180
+\scratchcounter=\count181
 \scratchdimen=\dimen163
 \scratchbox=\box34
-\nofMPsegments=\count181
-\nofMParguments=\count182
+\nofMPsegments=\count182
+\nofMParguments=\count183
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count183
+\MPscratchCnt=\count184
 \MPscratchDim=\dimen164
-\MPnumerator=\count184
-\makeMPintoPDFobject=\count185
+\MPnumerator=\count185
+\makeMPintoPDFobject=\count186
 \everyMPtoPDFconversion=\toks31
 )
-\c@lstlisting=\count186
+\c@lstlisting=\count187
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 12.
  ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1254,35 +1256,32 @@ l.2
 
 ] (tcc.lot) [15] [16
 
-]) (editaveis/abreviaturas.tex [17
+] (tcc.lol) [17] [18
 
-] [18
+]) (editaveis/abreviaturas.tex
+[19
 
-])
-(fixos/indiceAutomatico.tex (tcc.toc
+] [20
+
+]) (fixos/indiceAutomatico.tex (tcc.toc
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 34.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]
+ [21]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 82.
+(Font)              <14.4> on input line 78.
 
-Overfull \hbox (21.54878pt too wide) in paragraph at lines 86--86
+Overfull \hbox (21.54878pt too wide) in paragraph at lines 82--82
  [][] [][][]\T1/lmss/bx/n/12 CONECTOR API DE GE-REN-CI-A-MENTO DE USUÁ- 
  []
 
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-[21] [22
-
-]) (editaveis/aspectosgerais.tex
+) [22]) (editaveis/aspectosgerais.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23
+
 
 ]
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 23.
@@ -1296,14 +1295,14 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 [24]) (editaveis/estadodaarte.tex [25] [26
 
 ] [27]
-<figuras/modelo_mvc.PNG, id=386, 232.87pt x 269.005pt>
+<figuras/modelo_mvc.PNG, id=406, 232.87pt x 269.005pt>
 File: figuras/modelo_mvc.PNG Graphic file (type png)
 
 <use figuras/modelo_mvc.PNG>
 Package pdftex.def Info: figuras/modelo_mvc.PNG used on input line 30.
 (pdftex.def)             Requested size: 116.43471pt x 134.50217pt.
  [28 <./figuras/modelo_mvc.PNG (PNG copy)>]
-[29] [30] <figuras/servico_na_arquitetura.png, id=461, 408.02437pt x 168.63pt>
+[29] [30] <figuras/servico_na_arquitetura.png, id=481, 408.02437pt x 168.63pt>
 File: figuras/servico_na_arquitetura.png Graphic file (type png)
 
 <use figuras/servico_na_arquitetura.png>
@@ -1311,7 +1310,7 @@ Package pdftex.def Info: figuras/servico_na_arquitetura.png used on input line
 89.
 (pdftex.def)             Requested size: 326.41994pt x 134.90417pt.
  [31] [32 <./figuras/servico_na_arquitetura.png>]
-<figuras/modelos_integracao_soa.png, id=497, 593.96906pt x 347.04657pt>
+<figuras/modelos_integracao_soa.png, id=517, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
 
 <use figuras/modelos_integracao_soa.png>
@@ -1321,14 +1320,14 @@ Package pdftex.def Info: figuras/modelos_integracao_soa.png used on input line
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
  [33] [34 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=5
-22, 568.37344pt x 342.5297pt>
+42, 568.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
 <use figuras/padrao_ESB.png>
 Package pdftex.def Info: figuras/padrao_ESB.png used on input line 151.
 (pdftex.def)             Requested size: 284.18602pt x 171.26442pt.
  [35 <./figuras/padrao_ESB.png>] [36]
-<figuras/padroes_comunicacao.png, id=571, 901.11656pt x 299.61937pt>
+<figuras/padroes_comunicacao.png, id=591, 901.11656pt x 299.61937pt>
 File: figuras/padroes_comunicacao.png Graphic file (type png)
 
 <use figuras/padroes_comunicacao.png>
@@ -1342,7 +1341,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [39] [40] [41]) (editaveis/proposta.tex [42] [43
 
 ]
-<figuras/ambiente_virtual.png, id=670, 489.83pt x 389.455pt>
+<figuras/ambiente_virtual.png, id=690, 489.83pt x 389.455pt>
 File: figuras/ambiente_virtual.png Graphic file (type png)
 
 <use figuras/ambiente_virtual.png>
@@ -1353,7 +1352,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
 [45 <./figuras/ambiente_virtual.png (PNG copy)>]
-<figuras/barramento_interoperabilidade.png, id=685, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.png, id=705, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.png Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.png>
@@ -1361,7 +1360,7 @@ Package pdftex.def Info: figuras/barramento_interoperabilidade.png used on inpu
 t line 66.
 (pdftex.def)             Requested size: 321.1943pt x 273.01517pt.
  [46]
-<figuras/uso_esb.png, id=693, 390.70969pt x 361.35pt>
+<figuras/uso_esb.png, id=713, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.png Graphic file (type png)
 
 <use figuras/uso_esb.png>
@@ -1372,7 +1371,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [48 <./figuras/u
 so_esb.png>] [49] [50]
-<figuras/fluxo_basico_protocolo.png, id=732, 997.7275pt x 406.51875pt>
+<figuras/fluxo_basico_protocolo.png, id=752, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.png Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.png>
@@ -1395,22 +1394,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [52])
 (editaveis/engenhariadesoftware.tex [53] [54
 
-] [55] [56] [57]
-
-LaTeX Warning: Citation `mena-chalco_scriptlattes:_2009' on page 58 undefined o
-n input line 87.
-
-[58]
+] [55] [56] [57] [58]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 116.
- [59] [60] [61] [62] [63]
+ [59] [60]
+[61] [62] [63]
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 394.
- [64] <figuras/print_avsoa.png, id=926, 645.16031pt x 418.56375pt>
+ [64] <figuras/print_avsoa.png, id=943, 645.16031pt x 418.56375pt>
 File: figuras/print_avsoa.png Graphic file (type png)
 
 <use figuras/print_avsoa.png>
@@ -1438,7 +1433,7 @@ Underfull \vbox (badness 2103) has occurred while \output is active []
 
  [66]
 [67]
-<figuras/integracao_esb_front_rest_api_tcc.png, id=974, 314.17375pt x 482.80376
+<figuras/integracao_esb_front_rest_api_tcc.png, id=990, 314.17375pt x 482.80376
 pt>
 File: figuras/integracao_esb_front_rest_api_tcc.png Graphic file (type png)
  <use figuras/integracao_esb_front_rest_api_tcc.png>
@@ -1447,7 +1442,7 @@ input line 488.
 (pdftex.def)             Requested size: 219.92012pt x 337.96033pt.
  [68 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>]
 
-LaTeX Warning: Citation `wso2' on page 69 undefined on input line 496.
+Package hyperref Warning: Suppressing empty link on input line 496.
 
 [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1481,7 +1476,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [81
 
 ] [82]
-<figuras/estrutura_conector_login.png, id=1218, 149.05687pt x 135.50626pt>
+<figuras/estrutura_conector_login.png, id=1225, 149.05687pt x 135.50626pt>
 File: figuras/estrutura_conector_login.png Graphic file (type png)
 
 <use figuras/estrutura_conector_login.png>
@@ -1503,24 +1498,19 @@ AED: lastpage setting LastPage
 \tf@lot=\write7
 \openout7 = `tcc.lot'.
 
-\tf@toc=\write8
-\openout8 = `tcc.toc'.
+\tf@lol=\write8
+\openout8 = `tcc.lol'.
+
+\tf@toc=\write9
+\openout9 = `tcc.toc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-
-
-Package rerunfilecheck Warning: File `tcc.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tcc.brf':
-(rerunfilecheck)             Before: 15F6EA90083C2DB57020D503FC8B0042;7376
-(rerunfilecheck)             After:  3838F3478BE12EBE11C216DF779E7814;6618.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `tcc.brf' has not changed.
+(rerunfilecheck)             Checksum: CC62C22323A08FD3777964C4A745D704;6605.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1528,54 +1518,36 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15951 strings out of 493634
- 237472 string characters out of 3134424
- 499533 words of memory out of 3000000
- 18372 multiletter control sequences out of 15000+200000
+ 15919 strings out of 493634
+ 236262 string characters out of 3134424
+ 499428 words of memory out of 3000000
+ 18346 multiletter control sequences out of 15000+200000
  98747 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,49p,1450b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.2.6} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.5.1.3} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.5.1.2} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.2.5.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.2.5.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{page.89} has been referenced but does not exist, re
-placed by a fixed one
-
-{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
-c}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-lm/lmbx12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmbxi10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmr10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/lm/lmr12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Beatriz/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/Beatriz/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Beatriz/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/Beatriz/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beatri
-z/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/
-Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C
-:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso12
-.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
-lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (89 pages, 1289722 bytes).
+{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
+enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
+athsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmbx12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmbxi10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmr10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/lm/lmr12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/Beatriz/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Beatriz/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/Beatriz/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Beatriz/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/Beatriz/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beat
+riz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/User
+s/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
+<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso
+12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
+m/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmtt10.pfb>
+Output written on tcc.pdf (89 pages, 1288894 bytes).
 PDF statistics:
- 1765 PDF objects out of 2073 (max. 8388607)
- 577 named destinations out of 1000 (max. 500000)
+ 1763 PDF objects out of 2073 (max. 8388607)
+ 568 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 
