@@ -171,7 +171,7 @@ Para a disponibilização das funcionalidades da aplicação escolhida por meio 
 
 O nome completo, código identificador do currículo e arquivo do currículo devem ser enviados na mensagem escrita no formato JSON. Devido ao impedimento de download automático do currículo acadêmico causado pelo uso de \textit{captchas}, a ferramenta \textit{scriptLattes} foi adaptada para execução local. Para tanto, se faz necessário o recebimento do currículo acadêmico em formato HTML, nome conforme informado no currículo e o código identificar correspondente.
 
-A partir de tais informações, os nomes do indivíduos são fornecidos ao código de aderência de perfis. Os resultados finais são enviados como resposta e contém os nomes dos indivíduos e o percentual de aderência. A mensagem de resposta também é no formato JSON. Assim, os formatos de mensagens de resposta para os cálculos de aderência 1:1 e 1:N são exibidos nos Códigos (\textit{Listing}) \ref{lst:msgresposta11} e \ref{lst:msgresposta1N}.
+A partir de tais informações, os nomes do indivíduos são fornecidos ao código de aderência de perfis. Os resultados finais são enviados como resposta e contém os nomes dos indivíduos e o percentual de aderência. A mensagem de resposta também é no formato JSON. Assim, os formatos de mensagens de resposta para os cálculos de aderência 1:1 e 1:N são exibidos nos Códigos \ref{lst:msgresposta11} e \ref{lst:msgresposta1N}.
 
 
 \definecolor{verde}{rgb}{0.25,0.5,0.35}
@@ -357,7 +357,7 @@ A API de gerenciamento de usuários desenvolvida possui três das operações b�
 }
 \end{lstlisting}
 
-Os Códigos (\textit{Listings}) \ref{lst:msgloginpost} e \ref{lst:msgloginput} exibem os formatos de mensagem aceitos pelos métodos POST e PUT da API construída. Conforme exposto, o método PUT, no estado atual da API, recebe apenas dados para atualização do registro do usuário. O método POST, recebe dados para registro do usuário, bem como o nome identificador do serviço ou aplicação.
+Os Códigos \ref{lst:msgloginpost} e \ref{lst:msgloginput} exibem os formatos de mensagem aceitos pelos métodos POST e PUT da API construída. Conforme exposto, o método PUT, no estado atual da API, recebe apenas dados para atualização do registro do usuário. O método POST, recebe dados para registro do usuário, bem como o nome identificador do serviço ou aplicação.
 
 \subsection{Construção do Ambiente Virtual}
 O ambiente virtual foi construído com o propósito de implementar uma aplicação \textit{front-end} para usufruto de serviços disponibilizados e conectados ao barramento de serviços. O ambiente virtual é o elemento responsável pela coleta de dados necessários para a execução de um serviço. O envio destes dados é por meio de uma requisição ao ESB. Este componente arquitetural é também responsável por exibir resultados obtidos nas respostas recebidas dos serviços. Para o usuário, o uso de serviços externos ao ambiente virtual é transparente. Isto significa que o usuário final não distingue se a operação é realizada pelo ambiente virtual ou por um serviço externo à esta plataforma.
@@ -366,7 +366,7 @@ Para o desenvolvimento, optou-se pelo uso da linguagem de programação Python (
 
 Uma das estruturas de dados suportadas pela linguagem de programação Python é o dicionário. Esta estrutura define pares chave-valor e pode ser facilmente manipulada. Como a estrutura JSON também consiste de pares chave-valor, os dados das requisições são construídos no formato de um dicionário e convertido para JSON.
 
-Existe uma variedade de bibliotecas disponíveis para uso no desenvolvimento de sistemas de software em Django. Como o desenvolvimento desta plataforma será contínua assim como a produção de software no contexto definido, a existência de diversas bibliotecas colabora e estimula a evolução da mesma. Python dispõe da biblioteca Request (http://docs.python-requests.org/en/master/). Esta biblioteca facilita a implementação de requisições HTTP de todos os tipos (GET, POST, PUT, DELETE, OPTIONS) realizadas em aplicações Python. Para realizar uma requisição simples é necessário definir a URL, dados de cabeçalho e valores do corpo da mensagem (\textit{payload}) (Código (Listing) \ref{lst:requisicaopython}).
+Existe uma variedade de bibliotecas disponíveis para uso no desenvolvimento de sistemas de software em Django. Como o desenvolvimento desta plataforma será contínua assim como a produção de software no contexto definido, a existência de diversas bibliotecas colabora e estimula a evolução da mesma. Python dispõe da biblioteca Request (http://docs.python-requests.org/en/master/). Esta biblioteca facilita a implementação de requisições HTTP de todos os tipos (GET, POST, PUT, DELETE, OPTIONS) realizadas em aplicações Python. Para realizar uma requisição simples é necessário definir a URL, dados de cabeçalho e valores do corpo da mensagem (\textit{payload}) (Código \ref{lst:requisicaopython}).
 
 \definecolor{verde}{rgb}{0.25,0.5,0.35}
 \definecolor{jpurple}{rgb}{0.5,0,0.35}
@@ -398,7 +398,7 @@ def calcula_aderencia_simples():
     requests.post(url, data=json.dumps(conteudo), headers=cabecalho, timeout=6000)
 \end{lstlisting}
 
-O Código (Listing) \ref{lst:requisicaopython} representa o código-fonte do \textit{backend} de uma requisição realizada no ambiente virtual para uso do serviço disponibilizado no barramento de serviços do ESB. A url representa o endereço de acesso ao serviço. O cabeçalho deve conter a operação requisitada ao serviço. Os valores do corpo da mensagem contém os parâmetros requisitados pelo serviço para que este possa executar a operação desejada.
+O Código \ref{lst:requisicaopython} representa o código-fonte do \textit{backend} de uma requisição realizada no ambiente virtual para uso do serviço disponibilizado no barramento de serviços do ESB. A url representa o endereço de acesso ao serviço. O cabeçalho deve conter a operação requisitada ao serviço. Os valores do corpo da mensagem contém os parâmetros requisitados pelo serviço para que este possa executar a operação desejada.
 
 A requisição realizada retorna uma resposta. As principais informações contidas na mensagem de resposta são o conteúdo e o código de status da mensagem. O conteúdo pode ser um texto ou um JSON com dados de resposta enviados pelo serviço. O status da mensagem informa se a requisição foi aceita com sucesso ou contém erros, além de indicar a inexistência da operação ou serviço ou a não autorização para acesso.
 
@@ -583,7 +583,7 @@ O serviço de \textit{proxy} é um recurso fornecido pelo WSO2 ESB que recebe me
 </proxy>
 \end{lstlisting}
 
-O Código (\textit{Listing}) \ref{lst:xmlproxylogin} exibe a definição do serviço de \textit{proxy} de gerenciamento de usuários em XML. O código é gerado pela ferramenta WSO2 ESB ao definir as ações do serviço. O código pode ser alterado pelo desenvolvedor/manutenedor da arquitetura definida.
+O Código \ref{lst:xmlproxylogin} exibe a definição do serviço de \textit{proxy} de gerenciamento de usuários em XML. O código é gerado pela ferramenta WSO2 ESB ao definir as ações do serviço. O código pode ser alterado pelo desenvolvedor/manutenedor da arquitetura definida.
 
 A definição do serviço de \textit{proxy} estabelece que o serviço permite conexão via protocolos HTTP e HTTPS, além de definir parâmetros necessários, as operações (\textit{Action}) permitidas e o que deve ser feito quando cada operação é acionada. O serviço de \textit{proxy} define também a sequência de saída da mensagem retornada pelo serviço (API REST).
 

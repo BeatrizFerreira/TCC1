@@ -183,10 +183,7 @@ Assim, para realizar uma requisição, a aplicação que executa o papel de usu�
   tabsize=4,
   texcl=true
 }
-\begin{lstlisting}
-//Exemplo de uma mensagem de requisição de serviço em formato JSON de uma 
-//aplicação usuário.
-
+\begin{lstlisting}[caption={Exemplo de uma mensagem de requisição de serviço em formato JSON de uma aplicação usuário.},label={lst:exemplomsg}]
 url = "http://localhost:8000/services/facebookConnector"
 headers = {'Action':'urn:getUserDetails', 
 	'Content-type':'application/json'}
@@ -200,7 +197,7 @@ payload = {'apiUrl':'https://graph.facebook.com',
 	'age_range':'20-25', 'birthday':'dd/mm/yyyy'}
 \end{lstlisting}
 
-O código exibe os valores necessários para realizar uma requisição ao serviço fornecido pela rede social Facebook através de sua API. Para a chamada do serviço, são necessários a especificação do endereço do serviço, indicado pela \textit{url}; \textit{headers} guarda os valores da operação a ser executada pelo serviço ('\textit{Action}') e o formato da mensagem ('\textit{Content-type}'); os valores necessários para a execução da operação requisitada estão contidos no \textit{payload} também em formato \textit{{'chave':'valor'}}.
+O Código \ref{lst:exemplomsg} exibe os valores necessários para realizar uma requisição ao serviço fornecido pela rede social Facebook através de sua API. Para a chamada do serviço, são necessários a especificação do endereço do serviço, indicado pela \textit{url}; \textit{headers} guarda os valores da operação a ser executada pelo serviço ('\textit{Action}') e o formato da mensagem ('\textit{Content-type}'); os valores necessários para a execução da operação requisitada estão contidos no \textit{payload} também em formato \textit{{'chave':'valor'}}.
 
 A parte de código descrito mostra apenas exemplos do uso do formato de mensagem JSON para realizar uma requisição e de mensagem obtida como resposta advinda do serviço. Pode-se ver que os valores são correspondentes à uma chave conhecida por ambas as aplicações, permitindo que as aplicações (provedora e usuária de serviços) possam comunicar-se entre si de forma padronizada e conhecida por ambas as partes.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  21 NOV 2016 21:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  21 NOV 2016 21:19
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1295,14 +1295,14 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 [24]) (editaveis/estadodaarte.tex [25] [26
 
 ] [27]
-<figuras/modelo_mvc.PNG, id=406, 232.87pt x 269.005pt>
+<figuras/modelo_mvc.PNG, id=409, 232.87pt x 269.005pt>
 File: figuras/modelo_mvc.PNG Graphic file (type png)
 
 <use figuras/modelo_mvc.PNG>
 Package pdftex.def Info: figuras/modelo_mvc.PNG used on input line 30.
 (pdftex.def)             Requested size: 116.43471pt x 134.50217pt.
  [28 <./figuras/modelo_mvc.PNG (PNG copy)>]
-[29] [30] <figuras/servico_na_arquitetura.png, id=481, 408.02437pt x 168.63pt>
+[29] [30] <figuras/servico_na_arquitetura.png, id=484, 408.02437pt x 168.63pt>
 File: figuras/servico_na_arquitetura.png Graphic file (type png)
 
 <use figuras/servico_na_arquitetura.png>
@@ -1310,7 +1310,7 @@ Package pdftex.def Info: figuras/servico_na_arquitetura.png used on input line
 89.
 (pdftex.def)             Requested size: 326.41994pt x 134.90417pt.
  [31] [32 <./figuras/servico_na_arquitetura.png>]
-<figuras/modelos_integracao_soa.png, id=517, 593.96906pt x 347.04657pt>
+<figuras/modelos_integracao_soa.png, id=520, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
 
 <use figuras/modelos_integracao_soa.png>
@@ -1320,14 +1320,14 @@ Package pdftex.def Info: figuras/modelos_integracao_soa.png used on input line
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
  [33] [34 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=5
-42, 568.37344pt x 342.5297pt>
+45, 568.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
 <use figuras/padrao_ESB.png>
 Package pdftex.def Info: figuras/padrao_ESB.png used on input line 151.
 (pdftex.def)             Requested size: 284.18602pt x 171.26442pt.
  [35 <./figuras/padrao_ESB.png>] [36]
-<figuras/padroes_comunicacao.png, id=591, 901.11656pt x 299.61937pt>
+<figuras/padroes_comunicacao.png, id=594, 901.11656pt x 299.61937pt>
 File: figuras/padroes_comunicacao.png Graphic file (type png)
 
 <use figuras/padroes_comunicacao.png>
@@ -1341,7 +1341,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [39] [40] [41]) (editaveis/proposta.tex [42] [43
 
 ]
-<figuras/ambiente_virtual.png, id=690, 489.83pt x 389.455pt>
+<figuras/ambiente_virtual.png, id=693, 489.83pt x 389.455pt>
 File: figuras/ambiente_virtual.png Graphic file (type png)
 
 <use figuras/ambiente_virtual.png>
@@ -1352,7 +1352,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
 [45 <./figuras/ambiente_virtual.png (PNG copy)>]
-<figuras/barramento_interoperabilidade.png, id=705, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.png, id=708, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.png Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.png>
@@ -1360,7 +1360,7 @@ Package pdftex.def Info: figuras/barramento_interoperabilidade.png used on inpu
 t line 66.
 (pdftex.def)             Requested size: 321.1943pt x 273.01517pt.
  [46]
-<figuras/uso_esb.png, id=713, 390.70969pt x 361.35pt>
+<figuras/uso_esb.png, id=716, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.png Graphic file (type png)
 
 <use figuras/uso_esb.png>
@@ -1371,7 +1371,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [47 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [48 <./figuras/u
 so_esb.png>] [49] [50]
-<figuras/fluxo_basico_protocolo.png, id=752, 997.7275pt x 406.51875pt>
+<figuras/fluxo_basico_protocolo.png, id=755, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.png Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.png>
@@ -1383,6 +1383,8 @@ Package pdftex.def Info: figuras/fluxo_basico_protocolo.png used on input line
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 186.
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 186.
 
 
@@ -1394,10 +1396,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [52])
 (editaveis/engenhariadesoftware.tex [53] [54
 
-] [55] [56] [57] [58]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 116.
- [59] [60]
+] [55] [56] [57] [58] [59] [60]
 [61] [62] [63]
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
@@ -1411,9 +1410,6 @@ File: figuras/print_avsoa.png Graphic file (type png)
 <use figuras/print_avsoa.png>
 Package pdftex.def Info: figuras/print_avsoa.png used on input line 409.
 (pdftex.def)             Requested size: 451.60913pt x 292.99261pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [65 <./figuras/print_avsoa.png>]
 Overfull \hbox (14.68684pt too wide) in paragraph at lines 419--419
  [] [] [][]\T1/lmr/m/n/10 Serviços \T1/lmr/m/it/10 Proxy \T1/lmr/m/n/10 no WSO2
@@ -1429,7 +1425,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 .sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Underfull \vbox (badness 2103) has occurred while \output is active []
+Underfull \vbox (badness 1178) has occurred while \output is active []
 
  [66]
 [67]
@@ -1440,11 +1436,11 @@ File: figuras/integracao_esb_front_rest_api_tcc.png Graphic file (type png)
 Package pdftex.def Info: figuras/integracao_esb_front_rest_api_tcc.png used on 
 input line 488.
 (pdftex.def)             Requested size: 219.92012pt x 337.96033pt.
- [68 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>]
+
 
 Package hyperref Warning: Suppressing empty link on input line 496.
 
-[69]
+[68 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>] [69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70]
@@ -1518,10 +1514,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15919 strings out of 493634
- 236262 string characters out of 3134424
- 499428 words of memory out of 3000000
- 18346 multiletter control sequences out of 15000+200000
+ 15917 strings out of 493634
+ 236243 string characters out of 3134424
+ 499412 words of memory out of 3000000
+ 18347 multiletter control sequences out of 15000+200000
  98747 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,49p,1450b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1545,9 +1541,9 @@ s/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
 m/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (89 pages, 1288894 bytes).
+Output written on tcc.pdf (89 pages, 1280531 bytes).
 PDF statistics:
  1763 PDF objects out of 2073 (max. 8388607)
- 568 named destinations out of 1000 (max. 500000)
+ 565 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 
