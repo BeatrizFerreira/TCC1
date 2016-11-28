@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  21 NOV 2016 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  28 NOV 2016 13:55
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1278,6 +1278,12 @@ Overfull \hbox (21.54878pt too wide) in paragraph at lines 82--82
  []
 
 ) [22]) (editaveis/aspectosgerais.tex
+Overfull \hbox (1.2686pt too wide) in paragraph at lines 2--3
+[]\T1/lmr/m/n/12 Arquitetura de soft-ware é, se-gundo Bass, Cle-ments e Kas-man
+ ([][]BASS; CLE-MENTS;
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23
@@ -1516,7 +1522,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
 Here is how much of TeX's memory you used:
  15917 strings out of 493634
  236243 string characters out of 3134424
- 499412 words of memory out of 3000000
+ 499417 words of memory out of 3000000
  18347 multiletter control sequences out of 15000+200000
  98747 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -1541,7 +1547,7 @@ s/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
 m/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (89 pages, 1280531 bytes).
+Output written on tcc.pdf (89 pages, 1289124 bytes).
 PDF statistics:
  1763 PDF objects out of 2073 (max. 8388607)
  565 named destinations out of 1000 (max. 500000)

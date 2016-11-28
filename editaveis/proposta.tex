@@ -11,7 +11,7 @@ Avanços tecnológicos, a criação de linguagens de programação, diferentes t
 
 A fim de suprir esta necessidade de interação entre os diversos sistemas, foi criado um modelo arquitetural conhecido como Arquitetura Baseada em Serviços (ou \textit{Service-Oriented Architecture} - SOA) \cite{linthicum_soainrealworld_2007}. Este modelo arquitetural utiliza o conceito de serviço como uma unidade que representa uma funcionalidade reusável do sistema \cite{lewis_getting_2010}, além de trazer consigo como conceitos chave interoperabilidade, flexibilidade, extensibilidade e baixo acoplamento entre os diversos sistemas ou serviços \cite{josuttis_soa_2007}.
 
-Para este trabalho de conclusão de curso, foi desenvolvida uma arquitetura baseada no modelo SOA para um ambiente heterogêneo com características predominante web (um ambiente virtual), propiciando que diversas aplicações desenvolvidas que se encontram armazenadas em repositórios não mais mantidos ou visitados sejam integradas como módulos da plataforma. Por meio do uso do modelo arquitetural proposto, foi possível integrar tais aplicações, ou serviços, de modo que estas trocam dados e fazem uso do serviço disponibilizado por outras, indepentemente das tecnologias utilizadas para o desenvolvimento das mesmas.
+Para este trabalho de conclusão de curso, foi desenvolvida uma arquitetura baseada no modelo SOA para um ambiente heterogêneo com características predominante web (um ambiente virtual), propiciando que diversas aplicações desenvolvidas que se encontram armazenadas em repositórios não mais mantidos ou visitados sejam integradas como módulos da plataforma. Por meio do uso do modelo arquitetural proposto, foi possível integrar tais aplicações, ou serviços, de modo que estas trocam dados e fazem uso do serviço disponibilizado por outras, independentemente das tecnologias utilizadas para o desenvolvimento das mesmas.
 
 Um protocolo de comunicação entre as aplicações foi estabelecido, bem como o padrão de comunicação utilizado, uma vez que as aplicações produzidas por terceiros podem se comunicar de modo a se tornarem mais robustas e completas enquanto ferramentas.
 
@@ -48,14 +48,14 @@ A partir da necessidade identificada de disponibilizar aplicações que foram de
 \item O acoplamento entre aplicações deve ser o mínimo possível.
 \item Extensibilidade, permitindo que novas aplicações/componentes sejam inseridas à plataforma.
 \item Escalabilidade, fornecendo suporte para que diversas aplicações (ou componentes) sejam aderidas à plataforma.
-\item Flexibilidade,  possibilitando a extensão da plataform sem que a arquitetura original seja modificada drasticamente.
+\item Flexibilidade,  possibilitando a extensão da plataforma sem que a arquitetura original seja modificada drasticamente.
 \end{itemize}
 
 A partir destas características, foi implementado o uso do modelo arquitetural SOA. Desta forma, a plataforma virtual tem conhecimento sobre as aplicações por meio das interfaces disponibilizadas, mas não precisa ter conhecimento sobre como ou quais tecnologias foram utilizadas para o desenvolvimento das aplicações. As aplicações, neste contexto, também podem ser denominadas serviços ou funcionalidades da plataforma virtual.
 
 \subsection{A arquitetura escolhida}
 
-A proposta de arquitetura implementada faz uso da abordagem de implementação de SOA chamada "\textit{Hub-and-spoke}", onde a interface de comunicação entre os serviços é única e pode ser realizada com o uso de um barrameneto de serviços ou um Enterprise Service Bus (ESB) \cite{Bianco2007}.
+A proposta de arquitetura implementada faz uso da abordagem de implementação de SOA chamada "\textit{Hub-and-spoke}", onde a interface de comunicação entre os serviços é única e pode ser realizada com o uso de um barramento de serviços ou um Enterprise Service Bus (ESB) \cite{Bianco2007}.
 
 O barramento de serviços é um recurso utilizado na implementação da arquitetura baseada no modelo SOA para facilitar a troca entre mensagens entre as aplicações - ou serviços. Este barramento é uma ferramenta que implementa funcionalidades que roteiam as mensagens entre os usuários e provedores de um determinado serviço, transformam as mensagens e os dados para o formato aceito pelas aplicações e com protocolos múltiplos de comunicação através de adaptadores. Na arquitetura proposta, o protocolo de comunicação foi padronizado e a funcionalidade de roteamento de mensagens entre os serviços foi a mais explorada.
 
@@ -93,13 +93,13 @@ Existem algumas ferramentas tipo ESB disponíveis e em uso por grandes organiza�
 \item Possuir documentação e tutoriais disponíveis;
 \item Facilidade para implantação e instalação;
 \item Facilidade para uso;
-\item Possibilidade de de uso de conectores (customizados e existentes);
+\item Possibilidade de uso de conectores (customizados e existentes);
 \item Suporte ao formato de mensagem escolhido para a implementação do protocolo (REST e JSON);
 \item Permitir a conexão de serviços ao barramento independentemente da linguagem ou paradigma de programação.
 \item Suporte ao ambiente operacional Linux.
 \end{itemize}
 
-Outro aspecto importante que foi analisado diz respeito à licença de distribuição da ferramentas ESB. A licença de distribuição pode interferir no uso e propriedade da arquitetura distribuída estabelecida por este projeto.
+Outro aspecto importante que foi analisado diz respeito à licença de distribuição das ferramentas ESB. A licença de distribuição pode interferir no uso e propriedade da arquitetura distribuída estabelecida por este projeto.
 
 O levantamento mostrou que as ferramentas que poderiam ser utilizadas para a implementação da arquitetura eram o JBoss ESB, WSO2 ESB e ErlangMS. Foram realizados testes e pesquisas sobre as ferramentas ESB com base nos critérios estabelecidos. O resultado desta análise é exibido na Tabela \ref{analise_ferramentas}.
 
@@ -119,13 +119,13 @@ Uso de conectores                & Sim & Sim & Sim \\ \hline
 Suporte a REST e JSON            & Sim & Sim & Sim \\ \hline
 Conexão de serviços ao barramento independentemente da linguagem ou paradigma de programação & Sim & Não & Sim \\ \hline
 Suporte a Linux SO               & Sim & Sim & Sim\\ \hline
-Linceça de Distribuição          & Apache2 & GNU GPL & Não possui \\ \hline
+Licença de Distribuição          & Apache2 & GNU GPL & Não possui \\ \hline
 \end{tabular}
 \end{table}
 
 A Tabela 1 apresenta um sumário da análise realizada. É possível verificar que os critérios relacionados a usabilidade, implantação e instalação não foram alcançados pelo JBoss ESB, mesmo existindo uma grande comunidade aderente ao uso desta ferramenta. Concluiu-se também que esta ferramenta é limitada ao uso de serviços escritos em Java, uma vez que não foram encontrados documentos ou tutoriais com exemplos claros da utilização do JBoss ESB para disponibilização de serviços desenvolvidos em outras linguagens  de programação. As ferramentas ErlangMS e WSO2 ESB apresentaram um resultado geral satisfatório de acordo com os critérios de seleção elicitados. O único produto ESB não licenciado é o ErlangMS.
 
-Com relação a documentação e tutoriais, ErlangMS possui pouca documentação disponível quando comparada com as outras ferramentas. WSO2 ESB destacou-se com relação ao uso de conectores, uma vez que foi possível utilizar conectores já existentes e disponíveis na plataforma da própria WSO2\footnote{https://store.wso2.com/store/assets/esbconnector/list} , bem como a construção de novos conectores. Estes conectores são contruídos de forma independente de tecnologia, promovendo a interoperabilidade da arquitetura. JBoss ESB provê modelos para a construção de conectores, porém esta funcionalidade parece ser limitada ao contexto de aplicações Java. Embora ErlangMS tenha como objetivo promover a integração de serviços de maneira independente de tecnologias, atualmente existem conectores disponíveis apenas para aplicações Java. Além disto, a construção de conectores para aplicações em outras linguagens é uma atividade complexa e que  não faz parte do escopo deste projeto.
+Com relação a documentação e tutoriais, ErlangMS possui pouca documentação disponível quando comparada com as outras ferramentas. WSO2 ESB destacou-se com relação ao uso de conectores, uma vez que foi possível utilizar conectores já existentes e disponíveis na plataforma da própria WSO2\footnote{https://store.wso2.com/store/assets/esbconnector/list} , bem como a construção de novos conectores. Estes conectores são construídos de forma independente de tecnologia, promovendo a interoperabilidade da arquitetura. JBoss ESB provê modelos para a construção de conectores, porém esta funcionalidade parece ser limitada ao contexto de aplicações Java. Embora ErlangMS tenha como objetivo promover a integração de serviços de maneira independente de tecnologias, atualmente existem conectores disponíveis apenas para aplicações Java. Além disto, a construção de conectores para aplicações em outras linguagens é uma atividade complexa e que  não faz parte do escopo deste projeto.
 
 As pesquisas e testes realizados resultaram na escolha do WSO2 ESB como o componente ESB utilizado na implementação da arquitetura proposta. Uma documentação disponível e extensiva, além da colaboração de usuários por meio da divulgação de tutoriais, possibilitam a fácil instalação, implantação e uso da ferramenta. Além disto, conectores podem ser utilizados para disponibilização de serviços e APIs independentemente de tecnologias utilizadas para a construção do serviço. 
 
@@ -159,7 +159,7 @@ O formato escolhido para a troca de mensagens entre as aplicações é o JSON. A
 
 O formato JSON é baseado em um esquema de chave-valor, onde a chave identifica um atributo, um dado, e o valor é o dado em si, o valor quantitativo ou qualitativo do atributo indicado pela chave. Este formato de mensagem adotado, pode ser tratado na aplicação como uma mensagem JSON ou como uma cadeia de caracteres, a depender da linguagem de programação adotada na construção da plataforma virtual e dos serviços disponibilizados.
 
-Assim, para realizar uma requisição, a aplicação que executa o papel de usuário de um serviço indica o serviço e a operação desejada, o formato da mensagem (JSON por padrão) e os valores necessários para que o serviço seja executado corretamente, indicados pela API disponibilizada pelo mesmo. Da mesma forma, a resposta também é gerada em formato JSON, porém, a aplicação que provê serviços, retorna apenas a resposta da mensagem no padrão chave-valor. A seguir, podem ser visualizados um exemplo de requisição e outro de reposta, ambos em formato JSON.
+Assim, para realizar uma requisição, a aplicação que executa o papel de usuário de um serviço indica o serviço e a operação desejada, o formato da mensagem (JSON por padrão) e os valores necessários para que o serviço seja executado corretamente, indicados pela API disponibilizada pelo mesmo. Da mesma forma, a resposta também é gerada em formato JSON, porém, a aplicação que provê serviços, retorna apenas a resposta da mensagem no padrão chave-valor. A seguir, podem ser visualizados exemplos de requisição e outro de resposta, ambos em formato JSON.
 
 \definecolor{verde}{rgb}{0.25,0.5,0.35}
 \definecolor{jpurple}{rgb}{0.5,0,0.35}
