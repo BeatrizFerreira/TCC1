@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  28 NOV 2016 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  8 DEC 2016 21:20
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1286,7 +1286,12 @@ Overfull \hbox (1.2686pt too wide) in paragraph at lines 2--3
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 \subsection
+                {Objetivo Geral} [1
 
 
 ]
@@ -1297,26 +1302,72 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 23.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 
+      [2]) (editaveis/estadodaarte.texpdfTeX warning (ext4): destination with t
+he same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            [Referencial Teórico]{Referencial Teórico} [3]pdfTeX warning (ext
+4): destination with the same identifier (name{page.4}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            [Referencial Teórico]{Referencial Teórico} [4
 
-[24]) (editaveis/estadodaarte.tex [25] [26
-
-] [27]
-<figuras/modelo_mvc.PNG, id=409, 232.87pt x 269.005pt>
+]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 \item f
+            az parte da arquitetura o comportamento e a interação dos elem...
+[5] <figuras/modelo_mvc.PNG, id=405, 232.87pt x 269.005pt>
 File: figuras/modelo_mvc.PNG Graphic file (type png)
 
 <use figuras/modelo_mvc.PNG>
 Package pdftex.def Info: figuras/modelo_mvc.PNG used on input line 30.
 (pdftex.def)             Requested size: 116.43471pt x 134.50217pt.
- [28 <./figuras/modelo_mvc.PNG (PNG copy)>]
-[29] [30] <figuras/servico_na_arquitetura.png, id=484, 408.02437pt x 168.63pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 
+      [6 <./figuras/modelo_mvc.PNG (PNG copy)>]pdfTeX warning (ext4): destinati
+on with the same identifier (name{page.7}) has been already used, duplicate ign
+ored
+<to be read again> 
+                   \relax 
+l.53 
+      [7]pdfTeX warning (ext4): destination with the same identifier (name{page
+.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 
+      [8] <figuras/servico_na_arquitetura.png, id=477, 408.02437pt x 168.63pt>
 File: figuras/servico_na_arquitetura.png Graphic file (type png)
 
 <use figuras/servico_na_arquitetura.png>
 Package pdftex.def Info: figuras/servico_na_arquitetura.png used on input line 
 89.
 (pdftex.def)             Requested size: 326.41994pt x 134.90417pt.
- [31] [32 <./figuras/servico_na_arquitetura.png>]
-<figuras/modelos_integracao_soa.png, id=520, 593.96906pt x 347.04657pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 
+      [9]pdfTeX warning (ext4): destination with the same identifier (name{page
+.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108 \item \textit
+                   {WS-Policy}: permite a adição de políticas a serem cum...
+[10 <./figuras/servico_na_arquitetura.png>]
+<figuras/modelos_integracao_soa.png, id=511, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
 
 <use figuras/modelos_integracao_soa.png>
@@ -1325,29 +1376,87 @@ Package pdftex.def Info: figuras/modelos_integracao_soa.png used on input line
 (pdftex.def)             Requested size: 415.7755pt x 242.93094pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 130.
- [33] [34 <./figuras/modelos_integracao_soa.png>] <figuras/padrao_ESB.png, id=5
-45, 568.37344pt x 342.5297pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 
+       [11]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 \item L
+             idar com confiança e segurança de dados; [12 <./figuras/modelos_
+integracao_soa.png>]
+<figuras/padrao_ESB.png, id=534, 568.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
 <use figuras/padrao_ESB.png>
 Package pdftex.def Info: figuras/padrao_ESB.png used on input line 151.
 (pdftex.def)             Requested size: 284.18602pt x 171.26442pt.
- [35 <./figuras/padrao_ESB.png>] [36]
-<figuras/padroes_comunicacao.png, id=594, 901.11656pt x 299.61937pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.167 \end{itemize}
+                    [13 <./figuras/padrao_ESB.png>]pdfTeX warning (ext4): desti
+nation with the same identifier (name{page.14}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.184 
+       [14]
+<figuras/padroes_comunicacao.png, id=581, 901.11656pt x 299.61937pt>
 File: figuras/padroes_comunicacao.png Graphic file (type png)
 
 <use figuras/padroes_comunicacao.png>
 Package pdftex.def Info: figuras/padroes_comunicacao.png used on input line 193
 .
 (pdftex.def)             Requested size: 450.55717pt x 149.80931pt.
- [37 <./figuras/padroes_comunicacao.png>]
+pdfTeX warning (ext4): destination with the same identifier (name{page.15}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.199 
+       [15 <./figuras/padroes_comunicacao.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]
-[39] [40] [41]) (editaveis/proposta.tex [42] [43
+pdfTeX warning (ext4): destination with the same identifier (name{page.16}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.211 
+       [16]pdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.17}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226 A
+        fim de alcançar tal objetivo, Pereira realizou um levantamento sobr...
+[17]pdfTeX warning (ext4): destination with the same identifier (name{page.18})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.241 \subsection
+                 {Modelo integrado de Arquitetura Orientada a Serviços e Ar...
+[18]pdfTeX warning (ext4): destination with the same identifier (name{page.19})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.257 
+       [19]) (editaveis/proposta.texpdfTeX warning (ext4): destination with the
+ same identifier (name{page.20}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            [A Arquitetura Implementada]{A Arquitetura Implementada} [20]pdfTeX
+ warning (ext4): destination with the same identifier (name{page.21}) has been 
+already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 
+      [21
 
-]
-<figuras/ambiente_virtual.png, id=693, 489.83pt x 389.455pt>
+] <figuras/ambiente_virtual.png, id=673, 489.83pt x 389.455pt>
 File: figuras/ambiente_virtual.png Graphic file (type png)
 
 <use figuras/ambiente_virtual.png>
@@ -1356,17 +1465,21 @@ Package pdftex.def Info: figuras/ambiente_virtual.png used on input line 30.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
-[45 <./figuras/ambiente_virtual.png (PNG copy)>]
-<figuras/barramento_interoperabilidade.png, id=708, 803.0pt x 682.55pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 
+      [22] [23 <./figuras/ambiente_virtual.png (PNG copy)>]
+<figuras/barramento_interoperabilidade.png, id=687, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.png Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.png>
 Package pdftex.def Info: figuras/barramento_interoperabilidade.png used on inpu
 t line 66.
 (pdftex.def)             Requested size: 321.1943pt x 273.01517pt.
- [46]
-<figuras/uso_esb.png, id=716, 390.70969pt x 361.35pt>
+ [24]
+<figuras/uso_esb.png, id=695, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.png Graphic file (type png)
 
 <use figuras/uso_esb.png>
@@ -1375,16 +1488,16 @@ Package pdftex.def Info: figuras/uso_esb.png used on input line 81.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [47 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [48 <./figuras/u
-so_esb.png>] [49] [50]
-<figuras/fluxo_basico_protocolo.png, id=755, 997.7275pt x 406.51875pt>
+ [25 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [26 <./figuras/u
+so_esb.png>] [27] [28]
+<figuras/fluxo_basico_protocolo.png, id=734, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.png Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.png>
 Package pdftex.def Info: figuras/fluxo_basico_protocolo.png used on input line 
 148.
 (pdftex.def)             Requested size: 455.0pt x 185.3881pt.
- [51 <./figuras/fluxo_basico_protocolo.png>]
+ [29 <./figuras/fluxo_basico_protocolo.png>]
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
@@ -1399,24 +1512,24 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52])
-(editaveis/engenhariadesoftware.tex [53] [54
+ [30])
+(editaveis/engenhariadesoftware.tex [31] [32
 
-] [55] [56] [57] [58] [59] [60]
-[61] [62] [63]
+] [33] [34] [35] [36] [37] [38]
+[39] [40] [41]
 ("C:\Users\Beatriz\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang
 1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 394.
- [64] <figuras/print_avsoa.png, id=943, 645.16031pt x 418.56375pt>
+ [42] <figuras/print_avsoa.png, id=922, 645.16031pt x 418.56375pt>
 File: figuras/print_avsoa.png Graphic file (type png)
 
 <use figuras/print_avsoa.png>
 Package pdftex.def Info: figuras/print_avsoa.png used on input line 409.
 (pdftex.def)             Requested size: 451.60913pt x 292.99261pt.
- [65 <./figuras/print_avsoa.png>]
+ [43 <./figuras/print_avsoa.png>]
 Overfull \hbox (14.68684pt too wide) in paragraph at lines 419--419
  [] [] [][]\T1/lmr/m/n/10 Servi�os \T1/lmr/m/it/10 Proxy \T1/lmr/m/n/10 no WSO2
  ESB: https://docs.wso2.com/display/ESB480/Working+with+Proxy+Services| 
@@ -1433,9 +1546,9 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 Underfull \vbox (badness 1178) has occurred while \output is active []
 
- [66]
-[67]
-<figuras/integracao_esb_front_rest_api_tcc.png, id=990, 314.17375pt x 482.80376
+ [44]
+[45]
+<figuras/integracao_esb_front_rest_api_tcc.png, id=969, 314.17375pt x 482.80376
 pt>
 File: figuras/integracao_esb_front_rest_api_tcc.png Graphic file (type png)
  <use figuras/integracao_esb_front_rest_api_tcc.png>
@@ -1446,54 +1559,54 @@ input line 488.
 
 Package hyperref Warning: Suppressing empty link on input line 496.
 
-[68 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>] [69]
+[46 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>] [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [70]
-[71] [72]) (editaveis/consideracoesfinais.tex [73] [74
+ [48]
+[49] [50]) (editaveis/consideracoesfinais.tex [51] [52
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75])
+ [53])
 (tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [76]
+ [54]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[77
+[55
 
-] [78]) (editaveis/apendices.tex [79] [80
+] [56]) (editaveis/apendices.tex [57] [58
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[81
+[59
 
-] [82]
-<figuras/estrutura_conector_login.png, id=1225, 149.05687pt x 135.50626pt>
+] [60]
+<figuras/estrutura_conector_login.png, id=1204, 149.05687pt x 135.50626pt>
 File: figuras/estrutura_conector_login.png Graphic file (type png)
 
 <use figuras/estrutura_conector_login.png>
 Package pdftex.def Info: figuras/estrutura_conector_login.png used on input lin
 e 9.
 (pdftex.def)             Requested size: 149.0565pt x 135.5059pt.
- [83
+ [61
 
- <./figuras/estrutura_conector_login.png>] [84]
+ <./figuras/estrutura_conector_login.png>] [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
-[86]) (editaveis/anexos.tex) (tcc.ind) 
+ [63]
+[64]) (editaveis/anexos.tex) (tcc.ind) 
 AED: lastpage setting LastPage
-[87]
+[65]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1512,7 +1625,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: CC62C22323A08FD3777964C4A745D704;6605.
+(rerunfilecheck)             Checksum: 12105ECA046BB1B824400A51F0CED421;6566.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1520,36 +1633,39 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15917 strings out of 493634
- 236243 string characters out of 3134424
- 499417 words of memory out of 3000000
- 18347 multiletter control sequences out of 15000+200000
+ 15896 strings out of 493634
+ 236079 string characters out of 3134424
+ 499454 words of memory out of 3000000
+ 18346 multiletter control sequences out of 15000+200000
  98747 words of font info for 64 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,49p,1450b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
-enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
-athsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmbx12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/lm/lmbxi10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmr10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/lm/lmr12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/Beatriz/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Beatriz/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/Beatriz/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Beatriz/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/Beatriz/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beat
-riz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/User
-s/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso
-12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/l
-m/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (89 pages, 1289124 bytes).
+pdfTeX warning (dest): name{section*.12} has been referenced but does not exi
+st, replaced by a fixed one
+
+{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
+c}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
+hsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+lm/lmbx12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmbxi10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/lm/lmr10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmr12.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmr7.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Beatriz/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Users/Beatriz/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Beatriz/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Users/Beatriz/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Users/Beatri
+z/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Users/
+Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C
+:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsso12
+.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/lm/lmtt10.pfb>
+Output written on tcc.pdf (89 pages, 1277875 bytes).
 PDF statistics:
- 1763 PDF objects out of 2073 (max. 8388607)
- 565 named destinations out of 1000 (max. 500000)
- 654 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1741 PDF objects out of 2073 (max. 8388607)
+ 545 named destinations out of 1000 (max. 500000)
+ 662 words of extra memory for PDF output out of 10000 (max. 10000000)
 
