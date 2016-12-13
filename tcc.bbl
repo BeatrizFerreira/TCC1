@@ -45,13 +45,11 @@ Dispon{\'\i}vel em: \url{https://www.w3.org/TR/2000/NOTE-SOAP-20000508/}.}
 Dispon{\'\i}vel em:
   \url{http://canaltech.com.br/o-que-e/software/o-que-e-api/}.}
 
-\bibitem[{Capgemini, Adaptive Ltd, Fujistu} et al.
-  2009]{adaptive_ltd_service_2009}
-\abntrefinfo{{Capgemini, Adaptive Ltd, Fujistu} et al.}{{Capgemini, Adaptive
-  Ltd, Fujistu} et al.}{2009}
-{{Capgemini, Adaptive Ltd, Fujistu} et al. \emph{Service oriented architecture
-  {Modeling} {Language} ({SoaML}) - {Specification} for the {UML} {Profile} and
-  {Metamodel} for {Services} ({UPMS})}. OMG - Object Management Group, 2009.
+\bibitem[{Capgemini} et al. 2009]{adaptive_ltd_service_2009}
+\abntrefinfo{{Capgemini} et al.}{{Capgemini} et al.}{2009}
+{{Capgemini} et al. \emph{Service oriented architecture {Modeling} {Language}
+  ({SoaML}) - {Specification} for the {UML} {Profile} and {Metamodel} for
+  {Services} ({UPMS})}. OMG - Object Management Group, 2009.
 Dispon{\'\i}vel em:
   \url{http://www.uio.no/studier/emner/matnat/ifi/INF5120/v10/undervisningsmateriale/}.}
 
@@ -79,10 +77,16 @@ Dispon{\'\i}vel em:
   \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7086296}.}
 
 \bibitem[Erl 2009]{erl_orientacaoaservico_2009}
-\abntrefinfo{Erl}{ERL}{2009}
+\abntrefinfo{Erl}{ERL}{2009a}
 {ERL, T. Orientação a serviços. In:  GAMA, F. C. N.~d.; BARBOSA, R. d.~C.
   (Ed.). \emph{{SOA}: {Princípios} de {Design} de {Serviços}}. São Paulo:
   Pearson Prentice Hall, 2009. p.~306.
+ISBN 978-85-7605-189-3.}
+
+\bibitem[Erl 2009]{erl_soa_2009}
+\abntrefinfo{Erl}{ERL}{2009b}
+{ERL, T. \emph{{SOA}: {Princípios} de {Design} de {Serviços}}. 1. ed. São
+  Paulo: Pearson Prentice Hall, 2009.
 ISBN 978-85-7605-189-3.}
 
 \bibitem[Gil 2008]{gil_como_2008}

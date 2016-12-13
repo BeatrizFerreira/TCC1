@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  12 DEC 2016 22:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  13 DEC 2016 20:41
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1348,16 +1348,12 @@ ored
 <to be read again> 
                    \relax 
 l.53 
-      [7]
-
-LaTeX Warning: Citation `erl_soa_2009' on page 8 undefined on input line 58.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
-been already used, duplicate ignored
+      [7]pdfTeX warning (ext4): destination with the same identifier (name{page
+.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.64 
-      [8] <figuras/servico_na_arquitetura.png, id=473, 408.02437pt x 168.63pt>
+      [8] <figuras/servico_na_arquitetura.png, id=476, 408.02437pt x 168.63pt>
 File: figuras/servico_na_arquitetura.png Graphic file (type png)
 
 <use figuras/servico_na_arquitetura.png>
@@ -1376,7 +1372,7 @@ l.98
 l.110 \item \textit
                    {WS-Security}: fornece segurança a nível de mensagem, g...
 [10 <./figuras/servico_na_arquitetura.png>]
-<figuras/modelos_integracao_soa.png, id=507, 593.96906pt x 347.04657pt>
+<figuras/modelos_integracao_soa.png, id=510, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
 
 <use figuras/modelos_integracao_soa.png>
@@ -1396,7 +1392,7 @@ ge.12}) has been already used, duplicate ignored
                    \relax 
 l.145 \end{itemize}
                     [12 <./figuras/modelos_integracao_soa.png>]
-<figuras/padrao_ESB.png, id=530, 568.37344pt x 342.5297pt>
+<figuras/padrao_ESB.png, id=533, 568.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
 <use figuras/padrao_ESB.png>
@@ -1416,7 +1412,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
                    \relax 
 l.184 
        [14]
-<figuras/padroes_comunicacao.png, id=577, 901.11656pt x 299.61937pt>
+<figuras/padroes_comunicacao.png, id=580, 901.11656pt x 299.61937pt>
 File: figuras/padroes_comunicacao.png Graphic file (type png)
 
 <use figuras/padroes_comunicacao.png>
@@ -1468,7 +1464,7 @@ already used, duplicate ignored
 l.15 
       [21
 
-] <figuras/ambiente_virtual.png, id=670, 489.83pt x 389.455pt>
+] <figuras/ambiente_virtual.png, id=673, 489.83pt x 389.455pt>
 File: figuras/ambiente_virtual.png Graphic file (type png)
 
 <use figuras/ambiente_virtual.png>
@@ -1483,7 +1479,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.22}) has
                    \relax 
 l.40 
       [22] [23 <./figuras/ambiente_virtual.png (PNG copy)>]
-<figuras/barramento_interoperabilidade.png, id=684, 803.0pt x 682.55pt>
+<figuras/barramento_interoperabilidade.png, id=687, 803.0pt x 682.55pt>
 File: figuras/barramento_interoperabilidade.png Graphic file (type png)
 
 <use figuras/barramento_interoperabilidade.png>
@@ -1491,7 +1487,7 @@ Package pdftex.def Info: figuras/barramento_interoperabilidade.png used on inpu
 t line 66.
 (pdftex.def)             Requested size: 321.1943pt x 273.01517pt.
  [24]
-<figuras/uso_esb.png, id=692, 390.70969pt x 361.35pt>
+<figuras/uso_esb.png, id=695, 390.70969pt x 361.35pt>
 File: figuras/uso_esb.png Graphic file (type png)
 
 <use figuras/uso_esb.png>
@@ -1502,7 +1498,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./figuras/barramento_interoperabilidade.png (PNG copy)>] [26 <./figuras/u
 so_esb.png>] [27] [28]
-<figuras/fluxo_basico_protocolo.png, id=731, 997.7275pt x 406.51875pt>
+<figuras/fluxo_basico_protocolo.png, id=734, 997.7275pt x 406.51875pt>
 File: figuras/fluxo_basico_protocolo.png Graphic file (type png)
 
 <use figuras/fluxo_basico_protocolo.png>
@@ -1535,7 +1531,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 394.
- [42] <figuras/print_avsoa.png, id=921, 645.16031pt x 418.56375pt>
+ [42] <figuras/print_avsoa.png, id=924, 645.16031pt x 418.56375pt>
 File: figuras/print_avsoa.png Graphic file (type png)
 
 <use figuras/print_avsoa.png>
@@ -1563,13 +1559,13 @@ Underfull \vbox (badness 2103) has occurred while \output is active []
 
  [44]
 [45]
-<figuras/integracao_esb_front_rest_api_tcc.png, id=968, 314.17375pt x 482.80376
-pt>
+<figuras/integracao_esb_front_rest_api_tcc.png, id=971, 314.17375pt x 485.815pt
+>
 File: figuras/integracao_esb_front_rest_api_tcc.png Graphic file (type png)
  <use figuras/integracao_esb_front_rest_api_tcc.png>
 Package pdftex.def Info: figuras/integracao_esb_front_rest_api_tcc.png used on 
 input line 488.
-(pdftex.def)             Requested size: 219.92012pt x 337.96033pt.
+(pdftex.def)             Requested size: 219.92012pt x 340.06818pt.
  [46 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>]
 
 Package hyperref Warning: Suppressing empty link on input line 496.
@@ -1583,45 +1579,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53])
-(tcc.bbl (tcc.brf)
+ [53]
+[54]) (tcc.bbl (tcc.brf)
 \tf@brf=\write5
 \openout5 = `tcc.brf'.
 
- [54]
+ [55] [56
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[55
-
-] [56]) (editaveis/apendices.tex [57] [58
+[57] [58]) (editaveis/apendices.tex [59] [60
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 4.
 
-[59
+[61
 
-] [60]
-<figuras/estrutura_conector_login.png, id=1200, 149.05687pt x 135.50626pt>
+] [62]
+<figuras/estrutura_conector_login.png, id=1214, 149.05687pt x 135.50626pt>
 File: figuras/estrutura_conector_login.png Graphic file (type png)
 
 <use figuras/estrutura_conector_login.png>
 Package pdftex.def Info: figuras/estrutura_conector_login.png used on input lin
 e 9.
 (pdftex.def)             Requested size: 149.0565pt x 135.5059pt.
- [61
+ [63
 
- <./figuras/estrutura_conector_login.png>] [62]
+ <./figuras/estrutura_conector_login.png>] [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
-[64]) (editaveis/anexos.tex) (tcc.ind) 
+ [65]
+[66]) (editaveis/anexos.tex) (tcc.ind) 
 AED: lastpage setting LastPage
-[65]
+[67]
 \tf@lof=\write6
 \openout6 = `tcc.lof'.
 
@@ -1639,16 +1635,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-
-
-Package rerunfilecheck Warning: File `tcc.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tcc.brf':
-(rerunfilecheck)             Before: E2A91F3C4820AF33514C64FF46A52FDA;6523
-(rerunfilecheck)             After:  B00C28BA2372224BC9B41AEE1143ABD9;6522.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `tcc.brf' has not changed.
+(rerunfilecheck)             Checksum: B00C28BA2372224BC9B41AEE1143ABD9;6522.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -1656,10 +1644,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15911 strings out of 493634
- 236341 string characters out of 3134424
- 499840 words of memory out of 3000000
- 18358 multiletter control sequences out of 15000+200000
+ 15917 strings out of 493634
+ 236429 string characters out of 3134424
+ 499883 words of memory out of 3000000
+ 18361 multiletter control sequences out of 15000+200000
  104364 words of font info for 66 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,13n,49p,1459b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1685,9 +1673,9 @@ public/lm/lmsso17.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (89 pages, 1330517 bytes).
+Output written on tcc.pdf (91 pages, 1325754 bytes).
 PDF statistics:
- 1740 PDF objects out of 2073 (max. 8388607)
- 544 named destinations out of 1000 (max. 500000)
+ 1755 PDF objects out of 2073 (max. 8388607)
+ 547 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 

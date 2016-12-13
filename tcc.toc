@@ -71,12 +71,12 @@
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Conclus\IeC {\~o}es e Trabalhos Futuros}}{53}{chapter.5}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias}}{55}{section*.12}
+\contentsline {chapter}{\uppercase {Refer\^encias}}{57}{section*.12}
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{59}{section*.13}
+\contentsline {part}{\uppercase {Ap\^endices}}{61}{section*.13}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Conector API de Gerenciamento de Usu\IeC {\'a}rios}}{61}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase {Conector API de Gerenciamento de Usu\IeC {\'a}rios}}{63}{appendix.A}
