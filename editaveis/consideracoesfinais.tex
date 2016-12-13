@@ -1,8 +1,10 @@
 \chapter[Conclusões e Trabalhos Futuros]{Conclusões e Trabalhos Futuros}
 
-Neste trabalho, foi especificada e desenvolvida uma arquitetura de \textit{software} integrativa baseada no modelo SOA, onde aplicações individuais puderam ser integradas por meio da troca de dados entre estas. A troca de dados entre as aplicações foi baseada em um protocolo de comunicação definido para este contexto. Estas aplicações são resultados de trabalhos do grupo de orientandos e atividades desenvolvidas em laboratório de pesquisa e desenvolvimento de \textit{software}.
+Neste trabalho, foi especificada e desenvolvida uma arquitetura de \textit{software} integrativa baseada no modelo SOA, onde aplicações individuais puderam ser integradas por meio da troca de dados entre estas. A troca de dados entre as aplicações foi baseada em um protocolo de comunicação definido para este contexto. Estas aplicações são resultados de trabalhos do grupo de orientandos e atividades desenvolvidas em laboratório de pesquisa e desenvolvimento de produtos de \textit{software} na Universidade de Brasília.
 
-A partir do que foi proposto e construído, já é possível disponibilizar à comunidade acadêmica um ambiente virtual, por meio de uma plataforma web, que dispõe de serviços (ou funcionalidades) de aplicações existentes.
+A partir do que foi proposto e construído, já é possível disponibilizar à comunidade acadêmica um ambiente virtual, por meio de uma plataforma web, que dispõe de serviços (ou funcionalidades) de aplicações existentes e desenvolvidos no contexto estabelecido para este projeto de conclusão de curso.
+
+A implementação da arquitetura SOA utilizando a abordagem de integração \textit{Hub-and-Spoke} permitiu a integração de sistemas heterogêneos em uma plataforma unificada - o ambiente virtual. Além disto, foi estabelecido um protocolo de comunicação para uniformizar o formato dos dados e tecnologias utilizadas para a troca de dados entre as aplicações  que compõem o ambiente virtual.
 
 Foi feita não só a implementação, mas também testes de desempenho e esforço necessário para construir uma API REST a partir de um sistema legado. Além disto, a complexidade ciclomática do sistema legado foi medida para avaliação da alteração da métrica de qualidade do código-fonte modificado. Os resultados dos testes e da análise da métrica de qualidade selecionada exibiram resultados interessantes no que diz respeito ao desempenho: por motivos ainda desconhecidos, o uso do ESB melhorou um pouco o desempenho do sistema de modo geral e não houve alterações significavas nas métricas colhidas do código.
 
@@ -12,11 +14,13 @@ Foram exibidos detalhes de como adaptar um sistema legado, transformando-o em um
 
 Um subproduto resultante da execução deste projeto foi o AVSOA (Ambiente Virtual - Arquitetura Orientada à Serviços). O AVSOA é a implementação da aplicação cliente construída para realizar requisições aos serviços disponibilizados no barramento de serviços. Esta aplicação permite que novos serviços, caso não possuam uma interface gráfica já construída, ou sistemas legados que disponibilizam suas funcionalidades (ou parte delas) como um serviço possam ser incorporadas a uma arquitetura que suporta a integração de diversos serviços.
 
-Pode-se chegar à conclusão de que o conjunto de atividades desenvolvidas resultou em produtos de \textit{software} que atendem aos requisitos especificados, tanto em termos de qualidade de desempenho e quanto de necessidade. Ainda é possível afirmar que o modelo arquitetural baseado em serviços com a abordagem de integração \textit{Hub-and-Spoke} é uma forma de implementar um sistema heterogêneo, sendo recomendável quando o assunto é sistema distribuído e integrativo. As aplicações que se comportam como serviços podem também possuir suas próprias extensões e serem executadas de modo \textit{standalone}.
+O conjunto de atividades desenvolvidas resultou em produtos de \textit{software} que atendem aos requisitos especificados, tanto em termos de qualidade de desempenho e quanto de necessidade. Retomando a questão principal de pesquisa - "Como é possível implementar um sistema de \textit{software} composto a partir da integração de aplicações individuais, sendo estas aplicações desenvolidas com base em tecnologias, técnicas e métodos distintos?" - é possível afirmar que o modelo arquitetural baseado em serviços com a abordagem de integração \textit{Hub-and-Spoke} é uma forma de implementar um sistema heterogêneo, sendo recomendável quando o assunto é sistema distribuído e integrativo. 
 
-Questões relacionadas à segurança, tais como autenticação e autorização de usuários e serviços e criptografia não foram inseridas no escopo deste projeto de conclusão de curso. Sabe-se que o ESB escolhido (WSO2 ESB) dá suporte para requisitos de segurança de autenticação e autorização. 
+A questão secundária que moveu este trabalho de conclusão de curso foi "As aplicações que compõem este sistema podem ser executadas de modo \textit{standalone} ou apenas em conjunto ao sistema?". Com base nas atividades realizadas e nos resultados obtidos, pode-se concluir que as aplicações que se comportam como serviços podem também possuir suas próprias extensões e serem executadas de modo \textit{standalone}.
 
-Durante os testes realizados, observou-se a necessidade de inserção de requisitos que não foram inicialmente elicitados. Estes requisitos podem ser tratados em trabalhos futuros, e estão descritos abaixo.
+Características relacionadas à segurança, tais como autenticação e autorização de usuários e serviços e criptografia não foram inseridas no escopo deste projeto. Sabe-se que o ESB escolhido (WSO2 ESB) dá suporte para requisitos de segurança de autenticação e autorização. 
+
+Durante os testes realizados, observou-se a necessidade de inserção de requisitos que não foram inicialmente elicitados. Estes requisitos podem ser tratados em trabalhos futuros, os quais estão descritos como segue:
 
 \begin{itemize}
 \item Realizar verificação e adequação de segurança na arquitetura implementada;
@@ -27,5 +31,7 @@ Durante os testes realizados, observou-se a necessidade de inserção de requisi
 \item Analisar e selecionar outros trabalhos desenvolvidos para serem adaptados e adicionados ao barramento de serviços (WSO2 ESB) e ao AVSOA.
 \end{itemize}
 
+
+Em suma, pode-se concluir que utilizando-se SOA é possível implementar sistemas de \textit{software} compostos de aplicações individuais integradas. Além disto, a implantação de um ESB em uma arquitetura integrativa com sistemas legados tem uma estimativa de esforço de aproximadamente 56 horas para conclusão, sem ônus no que diz respeito à complexidade e ao desempenho do sistema.
 
 %O uso de uma arquitetura baseada no modelo SOA não elimina o trabalho necessário para a inserção de novos serviços: o seu uso visa minimizar os reparos que devem ser feitos para que uma nova funcionalidade seja incorporada ao sistema, promovendo extensibilidade e flexibilidade à arquitetura construída.
