@@ -1,10 +1,10 @@
 \chapter[Conclusões e Trabalhos Futuros]{Conclusões e Trabalhos Futuros}
 
-Neste trabalho foi especificada e desenvolvida uma arquitetura de \textit{software} integrativa baseada no modelo SOA, onde aplicações individuais puderam ser integradas por meio da troca de dados entre estas. A troca de dados entre as aplicações foi baseada em um protocolo de comunicação definido para este contexto. Estas aplicações são resultados de trabalhos do grupo de orientandos e atividades desenvolvidas em laboratório de pesquisa e desenvolvimento de \textit{software}.
+Neste trabalho, foi especificada e desenvolvida uma arquitetura de \textit{software} integrativa baseada no modelo SOA, onde aplicações individuais puderam ser integradas por meio da troca de dados entre estas. A troca de dados entre as aplicações foi baseada em um protocolo de comunicação definido para este contexto. Estas aplicações são resultados de trabalhos do grupo de orientandos e atividades desenvolvidas em laboratório de pesquisa e desenvolvimento de \textit{software}.
 
 A partir do que foi proposto e construído, já é possível disponibilizar à comunidade acadêmica um ambiente virtual, por meio de uma plataforma web, que dispõe de serviços (ou funcionalidades) de aplicações existentes.
 
-Foi feita não só a implementação, mas também testes de desempenho e esforço necessário para construir uma API REST a partir de um sistema legado. Além disto, a complexidade ciclomática do sistema legado foi medida para avaliação da alteração da métrica de qualidade do código-fonte modificado. Os resultados dos testes e da análise da métrica de qualidade selecionada exibiram resultados interessantes no que diz respeito ao desempenho: por motivos ainda desconhecidos, o uso do ESB melhorou um pouco o desempenho do sistema de modo geral e não houveram alterações significavas nas métricas colhidas do código.
+Foi feita não só a implementação, mas também testes de desempenho e esforço necessário para construir uma API REST a partir de um sistema legado. Além disto, a complexidade ciclomática do sistema legado foi medida para avaliação da alteração da métrica de qualidade do código-fonte modificado. Os resultados dos testes e da análise da métrica de qualidade selecionada exibiram resultados interessantes no que diz respeito ao desempenho: por motivos ainda desconhecidos, o uso do ESB melhorou um pouco o desempenho do sistema de modo geral e não houve alterações significavas nas métricas colhidas do código.
 
 A medição de esforço necessário para a construção de uma API REST a partir de um sistema legado irá permitir que outros laboratórios de pesquisa e desenvolvimento de \textit{software} possam estimar o esforço necessário para adaptar seus sistemas legados e implementar uma arquitetura de \textit{software} semelhante à que foi desenvolvida neste TCC.
 
@@ -12,16 +12,16 @@ Foram exibidos detalhes de como adaptar um sistema legado, transformando-o em um
 
 Um subproduto resultante da execução deste projeto foi o AVSOA (Ambiente Virtual - Arquitetura Orientada à Serviços). O AVSOA é a implementação da aplicação cliente construída para realizar requisições aos serviços disponibilizados no barramento de serviços. Esta aplicação permite que novos serviços, caso não possuam uma interface gráfica já construída, ou sistemas legados que disponibilizam suas funcionalidades (ou parte delas) como um serviço possam ser incorporadas a uma arquitetura que suporta a integração de diversos serviços.
 
-Pode-se chegar à conclusão de que o conjunto de atividades desenvolvidas resultou em produtos de \textit{software} que atende aos requisitos especificados, tanto em termos de qualidade de desempenho e quanto de necessidade. Ainda é possível afirmar que o modelo arquitetural baseado em serviços com a abordagem de integração \textit{Hub-and-Spoke} é uma forma de implementar um sistema heterogêneo e é altamente recomendável quando o assunto é sistema distribuído e integrativo. As aplicações que se comportam como serviços podem também possuir suas próprias extensões e serem executadas de modo \textit{standalone}.
+Pode-se chegar à conclusão de que o conjunto de atividades desenvolvidas resultou em produtos de \textit{software} que atendem aos requisitos especificados, tanto em termos de qualidade de desempenho e quanto de necessidade. Ainda é possível afirmar que o modelo arquitetural baseado em serviços com a abordagem de integração \textit{Hub-and-Spoke} é uma forma de implementar um sistema heterogêneo, sendo recomendável quando o assunto é sistema distribuído e integrativo. As aplicações que se comportam como serviços podem também possuir suas próprias extensões e serem executadas de modo \textit{standalone}.
 
-Questões relacionadas a segurança, tais como autenticação e autorização de usuários e serviços e criptografia não foram inseridas no escopo deste projeto de conclusão de curso. Sabe-se que o ESB escolhido (WSO2 ESB) dá suporte para requisitos de segurança de autenticação e autorização. 
+Questões relacionadas à segurança, tais como autenticação e autorização de usuários e serviços e criptografia não foram inseridas no escopo deste projeto de conclusão de curso. Sabe-se que o ESB escolhido (WSO2 ESB) dá suporte para requisitos de segurança de autenticação e autorização. 
 
-Durante os testes realizados, observou-se a necessidade de inserção de requisitos que não foram inicialmente elicitados. Estes requisitos podem ser tratados em trabalhos futuros e estão descritos abaixo.
+Durante os testes realizados, observou-se a necessidade de inserção de requisitos que não foram inicialmente elicitados. Estes requisitos podem ser tratados em trabalhos futuros, e estão descritos abaixo.
 
 \begin{itemize}
 \item Realizar verificação e adequação de segurança na arquitetura implementada;
 \item Estender a API de gerenciamento de usuários para controle de acesso a serviços dentro de uma aplicação cliente;
-\item Analisar o sistema legado adaptado neste projeto e procurar uma forma de melhorar seu desempenho;
+\item Analisar o sistema legado adaptado neste projeto, e procurar uma forma de melhorar seu desempenho;
 \item Pesquisar sobre as razões que levaram o desempenho utilizando o WSO2 ESB ser melhor do que utilizando a integração ponto-a-ponto;
 \item Implantar o AVSOA para acesso externo;
 \item Analisar e selecionar outros trabalhos desenvolvidos para serem adaptados e adicionados ao barramento de serviços (WSO2 ESB) e ao AVSOA.

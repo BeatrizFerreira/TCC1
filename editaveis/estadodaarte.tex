@@ -2,7 +2,7 @@
 
 Este capítulo tem como objetivo apresentar o referencial teórico deste projeto de TCC. Neste capítulo, são abordados conceitos que estão diretamente ligados à proposta deste trabalho, e que fundamentam as decisões realizadas para propor uma solução à necessidade encontrada.
 
-Este capítulo está subdividido em quatro seções. A seção 2.1, intitulada Arquitetura de \textit{Software}, aborda conceitos de arquitetura de \textit{software} de um modo geral e exibe alguns estilos arquiteturais conhecidos. A seção 2.2, Características da Arquitetura Orientada a Serviços, detalha a abordagem deste estilo arquitetural. A seção 2.3, nomeada Protocolos de Comunicação, fornece uma explicação sobre o tema e uma abordagem sobre dois principais protocolos, SOAP e REST. Na seção 2.4, estão resumidos algumas implementações existentes do modelo SOA.
+Este capítulo está subdividido em quatro seções. A seção 2.1, intitulada Arquitetura de \textit{Software}, aborda conceitos de arquitetura de \textit{software} de um modo geral e exibe alguns estilos arquiteturais conhecidos. A seção 2.2, Características da Arquitetura Orientada a Serviços, detalha a abordagem deste estilo arquitetural. A seção 2.3, nomeada Protocolos de Comunicação, fornece uma explicação sobre o tema e uma abordagem sobre dois principais protocolos, SOAP e REST. Na seção 2.4, estão resumidas algumas implementações existentes do modelo SOA.
 
 \section{Arquitetura de \textit{Software}}
 Existe na literatura a assertiva de que o produto de \textit{software} é construído com base em uma oportunidade de negócio ou uma necessidade de usuário(s) identificada. Estes produtos de \textit{software} possuem uma arquitetura associada à sua construção. Esta arquitetura é uma composição de estruturas de um ou mais sistemas que exibem as características visíveis de elementos que o compõem e o relacionamento entre estes elementos \cite{bass_software_archi_practice_2003}.
@@ -23,7 +23,7 @@ Ainda de acordo com Bass, Clements e Kasman \cite{bass_software_archi_practice_2
 Segundo Pressman \cite{pressman2006engenharia}, estilos arquiteturais são utilizados para guiar o desenvolvimento de \textit{software} e podem ser combinados a fim de obter um estilo próprio para cada produto de acordo com os requisitos e as restrições identificadas. A seguir, estão descritos alguns dos estilos arquiteturais existentes na literatura.
 
 \subsubsection{Arquitetura Baseada em Camadas}
-A arquitetura baseada em camadas é caracterizada pela divisão de elementos em grupos que possuem responsabilidades semelhantes. Estes grupos compõem camadas da aplicação e estas conversam entre si através de um protocolo estabelecido pelo estilo arquitetural, onde, geralmente, uma camada interage apenas com camadas mais próximas \cite{pressman2006engenharia}. A figura \ref{modelo_mvc} é uma ilustração deste estilo.
+A arquitetura baseada em camadas é caracterizada pela divisão de elementos em grupos que possuem responsabilidades semelhantes. Estes grupos compõem camadas da aplicação e estas conversam entre si através de um protocolo estabelecido pelo estilo arquitetural, no qual, geralmente, uma camada interage apenas com camadas mais próximas \cite{pressman2006engenharia}. A Figura \ref{modelo_mvc} é uma ilustração deste estilo.
 
 \begin{figure}[htb]
 \centering
@@ -32,7 +32,7 @@ A arquitetura baseada em camadas é caracterizada pela divisão de elementos em 
 \label{modelo_mvc}
 \end{figure}
 
-A figura \ref{modelo_mvc} é uma representação do padrão arquitetural MVC - \textit{Model View Controller}, que é uma implementação do estilo arquitetural baseado em camadas. No MVC, a camada de modelo (\textit{Model}) interage apenas com a camada de controle (\textit{Controller}). Esta, por sua vez, é responsável por promover a interação entre as camadas \textit{View} e \textit{Model} e contém todas as regras de negócio estabelecidas para o produto.
+A Figura \ref{modelo_mvc} é uma representação do padrão arquitetural MVC - \textit{Model View Controller}, que é uma implementação do estilo arquitetural baseado em camadas. No MVC, a camada de modelo (\textit{Model}) interage apenas com a camada de controle (\textit{Controller}). Esta, por sua vez, é responsável por promover a interação entre as camadas \textit{View} e \textit{Model} e contém todas as regras de negócio estabelecidas para o produto.
 
 \subsubsection{Arquitetura Orientada a Serviços}
 
@@ -44,7 +44,7 @@ Na arquitetura orientada a serviços (SOA), as funcionalidades ou módulos de um
 O estilo arquitetural cliente-servidor é utilizado como um modelo para a implementação de sistemas distribuídos. Neste estilo, os clientes são responsáveis por realizar requisições a um conjunto de servidores que disponibilizam serviços. Geralmente, os clientes comunicam-se de maneira direta com os servidores e possuem conhecimento apenas dos servidores disponíveis, desconhecendo outros clientes existentes. Um exemplo de implementação deste estilo é a rede de uma organização, onde os usuários (clientes) têm conhecimento acerca de impressoras (servidores) disponíveis. Ao acionar o serviço de impressão, o cliente estabelece uma comunicação direta com a impressora \cite{sommerville2008engenharia}.
 
 \subsubsection{Arquitetura Baseada em Eventos}
-A arquitetura baseada em eventos é um estilo arquitetural onde ocorrências importantes no sistema são identificadas pelo \textit{software} ou \textit{hardware} que o compõe. É composta por dois elementos principais. O primeiro cria um evento e é capaz apenas de identificar e anunciar a ocorrência do mesmo. O segundo elemento consome os eventos anunciados. Os elementos consumidores necessitam dos eventos para realizar o processamento de uma determinada operação ou mudança de estado \cite{rouse}.
+A arquitetura baseada em eventos é um estilo arquitetural, no qual ocorrências importantes no sistema são identificadas pelo \textit{software} ou \textit{hardware} que o compõe. É composta por dois elementos principais. O primeiro cria um evento e é capaz apenas de identificar e anunciar a ocorrência do mesmo. O segundo elemento consome os eventos anunciados. Os elementos consumidores necessitam dos eventos para realizar o processamento de uma determinada operação ou mudança de estado \cite{rouse}.
 
 \section{Características da Arquitetura Orientada a Serviços}
 A orientação a serviços é uma abordagem que foi criada para a construção de sistemas de \textit{software} distribuídos, a fim de promover a integração com baixo acoplamento entre aplicações e facilitar a manutenção corretiva, adaptativa ou evolutiva das mesmas \cite{linthicum_soainrealworld_2007}. Em outras palavras, SOA é "um paradigma para a construção e manutenção de processos de negócio que conecta sistemas distribuídos" \cite{josuttis_soa_2007}.
@@ -62,7 +62,7 @@ Como qualquer modelo, SOA apresenta benefícios para a construção de \textit{s
 
 Um serviço pode ser definido como uma aplicação de \textit{software} que interage com outras aplicações por meio da troca de mensagens \cite{linthicum_soainrealworld_2007}. Além disso, um serviço é uma coleção de capacidades \cite{erl_orientacaoaservico_2009}, "é um valor entregue para outro (serviço) através de uma interface bem definida e disponível e resulta em um trabalho provido de um para outro" \cite{adaptive_ltd_service_2009}.
 
-Um serviço é uma aplicação independente e deve ser composto por duas partes principais: a interface, que permite a comunicação com os usuários do serviço e define a estrutura das mensagens a ser utilizada para a comunicação entre um serviço e seu usuário; e a implementação, que consiste do núcleo do serviço, desconhecido pelo usuário, mas a parte responsável pela execução do serviço \cite{linthicum_soainrealworld_2007}. As principais características de um serviço, de acordo com Jossutis \cite{josuttis_soa_2007} e Erl \cite{erl_orientacaoaservico_2009}, são:
+Um serviço é uma aplicação independente, deve ser composto por duas partes principais: a interface, que permite a comunicação com os usuários do serviço e define a estrutura das mensagens a ser utilizada para a comunicação entre um serviço e seu usuário; e a implementação, que consiste do núcleo do serviço, desconhecido pelo usuário, mas a parte responsável pela execução do serviço \cite{linthicum_soainrealworld_2007}. As principais características de um serviço, de acordo com Jossutis \cite{josuttis_soa_2007} e Erl \cite{erl_orientacaoaservico_2009}, são:
 
 \begin{itemize}
 \item Um serviço deve ser \textbf{autônomo},  capaz de controlar seu ambiente e recursos disponibilizados. Isto implica na não interferência de fatores externos à aplicação que implementa o serviço, dependendo apenas de parâmetros fornecidos pelos usuários de um dado serviço.
@@ -82,7 +82,7 @@ Um serviço é uma aplicação independente e deve ser composto por duas partes 
 \item Um serviço deve possuir um \textbf{contrato de serviço padronizado}, que expressa o objetivo e a capacidade implementada pelo serviço.
 \end{itemize}
 
-Algumas destas características estão representadas na figura \ref{servico_na_arquitetura}.
+Algumas destas características estão representadas na Figura \ref{servico_na_arquitetura}.
 
 \begin{figure}[htb]
 \centering
@@ -91,7 +91,7 @@ Algumas destas características estão representadas na figura \ref{servico_na_a
 \label{servico_na_arquitetura}
 \end{figure}
 
-A figura \ref{servico_na_arquitetura} ilustra o serviço como o núcleo de uma arquitetura baseada no modelo SOA. As capacidades de um serviço, o próprio serviço e os consumidores deste serviço formam o núcleo deste modelo, sendo visíveis e transparentes em uma arquitetura de \textit{software}. Como um serviço deve ocultar seus detalhes de implementação e geralmente não possui conhecimento do sistema de \textit{software} em que está inserido \cite{nickull_service_2007}.
+A Figura \ref{servico_na_arquitetura} ilustra o serviço como o núcleo de uma arquitetura baseada no modelo SOA. As capacidades de um serviço, o próprio serviço e os consumidores deste serviço formam o núcleo deste modelo, sendo visíveis e transparentes em uma arquitetura de \textit{software}. Um serviço deve ocultar seus detalhes de implementação e, geralmente, não possui conhecimento do sistema de \textit{software} em que está inserido \cite{nickull_service_2007}.
 
 \subsubsection{Baixo Acoplamento}
 O baixo acoplamento permite que a dependência entre sistemas de \textit{software} seja reduzida. Isto pode ser implementado de duas maneiras distintas: uma utiliza a comunicação assíncrona entre aplicações, e outra faz uso de compensação para manter a consistência do estado dos sistemas de \textit{software} que utilizam e fornecem serviços \cite{josuttis_soa_2007}.
@@ -113,7 +113,7 @@ Os padrões de interoperabilidade existentes, também conhecidos como WS-I, visa
 Quando os serviços seguem padrões independentes da tecnologia, permitindo que a utilização seja transparente e fácil para diversos clientes que utilizam diferentes tecnologias, diz-se que interoperabilidade existe neste contexto, fornecendo uma abstração que colabora para o baixo acoplamento entre as aplicações \cite{oliveira_interoperabilidade}.
 
 \subsection{Modelos de integração}
-A integração entre os subsistemas de \textit{software} que compõem a arquitetura distribuída de um sistema construído com base no modelo arquitetural SOA pode ser estabelecida usando-se diferentes estratégias. A estratégia utilizada para promover tal integração é um aspecto que deve ser cuidadosamente analisado. O impacto de tal decisão é importante, e irá perpetuar-se durante a existência do produto final construído. Desta forma, de acordo com Bianco et. al. \cite{Bianco2007}, existem duas principais abordagens para a integração entre os sistemas que compõem a implementação deste modelo (figura \ref{modelos_integracao_soa}):
+A integração entre os subsistemas de \textit{software} que compõem a arquitetura distribuída de um sistema construído com base no modelo arquitetural SOA pode ser estabelecida usando-se diferentes estratégias. A estratégia utilizada para promover tal integração é um aspecto que deve ser cuidadosamente analisado. O impacto de tal decisão é importante, e irá perpetuar-se durante a existência do produto final construído. Desta forma, de acordo com Bianco et. al. \cite{Bianco2007}, existem duas principais abordagens para a integração entre os sistemas que compõem a implementação deste modelo (Figura \ref{modelos_integracao_soa}):
 
 \begin{figure}[htb]
 \centering
@@ -129,7 +129,7 @@ A integração entre os subsistemas de \textit{software} que compõem a arquitet
 
 \subsection{ESB - \textit{Enterprise Service Bus}}
 
-O ESB, ou \textit{Enterprise Service Bus}, consiste em um barramento de serviços, cuja principal responsabilidade é promover a interoperabilidade do sistema de \textit{software} que implementa o modelo SOA \cite{josuttis_soa_2007}. A criação do ESB foi uma solução encontrada para reduzir a quantidade de interfaces e canais de comunicação a serem mantidos quando o sistema de \textit{software} construído constitui uma aplicação distribuída: a interface tanto dos serviços quanto das aplicações usuárias estabelecem uma comunicação apenas com o barramento, não sendo necessário se adaptarem a cada interface definida pelos serviços existentes como parte do sistema \cite{josuttis_soa_2007}.
+O ESB, ou \textit{Enterprise Service Bus}, consiste em um barramento de serviços, cuja principal responsabilidade é promover a interoperabilidade do sistema de \textit{software} que implementa o modelo SOA \cite{josuttis_soa_2007}. A criação do ESB foi uma solução encontrada para reduzir a quantidade de interfaces e canais de comunicação a serem mantidos quando o sistema de \textit{software} construído constitui uma aplicação distribuída: a interface tanto dos serviços quanto das aplicações usuárias estabelece uma comunicação apenas com o barramento, não sendo necessário se adaptarem a cada interface definida pelos serviços existentes como parte do sistema \cite{josuttis_soa_2007}.
 
 A conexão entre provedores e usuários de serviços é realizada através deste \textit{middleware} e de forma padronizada, sendo que a utilização de uma ferramenta que provê os recursos propostos para que tal consista de um ESB (tratados logo adiante). Não é uma obrigatoriedade para que uma arquitetura construída implemente o modelo SOA \cite{lewis_getting_2010}.
 
@@ -144,7 +144,7 @@ O uso de um ESB possui como principal objetivo a promoção de interoperabilidad
 \item Monitorar e manter registros das transações.
 \end{itemize}
 
-Sendo um conceito relacionado ao modelo SOA, o ESB também possui padrões que devem ser seguidos quando se deseja implementar uma ferramenta caracterizada pelos requisitos descritos. A figura \ref{padrao_ESB} ilustra os padrões indicados.
+Sendo um conceito relacionado ao modelo SOA, o ESB também possui padrões que devem ser seguidos quando se deseja implementar uma ferramenta caracterizada pelos requisitos descritos. A Figura \ref{padrao_ESB} ilustra os padrões indicados.
 
 \begin{figure}[htb]
 \centering
@@ -153,7 +153,7 @@ Sendo um conceito relacionado ao modelo SOA, o ESB também possui padrões que d
 \label{padrao_ESB}
 \end{figure}
 
-A figura \ref{padrao_ESB} exibe os principais componentes de um ESB: roteador intermediário, intermediador ou agente de serviços (\textit{service broker}), um agente responsável por gerenciar mensagens assíncronas e um interceptor. Como exposto por Bianco et. al. \cite{bianco_architecting_2011}, as principais características de cada um destes componentes são:
+A Figura \ref{padrao_ESB} exibe os principais componentes de um ESB: roteador intermediário, intermediador ou agente de serviços (\textit{service broker}), um agente responsável por gerenciar mensagens assíncronas e um interceptor. Como exposto por Bianco et. al. \cite{bianco_architecting_2011}, as principais características de cada um destes componentes são:
 
 \begin{itemize}
 
@@ -186,7 +186,7 @@ Protocolos de comunicação são formados por três elementos principais: sintax
 
 A troca de mensagens entre aplicações podem ser realizadas de diferentes formas e seguir padrões já conhecidos e estabelecidos, e que influenciam na definição do protocolo de comunicação. Os padrões expostos por Josuttis \cite{josuttis_soa_2007} são quatro: \textit{request/response}, \textit{one-way}, \textit{request/callback} e \textit{publish/subcribe}.
 
-O padrão de comunicação \textit{request/response} permite a troca síncrona de mensagens, onde as respostas geradas pelo processamento de requisição são imediatamente encaminhadas à aplicação que inicializou a comunicação. Esta mantém-se em estado de espera pela resposta \cite{josuttis_soa_2007}. O padrão \textit{one-way} é mais utilizado para o envio de notificações, não sendo necessário o envio de uma mensagem de resposta (como sugerido pelo próprio nome do padrão) \cite{josuttis_soa_2007}. Estes padrões estão ilustrados na figura \ref{padroes_comunicacao}.
+O padrão de comunicação \textit{request/response} permite a troca síncrona de mensagens, onde as respostas geradas pelo processamento de requisição são imediatamente encaminhadas à aplicação que inicializou a comunicação. Esta mantém-se em estado de espera pela resposta \cite{josuttis_soa_2007}. O padrão \textit{one-way} é mais utilizado para o envio de notificações, não sendo necessário o envio de uma mensagem de resposta (como sugerido pelo próprio nome do padrão) \cite{josuttis_soa_2007}. Estes padrões estão ilustrados na Figura \ref{padroes_comunicacao}.
 
 \begin{figure}[htb]
 \centering
@@ -217,7 +217,7 @@ Esta abordagem é indicada para operações que não necessitam que dados sobre 
 
 \section{Implementações do modelo SOA existentes}
 
-Esta seção apresenta três trabalhos que utilizam o modelo SOA em suas implementações. Todas as publicações fazem uso deste modelo em ambientes distintos. O primeiro trabalho propôs a criação de um \textit{framework} baseado em boas práticas de desenvolvimento com SOA. O segundo estudo trata de um modelo arquitetural proposto a partir da orientação a serviços e a ISO/IEC 61499. O objetivo era construir um sistema industrial automatizado que fosse flexível, interoperável e reconfigurável. O último estudo aqui descrito. O último estudo exibe um modelo para \textit{software} financeiro utilizando conceitos de SOA e arquitetura orientada à Web.
+Esta seção apresenta três trabalhos que utilizam o modelo SOA em suas implementações. Todas as publicações fazem uso deste modelo em ambientes distintos. O primeiro trabalho propôs a criação de um \textit{framework} baseado em boas práticas de desenvolvimento com SOA. O segundo estudo trata de um modelo arquitetural proposto a partir da orientação a serviços e a ISO/IEC 61499. O objetivo era construir um sistema industrial automatizado que fosse flexível, interoperável e reconfigurável. O último estudo exibe um modelo para \textit{software} financeiro utilizando conceitos de SOA e arquitetura orientada à Web.
 
 \subsection{PSOA - Um \textit{framework} de práticas e padrões SOA para projetos DDS}
 
@@ -231,7 +231,7 @@ O \textit{framework} foi construído com base nas boas práticas levantadas atra
 
 Dai et. al. \cite{dai_bridging_2015} propuseram um modelo arquitetural que combina a orientação a serviços e padrões definidos pela ISO/IEC 61499 aplicados à automação industrial. O objetivo era propor um método de aplicação do modelo SOA e da norma citada para a construção de um sistema industrial automatizado.
 
-A orientação à serviços permite que requisitos de interoperabilidade, flexibilidade e reconfigurabilidade sejam mais facilmente incorporados a um sistema automatizado. Como o sistema construído por Dai et. al. \cite{dai_bridging_2015} foi aplicado à indústria, a norma IEC 61499 foi tomada como o padrão a ser seguido para o gerenciamento de comandos de operação industrial, permitindo que manutenções fossem realizadas sem afetar operações em curso.
+A orientação a serviços permite que requisitos de interoperabilidade, flexibilidade e reconfigurabilidade sejam mais facilmente incorporados a um sistema automatizado. Como o sistema construído por Dai et. al. \cite{dai_bridging_2015} foi aplicado à indústria, a norma IEC 61499 foi tomada como o padrão a ser seguido para o gerenciamento de comandos de operação industrial, permitindo que manutenções fossem realizadas sem afetar operações em curso.
 
 Para definir uma proposta de um modelo integrativo baseado em SOA e IEC 61499, os autores deste trabalho realizaram um mapeamento dos princípios definidos para o modelo arquitetural tratado e a norma. Em seguida, a execução da norma em um ambiente baseado no modelo SOA foi realizada a fim de elucidar a integração proposta. Por fim, detalhes e resultados do estudo de caso realizado são descritos \cite{dai_bridging_2015}.
 
@@ -257,4 +257,4 @@ Implementações de \textit{software} utilizando o modelo SOA demonstram que é 
 
 Um projeto de Engenharia de \textit{software} envolve aspectos metodológicos e técnicos. É possível o desenvolvimento de \textit{software} associando um processo adaptado à técnicas, métodos e modelos existentes. Tanto o processo quanto as ferramentas utilizadas devem ser adaptadas ao objetivo final definido.
 
-Assim, pode-se afirmar a possibilidade de construção de um sistema de \textit{software} baseado no modelo SOA, utilizando o protocolo mais adequado ao modelo de negócio. A utilização de um processo de desenvolvimento, bem como o uso de técnicas, métodos e ferramentas da área de Engenharia de \textit{software} podem ser aplicadas à um projeto de uma aplicação distribuída.
+Assim, pode-se afirmar a possibilidade de construção de um sistema de \textit{software} baseado no modelo SOA, utilizando o protocolo mais adequado ao modelo de negócio. A utilização de um processo de desenvolvimento, bem como o uso de técnicas, métodos e ferramentas da área de Engenharia de \textit{software} podem ser aplicados a um projeto de uma aplicação distribuída.

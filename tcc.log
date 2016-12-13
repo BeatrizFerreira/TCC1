@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  8 DEC 2016 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.1.6)  12 DEC 2016 22:49
 entering extended mode
 **./tcc.tex
 (tcc.tex
@@ -1368,14 +1368,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.96 \subsubsection
-                   {Baixo Acoplamento} [9]pdfTeX warning (ext4): destination wi
-th the same identifier (name{page.10}) has been already used, duplicate ignored
-
+l.98 
+      [9]pdfTeX warning (ext4): destination with the same identifier (name{page
+.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.109 \item \textit
-                   {WS-Transaction}: padrão que define como se dará a inte...
+l.110 \item \textit
+                   {WS-Security}: fornece segurança a nível de mensagem, g...
 [10 <./figuras/servico_na_arquitetura.png>]
 <figuras/modelos_integracao_soa.png, id=507, 593.96906pt x 347.04657pt>
 File: figuras/modelos_integracao_soa.png Graphic file (type png)
@@ -1395,9 +1394,8 @@ l.133
 ge.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \item L
-             idar com confiança e segurança de dados; [12 <./figuras/modelos_
-integracao_soa.png>]
+l.145 \end{itemize}
+                    [12 <./figuras/modelos_integracao_soa.png>]
 <figuras/padrao_ESB.png, id=530, 568.37344pt x 342.5297pt>
 File: figuras/padrao_ESB.png Graphic file (type png)
 
@@ -1408,10 +1406,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.13}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.167 \end{itemize}
-                    [13 <./figuras/padrao_ESB.png>]pdfTeX warning (ext4): desti
-nation with the same identifier (name{page.14}) has been already used, duplicat
-e ignored
+l.172 
+       [13 <./figuras/padrao_ESB.png>]
+Underfull \vbox (badness 4543) has occurred while \output is active []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.14}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.184 
@@ -1535,12 +1535,15 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 394.
- [42] <figuras/print_avsoa.png, id=919, 645.16031pt x 418.56375pt>
+ [42] <figuras/print_avsoa.png, id=921, 645.16031pt x 418.56375pt>
 File: figuras/print_avsoa.png Graphic file (type png)
 
 <use figuras/print_avsoa.png>
 Package pdftex.def Info: figuras/print_avsoa.png used on input line 409.
 (pdftex.def)             Requested size: 451.60913pt x 292.99261pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [43 <./figuras/print_avsoa.png>]
 Overfull \hbox (14.68684pt too wide) in paragraph at lines 419--419
  [] [] [][]\T1/lmr/m/n/10 Servi�os \T1/lmr/m/it/10 Proxy \T1/lmr/m/n/10 no WSO2
@@ -1556,22 +1559,22 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 .sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Underfull \vbox (badness 1178) has occurred while \output is active []
+Underfull \vbox (badness 2103) has occurred while \output is active []
 
  [44]
 [45]
-<figuras/integracao_esb_front_rest_api_tcc.png, id=966, 314.17375pt x 482.80376
+<figuras/integracao_esb_front_rest_api_tcc.png, id=968, 314.17375pt x 482.80376
 pt>
 File: figuras/integracao_esb_front_rest_api_tcc.png Graphic file (type png)
  <use figuras/integracao_esb_front_rest_api_tcc.png>
 Package pdftex.def Info: figuras/integracao_esb_front_rest_api_tcc.png used on 
 input line 488.
 (pdftex.def)             Requested size: 219.92012pt x 337.96033pt.
-
+ [46 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>]
 
 Package hyperref Warning: Suppressing empty link on input line 496.
 
-[46 <./figuras/integracao_esb_front_rest_api_tcc.png (PNG copy)>] [47]
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [48]
@@ -1603,7 +1606,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [59
 
 ] [60]
-<figuras/estrutura_conector_login.png, id=1198, 149.05687pt x 135.50626pt>
+<figuras/estrutura_conector_login.png, id=1200, 149.05687pt x 135.50626pt>
 File: figuras/estrutura_conector_login.png Graphic file (type png)
 
 <use figuras/estrutura_conector_login.png>
@@ -1636,9 +1639,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (tcc.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
-Package rerunfilecheck Info: File `tcc.brf' has not changed.
-(rerunfilecheck)             Checksum: E2A91F3C4820AF33514C64FF46A52FDA;6523.
 
+
+Package rerunfilecheck Warning: File `tcc.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `tcc.brf':
+(rerunfilecheck)             Before: E2A91F3C4820AF33514C64FF46A52FDA;6523
+(rerunfilecheck)             After:  B00C28BA2372224BC9B41AEE1143ABD9;6522.
 
 LaTeX Warning: There were undefined references.
 
@@ -1648,13 +1656,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 15908 strings out of 493634
- 236293 string characters out of 3134424
- 498528 words of memory out of 3000000
- 18356 multiletter control sequences out of 15000+200000
+ 15911 strings out of 493634
+ 236341 string characters out of 3134424
+ 499840 words of memory out of 3000000
+ 18358 multiletter control sequences out of 15000+200000
  104364 words of font info for 66 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,13n,49p,1450b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,49p,1459b,2107s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.
 enc}{C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
 athsy.enc}<C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
@@ -1677,9 +1685,9 @@ public/lm/lmsso17.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/lm/lmsy10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKTeX 2.9
 /fonts/type1/public/lm/lmtk10.pfb><C:/Users/Beatriz/AppData/Local/Programs/MiKT
 eX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tcc.pdf (89 pages, 1330220 bytes).
+Output written on tcc.pdf (89 pages, 1330517 bytes).
 PDF statistics:
- 1738 PDF objects out of 2073 (max. 8388607)
- 543 named destinations out of 1000 (max. 500000)
+ 1740 PDF objects out of 2073 (max. 8388607)
+ 544 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 
